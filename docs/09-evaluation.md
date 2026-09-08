@@ -18,7 +18,7 @@
 | 成本 | 每次输入、输出、缓存、缺失项、失败调用 | 把缺失的隐藏思考填为 0 |
 | 统计 | 固定分母、任务成对、场景分组、置信区间 | 只比较成功任务，漏掉失败开销 |
 
-对每个预算配置运行同一批题，令第 $i$ 题得分为 $s_i$，实际整项任务 token 为 $c_i$。报告 $\widehat Q=N^{-1}\sum_i s_i$ 与 $\widehat C=N^{-1}\sum_i c_i$。多次采样时先保留每次的成对记录；题目应有相同权重，不能让采样次数更多的题占据更大比例。
+对每个预算配置运行同一批题，令第 $`i`$ 题得分为 $`s_i`$ ，实际整项任务 token 为 $`c_i`$ 。报告 $`\widehat Q=N^{-1}\sum_i s_i`$ 与 $`\widehat C=N^{-1}\sum_i c_i`$ 。多次采样时先保留每次的成对记录；题目应有相同权重，不能让采样次数更多的题占据更大比例。
 
 ![预算曲线可能交叉](../assets/plots/evaluation-frontier.png)
 
@@ -62,11 +62,11 @@ assert tn_gp(2, 6, 3) == 486
 
 论文 v3 采用温度 0、每题一次生成；数学和科学描述为规则抽取与匹配，代码执行测试。它的标量分数为：
 
-$$
-\operatorname{OckScore}=100a-10\ln(1+\bar L/10000),
-$$
+```math
+\mathrm{OckScore}=100a-10\ln(1+\bar L/10000),
+```
 
-其中 $a\in[0,1]$ 为准确率，$\bar L\ge0$ 是平均完整输出 token（思考加答案）。例如 $a=0.8,\bar L=1000$ 时约为 79.0469。固定准确率时导数为 $-10/(10000+\bar L)<0$，因此缩短输出提高分数；但是准确率下降也可能被长度奖励抵消，所以分数升高不足以证明 Pareto 支配。[论文 v3](https://arxiv.org/html/2511.05722v3)
+其中 $`a\in[0,1]`$ 为准确率， $`\bar L\ge0`$ 是平均完整输出 token（思考加答案）。例如 $`a=0.8,\bar L=1000`$ 时约为 79.0469。固定准确率时导数为 $`-10/(10000+\bar L)\lt 0`$ ，因此缩短输出提高分数；但是准确率下降也可能被长度奖励抵消，所以分数升高不足以证明 Pareto 支配。[论文 v3](https://arxiv.org/html/2511.05722v3)
 
 **复现需要选择明确口径。** 上述固定仓库的数学实现使用 LLM judge，而 `scoring.py` 从 `tokens.total_tokens` 取平均成本，和论文输出长度口径不同。不要混用。可分别报告论文口径 OckScore 和本教程完整输入+输出曲线，并保存原始账目。[数学判分源码](https://github.com/OckBench/OckBench/blob/b72752a0ba5989d3c212675ec60d3eedcd838628/src/evaluators/math_eval.py)、[聚合源码](https://github.com/OckBench/OckBench/blob/b72752a0ba5989d3c212675ec60d3eedcd838628/src/core/scoring.py)
 
@@ -86,26 +86,26 @@ AB 的实际输入保存在[样例索引](../data/benchmarks/otb-examples.json)�
 
 黑格是墙，白格可通行，S/G 对应原题起止符号；橙色路径是本教程用广度优先搜索补充的解，15 步已与参考值核对。只改了视觉表示，未另造一个迷宫。
 
-论文对每题作 8 次采样、温度 0.6，简单题由 Llama-4-Maverick 比较答案，复杂题调用 Reasoning Gym verifier。这是重复采样均值，不是“八次至少成功一次”。令每次是否正确为 $c_i\in\{0,1\}$、思考长度为 $l_i\ge0$，阈值为 $t$：
+论文对每题作 8 次采样、温度 0.6，简单题由 Llama-4-Maverick 比较答案，复杂题调用 Reasoning Gym verifier。这是重复采样均值，不是“八次至少成功一次”。令每次是否正确为 $`c_i\in\{0,1\}`$ 、思考长度为 $`l_i\ge0`$ ，阈值为 $`t`$ ：
 
-$$
-\operatorname{OAA}(t)=\frac1N\sum_i c_i\mathbf1[l_i<t].
-$$
+```math
+\mathrm{OAA}(t)=\frac1N\sum_i c_i\mathbf1[l_i\lt t].
+```
 
-答错或超出阈值都记零，分母仍包含所有回答。令 $T>0$，对阈值积分得到：
+答错或超出阈值都记零，分母仍包含所有回答。令 $`T\gt 0`$ ，对阈值积分得到：
 
-$$
-A=\frac1T\int_0^T\operatorname{OAA}(t)\,dt
+```math
+A=\frac1T\int_0^T\mathrm{OAA}(t)\,dt
 =\frac1N\sum_i c_i\max(0,1-l_i/T).
-$$
+```
 
-等号来自每条正确回答在区间 $(l_i,T]$ 才贡献面积。论文取 $T=1000$：正确且用200个思考 token，贡献0.8；正确但达到1000，贡献0；错误无论多短仍为0。**这是给已经生成的回答改变评分阈值，没有在每个阈值下重新运行模型。**[论文 §3–4](https://arxiv.org/html/2508.13141v1#S3)
+等号来自每条正确回答在区间 $`(l_i,T]`$ 才贡献面积。论文取 $`T=1000`$ ：正确且用200个思考 token，贡献0.8；正确但达到1000，贡献0；错误无论多短仍为0。**这是给已经生成的回答改变评分阈值，没有在每个阈值下重新运行模型。**[论文 §3–4](https://arxiv.org/html/2508.13141v1#S3)
 
 ![AUCOAA 与聚合顺序](../assets/plots/evaluation-aucoaa.png)
 
-右图用两次合成回答说明实现差异：先逐次算 $c_i\max(0,1-l_i/T)$，得到0.5；先算平均正确率与平均长度再相乘，得到0.25。固定代码 `f0be19697523ac8340fd5eb76cded26d97732952` 采用后一类聚合，所以复现时要声明选择哪一种。[eval.py](https://github.com/facebookresearch/RAM/blob/f0be19697523ac8340fd5eb76cded26d97732952/projects/otb/eval.py)
+右图用两次合成回答说明实现差异：先逐次算 $`c_i\max(0,1-l_i/T)`$ ，得到0.5；先算平均正确率与平均长度再相乘，得到0.25。固定代码 `f0be19697523ac8340fd5eb76cded26d97732952` 采用后一类聚合，所以复现时要声明选择哪一种。[eval.py](https://github.com/facebookresearch/RAM/blob/f0be19697523ac8340fd5eb76cded26d97732952/projects/otb/eval.py)
 
-OTB 总分把简单题指标 $A$ 和困难题指标 $U$ 作调和平均：$2AU/(A+U)$；当两者都0时定义为0。这不是分类 precision/recall F1。公开复杂题代码直接平均 verifier reward，某些任务允许部分分，因此实际 $U$ 未必是严格二元准确率。[underthink evaluator](https://github.com/facebookresearch/RAM/blob/f0be19697523ac8340fd5eb76cded26d97732952/projects/otb/evals/underthink_eval.py)
+OTB 总分把简单题指标 $`A`$ 和困难题指标 $`U`$ 作调和平均： $`2AU/(A+U)`$ ；当两者都0时定义为0。这不是分类 precision/recall F1。公开复杂题代码直接平均 verifier reward，某些任务允许部分分，因此实际 $`U`$ 未必是严格二元准确率。[underthink evaluator](https://github.com/facebookresearch/RAM/blob/f0be19697523ac8340fd5eb76cded26d97732952/projects/otb/evals/underthink_eval.py)
 
 其他版本风险也要记录：`t_max=1000` 是评分尺度，不是所有模型的生成上限；think 标签缺失会影响思考长度抽取；第一个或最后一个 boxed 的选择可能改变结果；服务名不保证背后的 judge 权重身份。正式运行应固定依赖、逐题输出与真正加载的模型。[官方实现目录](https://github.com/facebookresearch/RAM/tree/f0be19697523ac8340fd5eb76cded26d97732952/projects/otb)
 
@@ -119,17 +119,17 @@ OTB 总分把简单题指标 $A$ 和困难题指标 $U$ 作调和平均：$2AU/(
 | 152 | PCl4F、BF3、CO2、CBr4，哪个分子为四面体？ | D：CBr4 | 中心原子电子域和 VSEPR 判断 |
 | 39 | 将10 μF电容充到100 V，需要做多少功？ | C：0.05 J | 单位换算与电容储能 |
 
-例如第三题可从电荷为 $q$ 时电压 $V(q)=q/C$ 推出：
+例如第三题可从电荷为 $`q`$ 时电压 $`V(q)=q/C`$ 推出：
 
-$$
+```math
 W=\int_0^{Q}\frac qC\,dq=\frac{Q^2}{2C}=\frac12CV^2=0.05\ \mathrm J,
-$$
+```
 
-这里假设电容 $C>0$ 恒定，计算充电后储能；实际电路从电源取走的能量还可能包含耗散。这个推导是对题意的教学解释，不是模型实测的思考轨迹。
+这里假设电容 $`C\gt 0`$ 恒定，计算充电后储能；实际电路从电源取走的能量还可能包含耗散。这个推导是对题意的教学解释，不是模型实测的思考轨迹。
 
 测试先生成推理与答案，再让 judge 对参考步骤、生成步骤和反思作比较。论文使用 Claude 3.7 Sonnet；实际代码可配置 judge 与 tokenizer。步骤 precision/recall 测的是与参考及合理推理的匹配，不能要求所有模型复现同一段文字。[论文](https://arxiv.org/abs/2505.22113)、[固定仓库](https://github.com/ZhiyuanLi218/Think-Bench/tree/43cd9672cc85027f34d578052de2a759daba4bb6)
 
-容易误读的是 Efficiency。设完整思考长度为 $L>0$，首次正确答案前的前缀长度为 $F$，该类指标为 $F/L$；未找到正确答案时按实现记0。它不等于正确率除以总成本，也不表示逐 token 验证“有用”。
+容易误读的是 Efficiency。设完整思考长度为 $`L\gt 0`$ ，首次正确答案前的前缀长度为 $`F`$ ，该类指标为 $`F/L`$ ；未找到正确答案时按实现记0。它不等于正确率除以总成本，也不表示逐 token 验证“有用”。
 
 ![同长度下的效率比率反例](../assets/plots/evaluation-think-ratio.png)
 
@@ -157,12 +157,12 @@ AppWorld 是带数据库的应用模拟环境，主要通过代码/API 操作，
 
 典型循环是初始化 `AppWorld(task_id)`，让 agent 读取合法任务信息，执行 `world.execute(code)`，把输出或错误送回模型，直到明确结束。参考解、评测代码和私有答案不属于模型可见输入。具体API接入以所安装的固定版本为准。[官方最小示例](https://github.com/StonyBrookNLP/appworld/blob/main/notebooks/minimal_agent.ipynb)
 
-Task Goal Completion（TGC）要求任务全部断言通过。Scenario Goal Completion（SGC）要求同场景全部变体成功。设任务成功为 $s_{gj}\in\{0,1\}$，场景 $g$ 有 $n_g$ 个完整变体：
+Task Goal Completion（TGC）要求任务全部断言通过。Scenario Goal Completion（SGC）要求同场景全部变体成功。设任务成功为 $`s_{gj}\in\{0,1\}`$ ，场景 $`g`$ 有 $`n_g`$ 个完整变体：
 
-$$
-\operatorname{TGC}=\frac{\sum_g\sum_{j=1}^{n_g}s_{gj}}{\sum_g n_g},\qquad
-\operatorname{SGC}=\frac1G\sum_{g=1}^{G}\prod_{j=1}^{n_g}s_{gj}.
-$$
+```math
+\mathrm{TGC}=\frac{\sum_g\sum_{j=1}^{n_g}s_{gj}}{\sum_g n_g},\qquad
+\mathrm{SGC}=\frac1G\sum_{g=1}^{G}\prod_{j=1}^{n_g}s_{gj}.
+```
 
 百分数显示时乘100。一个场景三次结果为成功、成功、失败，则TGC为66.7%，SGC为0。单题五条断言通过四条，不会使其以80%成功计入TGC。传入缺失变体会破坏SGC含义，所以教学代码要求先给出完整成员列表。[官方 evaluator](https://github.com/StonyBrookNLP/appworld/blob/main/src/appworld/evaluator.py)
 
