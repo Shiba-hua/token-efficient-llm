@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="570" viewBox="0 0 1080 570" role="img" aria-labelledby="title desc">
+<title id="title">数据质量需要四项独立证据</title><desc id="desc">标签正确、过程可信、判分可靠和无已知评测泄漏是四个不同维度。中心样本不能由其中一项自动获得其他三项保证。</desc>
+<defs><style>text{font-family:Arial,'PingFang SC','Noto Sans CJK SC',sans-serif;fill:#172033}.heading{font-size:30px;font-weight:700}.label{font-size:23px;font-weight:700}.body{font-size:19px}.small{font-size:17px;fill:#526176}</style></defs>
+<rect width="1080" height="570" fill="#fff"/>
+<text x="54" y="52" class="heading">“干净”需要四项独立证据</text>
+<text x="54" y="84" class="small">概念教学图 · 不包含真实语料测量 · unknown 应保留为 unknown</text>
+<rect x="54" y="117" width="460" height="176" rx="15" fill="#edf5ff" stroke="#3576ba"/>
+<text x="80" y="155" class="label">1  标签正确</text><text x="80" y="191" class="body">最终答案是否成立？</text><text x="80" y="225" class="body">证据：独立解答、来源核对、专家抽样</text><text x="80" y="266" class="small">字段名 expected_answer 不是正确性证明</text>
+<rect x="566" y="117" width="460" height="176" rx="15" fill="#edf5ff" stroke="#3576ba"/>
+<text x="592" y="155" class="label">2  过程可信</text><text x="592" y="191" class="body">中间推理是否使用有效条件？</text><text x="592" y="225" class="body">证据：步骤审核、引用与工具记录</text><text x="592" y="266" class="small">最终数值正确仍可能伴随错误步骤</text>
+<rect x="54" y="319" width="460" height="176" rx="15" fill="#f1f8f3" stroke="#428256"/>
+<text x="80" y="357" class="label">3  判分可靠</text><text x="80" y="393" class="body">验证器会漏判或误判什么？</text><text x="80" y="427" class="body">证据：假阳性、假阴性、不支持类型</text><text x="80" y="468" class="small">通过有限测试只证明通过这些测试</text>
+<rect x="566" y="319" width="460" height="176" rx="15" fill="#f1f8f3" stroke="#428256"/>
+<text x="592" y="357" class="label">4  无已知评测泄漏</text><text x="592" y="393" class="body">训练与测试是否共享同题或题族？</text><text x="592" y="427" class="body">证据：ID、哈希、近重复与来源审核</text><text x="592" y="468" class="small">正确的测试答案进入训练仍然是泄漏</text>
+<text x="54" y="538" class="small">报告每一项的审核范围、样本数、判定方法与未覆盖情况。</text>
+</svg>

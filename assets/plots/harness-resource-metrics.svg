@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 550" role="img" aria-labelledby="title desc">
+<title id="title">Token、计算和延迟是三条不同的计量轴</title><desc id="desc">输入输出token统计模型接口上的内容，计算统计执行的模型工作，延迟统计用户等待的时间。推测解码、量化和MoE不自动减少文本token。</desc>
+<rect width="1120" height="550" fill="white"/>
+<g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" fill="#111827"><text x="40" y="52" font-size="30" font-weight="700">同一答案，可以有不同的计算路径</text><text x="40" y="91" font-size="20" fill="#475569">自绘概念图；每个方案都需要同时报告任务质量。</text>
+<g stroke-width="2"><rect x="40" y="145" width="320" height="280" rx="12" fill="#eff6ff" stroke="#2563eb"/><rect x="400" y="145" width="320" height="280" rx="12" fill="#f0fdf4" stroke="#15803d"/><rect x="760" y="145" width="320" height="280" rx="12" fill="#fff7ed" stroke="#c2410c"/></g>
+<g text-anchor="middle" font-size="27" font-weight="700"><text x="200" y="192">Token</text><text x="560" y="192">计算 / 内存</text><text x="920" y="192">端到端延迟</text></g>
+<g font-size="22"><text x="65" y="246">读了多少输入？</text><text x="65" y="286">生成了多少输出？</text><text x="65" y="326">重试与子模型计入了吗？</text><text x="65" y="379" font-size="20" fill="#1d4ed8">缓存与 latent 单独标注</text><text x="425" y="246">执行多少前向与 FLOPs？</text><text x="425" y="286">每次激活多少参数？</text><text x="425" y="326">权重与 KV 占多少内存？</text><text x="425" y="379" font-size="20" fill="#166534">精度、内核、硬件影响结果</text><text x="785" y="246">用户总共等了多久？</text><text x="785" y="286">多少工作能够并行？</text><text x="785" y="326">排队和工具耗时多少？</text><text x="785" y="379" font-size="20" fill="#9a3412">并行可以缩时，也可以增工</text></g>
+<text x="40" y="482" font-size="23">少生成文字 ≠ 少执行模型；每步多出几个 token ≠ 端到端更快。</text><text x="40" y="521" font-size="20" fill="#475569">实验应分别画质量—token、质量—时间、质量—计算的比较图。</text></g></svg>

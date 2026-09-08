@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="600" viewBox="0 0 1080 600" role="img" aria-labelledby="title desc">
+<title id="title">NTP 与 MTP 的条件变量和效率边界</title><desc id="desc">真实前缀经过共享表示，NTP预测下一词元，MTP额外头预测更远词元。MTP的更远头不以第一个头的采样结果为条件。部署效率仍要测完整任务成本。</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10" fill="#3576ba"/></marker><style>text{font-family:Arial,'PingFang SC','Noto Sans CJK SC',sans-serif;fill:#172033}.h{font-size:29px;font-weight:700}.b{font-size:22px}.s{font-size:18px;fill:#526176}.arrow{stroke:#3576ba;stroke-width:3;fill:none;marker-end:url(#a)}</style></defs>
+<rect width="1080" height="600" fill="#fff"/>
+<text x="48" y="49" class="h">预测得更远，条件变量是什么？</text><text x="48" y="81" class="s">概念教学图 · 所有目标来自同一条真实训练序列</text>
+<rect x="48" y="177" width="234" height="105" rx="12" fill="#edf5ff" stroke="#3576ba"/><text x="72" y="218" class="b">真实前缀</text><text x="72" y="254" class="b">the model</text>
+<path d="M282 229 H350" class="arrow"/>
+<rect x="357" y="177" width="242" height="105" rx="12" fill="#edf5ff" stroke="#3576ba"/><text x="386" y="218" class="b">共享主干表示 h</text><text x="386" y="254" class="s">只看已有前缀</text>
+<path d="M599 210 H653 V152 H709" class="arrow"/><path d="M599 248 H653 V303 H709" class="arrow"/>
+<rect x="717" y="113" width="312" height="91" rx="12" fill="#f1f8f3" stroke="#428256"/><text x="741" y="150" class="b">第 1 个头 → reads</text><text x="741" y="182" class="s">下一位置：NTP 目标</text>
+<rect x="717" y="263" width="312" height="91" rx="12" fill="#fff4e8" stroke="#ae7131"/><text x="741" y="300" class="b">第 2 个头 → text</text><text x="741" y="332" class="s">更远位置：额外 MTP 目标</text>
+<text x="48" y="338" class="s">第 2 个头的条件中没有第 1 个头的采样结果。</text>
+<rect x="48" y="393" width="981" height="143" rx="12" fill="#f6f7fa" stroke="#8391a3"/>
+<text x="72" y="430" class="b">训练监督改善 → 能力可能提高 → 还需测部署曲线</text>
+<text x="72" y="468" class="s">更少训练样本、更多 token/秒：分别是训练效率与吞吐。</text>
+<text x="72" y="502" class="s">完成同一任务的全部输入 + 输出 token 减少，才直接涉及本教程的成本横轴。</text>
+<text x="48" y="578" class="s">示意语句：the model reads text · 未展示真实模型训练或性能数字</text>
+</svg>

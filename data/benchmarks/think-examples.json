@@ -1,0 +1,29 @@
+[
+  {
+    "benchmark": "THINK-Bench",
+    "index": 376,
+    "description_zh": "计算以2为底64的对数。",
+    "answer": "6",
+    "category": "math",
+    "difficulty": "Easy",
+    "source": "https://huggingface.co/datasets/zhiyuan218/Think-Bench/blob/78ed26bf4cac0f540c3d9caa2ae8e1eb553b250f/Think-Bench.json"
+  },
+  {
+    "benchmark": "THINK-Bench",
+    "index": 152,
+    "description_zh": "从PCl4F、BF3、CO2、CBr4中选出四面体分子。",
+    "answer": "D",
+    "category": "chemistry",
+    "difficulty": "Easy",
+    "source": "https://huggingface.co/datasets/zhiyuan218/Think-Bench/blob/78ed26bf4cac0f540c3d9caa2ae8e1eb553b250f/Think-Bench.json"
+  },
+  {
+    "benchmark": "THINK-Bench",
+    "index": 39,
+    "description_zh": "把10微法电容充到100伏需要做多少功？",
+    "answer": "C",
+    "category": "physics",
+    "difficulty": "Easy",
+    "source": "https://huggingface.co/datasets/zhiyuan218/Think-Bench/blob/78ed26bf4cac0f540c3d9caa2ae8e1eb553b250f/Think-Bench.json"
+  }
+]

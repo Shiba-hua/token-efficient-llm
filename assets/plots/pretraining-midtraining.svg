@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="590" viewBox="0 0 1080 590" role="img" aria-labelledby="title desc">
+<title id="title">中训练的数据混合与独立评测</title><desc id="desc">一般文本和领域文本按混合比例进入现有底座继续训练，随后分别评测一般能力、目标能力与完整任务token成本。</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10" fill="#3576ba"/></marker><style>text{font-family:Arial,'PingFang SC','Noto Sans CJK SC',sans-serif;fill:#172033}.h{font-size:29px;font-weight:700}.b{font-size:22px}.s{font-size:18px;fill:#526176}.arrow{stroke:#3576ba;stroke-width:3;fill:none;marker-end:url(#a)}</style></defs>
+<rect width="1080" height="590" fill="#fff"/><text x="48" y="49" class="h">中训练：目标能力与旧能力一起检查</text><text x="48" y="81" class="s">概念教学图 · 混合比例是实验变量 · 没有预设最佳比例</text>
+<rect x="48" y="122" width="251" height="86" rx="12" fill="#edf5ff" stroke="#3576ba"/><text x="76" y="158" class="b">一般文本</text><text x="76" y="187" class="s">比例 1 − ρ</text>
+<rect x="48" y="243" width="251" height="86" rx="12" fill="#f1f8f3" stroke="#428256"/><text x="76" y="279" class="b">领域 / 能力文本</text><text x="76" y="308" class="s">比例 ρ</text>
+<path d="M299 165 H342 V217 H390" class="arrow"/><path d="M299 286 H342 V241 H390" class="arrow"/>
+<rect x="398" y="175" width="276" height="110" rx="12" fill="#edf5ff" stroke="#3576ba"/><text x="425" y="216" class="b">已有底座继续训练</text><text x="425" y="252" class="s">记录长度、学习率与配比</text>
+<path d="M674 229 H739" class="arrow"/>
+<rect x="746" y="151" width="284" height="154" rx="12" fill="#fff4e8" stroke="#ae7131"/><text x="770" y="188" class="b">保留阶段检查点</text><text x="770" y="225" class="s">领域进步是否伴随退化？</text><text x="770" y="260" class="s">哪个阶段引入了变化？</text>
+<path d="M536 285 V359" class="arrow"/>
+<rect x="48" y="379" width="290" height="121" rx="12" fill="#f6f7fa" stroke="#8391a3"/><text x="71" y="418" class="b">一般能力</text><text x="71" y="454" class="s">短任务、语言建模、</text><text x="71" y="481" class="s">已有长上下文能力</text>
+<rect x="393" y="379" width="290" height="121" rx="12" fill="#f6f7fa" stroke="#8391a3"/><text x="417" y="418" class="b">目标能力</text><text x="417" y="454" class="s">领域问答、跨段约束、</text><text x="417" y="481" class="s">实际任务完成质量</text>
+<rect x="739" y="379" width="291" height="121" rx="12" fill="#f6f7fa" stroke="#8391a3"/><text x="763" y="418" class="b">部署总成本</text><text x="763" y="454" class="s">全部调用 input + output</text><text x="763" y="481" class="s">包含检索反馈与重试</text>
+<text x="48" y="552" class="s">长窗口是能力规格；token 效率要在相同任务和评分规则下比较。</text>
+</svg>

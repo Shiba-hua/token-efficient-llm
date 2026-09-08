@@ -1,0 +1,82 @@
+[
+  {
+    "benchmark": "OptimalThinkingBench",
+    "row_zero_based": 29,
+    "subset": "overthinkingbench",
+    "answer": "81",
+    "metadata": {
+      "domain": "Education",
+      "answer_type": "numeric"
+    },
+    "source": "https://huggingface.co/datasets/facebook/optimal_thinking_bench/blob/949ee6b5dc7960928dab98704cb380ded43c7636/otl_bench.jsonl",
+    "description_zh": "9乘9是多少？"
+  },
+  {
+    "benchmark": "OptimalThinkingBench",
+    "row_zero_based": 1327,
+    "subset": "underthinkingbench",
+    "answer": "#A #A #A B# B# A# B# A#",
+    "metadata": {
+      "source_dataset": "ab",
+      "source_index": 0,
+      "difficulty": {
+        "length": 20
+      }
+    },
+    "source": "https://huggingface.co/datasets/facebook/optimal_thinking_bench/blob/949ee6b5dc7960928dab98704cb380ded43c7636/otl_bench.jsonl",
+    "program": "B# B# #B #B #A B# B# #A #A A# B# A# B# #B #A #B B# A# #A A#",
+    "description_zh": "按四条相邻符号重写规则求终态。"
+  },
+  {
+    "benchmark": "OptimalThinkingBench",
+    "row_zero_based": 1727,
+    "subset": "underthinkingbench",
+    "answer": "15",
+    "metadata": {
+      "source_dataset": "maze",
+      "source_index": 0,
+      "grid_size": 21,
+      "shortest_path_length": 15,
+      "start": "]",
+      "wall": ".",
+      "path": "O",
+      "difficulty": {
+        "dist": [
+          15,
+          25
+        ],
+        "grid_size": [
+          15,
+          25
+        ]
+      },
+      "goal_symbol_note": "The goal in the question grid is a single backslash; upstream metadata double-escapes it."
+    },
+    "source": "https://huggingface.co/datasets/facebook/optimal_thinking_bench/blob/949ee6b5dc7960928dab98704cb380ded43c7636/otl_bench.jsonl",
+    "grid": [
+      ".....................",
+      ".O..O.O.OO..OO.OOOOO.",
+      "..OOOOOOOOO.OOO..OOO.",
+      ".OO.OOOOO.OOO..OOOOO.",
+      ".OOOOO..OOOOO..OO..O.",
+      "..O.OOOOOOOO..O..OOO.",
+      ".O.O.OO.OO.O..O.OOO..",
+      ".OOO.O.OO.OOO..OOOOO.",
+      ".O.OO..OO..OOOOO]O.O.",
+      "...OO..OOOOOOO.O..O..",
+      ".O.OO..O.OOOO.OO.OO..",
+      ".O.O\\OOO....OO.OOOO..",
+      ".O.OOOO.OOO..OOOOO...",
+      ".O.OOOOO.OOO.O.O.OO..",
+      ".O.O..OOO.OOO..OO.OO.",
+      ".OOOOO.OOOO.O.OOOO...",
+      ".OOOO..OOOO.OOOOOOOO.",
+      "..O..OOOO..OO.O..OO..",
+      "..OOO..OO...OOOOO.OO.",
+      ".O.OOO.O..O..OOOOOOO.",
+      "....................."
+    ],
+    "description_zh": "在21×21网格中从]到反斜杠，求最短步数。",
+    "grid_provenance": "Grid parsed from the official question text, not the separately escaped metadata grid."
+  }
+]

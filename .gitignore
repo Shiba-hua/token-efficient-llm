@@ -1,0 +1,12 @@
+# Local research notes and downloaded third-party source trees are not tutorial assets.
+/report/
+/research/
+/output/
+/tmp/
+/.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+/.env
+/.env.*
+/meta/local-*

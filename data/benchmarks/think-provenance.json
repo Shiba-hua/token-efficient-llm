@@ -1,0 +1,13 @@
+{
+  "retrieved": "2026-09-09",
+  "benchmark": "THINK-Bench",
+  "source": "https://huggingface.co/datasets/zhiyuan218/Think-Bench/blob/78ed26bf4cac0f540c3d9caa2ae8e1eb553b250f/Think-Bench.json",
+  "source_sha256": "5181ee6426d9f7a823254a7c2860b47b8fbda1d0d3beb9225f0fa7fd45e94a8c",
+  "num_rows": 1375,
+  "example_indices": [
+    376,
+    152,
+    39
+  ],
+  "note": "Counts and example answers checked against the downloaded fixed revision; no full annotation-correctness audit."
+}

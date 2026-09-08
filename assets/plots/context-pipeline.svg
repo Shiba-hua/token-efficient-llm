@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 500" role="img" aria-labelledby="title desc">
+<title id="title">上下文工程改变模型实际看到的信息</title><desc id="desc">原始材料先经过检索和筛选，再选择遮蔽或压缩，组成模型上下文；缓存复用只发生在计算层，原始证据另行保存。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0 0 L7 3 L0 6" fill="none" stroke="#2563eb" stroke-width="1.5"/></marker></defs>
+<rect width="1120" height="500" fill="white"/>
+<g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" fill="#111827">
+<text x="40" y="53" font-size="30" font-weight="700">上下文工程：先选信息，再决定表示</text>
+<text x="40" y="89" font-size="20" fill="#475569">自绘概念图；箭头表示数据流，不表示论文中的固定实现。</text>
+<g fill="#eff6ff" stroke="#2563eb" stroke-width="2"><rect x="40" y="150" width="210" height="110" rx="10"/><rect x="320" y="150" width="210" height="110" rx="10"/><rect x="600" y="150" width="210" height="110" rx="10"/><rect x="880" y="150" width="200" height="110" rx="10"/></g>
+<g text-anchor="middle" font-size="23"><text x="145" y="189">原始文档 / 工具结果</text><text x="145" y="226" font-size="20">完整证据</text><text x="425" y="189">检索与筛选</text><text x="425" y="226" font-size="20">哪些内容与任务有关？</text><text x="705" y="189">上下文表示</text><text x="705" y="226" font-size="20">原文 / 遮蔽 / 摘要</text><text x="980" y="189">模型请求</text><text x="980" y="226" font-size="20">输入 + 生成输出</text></g>
+<g stroke="#2563eb" stroke-width="3" marker-end="url(#arrow)"><path d="M250 204 H307"/><path d="M530 204 H587"/><path d="M810 204 H867"/><path d="M145 260 V339"/><path d="M980 260 V339"/></g>
+<rect x="40" y="350" width="490" height="90" rx="10" fill="#f8fafc" stroke="#64748b"/><text x="65" y="385" font-size="22">外部证据库：保留原件、位置、版本</text><text x="65" y="417" font-size="20" fill="#475569">模型需要细节时，再读取相应片段。</text>
+<rect x="600" y="350" width="480" height="90" rx="10" fill="#fff7ed" stroke="#c2410c"/><text x="625" y="385" font-size="22">缓存：复用已算过的前缀状态</text><text x="625" y="417" font-size="20" fill="#9a3412">缓存 token 仍包含在请求输入总量内。</text>
+</g></svg>
