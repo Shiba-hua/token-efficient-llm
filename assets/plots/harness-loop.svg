@@ -1,19 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 600" role="img" aria-labelledby="title desc">
-<title id="title">Agent harness 的状态、预算与工具闭环</title><desc id="desc">持久状态由上下文构建器选择信息送给模型，模型可以直接给出最终回答；若提出动作，检查合法性和剩余预算后执行工具，观察返回持久状态。预算不足时报告部分结果。每次模型调用前也要检查其输入输出额度。</desc>
-<defs><marker id="a" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0 0 L7 3 L0 6" fill="none" stroke="#2563eb" stroke-width="1.5"/></marker></defs>
-<defs><marker id="finish" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0 0 L7 3 L0 6" fill="none" stroke="#15803d" stroke-width="1.5"/></marker><marker id="stop" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0 0 L7 3 L0 6" fill="none" stroke="#c2410c" stroke-width="1.5"/></marker></defs>
-<rect width="1120" height="600" fill="white"/>
-<g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" fill="#111827"><text x="40" y="50" font-size="30" font-weight="700">Harness 决定：看什么、做什么、何时停止</text><text x="40" y="87" font-size="20" fill="#475569">自绘概念图；每次模型调用都进入同一份用量账本。</text>
-<g fill="#eff6ff" stroke="#2563eb" stroke-width="2"><rect x="40" y="150" width="220" height="100" rx="10"/><rect x="330" y="150" width="220" height="100" rx="10"/><rect x="620" y="150" width="200" height="100" rx="10"/><rect x="880" y="150" width="200" height="100" rx="10"/><rect x="40" y="390" width="220" height="100" rx="10"/><rect x="880" y="390" width="200" height="100" rx="10"/></g>
-<g text-anchor="middle" font-size="23"><text x="150" y="190">持久状态</text><text x="150" y="226" font-size="20">事实、文件、剩余预算</text><text x="440" y="190">上下文构建器</text><text x="440" y="226" font-size="20">只选当前所需信息</text><text x="720" y="190">模型</text><text x="720" y="226" font-size="20">回答或提出动作</text><text x="980" y="190">预算与动作检查</text><text x="980" y="226" font-size="20">检查下一步剩余额度</text><text x="980" y="430">执行工具</text><text x="980" y="467" font-size="20">保留完整结果</text><text x="150" y="430">筛选观察</text><text x="150" y="467" font-size="20">摘要字段 + 证据位置</text></g>
-<g stroke="#2563eb" stroke-width="3" fill="none" marker-end="url(#a)"><path d="M260 200 H317"/><path d="M550 200 H607"/><path d="M820 200 H867"/><path d="M980 250 V377"/><path d="M880 440 H273"/><path d="M150 390 V263"/></g>
-<text x="995" y="325" font-size="20" fill="#2563eb">允许</text>
-<text x="849" y="181" text-anchor="middle" font-size="18" fill="#2563eb">动作</text>
-<rect x="410" y="300" width="360" height="95" rx="10" fill="#f0fdf4" stroke="#15803d" stroke-width="2"/>
-<text x="590" y="336" text-anchor="middle" font-size="23">最终回复并结束</text>
-<text x="590" y="371" text-anchor="middle" font-size="19">完成 · 部分结果 · 预算耗尽</text>
-<path d="M720 250 V278 H590 V292" stroke="#15803d" fill="none" stroke-width="2.5" marker-end="url(#finish)"/>
-<text x="642" y="269" font-size="19" fill="#15803d">回答</text>
-<path d="M880 215 H855 V350 H780" stroke="#c2410c" fill="none" stroke-width="2.5" marker-end="url(#stop)"/>
-<text x="785" y="326" font-size="18" fill="#9a3412">不允许</text>
-<text x="347" y="426" font-size="21">原始日志留在环境中；模型只读必要字段</text><text x="40" y="540" font-size="20" fill="#475569">每次模型调用前检查输入与最大输出额度；为最终回复保留预算。</text><text x="40" y="576" font-size="20" fill="#475569">同一本账包含规划、路由、摘要、重试、子 Agent 与最终回复。</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="680" viewBox="0 0 1360 680" role="img" aria-labelledby="title desc">
+<title id="title">Harness 的调用前预算检查与三种终止路径</title>
+<desc id="desc">教学流程从持续状态、上下文构建、调用前预算检查进入模型。预算不足时返回已有部分结果并记录预算耗尽。模型回答时正常结束；提出动作则先检查合法性，拒绝时提前结束，允许时执行工具、筛选观察并回到状态。最终回复不自动表示任务成功。</desc>
+<defs><marker id="blue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#2861e8" stroke-width="1.8"/></marker><marker id="green" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#13833d" stroke-width="1.8"/></marker><marker id="orange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#b84716" stroke-width="1.8"/></marker></defs>
+<rect width="1360" height="680" fill="white"/>
+<g font-family="PingFang SC,Microsoft YaHei,Noto Sans CJK SC,sans-serif" fill="#172033">
+<text x="40" y="51" font-size="31" font-weight="700">Harness 决定：看什么、做什么、何时停止</text>
+<text x="40" y="92" font-size="22" fill="#506079">自绘教学流程；调用前检查预算，分别记录正常回答、动作被拒绝和预算耗尽。</text>
+<g fill="#eff6ff" stroke="#2861e8" stroke-width="2">
+<rect x="40" y="150" width="190" height="110" rx="12"/>
+<rect x="280" y="150" width="190" height="110" rx="12"/>
+<rect x="520" y="150" width="240" height="110" rx="12"/>
+<rect x="820" y="150" width="200" height="110" rx="12"/>
+<rect x="820" y="420" width="200" height="110" rx="12"/>
+<rect x="530" y="420" width="220" height="110" rx="12"/>
+<rect x="280" y="420" width="190" height="110" rx="12"/>
+</g>
+<g text-anchor="middle" font-size="25">
+<text x="135" y="195">持续状态</text><text x="375" y="195">上下文构建</text>
+<text x="640" y="185">调用前预算检查</text><text x="920" y="195">模型</text>
+<text x="920" y="463">动作合法性检查</text><text x="640" y="463">执行工具</text><text x="375" y="463">筛选观察</text>
+</g>
+<g text-anchor="middle" font-size="20">
+<text x="135" y="233">事实与剩余预算</text><text x="375" y="233">只选当前所需信息</text>
+<text x="640" y="220">本次调用 + 收尾预留</text><text x="640" y="246">≤ 剩余预算</text>
+<text x="920" y="233">回答或提出动作</text><text x="920" y="500">权限、格式与约束</text>
+<text x="640" y="500">保留完整结果</text><text x="375" y="500">字段与证据位置</text>
+</g>
+<g fill="none" stroke="#2861e8" stroke-width="3.2" marker-end="url(#blue)">
+<path d="M230 205 H271"/><path d="M470 205 H511"/><path d="M760 205 H811"/>
+<path d="M920 260 V410"/><path d="M820 475 H760"/><path d="M530 475 H480"/>
+<path d="M280 475 H135 V270"/>
+</g>
+<g font-size="19" fill="#2861e8"><text x="770" y="186">充足</text><text x="934" y="350">动作</text><text x="768" y="455">允许</text></g>
+<rect x="1090" y="150" width="230" height="110" rx="12" fill="#f0fbf3" stroke="#13833d" stroke-width="2"/>
+<g text-anchor="middle"><text x="1205" y="195" font-size="25">正常结束</text><text x="1205" y="233" font-size="20">已返回最终回复</text></g>
+<path d="M1020 205 H1080" fill="none" stroke="#13833d" stroke-width="3" marker-end="url(#green)"/>
+<text x="1033" y="185" font-size="19" fill="#13833d">回答</text>
+<rect x="1090" y="420" width="230" height="110" rx="12" fill="#fff5ed" stroke="#b84716" stroke-width="2"/>
+<g text-anchor="middle"><text x="1205" y="457" font-size="25">动作被拒绝</text><text x="1205" y="490" font-size="20">提前结束</text><text x="1205" y="517" font-size="20">保留已有部分结果</text></g>
+<path d="M1020 475 H1080" fill="none" stroke="#b84716" stroke-width="3" marker-end="url(#orange)"/>
+<text x="1030" y="455" font-size="19" fill="#b84716">拒绝</text>
+<rect x="520" y="310" width="240" height="100" rx="12" fill="#fff5ed" stroke="#b84716" stroke-width="2"/>
+<g text-anchor="middle"><text x="640" y="341" font-size="25">预算耗尽</text><text x="640" y="371" font-size="20">返回已有部分结果</text><text x="640" y="399" font-size="20">记录 budget_exhausted</text></g>
+<path d="M640 260 V300" fill="none" stroke="#b84716" stroke-width="3" marker-end="url(#orange)"/>
+<text x="654" y="289" font-size="19" fill="#b84716">不足</text>
+<text x="40" y="612" font-size="21" fill="#506079">本次调用 = 输入 + 最大输出额度；若需模型生成收尾，使用预留额度并再次检查。</text>
+<text x="40" y="652" font-size="21" fill="#506079">所有模型调用计入总账；正常结束仅表示已回复，任务是否成功由评测判定。</text>
+</g></svg>
