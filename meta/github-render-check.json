@@ -1,0 +1,281 @@
+{
+  "revision": "171932705547bf74f8b80b5f7cce31989c5e9c6d",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "rows": [
+    {
+      "articleWidth": 861,
+      "displayMath": 2,
+      "heading": "00 总论：把性能—token 曲线向左上移动",
+      "images": [
+        {
+          "alt": "性能—成本前沿概念图",
+          "loaded": true
+        },
+        {
+          "alt": "从数据与训练到完整任务评测",
+          "loaded": true
+        }
+      ],
+      "mathCount": 20,
+      "mathErrors": [],
+      "rawDollarText": [],
+      "renderedMath": 20,
+      "scrollWidth": 861,
+      "tables": 2,
+      "path": "docs/00-overview.md"
+    },
+    {
+      "articleWidth": 861,
+      "displayMath": 2,
+      "heading": "01 数据：先弄清模型在向什么学习",
+      "images": [
+        {
+          "alt": "数据审核的四个独立维度",
+          "loaded": true
+        }
+      ],
+      "mathCount": 19,
+      "mathErrors": [],
+      "rawDollarText": [],
+      "renderedMath": 19,
+      "scrollWidth": 861,
+      "tables": 2,
+      "path": "docs/01-data.md"
+    },
+    {
+      "articleWidth": 861,
+      "displayMath": 6,
+      "heading": "02 预训练：从预测下一个 token 到理解样本效率",
+      "images": [
+        {
+          "alt": "下一词元、多词元预测与部署成本",
+          "loaded": true
+        },
+        {
+          "alt": "MTP 作者原图：共享主干、多预测头和 MBPP 结果",
+          "loaded": true
+        }
+      ],
+      "mathCount": 25,
+      "mathErrors": [],
+      "rawDollarText": [],
+      "renderedMath": 25,
+      "scrollWidth": 861,
+      "tables": 0,
+      "path": "docs/02-pretraining.md"
+    },
+    {
+      "articleWidth": 861,
+      "displayMath": 5,
+      "heading": "03 中训练：让现有底座适应领域和上下文",
+      "images": [
+        {
+          "alt": "领域适配和能力保留需要共同观察",
+          "loaded": true
+        }
+      ],
+      "mathCount": 22,
+      "mathErrors": [],
+      "rawDollarText": [],
+      "renderedMath": 22,
+      "scrollWidth": 861,
+      "tables": 0,
+      "path": "docs/03-midtraining.md"
+    },
+    {
+      "articleWidth": 861,
+      "displayMath": 7,
+      "heading": "04｜SFT 与蒸馏：把什么行为教给学生？",
+      "images": [
+        {
+          "alt": "同一教师分布下，两个方向的 KL 随学生概率变化；两条曲线最低点相同但惩罚形状不同。",
+          "loaded": true
+        }
+      ],
+      "mathCount": 39,
+      "mathErrors": [],
+      "rawDollarText": [],
+      "renderedMath": 39,
+      "scrollWidth": 861,
+      "tables": 0,
+      "path": "docs/04-sft-distillation.md"
+    },
+    {
+      "articleWidth": 861,
+      "displayMath": 9,
+      "heading": "05｜RLHF、RLAIF 与偏好优化：偏爱简短不等于完成得更经济",
+      "images": [
+        {
+          "alt": "PPO 正负优势的裁剪目标；正优势在右侧变平，负优势在左侧变平。",
+          "loaded": true
+        }
+      ],
+      "mathCount": 32,
+      "mathErrors": [],
+      "rawDollarText": [],
+      "renderedMath": 32,
+      "scrollWidth": 861,
+      "tables": 1,
+      "path": "docs/05-preference-rl.md"
+    },
+    {
+      "articleWidth": 861,
+      "displayMath": 6,
+      "heading": "06｜RLVR 与 Agentic-RL：奖励结果，怎样学会少走弯路？",
+      "images": [
+        {
+          "alt": "四个回答全部正确时，二值奖励优势全零；加入门控成本后，较短回答优势为正，较长回答优势为负。",
+          "loaded": true
+        }
+      ],
+      "mathCount": 45,
+      "mathErrors": [],
+      "rawDollarText": [],
+      "renderedMath": 45,
+      "scrollWidth": 861,
+      "tables": 1,
+      "path": "docs/06-rlvr-agentic.md"
+    },
+    {
+      "articleWidth": 861,
+      "displayMath": 9,
+      "heading": "第 7 章：提示与上下文——让模型读到更少、但足够的信息",
+      "images": [
+        {
+          "alt": "上下文处理流程",
+          "loaded": true
+        }
+      ],
+      "mathCount": 56,
+      "mathErrors": [],
+      "rawDollarText": [],
+      "renderedMath": 56,
+      "scrollWidth": 861,
+      "tables": 1,
+      "path": "docs/07-prompt-context.md"
+    },
+    {
+      "articleWidth": 861,
+      "displayMath": 6,
+      "heading": "第 8 章：Agent harness——把 token 浪费挡在模型调用之外",
+      "images": [
+        {
+          "alt": "Harness 运行闭环",
+          "loaded": true
+        }
+      ],
+      "mathCount": 38,
+      "mathErrors": [],
+      "rawDollarText": [],
+      "renderedMath": 38,
+      "scrollWidth": 861,
+      "tables": 1,
+      "path": "docs/08-harness-agents.md"
+    },
+    {
+      "articleWidth": 861,
+      "displayMath": 5,
+      "heading": "09 评测：怎样证明性能—token 曲线改善了",
+      "images": [
+        {
+          "alt": "预算曲线可能交叉",
+          "loaded": true
+        },
+        {
+          "alt": "AMO-0 三角格点",
+          "loaded": true
+        },
+        {
+          "alt": "OTB 官方迷宫实例的代码重绘",
+          "loaded": true
+        },
+        {
+          "alt": "AUCOAA 与聚合顺序",
+          "loaded": true
+        },
+        {
+          "alt": "同长度下的效率比率反例",
+          "loaded": true
+        },
+        {
+          "alt": "AppWorld 原始框架图",
+          "loaded": true
+        }
+      ],
+      "mathCount": 34,
+      "mathErrors": [],
+      "rawDollarText": [],
+      "renderedMath": 34,
+      "scrollWidth": 861,
+      "tables": 6,
+      "path": "docs/09-evaluation.md"
+    },
+    {
+      "articleWidth": 861,
+      "displayMath": 10,
+      "heading": "第 10 章：相邻方向——更快、更小与更少 token 分别意味着什么",
+      "images": [
+        {
+          "alt": "Token、计算和时间的区别",
+          "loaded": true
+        }
+      ],
+      "mathCount": 75,
+      "mathErrors": [],
+      "rawDollarText": [],
+      "renderedMath": 75,
+      "scrollWidth": 861,
+      "tables": 3,
+      "path": "docs/10-other-directions.md"
+    },
+    {
+      "articleWidth": 861,
+      "displayMath": 3,
+      "heading": "专题：直接控制推理长度的三条研究路线",
+      "images": [],
+      "mathCount": 23,
+      "mathErrors": [],
+      "rawDollarText": [],
+      "renderedMath": 23,
+      "scrollWidth": 861,
+      "tables": 1,
+      "path": "docs/efficient-reasoning-recipes.md"
+    },
+    {
+      "articleWidth": 861,
+      "displayMath": 0,
+      "heading": "术语速查",
+      "images": [],
+      "mathCount": 0,
+      "mathErrors": [],
+      "rawDollarText": [],
+      "renderedMath": 0,
+      "scrollWidth": 861,
+      "tables": 1,
+      "path": "docs/glossary.md"
+    },
+    {
+      "articleWidth": 861,
+      "displayMath": 0,
+      "heading": "Token-efficient LLM",
+      "images": [
+        {
+          "alt": "性能—token 成本前沿的概念图",
+          "loaded": true
+        }
+      ],
+      "mathCount": 0,
+      "mathErrors": [],
+      "rawDollarText": [],
+      "renderedMath": 0,
+      "scrollWidth": 861,
+      "tables": 2,
+      "path": "README.md"
+    }
+  ],
+  "checked_at": "2026-09-09",
+  "scope": "GitHub rendered article DOM at a 1280x720 browser viewport; complete image assets were audited separately. Not a cross-device or every-scroll-position pixel audit."
+}

@@ -29,3 +29,5 @@
 图像验收、GitHub 页面显示与远端 CI 的最终状态分别见 [交付核查](completion-audit.md)及独立视觉记录。正文使用原生 Markdown 表格，不以截图代替表格。
 
 补充专题 [直接控制推理长度的三条路线](../docs/efficient-reasoning-recipes.md)连接 TokenSkip、长度奖励 RL 与 s1 budget forcing。新增标准库算例已运行；条件 SFT、sigmoid 长度奖励和留一基线均与其定义及适用范围一起说明。
+
+GitHub 实际显示检查后，统一保护数学字符串，修复中文标点邻接、Markdown 转义与宏兼容问题。独立源码比较确认 358 个行内公式、70 个块公式数学等价，19 个非数学代码围栏逐字一致；浏览器复查 428 个公式全部原生渲染。详见 [发布与显示核查](github-render-check.md)。
