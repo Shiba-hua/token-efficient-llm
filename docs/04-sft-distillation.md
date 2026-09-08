@@ -131,3 +131,5 @@ print(reverse_kl_grad(student_logits, teacher))
 练习：把教师第三个动作的概率改为很小但非零，并让学生很偏爱它，比较两个梯度；再把 2/8 的示范长度改为 2/80，解释两种平均方式的权重。最后设计一对“更短却更容易重试”和“稍长但一次成功”的轨迹，说明为何单条输出长度不足以选蒸馏数据。
 
 进一步阅读：[GKD 原论文](https://arxiv.org/abs/2306.13649)、[OPD 官方说明](https://thinkingmachines.ai/blog/on-policy-distillation/)、[OpenCodeReasoning §4.1 的过滤消融](https://arxiv.org/html/2504.01943v1#S4.SS1)。最后一篇提供的是特定 SFT 条件下的经验，不能从“过滤可能丢失困难题”推出错误答案普遍更值得模仿。下一章讨论：当我们更容易比较两个回答，而不是写出唯一示范时，如何训练？
+
+相关专题：[直接控制推理长度的三条路线](efficient-reasoning-recipes.md)。

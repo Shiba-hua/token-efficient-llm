@@ -37,5 +37,6 @@ jobs:
           python examples/posttraining_lab.py
           python examples/context_lab.py
           python examples/agent_budget_lab.py
+          python examples/efficient_reasoning_lab.py
       - name: Check post-training arithmetic
         run: python examples/posttraining_lab.py --self-test

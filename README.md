@@ -34,6 +34,8 @@
 | [09 评测与典型题目](docs/09-evaluation.md) | OckBench、OTB、THINK-Bench、AppWorld 如何判分？ | [评分与统计实验](examples/evaluation_lab.py) |
 | [10 相邻方向](docs/10-other-directions.md) | 推测解码、潜在推理、扩散、量化和 MoE 改变哪种成本？ | 对照不同计量单位 |
 
+专题阅读：[直接控制推理长度的三条路线](docs/efficient-reasoning-recipes.md)，连接 TokenSkip、长度奖励 RL 和 s1 budget forcing，附[压缩选择与奖励算例](examples/efficient_reasoning_lab.py)。
+
 ## 运行教学实验
 
 在仓库根目录运行，建议 Python 3.10 或更新版本：
@@ -45,6 +47,7 @@ python3 examples/tokenization_lab.py
 python3 examples/posttraining_lab.py
 python3 examples/context_lab.py
 python3 examples/agent_budget_lab.py
+python3 examples/efficient_reasoning_lab.py
 python3 -m unittest discover -s tests -v
 ```
 

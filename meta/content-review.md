@@ -24,6 +24,8 @@
 
 ## 验证及局限
 
-六个教学程序已实际执行，输出见 [example-runs.json](example-runs.json)。评分的六项单元测试和后训练算术自检通过。它们检查公式、计量和合成场景，不证明真实 LLM 的性能改善，也不代替全部事实与视觉审读。
+七个教学程序已实际执行，输出见 [example-runs.json](example-runs.json)。评分的六项单元测试和后训练算术自检通过。它们检查公式、计量和合成场景，不证明真实 LLM 的性能改善，也不代替全部事实与视觉审读。
 
 图像验收、GitHub 页面显示与远端 CI 的最终状态分别见 [交付核查](completion-audit.md)及独立视觉记录。正文使用原生 Markdown 表格，不以截图代替表格。
+
+补充专题 [直接控制推理长度的三条路线](../docs/efficient-reasoning-recipes.md)连接 TokenSkip、长度奖励 RL 与 s1 budget forcing。新增标准库算例已运行；条件 SFT、sigmoid 长度奖励和留一基线均与其定义及适用范围一起说明。

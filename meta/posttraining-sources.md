@@ -43,3 +43,9 @@ python3 examples/posttraining_lab.py --self-test --plots
 - 使用本地 `rsvg-convert` 将 SVG 渲染为临时 PNG 后逐张视觉检查；坐标、图例与正文结论一致。该渲染器只用于作者检查，不是读者运行实验的依赖。
 
 这些检查是程序和数学的一致性验证，不是 SFT、DPO、OPD 或 GRPO 的大模型效果验证。正文相邻章节链接按集成约定为 03→04→05→06→07。
+
+## 直接研究推理长度的补充主源
+
+- [TokenSkip v2 §3](https://arxiv.org/html/2502.12067v2#S3)：先压缩正确轨迹，再作比例条件 SFT；专题以自定义保留率和固定数量选择解释，不混用论文的分位数符号。
+- [Arora 与 Zanette v3 §4](https://arxiv.org/html/2502.04463v3#S4)：正确回答的题内长度统计、sigmoid 奖励、PPO/RLOO，最优性分析有简化表示假设；未称其为 GRPO。
+- [s1 原论文](https://arxiv.org/abs/2501.19393)与[作者实现](https://github.com/simplescaling/s1)：SFT 与思考终止/续写控制的组合；控制工作点本身不证明整条前沿改善。

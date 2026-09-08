@@ -202,3 +202,5 @@ $p_u,p_c,p_o$ 是各类 token 的单位价格。这里暂忽略缓存写入、�
 - [vLLM Automatic Prefix Caching](https://docs.vllm.ai/en/latest/features/automatic_prefix_caching/)：理解缓存的作用边界。
 
 [上一章：RLVR 与 Agentic-RL](06-rlvr-agentic.md) · [下一章：Harness 与多智能体](08-harness-agents.md)
+
+相关专题：[直接控制推理长度的三条路线](efficient-reasoning-recipes.md)。
