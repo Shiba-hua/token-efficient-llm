@@ -1,0 +1,67 @@
+[
+  {
+    "slug": "01-data",
+    "title": "数据准备与合成",
+    "page": "docs/chapters/01-data/index.md"
+  },
+  {
+    "slug": "02-pretraining",
+    "title": "预训练与 Scaling",
+    "page": "docs/chapters/02-pretraining/index.md"
+  },
+  {
+    "slug": "03-midtraining",
+    "title": "中训练与持续适配",
+    "page": "docs/chapters/03-midtraining/index.md"
+  },
+  {
+    "slug": "04-architecture",
+    "title": "模型架构、表示与内部计算",
+    "page": "docs/chapters/04-architecture/index.md"
+  },
+  {
+    "slug": "05-posttraining",
+    "title": "后训练与对齐",
+    "page": "docs/chapters/05-posttraining/index.md"
+  },
+  {
+    "slug": "06-reasoning",
+    "title": "推理策略、验证与规划",
+    "page": "docs/chapters/06-reasoning/index.md"
+  },
+  {
+    "slug": "07-context",
+    "title": "Prompt、知识、检索、长上下文与记忆",
+    "page": "docs/chapters/07-context/index.md"
+  },
+  {
+    "slug": "08-agents",
+    "title": "Harness、智能体与工具使用",
+    "page": "docs/chapters/08-agents/index.md"
+  },
+  {
+    "slug": "09-multimodal",
+    "title": "多模态与世界模型",
+    "page": "docs/chapters/09-multimodal/index.md"
+  },
+  {
+    "slug": "10-systems",
+    "title": "效率系统与部署",
+    "page": "docs/chapters/10-systems/index.md"
+  },
+  {
+    "slug": "11-evaluation",
+    "title": "评测、诊断与可解释性",
+    "page": "docs/chapters/11-evaluation/index.md"
+  },
+  {
+    "slug": "12-safety",
+    "title": "安全、隐私、可靠性与治理",
+    "page": "docs/chapters/12-safety/index.md"
+  },
+  {
+    "slug": "13-domains",
+    "title": "领域模型、多语言与 AI for Science",
+    "page": "docs/chapters/13-domains/index.md"
+  }
+]

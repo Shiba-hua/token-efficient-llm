@@ -1,0 +1,2676 @@
+{
+  "schema_version": 1,
+  "cutoff": "2026-09-09",
+  "single_writer": "main_agent",
+  "papers": [
+    {
+      "paper_id": "2503.23077",
+      "title": "Efficient Inference for Large Reasoning Models: A Survey",
+      "kind": "survey",
+      "identifiers": [
+        "arxiv:2503.23077"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2503.23077v3"
+      ],
+      "discovered_from": [
+        "用户提供的综述/关键论文入口"
+      ],
+      "legacy_records": [
+        {
+          "file": "sources/early-stages.md",
+          "heading": "S01 — Efficient Inference for Large Reasoning Models: A Survey",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2510.25817",
+      "title": "A Survey on Efficient Large Language Model Training: From Data-centric Perspectives",
+      "kind": "survey",
+      "identifiers": [
+        "arxiv:2510.25817"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2510.25817v1"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/early-stages.md",
+          "heading": "S02 — A Survey on Efficient Large Language Model Training: From Data-centric Perspectives",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2406.17557",
+      "title": "FineWeb / FineWeb-Edu",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2406.17557"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2406.17557v2"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/early-stages.md",
+          "heading": "E01 — FineWeb / FineWeb-Edu",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2404.07965",
+      "title": "Rho-1: Not All Tokens Are What You Need",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2404.07965"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2404.07965v1"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/early-stages.md",
+          "heading": "E02 — Rho-1: Not All Tokens Are What You Need",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2404.19737",
+      "title": "Better & Faster Large Language Models via Multi-token Prediction",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2404.19737"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2404.19737v1"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/early-stages.md",
+          "heading": "E03 — Better & Faster Large Language Models via Multi-token Prediction",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2412.19437",
+      "title": "DeepSeek-V3 Technical Report",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2412.19437"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2412.19437v2"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/early-stages.md",
+          "heading": "E04 — DeepSeek-V3 Technical Report",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2412.09871",
+      "title": "Byte Latent Transformer: Patches Scale Better Than Tokens",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2412.09871"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2412.09871v1"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/early-stages.md",
+          "heading": "E05 — Byte Latent Transformer: Patches Scale Better Than Tokens",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "src-05617b507f38",
+      "title": "Tokenizer Choice For LLM Training: Negligible or Crucial?",
+      "kind": "original_or_official",
+      "identifiers": [
+        "url:aclanthology.org/2024.findings-naacl.247"
+      ],
+      "versions": [
+        "https://aclanthology.org/2024.findings-naacl.247/"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/early-stages.md",
+          "heading": "E06 — Tokenizer Choice For LLM Training: Negligible or Crucial?",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2402.10171",
+      "title": "Data Engineering for Scaling Language Models to 128K Context",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2402.10171"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2402.10171v1"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/early-stages.md",
+          "heading": "E07 — Data Engineering for Scaling Language Models to 128K Context",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2501.19393",
+      "title": "s1: Simple Test-time Scaling",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2501.19393"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2501.19393"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/early-stages.md",
+          "heading": "E08 — s1: Simple Test-time Scaling",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "src-7cc3fedc37b4",
+      "title": "LLMLingua-2",
+      "kind": "original_or_official",
+      "identifiers": [
+        "url:aclanthology.org/2024.findings-acl.57"
+      ],
+      "versions": [
+        "https://aclanthology.org/2024.findings-acl.57/"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/early-stages.md",
+          "heading": "E09 — LLMLingua-2",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        },
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H03 — LLMLingua-2",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "reading",
+      "qc_status": "not_sampled",
+      "artifact": null,
+      "active_task": {
+        "task_id": "calibration-llmlingua2",
+        "owner": "luna_lingua",
+        "scope": "complete_legacy_body_calibration",
+        "prompt_version": "luna-reading-v1"
+      },
+      "prompt_version": "luna-reading-v1"
+    },
+    {
+      "paper_id": "2305.10429",
+      "title": "DoReMi",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2305.10429"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2305.10429v4"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/early-stages.md",
+          "heading": "E10 — DoReMi",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2406.11794",
+      "title": "DCLM",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2406.11794"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2406.11794v4"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/early-stages.md",
+          "heading": "E11 — DCLM",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "src-21857c5f5369",
+      "title": "Don’t Stop Pretraining",
+      "kind": "original_or_official",
+      "identifiers": [
+        "url:aclanthology.org/2020.acl-main.740"
+      ],
+      "versions": [
+        "https://aclanthology.org/2020.acl-main.740/"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/early-stages.md",
+          "heading": "E12 — Don’t Stop Pretraining",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "src-531620d2d5a4",
+      "title": "SmolLM3",
+      "kind": "original_or_official",
+      "identifiers": [
+        "url:huggingface.co/blog/smollm3"
+      ],
+      "versions": [
+        "https://huggingface.co/blog/smollm3"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/early-stages.md",
+          "heading": "E13 — SmolLM3",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2203.15556",
+      "title": "Chinchilla",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2203.15556"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2203.15556"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/early-stages.md",
+          "heading": "E14 — Chinchilla",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2401.00448",
+      "title": "Beyond Chinchilla-Optimal",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2401.00448"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2401.00448v3"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/early-stages.md",
+          "heading": "E15 — Beyond Chinchilla-Optimal",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2503.16419",
+      "title": "Stop Overthinking",
+      "kind": "survey",
+      "identifiers": [
+        "arxiv:2503.16419"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2503.16419v4"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "S03 — Stop Overthinking",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2503.21614",
+      "title": "A Survey of Efficient Reasoning for Large Reasoning Models",
+      "kind": "survey",
+      "identifiers": [
+        "arxiv:2503.21614"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2503.21614v2"
+      ],
+      "discovered_from": [
+        "用户提供的综述/关键论文入口"
+      ],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "S04 — A Survey of Efficient Reasoning for Large Reasoning Models",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2411.01855",
+      "title": "Can Language Models Learn to Skip Steps?",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2411.01855"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2411.01855v1"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P01 — Can Language Models Learn to Skip Steps?",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2407.06023",
+      "title": "Distilling System 2 into System 1",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2407.06023"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2407.06023v3"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P02 — Distilling System 2 into System 1",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2412.11664",
+      "title": "C3oT",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2412.11664"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2412.11664v1"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P03 — C3oT",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2502.20122",
+      "title": "Self-Training Elicits Concise Reasoning in Large Language Models",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2502.20122"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2502.20122v3"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P04 — Self-Training Elicits Concise Reasoning in Large Language Models",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2502.12067",
+      "title": "TokenSkip",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2502.12067"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2502.12067v3"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P05 — TokenSkip",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2412.18547",
+      "title": "TALE",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2412.18547"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2412.18547v5"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P06 — TALE",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2501.12570",
+      "title": "O1-Pruner",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2501.12570"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2501.12570v2"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P07 — O1-Pruner",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2502.09601",
+      "title": "CoT-Valve",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2502.09601"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2502.09601v1"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P08 — CoT-Valve",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2503.04697",
+      "title": "L1",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2503.04697"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2503.04697v2"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P09 — L1",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2503.04472",
+      "title": "DAST",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2503.04472"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2503.04472v3"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P10 — DAST",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2412.06769",
+      "title": "Coconut",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2412.06769"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2412.06769v1"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P11 — Coconut",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2502.21074",
+      "title": "CODI",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2502.21074"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2502.21074v3"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P12 — CODI",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2502.03373",
+      "title": "Demystifying Long Chain-of-Thought Reasoning in LLMs",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2502.03373"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2502.03373v1"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P13 — Demystifying Long Chain-of-Thought Reasoning in LLMs",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2306.13649",
+      "title": "GKD / On-policy Distillation of Language Models",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2306.13649"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2306.13649v3"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P14 — GKD / On-policy Distillation of Language Models",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "src-7cdb59a34280",
+      "title": "Thinking Machines On-Policy Distillation",
+      "kind": "original_or_official",
+      "identifiers": [
+        "url:thinkingmachines.ai/blog/on-policy-distillation"
+      ],
+      "versions": [
+        "https://thinkingmachines.ai/blog/on-policy-distillation/"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P15 — Thinking Machines On-Policy Distillation",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2503.09516",
+      "title": "Search-R1",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2503.09516"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2503.09516v5"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P16 — Search-R1",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2504.11536",
+      "title": "ReTool",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2504.11536"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2504.11536"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P17 — ReTool",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2507.05707",
+      "title": "Agentic-R1",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2507.05707"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2507.05707v2"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P18 — Agentic-R1",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2510.11701",
+      "title": "Demystifying Reinforcement Learning in Agentic Reasoning",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2510.11701"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2510.11701v1"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P19 — Demystifying Reinforcement Learning in Agentic Reasoning",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2203.02155",
+      "title": "InstructGPT",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2203.02155"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2203.02155v1"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P20 — InstructGPT",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2212.08073",
+      "title": "Constitutional AI",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2212.08073"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2212.08073v1"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P21 — Constitutional AI",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2305.18290",
+      "title": "DPO",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2305.18290"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2305.18290v3"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P22 — DPO",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2405.14734",
+      "title": "SimPO",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2405.14734"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2405.14734v3"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P23 — SimPO",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2502.04463",
+      "title": "Training Language Models to Reason Efficiently",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2502.04463"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2502.04463v4"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/posttraining-map.md",
+          "heading": "P24 — Training Language Models to Reason Efficiently",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "src-7f9e533203c6",
+      "title": "Prompt Compression for Large Language Models: A Survey",
+      "kind": "survey",
+      "identifiers": [
+        "url:aclanthology.org/2025.naacl-long.368"
+      ],
+      "versions": [
+        "https://aclanthology.org/2025.naacl-long.368/"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "S05 — Prompt Compression for Large Language Models: A Survey",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2601.14192",
+      "title": "Toward Efficient Agents",
+      "kind": "survey",
+      "identifiers": [
+        "arxiv:2601.14192"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2601.14192v2"
+      ],
+      "discovered_from": [
+        "用户提供的综述/关键论文入口"
+      ],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "S06 — Toward Efficient Agents",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "src-e6831934f1eb",
+      "title": "Large Language Model Based Multi-agents: A Survey of Progress and Challenges",
+      "kind": "survey",
+      "identifiers": [
+        "url:www.ijcai.org/proceedings/2024/890"
+      ],
+      "versions": [
+        "https://www.ijcai.org/proceedings/2024/890"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "S07 — Large Language Model Based Multi-agents: A Survey of Progress and Challenges",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "src-657b923f160d",
+      "title": "LLMLingua",
+      "kind": "original_or_official",
+      "identifiers": [
+        "url:aclanthology.org/2023.emnlp-main.825"
+      ],
+      "versions": [
+        "https://aclanthology.org/2023.emnlp-main.825/"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H01 — LLMLingua",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "src-290c4594eb7d",
+      "title": "LongLLMLingua",
+      "kind": "original_or_official",
+      "identifiers": [
+        "url:aclanthology.org/2024.acl-long.91"
+      ],
+      "versions": [
+        "https://aclanthology.org/2024.acl-long.91/"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H02 — LongLLMLingua",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2310.04408",
+      "title": "RECOMP",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2310.04408"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2310.04408v1"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H04 — RECOMP",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2407.14057",
+      "title": "LazyLLM",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2407.14057"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2407.14057v1"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H05 — LazyLLM",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2508.21433",
+      "title": "The Complexity Trap",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2508.21433"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2508.21433v3"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H06 — The Complexity Trap",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2410.02506",
+      "title": "AgentPrune",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2410.02506"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2410.02506"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H07 — AgentPrune",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "src-ec1b5c3a604b",
+      "title": "S²-MAD",
+      "kind": "original_or_official",
+      "identifiers": [
+        "url:aclanthology.org/2025.naacl-long.475"
+      ],
+      "versions": [
+        "https://aclanthology.org/2025.naacl-long.475/"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H08 — S²-MAD",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2305.05176",
+      "title": "FrugalGPT",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2305.05176"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2305.05176"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H09 — FrugalGPT",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2406.18665",
+      "title": "RouteLLM",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2406.18665"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2406.18665v4"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H10 — RouteLLM",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "src-53893cb4a19e",
+      "title": "Anthropic 多智能体研究系统",
+      "kind": "original_or_official",
+      "identifiers": [
+        "url:www.anthropic.com/engineering/multi-agent-research-system"
+      ],
+      "versions": [
+        "https://www.anthropic.com/engineering/multi-agent-research-system"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H11 — Anthropic 多智能体研究系统",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "src-48e62608de20",
+      "title": "Anthropic context engineering",
+      "kind": "original_or_official",
+      "identifiers": [
+        "url:www.anthropic.com/engineering/effective-context-engineering-for-ai-agents"
+      ],
+      "versions": [
+        "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H12 — Anthropic context engineering",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2402.09727",
+      "title": "ReadAgent",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2402.09727"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2402.09727v3"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H13 — ReadAgent",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2510.24699",
+      "title": "AgentFold",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2510.24699"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2510.24699"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H14 — AgentFold",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2310.03714",
+      "title": "DSPy",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2310.03714"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2310.03714"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H15 — DSPy",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2507.19457",
+      "title": "GEPA",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2507.19457"
+      ],
+      "versions": [
+        "https://arxiv.org/pdf/2507.19457v2"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H16 — GEPA",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2210.03629",
+      "title": "ReAct",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2210.03629"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2210.03629v3"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H17 — ReAct",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2312.04511",
+      "title": "LLMCompiler",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2312.04511"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2312.04511v3"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H18 — LLMCompiler",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2203.11171",
+      "title": "Self-Consistency",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2203.11171"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2203.11171v4"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H19 — Self-Consistency",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2305.10601",
+      "title": "Tree of Thoughts",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2305.10601"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2305.10601"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H20 — Tree of Thoughts",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2408.03314",
+      "title": "Compute-optimal Test-Time Scaling",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2408.03314"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2408.03314"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H21 — Compute-optimal Test-Time Scaling",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2504.15895",
+      "title": "DEER",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2504.15895"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2504.15895v3"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H22 — DEER",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2511.17006",
+      "title": "BATS",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2511.17006"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2511.17006v1"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H23 — BATS",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2305.14788",
+      "title": "AutoCompressors",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2305.14788"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2305.14788v2"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H24 — AutoCompressors",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2307.06945",
+      "title": "ICAE",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2307.06945"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2307.06945v4"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/context-agents-map.md",
+          "heading": "H25 — ICAE",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2211.17192",
+      "title": "Speculative Decoding",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2211.17192"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2211.17192v2"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/adjacent-map.md",
+          "heading": "A01 — Speculative Decoding",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2503.01840",
+      "title": "EAGLE-3",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2503.01840"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2503.01840"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/adjacent-map.md",
+          "heading": "A02 — EAGLE-3",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2508.15487",
+      "title": "Dream 7B",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2508.15487"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2508.15487v1"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/adjacent-map.md",
+          "heading": "A03 — Dream 7B",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2502.05171",
+      "title": "Recurrent Depth / Huginn",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2502.05171"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2502.05171v2"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/adjacent-map.md",
+          "heading": "A04 — Recurrent Depth / Huginn",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2403.06764",
+      "title": "FastV",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2403.06764"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2403.06764v3"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/adjacent-map.md",
+          "heading": "A05 — FastV",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2403.15388",
+      "title": "LLaVA-PruMerge",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2403.15388"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2403.15388v6"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/adjacent-map.md",
+          "heading": "A06 — LLaVA-PruMerge",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "src-5209f297f28f",
+      "title": "A Survey on Evaluation of LLM-based Agents",
+      "kind": "survey",
+      "identifiers": [
+        "url:aclanthology.org/2026.findings-acl.1330"
+      ],
+      "versions": [
+        "https://aclanthology.org/2026.findings-acl.1330/"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/evaluation-map.md",
+          "heading": "S08 — A Survey on Evaluation of LLM-based Agents",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2407.01502",
+      "title": "AI Agents That Matter",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2407.01502"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2407.01502v1"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/evaluation-map.md",
+          "heading": "B01 — AI Agents That Matter",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2511.02734",
+      "title": "CostBench",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2511.02734"
+      ],
+      "versions": [
+        "https://arxiv.org/html/2511.02734v1"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/evaluation-map.md",
+          "heading": "B02 — CostBench",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2404.07972",
+      "title": "OSWorld",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2404.07972"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2404.07972v2"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/evaluation-map.md",
+          "heading": "B03 — OSWorld",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2307.13854",
+      "title": "WebArena",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2307.13854"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2307.13854"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/evaluation-map.md",
+          "heading": "B04 — WebArena",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2306.06070",
+      "title": "Mind2Web",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2306.06070"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2306.06070v3"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/evaluation-map.md",
+          "heading": "B05 — Mind2Web",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2412.21139",
+      "title": "SWE-Gym",
+      "kind": "original_or_official",
+      "identifiers": [
+        "arxiv:2412.21139"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2412.21139v2"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/evaluation-map.md",
+          "heading": "B06 — SWE-Gym",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "src-e073acdc49e7",
+      "title": "OpenAI reasoning effort",
+      "kind": "original_or_official",
+      "identifiers": [
+        "url:developers.openai.com/api/docs/guides/reasoning"
+      ],
+      "versions": [
+        "https://developers.openai.com/api/docs/guides/reasoning"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/vendor-practice.md",
+          "heading": "V01 — OpenAI reasoning effort",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "src-eaa44c6dbba9",
+      "title": "OpenAI GPT-5.1 adaptive reasoning",
+      "kind": "original_or_official",
+      "identifiers": [
+        "url:openai.com/index/gpt-5-1-for-developers"
+      ],
+      "versions": [
+        "https://openai.com/index/gpt-5-1-for-developers/"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/vendor-practice.md",
+          "heading": "V02 — OpenAI GPT-5.1 adaptive reasoning",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "src-7e6d117e8671",
+      "title": "OpenAI GPT-5.1-Codex-Max",
+      "kind": "original_or_official",
+      "identifiers": [
+        "url:openai.com/index/gpt-5-1-codex-max"
+      ],
+      "versions": [
+        "https://openai.com/index/gpt-5-1-codex-max/"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/vendor-practice.md",
+          "heading": "V03 — OpenAI GPT-5.1-Codex-Max",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "src-84d772175bef",
+      "title": "OpenAI compaction",
+      "kind": "original_or_official",
+      "identifiers": [
+        "url:developers.openai.com/api/docs/guides/compaction"
+      ],
+      "versions": [
+        "https://developers.openai.com/api/docs/guides/compaction"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/vendor-practice.md",
+          "heading": "V04 — OpenAI compaction",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "src-c6503fa4a9c5",
+      "title": "OpenAI tool search",
+      "kind": "original_or_official",
+      "identifiers": [
+        "url:developers.openai.com/api/docs/guides/tools-tool-search"
+      ],
+      "versions": [
+        "https://developers.openai.com/api/docs/guides/tools-tool-search"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/vendor-practice.md",
+          "heading": "V05 — OpenAI tool search",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "src-4484f41ae689",
+      "title": "OpenAI prompt caching",
+      "kind": "original_or_official",
+      "identifiers": [
+        "url:developers.openai.com/api/docs/guides/prompt-caching"
+      ],
+      "versions": [
+        "https://developers.openai.com/api/docs/guides/prompt-caching"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/vendor-practice.md",
+          "heading": "V06 — OpenAI prompt caching",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "src-cc183bea768d",
+      "title": "OpenAI o1：RL 与推理时计算",
+      "kind": "original_or_official",
+      "identifiers": [
+        "url:openai.com/index/learning-to-reason-with-llms"
+      ],
+      "versions": [
+        "https://openai.com/index/learning-to-reason-with-llms/"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/vendor-practice.md",
+          "heading": "V07 — OpenAI o1：RL 与推理时计算",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "src-ebac892b941d",
+      "title": "OpenAI deliberative alignment",
+      "kind": "original_or_official",
+      "identifiers": [
+        "url:openai.com/index/deliberative-alignment"
+      ],
+      "versions": [
+        "https://openai.com/index/deliberative-alignment/"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/vendor-practice.md",
+          "heading": "V08 — OpenAI deliberative alignment",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "src-4370d9b5cc61",
+      "title": "Anthropic advanced tool use",
+      "kind": "original_or_official",
+      "identifiers": [
+        "url:www.anthropic.com/engineering/advanced-tool-use"
+      ],
+      "versions": [
+        "https://www.anthropic.com/engineering/advanced-tool-use"
+      ],
+      "discovered_from": [],
+      "legacy_records": [
+        {
+          "file": "sources/vendor-practice.md",
+          "heading": "V09 — Anthropic advanced tool use",
+          "read_scope_note": "历史记录，仅支持该卡声明的局部读取；未升级为本轮正文级精读"
+        }
+      ],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "legacy_partial",
+      "qc_status": "not_sampled",
+      "artifact": null
+    },
+    {
+      "paper_id": "2602.20945",
+      "title": "The Art of Efficient Reasoning: Data, Reward, and Optimization",
+      "kind": "original",
+      "identifiers": [
+        "arxiv:2602.20945"
+      ],
+      "versions": [
+        "https://arxiv.org/abs/2602.20945v3"
+      ],
+      "discovered_from": [
+        "用户提供的综述/关键论文入口"
+      ],
+      "legacy_records": [],
+      "primary_chapter": "05-posttraining",
+      "related_chapters": [
+        "01-data",
+        "06-reasoning",
+        "11-evaluation"
+      ],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "reading",
+      "qc_status": "not_sampled",
+      "artifact": null,
+      "active_task": {
+        "task_id": "calibration-art",
+        "owner": "luna_art",
+        "scope": "main_body_calibration",
+        "prompt_version": "luna-reading-v1"
+      },
+      "prompt_version": "luna-reading-v1"
+    },
+    {
+      "paper_id": "2503.24235",
+      "title": "What, How, Where, and How Well? A Survey on Test-Time Scaling in Large Language Models",
+      "kind": "survey",
+      "identifiers": [
+        "arxiv:2503.24235"
+      ],
+      "versions": [],
+      "discovered_from": [
+        "用户提供的综述/关键论文入口"
+      ],
+      "legacy_records": [],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "reading",
+      "qc_status": "not_sampled",
+      "artifact": null,
+      "active_task": {
+        "task_id": "survey_tts",
+        "owner": "survey_tts",
+        "scope": "survey_taxonomy_and_candidates",
+        "prompt_version": "survey-extraction-v1"
+      },
+      "prompt_version": "survey-extraction-v1"
+    },
+    {
+      "paper_id": "2509.08827",
+      "title": "A Survey of Reinforcement Learning for Large Reasoning Models",
+      "kind": "survey",
+      "identifiers": [
+        "arxiv:2509.08827"
+      ],
+      "versions": [],
+      "discovered_from": [
+        "用户提供的综述/关键论文入口"
+      ],
+      "legacy_records": [],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "reading",
+      "qc_status": "not_sampled",
+      "artifact": null,
+      "active_task": {
+        "task_id": "survey_rl",
+        "owner": "survey_rl",
+        "scope": "survey_taxonomy_and_candidates",
+        "prompt_version": "survey-extraction-v1"
+      },
+      "prompt_version": "survey-extraction-v1"
+    },
+    {
+      "paper_id": "2504.10903",
+      "title": "Efficient Reasoning Models: A Survey",
+      "kind": "survey",
+      "identifiers": [
+        "arxiv:2504.10903"
+      ],
+      "versions": [],
+      "discovered_from": [
+        "用户提供的综述/关键论文入口"
+      ],
+      "legacy_records": [],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "reading",
+      "qc_status": "not_sampled",
+      "artifact": null,
+      "active_task": {
+        "task_id": "survey_effmodels",
+        "owner": "survey_effmodels",
+        "scope": "survey_taxonomy_and_candidates",
+        "prompt_version": "survey-extraction-v1"
+      },
+      "prompt_version": "survey-extraction-v1"
+    },
+    {
+      "paper_id": "2501.09686",
+      "title": "Towards Large Reasoning Models: A Survey of Reinforced Reasoning with Large Language Models",
+      "kind": "survey",
+      "identifiers": [
+        "arxiv:2501.09686"
+      ],
+      "versions": [],
+      "discovered_from": [
+        "用户提供的综述/关键论文入口"
+      ],
+      "legacy_records": [],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "reading",
+      "qc_status": "not_sampled",
+      "artifact": null,
+      "active_task": {
+        "task_id": "survey_reinforced",
+        "owner": "survey_reinforced",
+        "scope": "survey_taxonomy_and_candidates",
+        "prompt_version": "survey-extraction-v1"
+      },
+      "prompt_version": "survey-extraction-v1"
+    },
+    {
+      "paper_id": "2502.21321",
+      "title": "LLM Post-Training: A Deep Dive into Reasoning Large Language Models",
+      "kind": "survey",
+      "identifiers": [
+        "arxiv:2502.21321"
+      ],
+      "versions": [],
+      "discovered_from": [
+        "用户提供的综述/关键论文入口"
+      ],
+      "legacy_records": [],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "reading",
+      "qc_status": "not_sampled",
+      "artifact": null,
+      "active_task": {
+        "task_id": "survey_posttrain",
+        "owner": "survey_posttrain",
+        "scope": "survey_taxonomy_and_candidates",
+        "prompt_version": "survey-extraction-v1"
+      },
+      "prompt_version": "survey-extraction-v1"
+    },
+    {
+      "paper_id": "2509.02547",
+      "title": "The Landscape of Agentic Reinforcement Learning for LLMs: A Survey",
+      "kind": "survey",
+      "identifiers": [
+        "arxiv:2509.02547"
+      ],
+      "versions": [],
+      "discovered_from": [
+        "用户提供的综述/关键论文入口"
+      ],
+      "legacy_records": [],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "reading",
+      "qc_status": "not_sampled",
+      "artifact": null,
+      "active_task": {
+        "task_id": "survey_agent_rl",
+        "owner": "survey_agent_rl",
+        "scope": "survey_taxonomy_and_candidates",
+        "prompt_version": "survey-extraction-v1"
+      },
+      "prompt_version": "survey-extraction-v1"
+    },
+    {
+      "paper_id": "2601.12538",
+      "title": "Agentic Reasoning for Large Language Models",
+      "kind": "survey",
+      "identifiers": [
+        "arxiv:2601.12538"
+      ],
+      "versions": [],
+      "discovered_from": [
+        "用户提供的综述/关键论文入口"
+      ],
+      "legacy_records": [],
+      "primary_chapter": null,
+      "related_chapters": [],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "reading",
+      "qc_status": "not_sampled",
+      "artifact": null,
+      "active_task": {
+        "task_id": "survey_agentic",
+        "owner": "survey_agentic",
+        "scope": "survey_taxonomy_and_candidates",
+        "prompt_version": "survey-extraction-v1"
+      },
+      "prompt_version": "survey-extraction-v1"
+    },
+    {
+      "paper_id": "2303.18223",
+      "title": "A Survey of Large Language Models",
+      "kind": "survey",
+      "identifiers": [
+        "arxiv:2303.18223"
+      ],
+      "versions": [],
+      "discovered_from": [
+        "用户指定领域分类文章的综述入口"
+      ],
+      "legacy_records": [],
+      "primary_chapter": null,
+      "related_chapters": [
+        "01-data",
+        "02-pretraining",
+        "03-midtraining",
+        "04-architecture",
+        "09-multimodal",
+        "10-systems",
+        "11-evaluation",
+        "12-safety",
+        "13-domains"
+      ],
+      "lifecycle_tags": [],
+      "mechanism_tags": [],
+      "status": "reading",
+      "qc_status": "not_sampled",
+      "artifact": null,
+      "active_task": {
+        "task_id": "survey_broad",
+        "owner": "survey_broad",
+        "scope": "survey_taxonomy_and_candidates",
+        "prompt_version": "survey-extraction-v1"
+      },
+      "prompt_version": "survey-extraction-v1"
+    }
+  ]
+}
