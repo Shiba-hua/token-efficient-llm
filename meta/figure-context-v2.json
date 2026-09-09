@@ -1,0 +1,283 @@
+{
+  "date": "2026-09-09",
+  "reviewer": "primary agent",
+  "preserved_image_placements": [
+    {
+      "document": "README.md",
+      "line": 7,
+      "alt": "性能—token 成本前沿的概念图",
+      "asset": "assets/generated/frontier-concept.png",
+      "sha256": "2bb755339bf3bdc708b05d3b17f38fdf1192e4a5e779f960672539115a63f6ef",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/00-overview.md",
+      "line": 11,
+      "alt": "性能—token 前沿概念图",
+      "asset": "assets/generated/frontier-concept.png",
+      "sha256": "2bb755339bf3bdc708b05d3b17f38fdf1192e4a5e779f960672539115a63f6ef",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/00-overview.md",
+      "line": 33,
+      "alt": "从训练到部署任务的关系",
+      "asset": "assets/plots/research-map.svg",
+      "sha256": "79083f41ab293eaa4dfd22287156d40e41e3c6aad588e4d931f1cd175b40f19b",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/01-data.md",
+      "line": 34,
+      "alt": "数据质量的四个独立维度",
+      "asset": "assets/plots/data-four-axes.svg",
+      "sha256": "ca9a3836362a3d0bd3e046ce3f8a3c2af694e9d2815f67a6930e0d991cf5ffba",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/02-pretraining.md",
+      "line": 36,
+      "alt": "MTP 原论文结构图",
+      "asset": "assets/papers/mtp-main.png",
+      "sha256": "5fc3a6b36df6afb659b9d88fdc55c41273beb7c4807211c0c5af21305ec804f7",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/03-midtraining.md",
+      "line": 18,
+      "alt": "预训练与中训练的关系",
+      "asset": "assets/plots/pretraining-midtraining.svg",
+      "sha256": "5a3c88a21cf24ad653be76619a44bce180841b0a48be8bde9dfbd7b93812a77c",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/07-prompt-context.md",
+      "line": 21,
+      "alt": "上下文处理流程",
+      "asset": "assets/plots/context-pipeline.svg",
+      "sha256": "47bf27044c3dbd33f0e0ade60eb0d3f524e029d2edf90831944d3b788c65a56c",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/08-harness-agents.md",
+      "line": 20,
+      "alt": "Harness 运行闭环",
+      "asset": "assets/plots/harness-loop.svg",
+      "sha256": "31d6a9e06ec46dba5a8f52ef957a23999d97403ed53f94cdd129d9d80182f68a",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/09-evaluation.md",
+      "line": 39,
+      "alt": "预算曲线可能交叉",
+      "asset": "assets/plots/evaluation-frontier.png",
+      "sha256": "18ab176da675c3f0360aa80a5e5f0a4005e8e1e4c0241407d50034a0a7842f1b",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/09-evaluation.md",
+      "line": 66,
+      "alt": "AMO-0 三角格点",
+      "asset": "assets/plots/evaluation-ock-triangle.png",
+      "sha256": "cf71d5f93a196149570e2c9284d387c88c2aecd6d92a49110464120a3eac9640",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/09-evaluation.md",
+      "line": 101,
+      "alt": "OTB 官方迷宫实例的代码重绘",
+      "asset": "assets/plots/evaluation-otb-maze.png",
+      "sha256": "3c02f34f9f6f56675227a24c671a7329d0cd60354d2548f13449162ed3767bee",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/09-evaluation.md",
+      "line": 120,
+      "alt": "AUCOAA 与聚合顺序",
+      "asset": "assets/plots/evaluation-aucoaa.png",
+      "sha256": "a3226150de457bbdc3e5374cc41a7e9ac1b92c066dbaa9586076d4b472586d19",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/09-evaluation.md",
+      "line": 150,
+      "alt": "同长度下的效率比率反例",
+      "asset": "assets/plots/evaluation-think-ratio.png",
+      "sha256": "a11d23a1d113a3830aad510d5b033e40bf88f615919dc24d66713a96fd1ec40a",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/09-evaluation.md",
+      "line": 160,
+      "alt": "AppWorld 原始框架图",
+      "asset": "assets/papers/appworld-main.png",
+      "sha256": "57f4fd714451a76b8bb9e54d7cfc518d8d529d984cfe4212a3afcb91d298960f",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/10-other-directions.md",
+      "line": 7,
+      "alt": "Token、计算和时间的区别",
+      "asset": "assets/plots/harness-resource-metrics.svg",
+      "sha256": "8994ce145301dd5fbedd9c4493915630ed75db7bd9fcbe36b35c4ef4d9313202",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/technical/00-overview.md",
+      "line": 12,
+      "alt": "性能—成本前沿概念图",
+      "asset": "assets/generated/frontier-concept.png",
+      "sha256": "2bb755339bf3bdc708b05d3b17f38fdf1192e4a5e779f960672539115a63f6ef",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/technical/00-overview.md",
+      "line": 54,
+      "alt": "从数据与训练到完整任务评测",
+      "asset": "assets/plots/research-map.svg",
+      "sha256": "79083f41ab293eaa4dfd22287156d40e41e3c6aad588e4d931f1cd175b40f19b",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/technical/01-data.md",
+      "line": 42,
+      "alt": "数据审核的四个独立维度",
+      "asset": "assets/plots/data-four-axes.svg",
+      "sha256": "ca9a3836362a3d0bd3e046ce3f8a3c2af694e9d2815f67a6930e0d991cf5ffba",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/technical/02-pretraining.md",
+      "line": 18,
+      "alt": "下一词元、多词元预测与部署成本",
+      "asset": "assets/plots/pretraining-objectives.svg",
+      "sha256": "7d0d963e85a8999b1be699f1c54fa74502f89ea75b6d4f0b374eae71c869f083",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/technical/02-pretraining.md",
+      "line": 102,
+      "alt": "MTP 作者原图：共享主干、多预测头和 MBPP 结果",
+      "asset": "assets/papers/mtp-main.png",
+      "sha256": "5fc3a6b36df6afb659b9d88fdc55c41273beb7c4807211c0c5af21305ec804f7",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/technical/03-midtraining.md",
+      "line": 30,
+      "alt": "领域适配和能力保留需要共同观察",
+      "asset": "assets/plots/pretraining-midtraining.svg",
+      "sha256": "5a3c88a21cf24ad653be76619a44bce180841b0a48be8bde9dfbd7b93812a77c",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/technical/04-sft-distillation.md",
+      "line": 68,
+      "alt": "同一教师分布下，两个方向的 KL 随学生概率变化；两条曲线最低点相同但惩罚形状不同。",
+      "asset": "assets/plots/posttraining-kl.svg",
+      "sha256": "628d15c61c4c20bce5c905acce39cf4dfc027c3b9590b629c2bdc869d5d0ea5a",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/technical/05-preference-rl.md",
+      "line": 118,
+      "alt": "PPO 正负优势的裁剪目标；正优势在右侧变平，负优势在左侧变平。",
+      "asset": "assets/plots/posttraining-clip.svg",
+      "sha256": "37e6e47b34a27801abba7f1cf7f32c0341e5921fbce36136f0fbd772b3d0cda1",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/technical/06-rlvr-agentic.md",
+      "line": 75,
+      "alt": "四个回答全部正确时，二值奖励优势全零；加入门控成本后，较短回答优势为正，较长回答优势为负。",
+      "asset": "assets/plots/posttraining-grpo.svg",
+      "sha256": "8a91f40af05f9ed7f6fecb78b9a87175591d30206ea0751b37b0cae441bffc35",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/technical/07-prompt-context.md",
+      "line": 16,
+      "alt": "上下文处理流程",
+      "asset": "assets/plots/context-pipeline.svg",
+      "sha256": "47bf27044c3dbd33f0e0ade60eb0d3f524e029d2edf90831944d3b788c65a56c",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/technical/08-harness-agents.md",
+      "line": 26,
+      "alt": "Harness 运行闭环",
+      "asset": "assets/plots/harness-loop.svg",
+      "sha256": "31d6a9e06ec46dba5a8f52ef957a23999d97403ed53f94cdd129d9d80182f68a",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/technical/09-evaluation.md",
+      "line": 24,
+      "alt": "预算曲线可能交叉",
+      "asset": "assets/plots/evaluation-frontier.png",
+      "sha256": "18ab176da675c3f0360aa80a5e5f0a4005e8e1e4c0241407d50034a0a7842f1b",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/technical/09-evaluation.md",
+      "line": 51,
+      "alt": "AMO-0 三角格点",
+      "asset": "assets/plots/evaluation-ock-triangle.png",
+      "sha256": "cf71d5f93a196149570e2c9284d387c88c2aecd6d92a49110464120a3eac9640",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/technical/09-evaluation.md",
+      "line": 86,
+      "alt": "OTB 官方迷宫实例的代码重绘",
+      "asset": "assets/plots/evaluation-otb-maze.png",
+      "sha256": "3c02f34f9f6f56675227a24c671a7329d0cd60354d2548f13449162ed3767bee",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/technical/09-evaluation.md",
+      "line": 105,
+      "alt": "AUCOAA 与聚合顺序",
+      "asset": "assets/plots/evaluation-aucoaa.png",
+      "sha256": "a3226150de457bbdc3e5374cc41a7e9ac1b92c066dbaa9586076d4b472586d19",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/technical/09-evaluation.md",
+      "line": 135,
+      "alt": "同长度下的效率比率反例",
+      "asset": "assets/plots/evaluation-think-ratio.png",
+      "sha256": "a11d23a1d113a3830aad510d5b033e40bf88f615919dc24d66713a96fd1ec40a",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/technical/09-evaluation.md",
+      "line": 145,
+      "alt": "AppWorld 原始框架图",
+      "asset": "assets/papers/appworld-main.png",
+      "sha256": "57f4fd714451a76b8bb9e54d7cfc518d8d529d984cfe4212a3afcb91d298960f",
+      "unchanged_from_v1": true
+    },
+    {
+      "document": "docs/technical/10-other-directions.md",
+      "line": 10,
+      "alt": "Token、计算和时间的区别",
+      "asset": "assets/plots/harness-resource-metrics.svg",
+      "sha256": "8994ce145301dd5fbedd9c4493915630ed75db7bd9fcbe36b35c4ef4d9313202",
+      "unchanged_from_v1": true
+    }
+  ],
+  "new_mermaid": [
+    {
+      "document": "docs/04-sft-distillation.md",
+      "meaning": "Selection rewriting and student-prefix supervision have different mechanisms.",
+      "visually_checked": true
+    },
+    {
+      "document": "docs/07-prompt-context.md",
+      "meaning": "Text deletion abstraction and continuous memory require different interfaces.",
+      "visually_checked": true
+    }
+  ],
+  "method": "Compare asset bytes to v1, read captions and adjacent explanation at each placement, verify actual GitHub loading. Existing asset visual checks remain historical; new contexts reviewed by root."
+}

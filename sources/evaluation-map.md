@@ -4,7 +4,7 @@
 
 ## S08 — A Survey on Evaluation of LLM-based Agents
 
-[Yehudai 等，Findings of ACL 2026](https://aclanthology.org/2026.findings-acl.1330/)，2026-07。已取得并阅读全文 PDF 的分类图、§2–3 和 §7 成本/环境讨论。按能力（规划、工具、记忆等）与应用（网页、代码、科学等）组织评测，提示将模型、harness、成本和动态环境变化分开。由其参考文献追读 B01；综述分类不能代替原始基准的划分、判分器与成本实现。
+[Yehudai 等，Findings of ACL 2026](https://aclanthology.org/2026.findings-acl.1330/)，2026-07。已取得全文PDF，阅读分类图、§2–3 和 §7 成本/环境讨论。按能力（规划、工具、记忆等）与应用（网页、代码、科学等）组织评测，提示将模型、harness、成本和动态环境变化分开。由其参考文献追读 B01；综述分类不能代替原始基准的划分、判分器与成本实现。
 
 ## B01 — AI Agents That Matter
 
