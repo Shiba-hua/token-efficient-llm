@@ -1,5 +1,7 @@
 # GitHub 发布与显示核查
 
+> 此页是第一版的历史验收记录。第二版结果见[研究地图验收](research-map-audit.md)，不能用本页 PASS 代替本版验收。
+
 核查日期：2026-09-09。正文与图像版本：[171932705547bf74f8b80b5f7cce31989c5e9c6d](https://github.com/Shiba-hua/token-efficient-llm/tree/171932705547bf74f8b80b5f7cce31989c5e9c6d)。本记录随后作为验收文档提交；逐页原始计数见 [github-render-check.json](github-render-check.json)。
 
 ## 实际页面检查

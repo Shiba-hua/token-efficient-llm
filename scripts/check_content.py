@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Check published Markdown structure using only the Python standard library.
 
-Scope: README.md, CONTRIBUTING.md, and Markdown under docs/, meta/, assets/.
+Scope: README.md, CONTRIBUTING.md, and Markdown under docs/, meta/, assets/, sources/.
 Private research/report/tmp directories are excluded, including nested ones.
 Inline links, reference definitions, and HTML href/src targets are checked.
 Fenced and inline code are ignored for links but checked for local user paths.
@@ -33,7 +33,7 @@ INLINE_CODE = re.compile(r"(?<![\\`])(`+)(?!`)(.+?)(?<!`)\1(?!`)", re.DOTALL)
 
 def published_markdown(root: Path) -> list[Path]:
     paths = {root / "README.md", root / "CONTRIBUTING.md"}
-    for directory in ("docs", "meta", "assets"):
+    for directory in ("docs", "meta", "assets", "sources"):
         paths.update(
             path for path in (root / directory).rglob("*.md")
             if not PRIVATE_DIRS.intersection(path.relative_to(root).parts[:-1])
