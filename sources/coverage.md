@@ -1,68 +1,109 @@
-# 分类对照、发现链与覆盖边界
+# 覆盖边界、发现链与交叉索引
 
-检索/阅读截止：2026-09-09。本文是主代理整理的选择性地图，不报告未实际统计的引用数，不声称完成全部数据库的系统综述。以下记录分类怎样进入正文，以及补读原文后怎样修正分类。
+[总论](../docs/00-overview.md) · [文献台账](papers.json) · [阅读协议](README.md)
 
-## 综述之间的一致与不一致
+资料截止：2026-09-09。用户提供的[知乎分类文章](https://www.zhihu.com/question/1958561146647876509/answer/2075524312644195693)用于扩展方向覆盖；效率结论回到原始论文。13 章以研究方向为主目录，数据、预训练、中训练各自独立。这里记录实际选择范围，未声称穷尽全部数据库或统计引用量。
 
-| 入口与阅读记录 | 主要分类视角 | 对本地图的贡献 | 单独使用会遗漏什么 |
-| --- | --- | --- | --- |
-| [S01 高效推理综述](early-stages.md) | 推理长度、步骤加速与推理策略 | 连接后训练、部署控制、相邻计算 | 训练数据与长程工具输入 |
-| [S02 数据中心训练](early-stages.md) | 数据选择、组织和训练信号 | 补文档/域/token三个选择粒度 | 更低训练成本不证明部署少token |
-| [S03 Stop Overthinking](posttraining-map.md) | model/output/input-prompt | 发现短链、控制、蒸馏原文 | Agent的通信、动作与状态 |
-| [S04 Efficient Reasoning](posttraining-map.md) | inference/SFT/RL、多模态与预算 | 补条件长度、预算与表示分支 | 与本地图的全任务成本口径不同 |
-| [S05 Prompt Compression](context-agents-map.md) | hard/soft compression | LLMLingua系列与连续输入表示 | 压短单次输入未必缩短任务 |
-| [S06 Toward Efficient Agents](context-agents-map.md) | memory/tool/planning | 状态管理、工具选择、预算规划 | 不按预训练/后训练分章 |
-| [S07 多智能体综述](context-agents-map.md) | 角色、通信、协作、应用 | 拓扑和参与机制的发现入口 | 并非每种协作都经济 |
-| [S08 Agent评测综述](evaluation-map.md) | 能力×应用、成本与环境 | 补网页/桌面/SWE、成本评测 | 仍需逐个读任务和evaluator |
+## 本轮综述入口
 
-“软压缩”最能说明分类为什么需要交叉：S05中的连续输入表示若只按训练阶段索引，会混进SFT；若只按可见token，则又容易和Coconut的推理表示混淆。本轮据此补读AutoCompressors/ICAE，并在07与10分别解释。S07主要作为分类入口，不以其综述转述充当节省实验。
+下表中的“读取”是综述自身的分类/候选提取，具体范围见对应 JSON。原论文首读由主代理去重后另行派发。2026 年补充既包括新综述，也包括旧 arXiv 工作的新版本。
 
-## 从综述深入原始工作的实际路径
-
-| 问题链 | 读到的代表原文 | 为解释关系补充的反例或条件 |
+| 综述 | 固定版本 | 提取记录 |
 | --- | --- | --- |
-| 数据如何有效 | FineWeb/DCLM→DoReMi/Rho-1 | 去重粒度、代理迁移、全文仍参与前向 |
-| 少量数据能否教短解 | s1→最短自训练→C3oT/TokenSkip | 教师预算、题族选择、难题压缩退化 |
-| 能力能否内化 | System2→1→GKD/OPD；Coconut→CODI | GSM8K答案蒸馏失败；V2.5蒸馏长度增长 |
-| 预算该给多少 | TALE/DAST↔O1-Pruner/Arora–Zanette→L1 | 难度依赖、软预算、缺污染审计 |
-| 文本与工具如何配合 | Search-R1→ReTool→Agentic-R1；Agentic-RL消融 | 检索屏蔽loss不等于无输入成本；蒸馏不等于RL |
-| 压缩什么 | LLMLingua→LongLLMLingua→LLMLingua-2；RECOMP | 查询相关性、压缩器成本、遗漏证据 |
-| 长程记忆如何维护 | 遮蔽/摘要→Complexity Trap；ReadAgent→AgentFold | 摘要延长轨迹、回读摊销、单轮上下文不是总量 |
-| 连续输入如何压缩 | AutoCompressors↔ICAE | 白盒接口、PPL损失、前处理与缓存条件 |
-| 何时调用谁 | ReAct→LLMCompiler/PTC；FrugalGPT→RouteLLM | 不同ReAct基线、美元与token分离 |
-| 多少搜索与通信 | SC→ToT→Snell；Sparse/Group→S²-MAD/AgentPrune | 单代理强基线、阈值变化、输出不一定下降 |
-| 何时结束 | BATS↔DEER↔L1 | 上限≠实耗，试答和验证也有成本 |
-| 计算与表示 | SpecDec→EAGLE；Coconut/CODI→Huginn；BLT/Dream；FastV↔PruMerge | 同输出分布、latent步、视觉细节与训练成本 |
-| 证据如何成立 | AI Agents That Matter→四基准→CostBench/GUI/SWE原文 | 数据重叠、判分版本、经济指标与任务分母 |
+| [A Survey of Large Language Models](https://arxiv.org/abs/2303.18223) | v19 (last revised 2026-03-18; arXiv page checked 2026-09-09) | [2303.18223](../meta/research-map-v3/survey-extractions/2303.18223.json) |
+| [Towards Large Reasoning Models: A Survey of Reinforced Reasoning with Large Language Models](https://arxiv.org/abs/2501.09686) | v3, 2025-01-23 | [2501.09686](../meta/research-map-v3/survey-extractions/2501.09686.json) |
+| [LLM Post-Training: A Deep Dive into Reasoning Large Language Models](https://arxiv.org/abs/2502.21321) | v2, revised 2025-03-24 (arXiv page checked 2026-09-09) | [2502.21321](../meta/research-map-v3/survey-extractions/2502.21321.json) |
+| [A Survey of Efficient Reasoning for Large Reasoning Models: Language, Multimodality, and Beyond](https://arxiv.org/abs/2503.21614) | v2 (arXiv HTML dated 2025-12-31; checked 2026-09-09) | [2503.21614](../meta/research-map-v3/survey-extractions/2503.21614.json) |
+| [A Survey on Test-Time Scaling in Large Language Models: What, How, Where, and How Well?](https://arxiv.org/abs/2503.24235) | arXiv v3, 2025-05-04 | [2503.24235](../meta/research-map-v3/survey-extractions/2503.24235.json) |
+| [Efficient Reasoning Models: A Survey](https://arxiv.org/abs/2504.10903) | v2 (29 Sep 2025) | [2504.10903](../meta/research-map-v3/survey-extractions/2504.10903.json) |
+| [A Survey of Token Compression for Efficient Multimodal Large Language Models](https://arxiv.org/html/2507.20198v5) | v5 (01 Feb 2026; formerly When Tokens Talk Too Much) | [2507.20198](../meta/research-map-v3/survey-extractions/2507.20198.json) |
+| [The Landscape of Agentic Reinforcement Learning for LLMs: A Survey](https://arxiv.org/abs/2509.02547) | arXiv v5, 2026-04-17 | [2509.02547](../meta/research-map-v3/survey-extractions/2509.02547.json) |
+| [A Survey of Reinforcement Learning for Large Reasoning Models](https://arxiv.org/abs/2509.08827) | v3, 2025-10-09 (arXiv page says last revised 9 Oct 2025) | [2509.08827](../meta/research-map-v3/survey-extractions/2509.08827.json) |
+| [Agentic Reasoning for Large Language Models](https://arxiv.org/abs/2601.12538) | v1 | [2601.12538](../meta/research-map-v3/survey-extractions/2601.12538.json) |
 
-箭头表示沿相关问题追读，不是宣称所有论文之间有直接引用或因果继承；直接借用关系会在正文明确说明。每篇的实际阅读章节、版本、条件与局限见来源卡。
+原有 Stop Overthinking、Prompt Compression、Efficient Agents、数据中心训练及评测综述卡继续作为发现入口，不假定每篇本轮都重新阅读全文。新引用先进入[候选提及表](../meta/research-map-v3/candidate-mentions.json)，再与旧记录和别名匹配；最终形成[41 篇生产队列](../meta/research-map-v3/reading-queue.json)及两篇校准论文。
 
-## 跨阶段机制索引
+2026 年原始工作补充包括 The Art、OPSD、RecurGuard、LongVU-TTT；Coconut 等采用本轮指定版本。它们分别填补统一效率训练、学生前缀监督、资源攻击防御与视频适配问题，不意味着所有 2026 年方向已穷尽。
 
-| 机制 | 主要章节 | 同时关联 | 最容易重复的想法 |
-| --- | --- | --- | --- |
-| 学得更有效 | 01/02/03 | 04/09 | 把训练loss变好当推理更短 |
-| 同题短解/省略步骤 | 04 | 01/05/06 | 每题选最短正确轨迹 |
-| 按难度分配长度 | 05/06 | 07/08 | 加预算prompt或长度reward |
-| 少读证据和历史 | 07 | 01/08/09 | 固定间隔摘要、关键token分类 |
-| 少走工具/调用轮次 | 08 | 06/07 | 程序化调用、工具结果过滤 |
-| 少通信、少参与者 | 08 | 05/09 | 共识早停、剪通信图 |
-| 改变表示或每token计算 | 02/10 | 04/07 | 将视觉/latent/缓存当零token |
-| 验证驱动选择/停止 | 08/09 | 04/05/06 | 不计验证成本的“省推理” |
+## 生命周期索引
 
-## 检索记录与本轮停止范围
+| 生命周期 | 主要章节 | 跨阶段问题 |
+| --- | --- | --- |
+| 数据 | [01](../docs/chapters/01-data/index.md)、[05](../docs/chapters/05-posttraining/index.md) | 难度、候选覆盖与正确短轨迹；压缩器也可构造训练标签 |
+| 预训练 | [02](../docs/chapters/02-pretraining/index.md)、[04](../docs/chapters/04-architecture/index.md) | 多未来目标、表示粒度与部署预算的间接链条 |
+| 中训练 | [03](../docs/chapters/03-midtraining/index.md)、[09](../docs/chapters/09-multimodal/index.md) | 领域/模式持续适配与多模态更新；按原文辨明阶段 |
+| 后训练 | [05](../docs/chapters/05-posttraining/index.md)、[04](../docs/chapters/04-architecture/index.md)、[08](../docs/chapters/08-agents/index.md) | SFT、蒸馏/OPD、偏好、RLVR、Agentic-RL；连续表示和工具策略 |
+| 推理部署 | [06](../docs/chapters/06-reasoning/index.md)、[07](../docs/chapters/07-context/index.md)、[08](../docs/chapters/08-agents/index.md)、[09](../docs/chapters/09-multimodal/index.md)、[10](../docs/chapters/10-systems/index.md) | 搜索与停止、上下文、调用通信、多模态和系统执行 |
+| 评测 | [11](../docs/chapters/11-evaluation/index.md)、[12](../docs/chapters/12-safety/index.md)、[13](../docs/chapters/13-domains/index.md) | 全任务分母、失败/攻击成本、领域正确性和迁移 |
 
-各来源卡保留具体发现路径。本轮收尾交叉检索实际使用了以下查询（2026-09-09）；它们是可复查的补漏查询，**不是全部历史检索的完整日志**：
+## 效率机制索引
 
-| 查询 | 用途与处理 |
-| --- | --- |
-| `efficient reasoning survey large language models 2026 token efficiency survey agents memory tool planning` | 检查reasoning与Agent分类边界，回到原综述和原论文 |
-| `prompt compression survey soft compression AutoCompressors ICAE LLMLingua` | 确认硬/软压缩缺口，补两篇原文 |
-| `Stanford CS336 Spring 2026 Lecture 10 Inference YouTube` | 视频入口发现，不依据二手摘要写技术结论 |
-| `NICE 学术 姜慧强 LLMLingua LongLLMLingua Bilibili` | 作者中文报告入口，核查实际页面元信息 |
-| `site.youtube.com/watch "CS336" "Spring 2026" "Lecture 10"` | 核对视频题目/链接，未取得全文字幕 |
-| `site.bilibili.com "BV19K41187Ny"` | 页面定位，后续直接打开作者报告 |
+| 机制 | 代表路线与主要讲解位置 | 必须检查的代价 |
+| --- | --- | --- |
+| 少读 | LLMLingua-2、RECOMP、ICAE、LightMem → [07](../docs/chapters/07-context/index.md)；FastV/LongVU → [09](../docs/chapters/09-multimodal/index.md) | 压缩器、回读、漏证据与非文本单位 |
+| 少写 | 最短正确轨迹 → [01](../docs/chapters/01-data/index.md)；TokenSkip、DAST、The Art → [05](../docs/chapters/05-posttraining/index.md) | 难题覆盖、正确/错误长度和高预算能力 |
+| 少搜索／重试 | DeepConf/Snell → [06](../docs/chapters/06-reasoning/index.md)；ReTool/证明工具 → [05](../docs/chapters/05-posttraining/index.md)、[13](../docs/chapters/13-domains/index.md) | 验证成本、相关错误与工具执行 |
+| 少交互／通信 | ReWOO、LLMCompiler、AgentPrune、MEM1 → [08](../docs/chapters/08-agents/index.md) | 少轮数是否丢失反馈；发送与接收成本是否都改变 |
+| 计算内化 | MTP/Rho-1 → [02](../docs/chapters/02-pretraining/index.md)、[03](../docs/chapters/03-midtraining/index.md)；System 2→1/GKD/OPSD → [05](../docs/chapters/05-posttraining/index.md) | 能力到部署长度的证据链是否真正测过 |
+| 表示改变 | Coconut、CODI、BLT、LCM → [04](../docs/chapters/04-architecture/index.md)；多模态特征 → [09](../docs/chapters/09-multimodal/index.md) | latent 步、字节、句子和特征不能伪装成免费计算 |
+| 预算分配 | L1 → [05](../docs/chapters/05-posttraining/index.md)；搜索/停止 → [06](../docs/chapters/06-reasoning/index.md)；路由 → [08](../docs/chapters/08-agents/index.md) | 上限与实耗、费用与 token、失配难度与攻击尾部 |
 
-收尾检索仍能发现新论文，但主要落入已覆盖机制；软压缩缺口已补。当前每个生命周期章节具有主要路线、竞争/组合关系、限制证据与阅读顺序，故进入整合。**尚未穷尽**：最新多模态Agent训练配方、所有任务专用路由器、量化/KV系统细分、全部科研自动化框架。不能把这份地图用作这些相邻领域的完整综述。
+投机解码/EAGLE 在台账中使用“计算执行（相邻成本）”边界标签，不强行归为少 token 的七类机制。
 
-部分HTML版本不可访问时使用实际取得的PDF/其他注明版本；未取得全文的工作不写具体实验结论。视频访问范围见[视频入口](videos.md)。
+每篇精读在台账中有一个主归属和若干关联章；同一方法只保留一个精读页面。标签表达研究关联，不替代证据等级。例如投机解码列入预算/执行关联，不表示它减少最终文本 token。
+
+## 选择性覆盖与尚缺证据
+
+预训练、中训练章节集中解释 MTP、LCM、Rho-1 及领域/模式路线。大规模数据配比、MoE、SSM 与长上下文架构作为机制边界和历史入口，没有逐一扩写完整原文。原因是本轮选择的代表证据大多尚未测量同质量任务 token 曲线，不能用训练效率来填补问题。
+
+多模态正文覆盖图像、视频、语音；世界模型对真实交互节省与任务 token 的联系仍缺直接可比证据。系统章详解投机解码，缓存、量化、调度和端侧部署保留边界。安全章聚焦推理资源攻击，隐私、治理没有被强行写成效率路线。领域章以数学程序、跨语言推理和形式化证明为代表，未穷尽全部专业模型与科学自动化框架。
+
+这些是可公开检查的停止范围，不能用于“某方向无人研究”的断言。下一轮应先围绕具体缺口扩展候选，复用已有精读，而不是按每篇综述重新派发相同论文。
+
+## 43 篇共享精读索引
+
+| 主归属 | 论文 | 固定读取版本 |
+| --- | --- | --- |
+| 01-data | [Self-Training Elicits Concise Reasoning in Large Language Models](../docs/chapters/01-data/reference/2502.20122.md) | arXiv v3, 2025-06-10 |
+| 02-pretraining | [Better & Faster Large Language Models via Multi-token Prediction](../docs/chapters/02-pretraining/reference/2404.19737.md) | arXiv v1, 2024-04-30 |
+| 02-pretraining | [Large Concept Models](../docs/chapters/02-pretraining/reference/2412.08821.md) | 2412.08821v2 |
+| 03-midtraining | [Rho-1: Not All Tokens Are What You Need](../docs/chapters/03-midtraining/reference/2404.07965.md) | v1 |
+| 04-architecture | [Coconut](../docs/chapters/04-architecture/reference/2412.06769.md) | v4 (2026-08-23) |
+| 04-architecture | [Byte Latent Transformer: Patches Scale Better Than Tokens](../docs/chapters/04-architecture/reference/2412.09871.md) | 2412.09871v1 |
+| 04-architecture | [CODI](../docs/chapters/04-architecture/reference/2502.21074.md) | 2502.21074v3 |
+| 05-posttraining | [GKD / On-policy Distillation of Language Models](../docs/chapters/05-posttraining/reference/2306.13649.md) | 2306.13649v3 (2024-01-17), ICLR 2024 camera-ready |
+| 05-posttraining | [Distilling System 2 into System 1](../docs/chapters/05-posttraining/reference/2407.06023.md) | 2407.06023v3 |
+| 05-posttraining | [CoT-Valve](../docs/chapters/05-posttraining/reference/2502.09601.md) | 2502.09601v1 |
+| 05-posttraining | [TokenSkip](../docs/chapters/05-posttraining/reference/2502.12067.md) | v3 (2025-09-16; EMNLP 2025 camera-ready) |
+| 05-posttraining | [DAST](../docs/chapters/05-posttraining/reference/2503.04472.md) | v3 (2026-01-12) |
+| 05-posttraining | [L1](../docs/chapters/05-posttraining/reference/2503.04697.md) | 2503.04697v2 / COLM 2025 |
+| 05-posttraining | [ReTool](../docs/chapters/05-posttraining/reference/2504.11536.md) | 2504.11536v2 |
+| 05-posttraining | [Self-Distilled Reasoner: On-Policy Self-Distillation for Large Language Models](../docs/chapters/05-posttraining/reference/2601.18734.md) | 2601.18734v3 (2026-03-20) |
+| 05-posttraining | [The Art of Efficient Reasoning: Data, Reward, and Optimization](../docs/chapters/05-posttraining/reference/2602.20945.md) | v3 |
+| 06-reasoning | [Compute-optimal Test-Time Scaling](../docs/chapters/06-reasoning/reference/2408.03314.md) | v1 (2024-08-06), fixed for reading on 2026-09-09 |
+| 06-reasoning | [Chain of Draft: Thinking faster by writing less](../docs/chapters/06-reasoning/reference/2502.18600.md) | 2502.18600v2 |
+| 06-reasoning | [DeepConf](../docs/chapters/06-reasoning/reference/2508.15260.md) | 2508.15260v1 |
+| 07-context | [ICAE](../docs/chapters/07-context/reference/2307.06945.md) | 2307.06945v4 (ICLR 2024 camera-ready source; arXiv 2024-05-08) |
+| 07-context | [RECOMP](../docs/chapters/07-context/reference/2310.04408.md) | v1 (2023-10-06) |
+| 07-context | [The Complexity Trap](../docs/chapters/07-context/reference/2508.21433.md) | 2508.21433v3 |
+| 07-context | [LightMem: Lightweight and Efficient Memory-Augmented Generation](../docs/chapters/07-context/reference/2510.18866.md) | 2510.18866v4 |
+| 07-context | [LLMLingua-2](../docs/chapters/07-context/reference/src-7cc3fedc37b4.md) | {'title': 'LLMLingua-2: Data Distillation for Efficient and Faithful Task-Agnostic Prompt Compression', 'authors': ['Zhuoshi Pan', 'Qianhui Wu', 'Huiqiang Jiang', 'Menglin Xia', 'Xufang Luo', 'Jue Zhang', 'Qingwei Lin', 'Victor Rühle', 'Yuqing Yang', 'Chin-Yew Lin', 'H. Vicky Zhao', 'Lili Qiu', 'Dongmei Zhang'], 'year': 2024, 'venue': 'Findings of ACL 2024', 'pages': '963-981', 'doi': '10.18653/v1/2024.findings-acl.57', 'url': 'https://aclanthology.org/2024.findings-acl.57/', 'pdf_url': 'https://aclanthology.org/2024.findings-acl.57.pdf'} |
+| 08-agents | [REWOO: Decoupling Reasoning from Observations for Efficient Augmented Language Models](../docs/chapters/08-agents/reference/2305.18323.md) | arXiv v1, submitted 2023-05-23 |
+| 08-agents | [LLMCompiler](../docs/chapters/08-agents/reference/2312.04511.md) | 2312.04511v3 |
+| 08-agents | [RouteLLM](../docs/chapters/08-agents/reference/2406.18665.md) | 2406.18665v4 |
+| 08-agents | [AgentPrune](../docs/chapters/08-agents/reference/2410.02506.md) | 2410.02506v1 |
+| 08-agents | [MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents](../docs/chapters/08-agents/reference/2506.15841.md) | 2506.15841v2 |
+| 09-multimodal | [FastV](../docs/chapters/09-multimodal/reference/2403.06764.md) | 2403.06764v3 |
+| 09-multimodal | [LLaVA-PruMerge](../docs/chapters/09-multimodal/reference/2403.15388.md) | 2403.15388v6 |
+| 09-multimodal | [LongVU](../docs/chapters/09-multimodal/reference/2410.17434.md) | 2410.17434v1 |
+| 09-multimodal | [SpeechPrune](../docs/chapters/09-multimodal/reference/2412.12009.md) | 2412.12009v2 (arXiv online 2025-03-30) |
+| 09-multimodal | [LongVU-TTT](../docs/chapters/09-multimodal/reference/2608.25729.md) | 2608.25729v1 |
+| 10-systems | [Speculative Decoding](../docs/chapters/10-systems/reference/2211.17192.md) | 2211.17192v2 |
+| 10-systems | [EAGLE-3](../docs/chapters/10-systems/reference/2503.01840.md) | 2503.01840v3 |
+| 11-evaluation | [AI Agents That Matter](../docs/chapters/11-evaluation/reference/2407.01502.md) | 2407.01502v1 |
+| 11-evaluation | [Do Not Think That Much for 2+3=? on the Overthinking of o1-like LLMs](../docs/chapters/11-evaluation/reference/2412.21187.md) | 2412.21187v2 |
+| 12-safety | [OverThink](../docs/chapters/12-safety/reference/2502.02542.md) | 2502.02542v4 |
+| 12-safety | [RecurGuard: Runtime Monitoring for Reasoning-Token Consumption Attacks](../docs/chapters/12-safety/reference/2606.07968.md) | v1 (2026-06-06) |
+| 13-domains | [Language models are multilingual chain-of-thought reasoners](../docs/chapters/13-domains/reference/2210.03057.md) | 2210.03057v1 |
+| 13-domains | [PAL](../docs/chapters/13-domains/reference/2211.10435.md) | 2211.10435v2 (2023-01-27) |
+| 13-domains | [DeepSeek-Prover-V2: Advancing Formal Mathematical Reasoning via Reinforcement Learning for Subgoal Decomposition](../docs/chapters/13-domains/reference/2504.21801.md) | arXiv:2504.21801v2 (2025-07-18) |

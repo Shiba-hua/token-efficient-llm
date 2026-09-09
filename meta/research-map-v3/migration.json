@@ -1,0 +1,39 @@
+{
+  "01-data": [
+    "01-data"
+  ],
+  "02-pretraining": [
+    "02-pretraining",
+    "04-architecture"
+  ],
+  "03-midtraining": [
+    "03-midtraining"
+  ],
+  "04-sft-distillation": [
+    "05-posttraining"
+  ],
+  "05-preference-rl": [
+    "05-posttraining"
+  ],
+  "06-rlvr-agentic": [
+    "05-posttraining",
+    "08-agents"
+  ],
+  "07-prompt-context": [
+    "07-context"
+  ],
+  "08-harness-agents": [
+    "08-agents",
+    "06-reasoning"
+  ],
+  "09-evaluation": [
+    "11-evaluation"
+  ],
+  "10-other-directions": [
+    "04-architecture",
+    "09-multimodal",
+    "10-systems",
+    "12-safety",
+    "13-domains"
+  ]
+}

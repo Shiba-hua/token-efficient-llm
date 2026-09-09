@@ -1,0 +1,239 @@
+{
+  "survey_id": "2509.08827",
+  "title": "A Survey of Reinforcement Learning for Large Reasoning Models",
+  "version": "v3, 2025-10-09 (arXiv page says last revised 9 Oct 2025)",
+  "source_url": "https://arxiv.org/abs/2509.08827",
+  "date": "2025-10-09",
+  "actual_read_scope": "Read the complete arXiv v3 PDF text (120 pages) and its reference list. Focused synthesis: Sections 2.1-2.2, 3.1.1-3.1.5, 3.2.5, 3.3.1-3.3.2, 4.1-4.5, 5.1, and 7.4. No cited paper was independently read.",
+  "routes": [
+    {
+      "problem": "Sparse outcome rewards make long reasoning chains hard to assign credit to and can encourage reward hacking or unfaithful traces.",
+      "mechanism": "Use rule-based verifiers for correctness/format, generative verifiers for semantic or open-ended judging, and process/token/step/turn rewards to shorten the credit-assignment horizon.",
+      "inference_token_connection": "Indirect-to-direct: process supervision may teach better reasoning trajectories, but the survey does not establish a generally lower inference-token Pareto frontier. Explicit length penalties and adaptive length rewards are direct token-cost routes.",
+      "related_sections": ["3.1.1", "3.1.2", "3.1.3", "4.5", "7.4"],
+      "survey_locator": "PDF pp. 14-19, 38, 63; HTML lines 303-325, 327-398",
+      "notes": "Dense rewards are described as improving training efficiency/stability and credit assignment; inference efficiency is a separate question."
+    },
+    {
+      "problem": "Group/sequence rewards have high variance and may optimize Pass@1 while collapsing exploration and Pass@K diversity.",
+      "mechanism": "GRPO-style group baselines, leave-one-out/ranking baselines, and Pass@K-aligned objectives redistribute set-level credit to individual samples.",
+      "inference_token_connection": "Indirect: exploration diversity can change the quality of reasoning candidates at a fixed inference budget; no direct token reduction is established by the survey.",
+      "related_sections": ["3.1.5", "3.2.3", "4.1"],
+      "survey_locator": "PDF pp. 19-20, 36-38; HTML lines 437-441, 1453-1476, 1932-1977",
+      "notes": "The survey reports conflicting Pass@1/Pass@K behavior and treats exploration collapse as an unresolved issue."
+    },
+    {
+      "problem": "Uniform rollout sampling wastes training compute on mastered, impossible, all-correct, or all-wrong prompts.",
+      "mechanism": "Online filtering, failure-rate prioritization, difficulty estimation, curriculum schedules, rollout replay, adaptive batch sizing, and category/item-level controllers concentrate rollouts on informative prompts.",
+      "inference_token_connection": "Training-sampling efficiency only: fewer wasted rollouts/tokens per policy update; it is not evidence that the trained model answers with fewer inference tokens.",
+      "related_sections": ["3.3.1", "5.1"],
+      "survey_locator": "PDF pp. 29-30, 39-42; HTML lines 1753-1807",
+      "notes": "The survey explicitly frames these methods as learning efficiency and rollout budget allocation."
+    },
+    {
+      "problem": "Long-chain RL rollouts are expensive and repeated prefixes duplicate KV-cache work.",
+      "mechanism": "Tree/MCTS rollouts, shared-prefix or segment-wise sampling, branch-point selection, and node-level process rewards reuse partial computation and provide finer credit.",
+      "inference_token_connection": "Primarily RL training sampling efficiency/compute-only. Shared prefixes can reduce training GPU hours; the survey does not show reduced final answer tokens. Tree-based inference may spend more tokens if used at test time.",
+      "related_sections": ["3.1.3", "3.3.1"],
+      "survey_locator": "PDF pp. 16-17, 30-31; HTML lines 1008-1026, 1809-1842",
+      "notes": "Do not conflate cheaper rollout generation with token-efficient final inference."
+    },
+    {
+      "problem": "Long reasoning traces improve accuracy but raise inference cost and can overthink easy instances.",
+      "mechanism": "Length-aware/adaptive reward shaping, relative-length regularization, difficulty-conditioned penalties, user-specified length constraints, and stage-dependent overlength filtering.",
+      "inference_token_connection": "Direct: explicitly optimizes or constrains response length while attempting to preserve accuracy; this is the survey's clearest token-efficiency route.",
+      "related_sections": ["3.2.5", "3.3.2", "7.4"],
+      "survey_locator": "PDF pp. 28-32, 63; HTML lines 1718-1727, 1871-1895",
+      "notes": "The survey says the principled cost-performance trade-off remains open and warns about both overthinking and underthinking."
+    },
+    {
+      "problem": "A fixed long context budget makes early RL unstable and encourages unnecessarily long solutions.",
+      "mechanism": "Staged context lengthening (for example 8k -> 16k -> 24k/32k), short-context warm-up, overlength masks/penalties, and inference-time length extrapolation.",
+      "inference_token_connection": "Direct/indirect: short-context training is reported to force more concise patterns; inference-time extrapolation changes maximum capacity rather than proving fewer tokens at equal accuracy.",
+      "related_sections": ["3.3.2", "7.4"],
+      "survey_locator": "PDF pp. 31-32, 63; HTML lines 1871-1895, 3696-3711",
+      "notes": "This route mixes training stability with an intended inference budget effect; retain the distinction in downstream synthesis."
+    },
+    {
+      "problem": "Static RL data can be low-quality, too easy/hard, or lack verifiable intermediate traces.",
+      "mechanism": "Shift from scale-first corpora to distilled/annotated/verified data, multi-trajectory traces, quality filtering, explicit difficulty stratification, and agent/tool trajectories.",
+      "inference_token_connection": "Indirect: better data/process supervision may improve reasoning at a given token budget, but the survey supplies no general proof of reduced inference length.",
+      "related_sections": ["3.1.1", "3.1.3", "3.3.1", "5.1"],
+      "survey_locator": "PDF pp. 39-42; HTML lines 2279-2425",
+      "notes": "Data route is mainly sample effectiveness and verifier compatibility; do not count dataset size as token efficiency."
+    },
+    {
+      "problem": "Outcome-only rewards are scalable but can be unfaithful; process rewards are informative but expensive and noisy.",
+      "mechanism": "Hybrid outcome/process rewards, implicit process modeling, generative PRMs, and step-level credit assignment attempt to combine scalable goals with dense guidance.",
+      "inference_token_connection": "Indirect: process fidelity may reduce wasted thought, but annotation/verifier overhead is training-side and the survey reports no settled inference-token result.",
+      "related_sections": ["3.1.2", "3.1.3", "4.5"],
+      "survey_locator": "PDF pp. 15-19, 38; HTML lines 940-1048, 2232-2270",
+      "notes": "Evidence boundary is the survey's comparative characterization, not an independently verified benchmark result."
+    }
+  ],
+  "candidates": [
+    {
+      "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+      "authors": "Daya Guo et al.",
+      "year": 2025,
+      "arxiv_id": "2501.12948",
+      "source_url": "https://arxiv.org/abs/2501.12948",
+      "survey_locator": "Guo et al. [2025a], Sections 2.2, 3.1.1, 3.1.5, 4.1, 4.3",
+      "route": "verifiable outcome/format reward and long-CoT RLVR",
+      "role": "起点",
+      "token_relevance": "indirect",
+      "reason": "Survey anchor for rule-based accuracy/format rewards, GRPO, emergent long reasoning, and the train-time/test-time compute distinction; not a direct concise-inference method."
+    },
+    {
+      "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+      "authors": "Zhihong Shao et al.",
+      "year": 2024,
+      "arxiv_id": "2402.03300",
+      "source_url": "https://arxiv.org/abs/2402.03300",
+      "survey_locator": "Shao et al. [2024], Sections 3.1.5, 3.2.3, 4.4",
+      "route": "GRPO group-relative credit assignment",
+      "role": "起点",
+      "token_relevance": "compute_only",
+      "reason": "Introduces the group-baseline critic-free route used by later LRM RL; the survey links it to variance reduction, not lower inference token count."
+    },
+    {
+      "title": "DAPO: An Open-Source LLM Reinforcement Learning System at Scale",
+      "authors": "Qiying Yu et al.",
+      "year": 2025,
+      "arxiv_id": "2503.14476",
+      "source_url": "https://arxiv.org/abs/2503.14476",
+      "survey_locator": "Yu et al. [2025d], Sections 3.1.1, 3.2.3, 3.3.1-3.3.2",
+      "route": "dynamic sampling, clip-higher, length/reward shaping",
+      "role": "改进",
+      "token_relevance": "indirect",
+      "reason": "Survey credits DAPO with oversampling/filtering saturated or degenerate prompts, non-zero-advantage batches, and length-related reward handling; rollout efficiency is training-side."
+    },
+    {
+      "title": "Let's Verify Step by Step",
+      "authors": "Hunter Lightman et al.",
+      "year": 2024,
+      "source_url": "https://openreview.net/forum?id=v8L0pN6EOi",
+      "survey_locator": "Lightman et al. [2024], Sections 3.1.1, 3.1.3, 4.5",
+      "route": "process reward model and step-level credit",
+      "role": "起点",
+      "token_relevance": "indirect",
+      "reason": "Survey uses it as the canonical comparison where process supervision gives denser, more stable guidance than outcome-only reward, with annotation-cost caveats."
+    },
+    {
+      "title": "PRIME: Process Reinforcement through Implicit Rewards",
+      "authors": "Junyu Cui et al.",
+      "year": 2025,
+      "arxiv_id": "2502.01456",
+      "source_url": "https://arxiv.org/abs/2502.01456",
+      "survey_locator": "Cui et al. [2025a], Sections 3.1.3, 3.3.1, 5.1",
+      "route": "implicit token-level process reward and online filtering",
+      "role": "改进",
+      "token_relevance": "indirect",
+      "reason": "Survey describes implicit token rewards from ORM learning and filtering of too-easy/too-hard prompts; any inference-token benefit is not established."
+    },
+    {
+      "title": "Stop Summation: Min-Form Credit Assignment Is All Process Reward Model Needs for Reasoning",
+      "authors": "Jie Cheng et al.",
+      "year": 2025,
+      "arxiv_id": "2504.15275",
+      "source_url": "https://arxiv.org/abs/2504.15275",
+      "survey_locator": "Cheng et al. [2025b], Section 3.1.3",
+      "route": "step-level min-form credit assignment",
+      "role": "改进",
+      "token_relevance": "compute_only",
+      "reason": "A concrete credit-allocation alternative intended to reduce process-reward hacking; the survey frames it as training optimization, not inference compression."
+    },
+    {
+      "title": "Segment Policy Optimization: Effective Segment-Level Credit Assignment in RL for Large Language Models",
+      "authors": "Yiran Guo et al.",
+      "year": 2025,
+      "arxiv_id": "2505.23564",
+      "source_url": "https://arxiv.org/abs/2505.23564",
+      "survey_locator": "Guo et al. [2025c], Sections 3.1.3, 3.3.1",
+      "route": "segment/tree sampling and process credit",
+      "role": "改进",
+      "token_relevance": "compute_only",
+      "reason": "Survey groups SPO with tree/shared-prefix methods for finer process rewards and sample reuse; this is RL rollout efficiency and may increase search computation."
+    },
+    {
+      "title": "TreePO: Bridging the Gap of Policy Optimization and Efficacy and Inference Efficiency with Heuristic Tree-Based Modeling",
+      "authors": "Yizhi Li et al.",
+      "year": 2025,
+      "arxiv_id": "2508.17445",
+      "source_url": "https://arxiv.org/abs/2508.17445",
+      "survey_locator": "Li et al. [2025t], Sections 3.1.3, 3.3.1",
+      "route": "segment-wise tree sampling/KV reuse",
+      "role": "改进",
+      "token_relevance": "indirect",
+      "reason": "The survey reports reduced training GPU hours and improved sampling efficiency through segment-wise trees; title suggests inference efficiency but the survey evidence read here is primarily training-side."
+    },
+    {
+      "title": "Improving Data Efficiency for LLM Reinforcement Fine-Tuning through Difficulty-Targeted Online Data Selection and Rollout Replay",
+      "authors": "Yifan Sun et al.",
+      "year": 2025,
+      "arxiv_id": "2506.05316",
+      "source_url": "https://arxiv.org/abs/2506.05316",
+      "survey_locator": "Sun et al. [2025e], Section 3.3.1",
+      "route": "difficulty-targeted sampling and replay",
+      "role": "改进",
+      "token_relevance": "compute_only",
+      "reason": "Representative data/rollout efficiency route: allocate training samples to informative difficulty regions and replay useful rollouts."
+    },
+    {
+      "title": "Learn to Reason Efficiently with Adaptive Length-Based Reward Shaping",
+      "authors": "Wei Liu et al.",
+      "year": 2025,
+      "arxiv_id": "2505.15612",
+      "source_url": "https://arxiv.org/abs/2505.15612",
+      "survey_locator": "Liu et al. [2025b], Sections 3.1.5, 3.2.5, 7.4",
+      "route": "difficulty-conditioned/adaptive length reward",
+      "role": "改进",
+      "token_relevance": "direct",
+      "reason": "Explicitly targets efficient reasoning by conditioning length penalties/rewards on difficulty; one of the survey's direct inference-token candidates, although the survey does not independently validate its Pareto curve."
+    },
+    {
+      "title": "Efficient RL Training for Reasoning Models via Length-Aware Optimization",
+      "authors": "Danlong Yuan et al.",
+      "year": 2025,
+      "arxiv_id": "2505.12284",
+      "source_url": "https://arxiv.org/abs/2505.12284",
+      "survey_locator": "Yuan et al. [2025a], Sections 3.2.5, 7.4",
+      "route": "relative-length regularization and accuracy-preservation constraint",
+      "role": "改进",
+      "token_relevance": "direct",
+      "reason": "Survey identifies it as a direct length-control route that seeks to reduce reasoning cost while retaining accuracy; evidence boundary remains survey-level."
+    },
+    {
+      "title": "Sample More to Think Less: Group Filtered Policy Optimization for Concise Reasoning",
+      "authors": "Vaishnavi Shrivastava et al.",
+      "year": 2025,
+      "arxiv_id": "2508.09726",
+      "source_url": "https://arxiv.org/abs/2508.09726",
+      "survey_locator": "Shrivastava et al. [2025], Sections 3.3.2, 4.4",
+      "route": "concise reasoning via group-filtered policy optimization",
+      "role": "改进",
+      "token_relevance": "direct",
+      "reason": "The survey reports reduced redundant reasoning and 35-61% shorter sequences with slight accuracy improvements; this is the strongest explicit direct token-efficiency evidence mentioned in the survey, but remains a cited claim not independently checked here."
+    },
+    {
+      "title": "Pass@k Training for Adaptively Balancing Exploration and Exploitation of Large Reasoning Models",
+      "authors": "Zhipeng Chen et al.",
+      "year": 2025,
+      "arxiv_id": "2508.10751",
+      "source_url": "https://arxiv.org/abs/2508.10751",
+      "survey_locator": "Chen et al. [2025z], Sections 3.1.5, 4.1",
+      "route": "Pass@K-aligned credit allocation",
+      "role": "改进",
+      "token_relevance": "indirect",
+      "reason": "Directly decomposes set-level Pass@K targets into sample credit and addresses exploration/exploitation; relevance is candidate quality/diversity at a budget, not fewer tokens per answer."
+    }
+  ],
+  "gaps_conflicts": [
+    "The survey's taxonomy is organized around reward design, policy optimization, and sampling, not around an explicit inference-token Pareto frontier. Direct token-efficiency routes are concentrated in Sections 3.2.5, 3.3.2, and 7.4.",
+    "Training rollout throughput/sample efficiency, KV-cache reuse, asynchronous infrastructure, and lower GPU hours are repeatedly discussed but must not be reported as lower final reasoning-token usage.",
+    "Outcome rewards are scalable and verifiable but may reward unfaithful or hacked chains; process rewards improve credit assignment but require costly/noisy labels or online PRM computation. The survey does not resolve the trade-off.",
+    "Pass@1 versus Pass@K evidence is explicitly conflicting: RL can sharpen single-sample success while reducing diversity; later self-play/Pass@K objectives reopen the discovery view.",
+    "Length control has a two-sided failure mode: overthinking when unconstrained and underthinking/premature halting when aggressively truncated. The survey states that a principled marginal-utility cost-performance policy remains unsolved.",
+    "The fixed source is arXiv v3 dated 2025-10-09. It includes some September 2025 citations/models, but it is not a 2026 survey; no post-v3 updates were covered."
+  ]
+}

@@ -1,1 +1,112 @@
-[]
+[
+  {
+    "incident_id": "survey-metadata-01",
+    "phase": "survey_candidate_metadata",
+    "survey_id": "2601.12538",
+    "task_id": "survey-2601.12538",
+    "model": "gpt-5.6-luna",
+    "affected_prompt": "survey-extraction-v1",
+    "severity": "fabricated author expansion",
+    "discovery": "主代理收尾核对 ReWOO 候选姓名与已读原文首页，发现六个姓名错误",
+    "confirmed_examples": [
+      {
+        "paper_id": "2305.18323",
+        "wrong_authors": [
+          "Boyuan Xu",
+          "Zhen Peng",
+          "Ben Lei",
+          "Shengnan Mukherjee",
+          "Yiqing Liu",
+          "Dahua Xu"
+        ],
+        "correct_authors": [
+          "Binfeng Xu",
+          "Zhiyuan Peng",
+          "Bowen Lei",
+          "Subhabrata Mukherjee",
+          "Yuchen Liu",
+          "Dongkuan Xu"
+        ]
+      },
+      {
+        "paper_id": "2510.18866",
+        "wrong_authors": [
+          "Jiaqi Fang",
+          "Xiaolei Deng",
+          "Haoyu Xu",
+          "Zhaoyang Jiang",
+          "Yingqi Tang",
+          "Zhaocheng Xu",
+          "Shuai Deng",
+          "Yiming Yao",
+          "Ming Wang",
+          "Shuang Qiao"
+        ],
+        "correct_authors": [
+          "Jizhan Fang",
+          "Xinle Deng",
+          "Haoming Xu",
+          "Ziyan Jiang",
+          "Yuqi Tang",
+          "Ziwen Xu",
+          "Shumin Deng",
+          "Yunzhi Yao",
+          "Mengru Wang",
+          "Shuofei Qiao",
+          "Huajun Chen",
+          "Ningyu Zhang"
+        ]
+      },
+      {
+        "paper_id": "2506.15841",
+        "wrong_authors": [
+          "Zhiqiang Zhou",
+          "Anjie Qu",
+          "Zhiqiang Wu",
+          "Sangdoo Kim",
+          "Aviral Prakash",
+          "Dieter Fox",
+          "Daniela Rus",
+          "Jing Zhao",
+          "Bo-Keun Low",
+          "Percy Liang"
+        ],
+        "correct_authors": [
+          "Zijian Zhou",
+          "Ao Qu",
+          "Zhaoxuan Wu",
+          "Sunghwan Kim",
+          "Alok Prakash",
+          "Daniela Rus",
+          "Jinhua Zhao",
+          "Bryan Kian Hsiang Low",
+          "Paul Pu Liang"
+        ]
+      }
+    ],
+    "bounded_check": "同一提取中的 LightMem、MEM1 两条补查；仅用已有原文首页，不重新阅读正文。三条均有姓名虚构。",
+    "cause": "输出将作者缩写或不确定姓名扩写；生成内部原因不可确认。v1要求准确元数据但缺少逐字段原文证据。",
+    "impact": "确认影响2601.12538综述提取与candidate-mentions派生作者字段。正式三篇精读使用原文正确姓名；唯一身份和调度按arXiv ID完成，未因姓名重复派发首读。其他正文不据此标成已核验。",
+    "actions": [
+      "停止继续使用survey-extraction-v1发布作者元数据",
+      "修正3条确认错误；同份提取其他作者字段暂缓发布为null",
+      "新prompt要求字面提取、证据定位、保留et al.、区分年份与缺失信息",
+      "有限元数据校准，未扩大第四级论文正文普查"
+    ],
+    "retraining": {
+      "prompt": "survey-extraction-v2",
+      "calibration_samples": "3份已读PDF头部 + 1个明确教学案例",
+      "iterations": 3,
+      "feedback": [
+        "保留et al.，不能误报作者完整性",
+        "当前版本年不代替初次发表年",
+        "本次节选未核实不等于与原文矛盾"
+      ],
+      "main_review": "作者字段与所给原始头部一致；缩写、缺失、年份和证据判断经反馈修正，达到本任务中等偏上标准",
+      "result": "pass_upper_middle",
+      "production_resumed": "无剩余综述批量任务；未来提取使用v2"
+    },
+    "status": "resolved_with_unverified_fields_withheld",
+    "full_prose_reaudit": false
+  }
+]

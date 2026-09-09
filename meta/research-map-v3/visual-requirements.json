@@ -1,0 +1,35 @@
+{
+  "explicit": [
+    {
+      "id": "explicit.goal",
+      "text": "研究图解释推理时性能-token目标；训练成本、每token计算和表示单位变化不得画成已证实的推理token下降。"
+    },
+    {
+      "id": "explicit.relations",
+      "text": "路线图必须与正文及主代理冻结的map-specifications关系一致，流程、比较、待验证组合清楚区分；不以时间顺序暗示性能排名，不虚构实验数值。"
+    },
+    {
+      "id": "explicit.original",
+      "text": "原论文图与中文解释结合，保留必要坐标、图例、模型/预算条件；原作者图允许原英文。"
+    },
+    {
+      "id": "explicit.scope",
+      "text": "本轮检查总论/章节页面图位；第四级论文精读仅按正文抽样，不扩大为全部精读图文普查。"
+    }
+  ],
+  "inferred": [
+    {
+      "id": "inferred.context",
+      "text": "每个任务提供候选图像、对应Markdown全文与图旁正文。原生Markdown无PDF页面时，以图像+文本上下文检查图文；GitHub实际渲染另检查。"
+    },
+    {
+      "id": "inferred.caption",
+      "text": "图注条件可在相邻Markdown中保留，不要求重复烘焙进每张独立原图。"
+    },
+    {
+      "id": "inferred.zoom",
+      "text": "密集原论文多面板图允许通过随图提供的原始PDF链接放大；概览研究图应在正常页面宽度可读。"
+    }
+  ],
+  "conflicts": []
+}

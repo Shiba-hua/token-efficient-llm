@@ -1,0 +1,248 @@
+[
+  {
+    "paper_id": "2502.20122",
+    "chapter": "01-data",
+    "title": "Shortest-correct self-training",
+    "reason": "同题短正确轨迹选择的直接数据路线"
+  },
+  {
+    "paper_id": "2404.19737",
+    "chapter": "02-pretraining",
+    "title": "Multi-token Prediction",
+    "reason": "预训练目标改变与部署生成长度证据边界"
+  },
+  {
+    "paper_id": "2404.07965",
+    "chapter": "03-midtraining",
+    "title": "Rho-1",
+    "reason": "选择损失与领域继续训练的间接路线"
+  },
+  {
+    "paper_id": "2412.06769",
+    "chapter": "04-architecture",
+    "title": "Coconut",
+    "reason": "连续潜在推理的起点及反例"
+  },
+  {
+    "paper_id": "2502.12067",
+    "chapter": "05-posttraining",
+    "title": "TokenSkip",
+    "reason": "选择性压缩SFT与输入压缩器的跨阶段联系"
+  },
+  {
+    "paper_id": "2503.04472",
+    "chapter": "05-posttraining",
+    "title": "DAST",
+    "reason": "难度适应偏好构造"
+  },
+  {
+    "paper_id": "2408.03314",
+    "chapter": "06-reasoning",
+    "title": "Compute-optimal test-time scaling",
+    "reason": "搜索与修订按难度分配预算"
+  },
+  {
+    "paper_id": "2310.04408",
+    "chapter": "07-context",
+    "title": "RECOMP",
+    "reason": "选择性检索与抽象/抽取压缩竞争"
+  },
+  {
+    "paper_id": "2305.18323",
+    "chapter": "08-agents",
+    "title": "ReWOO",
+    "reason": "解耦规划和观察以减少重复输入"
+  },
+  {
+    "paper_id": "2606.07968",
+    "chapter": "12-safety",
+    "title": "RecurGuard",
+    "reason": "2026资源攻击防御与自适应攻击反例"
+  },
+  {
+    "paper_id": "2502.21074",
+    "chapter": "04-architecture",
+    "title": "CODI",
+    "reason": "连续推理的蒸馏竞争路线"
+  },
+  {
+    "paper_id": "2412.09871",
+    "chapter": "04-architecture",
+    "title": "BLT",
+    "reason": "动态patch与token计量的区别"
+  },
+  {
+    "paper_id": "2407.06023",
+    "chapter": "05-posttraining",
+    "title": "Distilling System 2 into System 1",
+    "reason": "推理内化的成功与数学失败反例"
+  },
+  {
+    "paper_id": "2502.09601",
+    "chapter": "05-posttraining",
+    "title": "CoT-Valve",
+    "reason": "参数方向控制推理长度"
+  },
+  {
+    "paper_id": "2306.13649",
+    "chapter": "05-posttraining",
+    "title": "GKD",
+    "reason": "on-policy蒸馏原理与分布错配"
+  },
+  {
+    "paper_id": "2601.18734",
+    "chapter": "05-posttraining",
+    "title": "Self-Distilled Reasoner",
+    "reason": "2026同模型特权上下文OPSD"
+  },
+  {
+    "paper_id": "2503.04697",
+    "chapter": "05-posttraining",
+    "title": "L1",
+    "reason": "预算条件化的RL效率学习"
+  },
+  {
+    "paper_id": "2504.11536",
+    "chapter": "05-posttraining",
+    "title": "ReTool",
+    "reason": "工具策略RL与工具计算的成本迁移"
+  },
+  {
+    "paper_id": "2508.15260",
+    "chapter": "06-reasoning",
+    "title": "DeepConf",
+    "reason": "在线停止与离线过滤的清楚对照"
+  },
+  {
+    "paper_id": "2502.18600",
+    "chapter": "06-reasoning",
+    "title": "Chain of Draft",
+    "reason": "无需训练的简写推理"
+  },
+  {
+    "paper_id": "2307.06945",
+    "chapter": "07-context",
+    "title": "ICAE",
+    "reason": "连续上下文压缩接口"
+  },
+  {
+    "paper_id": "2508.21433",
+    "chapter": "07-context",
+    "title": "The Complexity Trap",
+    "reason": "简单遮蔽挑战摘要管理的反例"
+  },
+  {
+    "paper_id": "2510.18866",
+    "chapter": "07-context",
+    "title": "LightMem",
+    "reason": "跨会话记忆与写入/读取摊销"
+  },
+  {
+    "paper_id": "2312.04511",
+    "chapter": "08-agents",
+    "title": "LLMCompiler",
+    "reason": "工具依赖图及并行化和token关系"
+  },
+  {
+    "paper_id": "2410.02506",
+    "chapter": "08-agents",
+    "title": "AgentPrune",
+    "reason": "通信拓扑剪枝及强单体对照"
+  },
+  {
+    "paper_id": "2506.15841",
+    "chapter": "08-agents",
+    "title": "MEM1",
+    "reason": "联合训练记忆与推理的长任务效率"
+  },
+  {
+    "paper_id": "2406.18665",
+    "chapter": "08-agents",
+    "title": "RouteLLM",
+    "reason": "路由费用目标与token目标的边界"
+  },
+  {
+    "paper_id": "2403.06764",
+    "chapter": "09-multimodal",
+    "title": "FastV",
+    "reason": "视觉注意力剪枝"
+  },
+  {
+    "paper_id": "2403.15388",
+    "chapter": "09-multimodal",
+    "title": "LLaVA-PruMerge",
+    "reason": "选择与合并的竞争机制"
+  },
+  {
+    "paper_id": "2211.17192",
+    "chapter": "10-systems",
+    "title": "Speculative decoding",
+    "reason": "分布保持加速与最终token数量的边界"
+  },
+  {
+    "paper_id": "2503.01840",
+    "chapter": "10-systems",
+    "title": "EAGLE-3",
+    "reason": "特征草稿的关键改进"
+  },
+  {
+    "paper_id": "2412.21187",
+    "chapter": "11-evaluation",
+    "title": "Overthinking of o1-like LLMs",
+    "reason": "诊断过度推理、第一正确性与冗余"
+  },
+  {
+    "paper_id": "2407.01502",
+    "chapter": "11-evaluation",
+    "title": "AI Agents That Matter",
+    "reason": "联合质量成本评价与开发账"
+  },
+  {
+    "paper_id": "2502.02542",
+    "chapter": "12-safety",
+    "title": "OverThink",
+    "reason": "资源消耗攻击与正确率指标的盲点"
+  },
+  {
+    "paper_id": "2211.10435",
+    "chapter": "13-domains",
+    "title": "PAL",
+    "reason": "领域工具执行替代长文本计算"
+  },
+  {
+    "paper_id": "2210.03057",
+    "chapter": "13-domains",
+    "title": "Multilingual CoT reasoning",
+    "reason": "语言选择与领域迁移边界"
+  },
+  {
+    "paper_id": "2504.21801",
+    "chapter": "13-domains",
+    "title": "DeepSeek-Prover-V2",
+    "reason": "子目标分解与形式化工具的能力/成本边界"
+  },
+  {
+    "paper_id": "2412.08821",
+    "chapter": "02-pretraining",
+    "title": "Large Concept Models",
+    "reason": "句子级预训练表示及token换尺边界"
+  },
+  {
+    "paper_id": "2410.17434",
+    "chapter": "09-multimodal",
+    "title": "LongVU",
+    "reason": "补足视频/音频模态与2026相关后续；原文结果待精读"
+  },
+  {
+    "paper_id": "2412.12009",
+    "chapter": "09-multimodal",
+    "title": "SpeechPrune",
+    "reason": "补足视频/音频模态与2026相关后续；原文结果待精读"
+  },
+  {
+    "paper_id": "2608.25729",
+    "chapter": "09-multimodal",
+    "title": "LongVU-TTT",
+    "reason": "补足视频/音频模态与2026相关后续；原文结果待精读"
+  }
+]

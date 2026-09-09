@@ -1,0 +1,278 @@
+[
+  {
+    "page": "docs/chapters/02-pretraining/index.md",
+    "paper_id": "2412.08821",
+    "figure_id": "fig:intro:idea",
+    "file": "assets/papers-v3/2412.08821/fig-intro-idea-part-1.png"
+  },
+  {
+    "page": "docs/chapters/02-pretraining/index.md",
+    "paper_id": "2412.08821",
+    "figure_id": "fig:intro:idea",
+    "file": "assets/papers-v3/2412.08821/fig-intro-idea-part-2.png"
+  },
+  {
+    "page": "docs/chapters/04-architecture/index.md",
+    "paper_id": "2502.21074",
+    "figure_id": "fig-codi-method",
+    "file": "assets/papers-v3/2502.21074/fig-codi-method.png"
+  },
+  {
+    "page": "docs/chapters/04-architecture/index.md",
+    "paper_id": "2412.09871",
+    "figure_id": "architecture",
+    "file": "assets/papers-v3/2412.09871/architecture.png"
+  },
+  {
+    "page": "docs/chapters/06-reasoning/index.md",
+    "paper_id": "2408.03314",
+    "figure_id": "fig:search_methods",
+    "file": "assets/papers-v3/2408.03314/fig-search_methods.png"
+  },
+  {
+    "page": "docs/chapters/06-reasoning/index.md",
+    "paper_id": "2508.15260",
+    "figure_id": "figure-4-online-diagram",
+    "file": "assets/papers-v3/2508.15260/figure-4-online-diagram.png"
+  },
+  {
+    "page": "docs/chapters/06-reasoning/index.md",
+    "paper_id": "2502.18600",
+    "figure_id": "fig1_plot",
+    "file": "assets/papers-v3/2502.18600/fig1_plot.png"
+  },
+  {
+    "page": "docs/chapters/12-safety/index.md",
+    "paper_id": "2502.02542",
+    "figure_id": "attack_method",
+    "file": "assets/papers-v3/2502.02542/attack_method.png"
+  },
+  {
+    "page": "docs/chapters/12-safety/index.md",
+    "paper_id": "2606.07968",
+    "figure_id": "fig1",
+    "file": "assets/papers-v3/2606.07968/fig1.png"
+  },
+  {
+    "page": "docs/chapters/01-data/index.md",
+    "paper_id": "2502.20122",
+    "figure_id": "fig3",
+    "file": "assets/papers-v3/2502.20122/fig3.png"
+  },
+  {
+    "page": "docs/chapters/09-multimodal/index.md",
+    "paper_id": "2403.06764",
+    "figure_id": "fig-5-fastv",
+    "file": "assets/papers-v3/2403.06764/fig-5-fastv.png"
+  },
+  {
+    "page": "docs/chapters/09-multimodal/index.md",
+    "paper_id": "2403.15388",
+    "figure_id": "fig:pipeline",
+    "file": "assets/papers-v3/2403.15388/fig-pipeline.png"
+  },
+  {
+    "page": "docs/chapters/09-multimodal/index.md",
+    "paper_id": "2410.17434",
+    "figure_id": "main",
+    "file": "assets/papers-v3/2410.17434/main.png"
+  },
+  {
+    "page": "docs/chapters/09-multimodal/index.md",
+    "paper_id": "2412.12009",
+    "figure_id": "fig1-method",
+    "file": "assets/papers-v3/2412.12009/fig1-method.png"
+  },
+  {
+    "page": "docs/chapters/09-multimodal/index.md",
+    "paper_id": "2608.25729",
+    "figure_id": "architecture",
+    "file": "assets/papers-v3/2608.25729/architecture.png"
+  },
+  {
+    "page": "docs/chapters/13-domains/index.md",
+    "paper_id": "2211.10435",
+    "figure_id": "fig_main_intro_example",
+    "file": "assets/papers-v3/2211.10435/fig_main_intro_example.png"
+  },
+  {
+    "page": "docs/chapters/13-domains/index.md",
+    "paper_id": "2210.03057",
+    "figure_id": "figure3-mgsm-prompts",
+    "file": "assets/papers-v3/2210.03057/figure3-mgsm-prompts.png"
+  },
+  {
+    "page": "docs/chapters/13-domains/index.md",
+    "paper_id": "2504.21801",
+    "figure_id": "figure-2-overview-decomposition",
+    "file": "assets/papers-v3/2504.21801/figure-2-overview-decomposition.png"
+  },
+  {
+    "page": "docs/chapters/03-midtraining/index.md",
+    "paper_id": "2404.07965",
+    "figure_id": "fig4",
+    "file": "assets/papers-v3/2404.07965/fig4.png"
+  },
+  {
+    "page": "docs/chapters/05-posttraining/index.md",
+    "paper_id": "2502.12067",
+    "figure_id": "fig1",
+    "file": "assets/papers-v3/2502.12067/fig1.png"
+  },
+  {
+    "page": "docs/chapters/05-posttraining/index.md",
+    "paper_id": "2502.09601",
+    "figure_id": "main",
+    "file": "assets/papers-v3/2502.09601/main.png"
+  },
+  {
+    "page": "docs/chapters/05-posttraining/index.md",
+    "paper_id": "2601.18734",
+    "figure_id": "fig-opsd-overview",
+    "file": "assets/papers-v3/2601.18734/fig-opsd-overview.png"
+  },
+  {
+    "page": "docs/chapters/05-posttraining/index.md",
+    "paper_id": "2503.04472",
+    "figure_id": "figure-2",
+    "file": "assets/papers-v3/2503.04472/figure-2.png"
+  },
+  {
+    "page": "docs/chapters/05-posttraining/index.md",
+    "paper_id": "2602.20945",
+    "figure_id": "fig6",
+    "file": "assets/papers-v3/2602.20945/fig6.png"
+  },
+  {
+    "page": "docs/chapters/05-posttraining/index.md",
+    "paper_id": "2602.20945",
+    "figure_id": "fig3",
+    "file": "assets/papers-v3/2602.20945/fig3.png"
+  },
+  {
+    "page": "docs/chapters/05-posttraining/index.md",
+    "paper_id": "2503.04697",
+    "figure_id": "figure2-main-results",
+    "file": "assets/papers-v3/2503.04697/figure2-main-results.png"
+  },
+  {
+    "page": "docs/chapters/05-posttraining/index.md",
+    "paper_id": "2504.11536",
+    "figure_id": "fig-model-rl",
+    "file": "assets/papers-v3/2504.11536/fig-model-rl.png"
+  },
+  {
+    "page": "docs/chapters/07-context/index.md",
+    "paper_id": "src-7cc3fedc37b4",
+    "figure_id": "figure-1",
+    "file": "assets/papers-v3/src-7cc3fedc37b4/figure-1.png"
+  },
+  {
+    "page": "docs/chapters/07-context/index.md",
+    "paper_id": "2310.04408",
+    "figure_id": "figure-1-recomp-pipeline",
+    "file": "assets/papers-v3/2310.04408/figure-1-recomp-pipeline.png"
+  },
+  {
+    "page": "docs/chapters/07-context/index.md",
+    "paper_id": "2307.06945",
+    "figure_id": "fig-ae-learning",
+    "file": "assets/papers-v3/2307.06945/fig-ae-learning.png"
+  },
+  {
+    "page": "docs/chapters/07-context/index.md",
+    "paper_id": "2508.21433",
+    "figure_id": "figure3_management_strategies",
+    "file": "assets/papers-v3/2508.21433/figure3_management_strategies.png"
+  },
+  {
+    "page": "docs/chapters/07-context/index.md",
+    "paper_id": "2510.18866",
+    "figure_id": "figure2-architecture",
+    "file": "assets/papers-v3/2510.18866/figure2-architecture.png"
+  },
+  {
+    "page": "docs/chapters/11-evaluation/index.md",
+    "paper_id": "2407.01502",
+    "figure_id": "pareto-hotpot",
+    "file": "assets/papers-v3/2407.01502/pareto-hotpot.png"
+  },
+  {
+    "page": "docs/chapters/11-evaluation/index.md",
+    "paper_id": "2412.21187",
+    "figure_id": "figure-1-token-accuracy",
+    "file": "assets/papers-v3/2412.21187/figure-1-token-accuracy-part-1.png"
+  },
+  {
+    "page": "docs/chapters/11-evaluation/index.md",
+    "paper_id": "2412.21187",
+    "figure_id": "figure-1-token-accuracy",
+    "file": "assets/papers-v3/2412.21187/figure-1-token-accuracy-part-2.png"
+  },
+  {
+    "page": "docs/chapters/10-systems/index.md",
+    "paper_id": "2211.17192",
+    "figure_id": "figure1",
+    "file": "assets/papers-v3/2211.17192/figure1.png"
+  },
+  {
+    "page": "docs/chapters/10-systems/index.md",
+    "paper_id": "2503.01840",
+    "figure_id": "fig:nofe",
+    "file": "assets/papers-v3/2503.01840/fig-nofe-part-1.png"
+  },
+  {
+    "page": "docs/chapters/10-systems/index.md",
+    "paper_id": "2503.01840",
+    "figure_id": "fig:nofe",
+    "file": "assets/papers-v3/2503.01840/fig-nofe-part-2.png"
+  },
+  {
+    "page": "docs/chapters/08-agents/index.md",
+    "paper_id": "2305.18323",
+    "figure_id": "figure1-workflow",
+    "file": "assets/papers-v3/2305.18323/figure1-workflow.png"
+  },
+  {
+    "page": "docs/chapters/08-agents/index.md",
+    "paper_id": "2312.04511",
+    "figure_id": "fig-overview",
+    "file": "assets/papers-v3/2312.04511/fig-overview.png"
+  },
+  {
+    "page": "docs/chapters/08-agents/index.md",
+    "paper_id": "2506.15841",
+    "figure_id": "fig-mem1-mechanism",
+    "file": "assets/papers-v3/2506.15841/fig-mem1-mechanism.png"
+  },
+  {
+    "page": "docs/chapters/04-architecture/index.md",
+    "paper_id": "2412.06769",
+    "figure_id": "fig2",
+    "file": "assets/papers-v3/2412.06769/fig2.png"
+  },
+  {
+    "page": "docs/chapters/08-agents/index.md",
+    "paper_id": "2410.02506",
+    "figure_id": "figure-4-framework",
+    "file": "assets/papers-v3/2410.02506/figure-4-framework.png"
+  },
+  {
+    "page": "docs/chapters/08-agents/index.md",
+    "paper_id": "2406.18665",
+    "figure_id": "main",
+    "file": "assets/papers-v3/2406.18665/main-part-1.png"
+  },
+  {
+    "page": "docs/chapters/08-agents/index.md",
+    "paper_id": "2406.18665",
+    "figure_id": "main",
+    "file": "assets/papers-v3/2406.18665/main-part-2.png"
+  },
+  {
+    "page": "docs/chapters/08-agents/index.md",
+    "paper_id": "2406.18665",
+    "figure_id": "main",
+    "file": "assets/papers-v3/2406.18665/main-part-3.png"
+  }
+]

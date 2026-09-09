@@ -1,1 +1,89 @@
-[]
+[
+  {
+    "id": "calibration-art-v1",
+    "paper_id": "2602.20945",
+    "phase": "calibration",
+    "verdict": "revise",
+    "issues": [
+      "数学定界符",
+      "mask误作正信号",
+      "指标定义缺失",
+      "零优势边界",
+      "曲线口径"
+    ],
+    "next_prompt": "luna-reading-v2"
+  },
+  {
+    "id": "calibration-lingua-v1",
+    "paper_id": "src-7cc3fedc37b4",
+    "phase": "calibration",
+    "verdict": "revise",
+    "issues": [
+      "samples/chunks误读",
+      "训练/推理显存混淆",
+      "伪代码边界",
+      "结构保真过度外推"
+    ],
+    "next_prompt": "luna-reading-v2"
+  },
+  {
+    "id": "calibration-2602.20945-v2",
+    "paper_id": "2602.20945",
+    "phase": "calibration",
+    "verdict": "pass_upper_middle",
+    "reviewer": "main_agent",
+    "scope": "样稿机制、主实验、关键错误修正及数学格式；用固定原文与作者TeX定点核查",
+    "corrections_confirmed": true,
+    "production_prompt": "luna-reading-v2"
+  },
+  {
+    "id": "calibration-src-7cc3fedc37b4-v2",
+    "paper_id": "src-7cc3fedc37b4",
+    "phase": "calibration",
+    "verdict": "pass_upper_middle",
+    "reviewer": "main_agent",
+    "scope": "样稿机制、主实验、关键错误修正及数学格式；用固定原文与作者TeX定点核查",
+    "corrections_confirmed": true,
+    "production_prompt": "luna-reading-v2"
+  },
+  {
+    "id": "production-sample-01",
+    "paper_id": "2404.19737",
+    "phase": "production",
+    "population": "首10篇唯一原始论文",
+    "sampling": "Random(20260909)，从reading-queue前10项抽取1篇",
+    "verdict": "pass",
+    "scope": "正文结构、机制与主实验段落、训练/部署token边界；重要机制亦供主代理章节写作读取",
+    "note": "读者能跟踪多头目标与解码区别，保留规模和自然语言反例。整合时澄清独立边缘乘积本身可定义模型联合分布，但不保证真实相关性。未逐篇普查其余9篇。"
+  },
+  {
+    "id": "production-sample-02",
+    "paper_id": "2412.09871",
+    "phase": "integration_sampling",
+    "population": "11–20项唯一原始论文",
+    "sampling": "固定seed20260909+组号；第4组先排除已抽查主题再抽取",
+    "verdict": "pass",
+    "scope": "整体结构、关键机制与主实验、成本分母/限制；结合章节写作所需的相关原文复核",
+    "note": "机制、byte/patch/token和固定FLOPs条件清楚，主实验与反例均展开。 未普查同组其他精读。"
+  },
+  {
+    "id": "production-sample-03",
+    "paper_id": "2211.17192",
+    "phase": "integration_sampling",
+    "population": "21–30项唯一原始论文",
+    "sampling": "固定seed20260909+组号；第4组先排除已抽查主题再抽取",
+    "verdict": "pass",
+    "scope": "整体结构、关键机制与主实验、成本分母/限制；结合章节写作所需的相关原文复核",
+    "note": "接受/残差证明、支持集和算例可跟踪，主实验说明速度而非token减少。 未普查同组其他精读。"
+  },
+  {
+    "id": "production-sample-04",
+    "paper_id": "2412.21187",
+    "phase": "integration_sampling",
+    "population": "31–40项唯一原始论文",
+    "sampling": "固定seed20260909+组号；第4组先排除已抽查主题再抽取",
+    "verdict": "pass",
+    "scope": "整体结构、关键机制与主实验、成本分母/限制；结合章节写作所需的相关原文复核",
+    "note": "三个分母体系与主表/缓解方法展开，保留困难题反例及后验诊断边界。 未普查同组其他精读。"
+  }
+]

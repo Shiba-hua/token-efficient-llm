@@ -1,0 +1,41 @@
+Create one large, publication-quality Chinese academic research landscape diagram, landscape about 2400x1500, crisp legible Simplified Chinese, white background, generous whitespace, restrained blue structure and orange uncertainty annotations. No photographs, no mascots, no fake data plots. This is a conceptual map, not empirical performance ranking. It will appear in a Chinese GitHub research-map overview. All text must be correctly rendered. Use clear rounded rectangular nodes, thin lines, and balanced typography.
+
+Title: “推理时 token 效率：研究全景”
+Subtitle/goal banner: “同样的任务性能，更少的实际输入 + 输出 token”
+Small secondary line: “优先曲线向左；极大预算下的能力上限为次要分支”
+
+Layout three broad columns plus a full-width bottom evaluation bar. Left column header “上游能力与表示”; middle header “轨迹、信息与调用”; right header “跨方向条件与约束”. These headers are grouping for navigation, not chronological stages.
+
+LEFT four nodes top to bottom:
+“01 数据准备与合成” / “选题、正确短解、训练信号”
+“02 预训练与 Scaling” / “多未来预测、能力内化”
+“03 中训练与持续适配” / “领域、位置选择、推理模式”
+“04 架构、表示与内部计算” / “连续状态、字节、句子表示”
+
+MIDDLE four nodes aligned top to bottom:
+“05 后训练与对齐” / “SFT · 蒸馏/OPD · 偏好 · RLVR · Agentic-RL”
+“06 推理策略、验证与规划” / “搜索、预算分配、停止”
+“07 Prompt、上下文与记忆” / “检索、压缩、少重读”
+“08 Harness、智能体与工具” / “控制流、状态、通信”
+
+RIGHT four nodes:
+“09 多模态与世界模型” / “特征、帧、语音；交互建模”
+“10 效率系统与部署” / “投机、缓存、量化、调度”
+“12 安全、隐私与可靠性” / “攻击成本、验证约束”
+“13 领域、多语言与科学” / “执行器、证明器、迁移”
+
+BOTTOM a large wide node:
+“11 评测、诊断与可解释性”
+“全任务实际成本 · 成功与失败 · 多预算曲线 · 内部计算另列”
+Small caption below: “训练成本 ≠ 部署 token；提速 ≠ 少输出；表示单位不能混算”
+
+RELATIONSHIPS, only these visible connector lines:
+1. Blue solid directed arrow from node01 to node05, in gap between columns, with readable small label “短轨迹监督”. This denotes an implemented method connection.
+2. Orange dashed arrow from a bracket beside nodes02 and03 to node06, label “能力到预算：需补测”. Avoid crossing node05 or01 arrow.
+3. Orange dashed arrow from node04 toward node08, label “内部计算与任务成本：需分别验证”. This is a research connection, not a claim of an implemented superiority.
+4. Blue solid bidirectional vertical connector between node07 andnode08, label “状态与上下文” placed in margin. This denotes actual cooperation between state management and context mechanisms.
+5. A thin gray line from bottom edge of each of the three column groups down to the evaluation bar, no arrowheads. It expresses shared evaluation criteria, not causal effects. Route outside node text.
+
+No arrows between right-column nodes, and do not invent chronological or superiority relations among methods. Right column is linked only to evaluation via group line.
+Tiny legend in a whitespace area: “蓝实线：已实现的机制连接   橙虚线：需验证的联系   灰线：共同评价”
+Make 01 through13 each appear once as chapter numbers, including11 in bottom bar. Use all node names; shorter second lines are acceptable only if necessary for legibility, do not omit chapter nodes. Do not add URLs, logos, numerical accuracy or savings percentages. All visible text in Chinese except the method names explicitly supplied.

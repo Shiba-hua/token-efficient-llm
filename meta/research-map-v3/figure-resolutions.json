@@ -1,0 +1,880 @@
+[
+  {
+    "paper_id": "2412.09871",
+    "marker": "scaling-compute-opt",
+    "resolved_files": [
+      "assets/compute_op_space.pdf",
+      "assets/compute_op_entropy.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/paper.tex:398-411",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2412.09871",
+    "marker": "fixed-inference",
+    "resolved_files": [
+      "assets/500m_fixed_inference_vert.pdf",
+      "assets/4b_fixed_inference_vert.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/paper.tex:82-101",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2502.20122",
+    "marker": "fig1",
+    "resolved_files": [
+      "source/tex/figures/main.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/sections/01_introduction.tex:7-16; label fig:distribution",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2502.20122",
+    "marker": "fig2",
+    "resolved_files": [
+      "source/tex/figures/length_distribution_normalized_gsm8k.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/sections/02_preliminary.tex:11-17; label fig:main_distribution_analysis",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2502.20122",
+    "marker": "fig3",
+    "resolved_files": [
+      "source/tex/figures/sample_efficiency_plot.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/sections/03_method.tex:65-70; label fig:bon_sample_efficiency",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2502.20122",
+    "marker": "fig4",
+    "resolved_files": [
+      "source/tex/figures/main_methods_comparison.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/sections/05_results.tex:26-32; label fig:main_methods_comparison",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2502.20122",
+    "marker": "fig5",
+    "resolved_files": [
+      "source/tex/figures/length_by_difficulty.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/sections/05_results.tex:70-79; label fig:length_difficulty",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2502.20122",
+    "marker": "fig6",
+    "resolved_files": [
+      "source/tex/figures/scaling_methods_comparison.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/sections/05_results.tex:124-132; label fig:scaling_methods_comparison",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2502.20122",
+    "marker": "fig7",
+    "resolved_files": [
+      "source/tex/figures/both_length_scatter.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/sections/05_results.tex:151-156; label fig:ft_length_scatter",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2503.04697",
+    "marker": "figure20-21-qualitative",
+    "resolved_files": [],
+    "scope": "附录",
+    "source_locator": "source/tex/appendix/400_results.tex:126-130 (\\input{figures/qual_example1}); PDF pp.26-27",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2306.13649",
+    "marker": "fig6_wmt_small",
+    "resolved_files": [
+      "source/tex/figures_new/wmt_bleu_distill_raw_small_v2.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/main.tex:465-472",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2306.13649",
+    "marker": "fig6_wmt_base",
+    "resolved_files": [
+      "source/tex/figures_new/wmt_bleu_distill_raw_base_v2.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/main.tex:465-472",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2408.03314",
+    "marker": "fig2-prm-search",
+    "resolved_files": [
+      "assets/Search_Figure-2.pdf",
+      "source/tex/figures/Search_Figure-2.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/template_content.tex:138-144",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2408.03314",
+    "marker": "fig3-search-sweep",
+    "resolved_files": [
+      "assets/search_comparing_and_bins3.pdf",
+      "source/tex/figures/search_comparing_and_bins3.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/template_content.tex:170-176",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2408.03314",
+    "marker": "fig4-compute-optimal-search",
+    "resolved_files": [
+      "assets/compute_optimal_search_v4.pdf",
+      "source/tex/figures/compute_optimal_search_v4.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/template_content.tex:208-214",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2408.03314",
+    "marker": "fig5-revision-vs-parallel",
+    "resolved_files": [
+      "assets/Revisions_descriptive_fig.pdf",
+      "source/tex/figures/Revisions_descriptive_fig.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/template_content.tex:231-237",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2408.03314",
+    "marker": "fig6-revision-pass1",
+    "resolved_files": [
+      "assets/pass1_and_comparing_seq_parallel.pdf",
+      "source/tex/figures/pass1_and_comparing_seq_parallel.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/template_content.tex:252-258",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2408.03314",
+    "marker": "fig7-sequential-parallel-ratio",
+    "resolved_files": [
+      "assets/revisions_varing_ratio_and_with_difficulty.pdf",
+      "source/tex/figures/revisions_varing_ratio_and_with_difficulty.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/template_content.tex:266-272",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2408.03314",
+    "marker": "fig8-compute-optimal-revision",
+    "resolved_files": [
+      "assets/compute_optimal_revisions_v4.pdf",
+      "source/tex/figures/compute_optimal_revisions_v4.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/template_content.tex:287-293",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2503.01840",
+    "marker": "fig:speedup",
+    "resolved_files": [
+      "assets/r1.pdf",
+      "source/tex/figs/r1.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/paper.tex",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2503.01840",
+    "marker": "fig:pipline",
+    "resolved_files": [
+      "assets/method.pdf",
+      "source/tex/figs/method.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/paper.tex",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2503.01840",
+    "marker": "fig:nofe",
+    "resolved_files": [
+      "assets/nofe.pdf",
+      "source/tex/figs/nofe.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/paper.tex",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2503.01840",
+    "marker": "fig:mask",
+    "resolved_files": [
+      "assets/train.pdf",
+      "source/tex/figs/train.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/paper.tex",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2503.01840",
+    "marker": "fig:sc",
+    "resolved_files": [
+      "source/tex/figs/scaale.pdf",
+      "source/tex/figs/scaletau.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/paper.tex",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2503.01840",
+    "marker": "fig:sc1",
+    "resolved_files": [
+      "source/tex/figs/alpha0.pdf",
+      "source/tex/figs/alpha1.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": "source/tex/paper.tex",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2503.01840",
+    "marker": "...",
+    "resolved_files": [],
+    "scope": "正文",
+    "source_locator": "source/tex/paper.tex",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2602.20945",
+    "marker": "fig9-10",
+    "resolved_files": [
+      "source/tex/figures/two_stage_all_results_1.pdf",
+      "source/tex/figures/two_stage_all_results_2.pdf"
+    ],
+    "scope": "附录",
+    "source_locator": "source/tex/sections/Appendix.tex:262-275",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+  },
+  {
+    "paper_id": "2602.20945",
+    "marker": "fig9-10",
+    "resolved_files": [
+      "source/tex/figures/two_stage_all_results_1.pdf",
+      "source/tex/figures/two_stage_all_results_2.pdf"
+    ],
+    "scope": "附录",
+    "source_locator": "source/tex/sections/Appendix.tex:262-275",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+  },
+  {
+    "paper_id": "2602.20945",
+    "marker": "fig11-14",
+    "resolved_files": [
+      "source/tex/figures/data_diff_all_16k_8k.pdf",
+      "source/tex/figures/data_diff_all_4k_4k.pdf",
+      "source/tex/figures/data_rollout_N_16k_4k.pdf",
+      "source/tex/figures/data_rollout_N_4k_4k.pdf"
+    ],
+    "scope": "附录",
+    "source_locator": "source/tex/sections/Appendix.tex:279-309",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+  },
+  {
+    "paper_id": "2210.03057",
+    "marker": "...",
+    "resolved_files": [],
+    "scope": "正文",
+    "source_locator": "source/tex/1-main.tex and included source/tex/src files",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2210.03057",
+    "marker": "figure1-frequency-accuracy",
+    "resolved_files": [],
+    "scope": "正文",
+    "source_locator": "source/tex/figs/11-mgsm-freq-acc.tex; label fig:freq_acc",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2210.03057",
+    "marker": "figure4-scaling-laws",
+    "resolved_files": [],
+    "scope": "正文",
+    "source_locator": "source/tex/figs/12-mgsm-scaling-laws.tex; label fig:scaling_laws",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2210.03057",
+    "marker": "figure5-n-shots",
+    "resolved_files": [],
+    "scope": "正文",
+    "source_locator": "source/tex/figs/13-mgsm-n-shots.tex; label fig:num_shots",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2407.06023",
+    "marker": "fig-s2a-example",
+    "resolved_files": [],
+    "scope": null,
+    "source_locator": "source/tex/prompts/s2a_example.tex:42-43; label fig:s2a_example",
+    "license_url": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+  },
+  {
+    "paper_id": "2502.09601",
+    "marker": "exp_main",
+    "resolved_files": [
+      "assets/main_v8.pdf",
+      "figures/main_v8.pdf"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/acl_latex.tex:224-226; label fig:main",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2502.09601",
+    "marker": "gsm8k_qwq_curve",
+    "resolved_files": [
+      "assets/gsm8k_qwq.pdf",
+      "figures/gsm8k_qwq.pdf"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/acl_latex.tex:311-313; label fig:qwq-gsm8k",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2502.09601",
+    "marker": "gsm8k_llama1b_curve",
+    "resolved_files": [
+      "assets/gsm8k_llama1b.pdf",
+      "figures/gsm8k_llama1b.pdf"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/acl_latex.tex:318-320; label fig:llama1b-gsm8k",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2412.06769",
+    "marker": "fig3",
+    "resolved_files": [
+      "assets/fig3-prosqa-results.png"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/paper.tex:169-174; label fig:analysis",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2412.06769",
+    "marker": "fig4",
+    "resolved_files": [
+      "assets/fig4-prosqa-case-study.png"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/paper.tex:192-202; label fig:interpret",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2412.06769",
+    "marker": "fig5",
+    "resolved_files": [
+      "assets/fig5-latent-search-trees.png"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/paper.tex:203-212; label fig:height",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2412.06769",
+    "marker": "fig6",
+    "resolved_files": [
+      "assets/fig6-parallelism.png"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/paper.tex:222-229; label fig:percentile",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2412.06769",
+    "marker": "fig7",
+    "resolved_files": [
+      "assets/fig7-height-value.png"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/paper.tex:238-244; label fig:height_pred",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2412.06769",
+    "marker": "fig8",
+    "resolved_files": [
+      "assets/fig8-efficiency.png"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/paper.tex:318-326; label fig:merge",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2412.06769",
+    "marker": "fig9",
+    "resolved_files": [
+      "assets/fig9-decoded-thought.png"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/paper.tex:334-341; label fig:case",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2406.18665",
+    "marker": "main-gsm8k",
+    "resolved_files": [
+      "assets/gsm8k.png"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/1intro.tex:18-34; label fig:main (left subfigure fig:gsm8k)",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2406.18665",
+    "marker": "main-mt-bench",
+    "resolved_files": [
+      "assets/mt-bench.png"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/1intro.tex:24-34; label fig:main (center subfigure fig:mtbench)",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2406.18665",
+    "marker": "main-mmlu",
+    "resolved_files": [
+      "assets/mmlu-main.png"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/1intro.tex:30-34; label fig:main (right subfigure fig:mmlu)",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2406.18665",
+    "marker": "main-mmlu",
+    "resolved_files": [
+      "assets/mmlu-main.png"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/1intro.tex:30-34; label fig:main (right subfigure fig:mmlu)",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2406.18665",
+    "marker": "main-gsm8k",
+    "resolved_files": [
+      "assets/gsm8k.png"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/1intro.tex:18-34; label fig:main (left subfigure fig:gsm8k)",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2406.18665",
+    "marker": "cross-model-mtbench",
+    "resolved_files": [],
+    "scope": null,
+    "source_locator": "No includegraphics/caption for this marker in the supplied TeX; draft discusses Table 4 cross-model MT Bench results.",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2406.18665",
+    "marker": "independent-benchmark",
+    "resolved_files": [
+      "assets/indep-benchmarks-llama.png",
+      "assets/indep-benchmarks.png"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/6appendix.tex:60-68; label fig:independent-benchmark",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2406.18665",
+    "marker": "main-gsm8k",
+    "resolved_files": [
+      "assets/gsm8k.png"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/1intro.tex:18-34; label fig:main (left subfigure fig:gsm8k)",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2406.18665",
+    "marker": "main-mt-bench",
+    "resolved_files": [
+      "assets/mt-bench.png"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/1intro.tex:24-34; label fig:main (center subfigure fig:mtbench)",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2406.18665",
+    "marker": "main-mmlu",
+    "resolved_files": [
+      "assets/mmlu-main.png"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/1intro.tex:30-34; label fig:main (right subfigure fig:mmlu)",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2406.18665",
+    "marker": "independent-benchmark",
+    "resolved_files": [
+      "assets/indep-benchmarks-llama.png",
+      "assets/indep-benchmarks.png"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/6appendix.tex:60-68; label fig:independent-benchmark",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2406.18665",
+    "marker": "main-gsm8k",
+    "resolved_files": [
+      "assets/gsm8k.png"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/1intro.tex:18-34; label fig:main (left subfigure fig:gsm8k)",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2406.18665",
+    "marker": "main-mt-bench",
+    "resolved_files": [
+      "assets/mt-bench.png"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/1intro.tex:24-34; label fig:main (center subfigure fig:mtbench)",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2406.18665",
+    "marker": "main-mmlu",
+    "resolved_files": [
+      "assets/mmlu-main.png"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/1intro.tex:30-34; label fig:main (right subfigure fig:mmlu)",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2211.17192",
+    "marker": "table2",
+    "resolved_files": [],
+    "scope": null,
+    "source_locator": "source/tex/main.tex:466-478; table caption/label for empirical T5-XXL results",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2407.01502",
+    "marker": "pareto-humaneval",
+    "resolved_files": [
+      "assets/pareto-humaneval.png"
+    ],
+    "scope": null,
+    "source_locator": "main.tex main HumanEval Pareto figure",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2407.01502",
+    "marker": "pareto-hotpot",
+    "resolved_files": [
+      "assets/pareto-hotpot.png"
+    ],
+    "scope": null,
+    "source_locator": "main.tex HotPotQA joint-optimization Pareto figure",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2407.01502",
+    "marker": "cost-hotpot",
+    "resolved_files": [
+      "assets/cost-hotpot.png"
+    ],
+    "scope": null,
+    "source_locator": "main.tex/Appendix B cost-vs-use figure",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2412.21187",
+    "marker": "figure-3-solution-distribution",
+    "resolved_files": [
+      "assets/solution_distribution.pdf",
+      "assets/solution_distribution_QwQ_MATH500.pdf",
+      "assets/solution_distribution_R1_MATH500.pdf"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/new_year/main.20241229.sperate.2.3.sections.tex:276-293; labels fig:solution_distribution and fig:solution_distribution_math500",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2412.21187",
+    "marker": "figure-7-efficiency-levels",
+    "resolved_files": [
+      "assets/solution_efficiency_QwQ_MATH500.pdf",
+      "assets/solution_efficiency_R1_MATH500.pdf"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/new_year/main.20241229.sperate.2.3.sections.tex; Figure 7 efficiency-level assets",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2412.21187",
+    "marker": "figure-1-token-accuracy",
+    "resolved_files": [
+      "assets/overthinking_tall.pdf",
+      "assets/math500_token_acc_tall.pdf"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/new_year/main.20241228.4metrics.tex:153-188; overthinking and MATH500 token-accuracy figures",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2412.08821",
+    "marker": "fig:intro:idea",
+    "resolved_files": [
+      "assets/fig-intro-space-comms.pdf",
+      "assets/fig-intro-lcm-comms.pdf"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/lcm.tex:422-426; label fig:intro:idea",
+    "license_url": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+  },
+  {
+    "paper_id": "2412.08821",
+    "marker": "fig:noise_schedules",
+    "resolved_files": [
+      "assets/lineplots/sigmoid_snrs.pdf",
+      "assets/lineplots/outlier_sigmoid_snrs.pdf",
+      "assets/lineplots/scaled_linear_snrs.pdf"
+    ],
+    "scope": null,
+    "source_locator": "source/tex/lcm.tex:733-737; label fig:noise_schedules",
+    "license_url": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+  },
+  {
+    "paper_id": "src-7cc3fedc37b4",
+    "marker": "figure-6",
+    "resolved_files": [],
+    "scope": "正文/嵌入式彩色例子",
+    "source_locator": null,
+    "license_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "src-7cc3fedc37b4",
+    "marker": "figure-6",
+    "resolved_files": [],
+    "scope": "正文/嵌入式彩色例子",
+    "source_locator": null,
+    "license_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2502.12067",
+    "marker": "fig2",
+    "resolved_files": [],
+    "scope": "正文",
+    "source_locator": null,
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2503.04472",
+    "marker": "figure-5",
+    "resolved_files": [
+      "assets/figure-5-level-accuracy.png",
+      "assets/figure-5-level-token.png"
+    ],
+    "scope": "正文",
+    "source_locator": null,
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2410.02506",
+    "marker": "figure-2-intro",
+    "resolved_files": [
+      "assets/figure-2-intro.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": null,
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2410.02506",
+    "marker": "figure-6-attack",
+    "resolved_files": [
+      "assets/figure-6-attack.pdf"
+    ],
+    "scope": "正文/攻击鲁棒性实验",
+    "source_locator": null,
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2410.02506",
+    "marker": "figure-21-sensitivity",
+    "resolved_files": [
+      "assets/figure-21-sensitivity.pdf"
+    ],
+    "scope": "附录",
+    "source_locator": null,
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2410.02506",
+    "marker": "figure-24-complete-mmlu-pruning",
+    "resolved_files": [
+      "assets/figure-24-complete-mmlu-pruning.pdf"
+    ],
+    "scope": "附录",
+    "source_locator": null,
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2410.02506",
+    "marker": "figure-30-temporal-humaneval",
+    "resolved_files": [
+      "assets/figure-30-temporal-humaneval.pdf"
+    ],
+    "scope": "附录",
+    "source_locator": null,
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2410.02506",
+    "marker": "figure-32-connectivity-mmlu",
+    "resolved_files": [
+      "assets/figure-32-connectivity-mmlu.pdf"
+    ],
+    "scope": "附录",
+    "source_locator": null,
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2307.06945",
+    "marker": "fig-latency-table",
+    "resolved_files": [],
+    "scope": "正文/表格",
+    "source_locator": null,
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2307.06945",
+    "marker": "fig-multiple-span",
+    "resolved_files": [
+      "assets/figures/icae_concat_demo.pdf",
+      "assets/figures/multi_span_result.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": null,
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2403.06764",
+    "marker": "fig-mllm-struct",
+    "resolved_files": [
+      "assets/MLLM_0306.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": null,
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2403.06764",
+    "marker": "fig-attn-ill",
+    "resolved_files": [
+      "assets/attention_effi.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": null,
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2403.06764",
+    "marker": "fig-attn-map",
+    "resolved_files": [
+      "assets/attention_map.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": null,
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2403.06764",
+    "marker": "fig-fastv",
+    "resolved_files": [
+      "assets/fastv_0306.pdf"
+    ],
+    "scope": "正文",
+    "source_locator": null,
+    "license_url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "paper_id": "2510.18866",
+    "marker": "figure1-motivation",
+    "resolved_files": [],
+    "scope": "正文",
+    "source_locator": null,
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2510.18866",
+    "marker": "figure5-attention",
+    "resolved_files": [
+      "assets/figure5-attention-matrix1.png",
+      "assets/figure5-attention-matrix2.png",
+      "assets/figure5-attention-matrix3.png"
+    ],
+    "scope": "附录",
+    "source_locator": null,
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  },
+  {
+    "paper_id": "2211.10435",
+    "marker": "fig_main_intro_example",
+    "resolved_files": [
+      "assets/fig_main_intro_example.pdf"
+    ],
+    "scope": "正文/示例",
+    "source_locator": null,
+    "license_url": null
+  },
+  {
+    "paper_id": "2211.10435",
+    "marker": "fig_miniexample",
+    "resolved_files": [
+      "assets/fig_miniexample.pdf"
+    ],
+    "scope": "正文/示例",
+    "source_locator": null,
+    "license_url": null
+  }
+]

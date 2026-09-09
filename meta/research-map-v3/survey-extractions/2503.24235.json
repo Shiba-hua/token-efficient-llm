@@ -1,0 +1,108 @@
+{
+  "survey_id": "2503.24235",
+  "title": "A Survey on Test-Time Scaling in Large Language Models: What, How, Where, and How Well?",
+  "version": "arXiv v3, 2025-05-04",
+  "source_url": "https://arxiv.org/abs/2503.24235",
+  "date": "2025-05-04",
+  "actual_read_scope": "Read the arXiv HTML v3 full article, including abstract, Sections 1-9, Tables 1-5, appendices A-B, and the complete reference list as rendered at https://arxiv.org/html/2503.24235. Version metadata was checked on the arXiv abstract page on 2026-09-09. No cited original paper was read.",
+  "routes": [
+    {
+      "route_id": "what_parallel",
+      "question": "What is scaled?",
+      "mechanism": "Generate multiple responses in parallel, from one or multiple models, then select, vote, or fuse them; coverage and aggregation quality are separate factors.",
+      "token_connection": "Direct: increases sampled/generated reasoning tokens (or model calls) and trades pass@k/cons@k against token/FLOP cost.",
+      "related_sections": ["2.1", "3.2.2", "3.2.4", "5.1", "5.2"],
+      "survey_locator": "HTML lines 160-166, 270-322, 331-337, 423-431, 449-457"
+    },
+    {
+      "route_id": "what_sequential",
+      "question": "What is scaled?",
+      "mechanism": "Iteratively update an intermediate solution/state, using refinement, decomposition, self-correction, or repeated prompting.",
+      "token_connection": "Direct: adds serial reasoning tokens and rounds; coherence, error accumulation, and diminishing returns determine the useful budget.",
+      "related_sections": ["2.2", "3.2.1", "8.1"],
+      "survey_locator": "HTML lines 167-171, 238-240, 596-605"
+    },
+    {
+      "route_id": "what_hybrid_search",
+      "question": "What is scaled?",
+      "mechanism": "Combine parallel expansion with sequential filtering/refinement; tree, graph, beam, MCTS, and multi-agent procedures explore and prune candidate states.",
+      "token_connection": "Direct: search branching and depth spend inference tokens; verifier quality and pruning determine whether extra compute improves the accuracy-token curve.",
+      "related_sections": ["2.3", "3.2.2", "3.2.3", "6"],
+      "survey_locator": "HTML lines 172-178, 323-330, Table 5 lines 535-563"
+    },
+    {
+      "route_id": "what_internal",
+      "question": "What is scaled?",
+      "mechanism": "A tuned model autonomously generates hidden/intermediate states and learns a stopping policy, often through SFT/RL, instead of external orchestration.",
+      "token_connection": "Direct for generated thinking tokens, but allocation is endogenous; requires controllability and stopping analysis to avoid overthinking simple instances or underthinking hard ones.",
+      "related_sections": ["2.4", "3.1", "5.3", "8.1"],
+      "survey_locator": "HTML lines 179-185, 186-215, 484-517, 615-627"
+    },
+    {
+      "route_id": "how_verification",
+      "question": "How is scaling implemented?",
+      "mechanism": "Outcome verification scores complete answers using verifier models, voting, discriminators, tools, heuristics, functional tests, or multi-agent evaluators; process verification scores intermediate states/steps with PRMs, state verifiers, self-evaluation, deductive checks, or tools.",
+      "token_connection": "Direct/indirect: verifier calls and candidate traces consume tokens; verification determines selection, search guidance, aggregation, and when to stop.",
+      "related_sections": ["3.2.2", "Appendix A", "8.1", "8.2"],
+      "survey_locator": "HTML lines 270-322, 1070-1084; challenges lines 600-604, 639-642"
+    },
+    {
+      "route_id": "how_search_aggregation",
+      "question": "How is scaling implemented?",
+      "mechanism": "Search organizes candidate reasoning states with DFS/BFS, beam, MCTS, graph or control-flow search; aggregation either selects a candidate (self-consistency, best-of-N, verifier score) or fuses multiple outputs.",
+      "token_connection": "Direct: search width/depth, candidate count, and aggregation calls define the inference-token budget; wrong discriminators can make additional search harmful.",
+      "related_sections": ["3.2.3", "3.2.4", "Appendix B"],
+      "survey_locator": "HTML lines 323-337 and Table 5 lines 535-563"
+    },
+    {
+      "route_id": "budget_stop",
+      "question": "How are stopping and budgets handled?",
+      "mechanism": "External controls include max output length, fixed thinking-token budgets, budget forcing (suppressing end-of-thinking), and adaptive selection; internal models learn a halt policy. Verification can guide termination, but the survey identifies optimal stopping as unresolved.",
+      "token_connection": "Direct: controls the token axis of the performance-cost curve; controllability is measured by budget adherence and length deviation.",
+      "related_sections": ["2.4", "3.2.2", "5.3", "8.2"],
+      "survey_locator": "HTML lines 180-185, 232-233, 252-256, 278-287, 484-517, 642-649"
+    },
+    {
+      "route_id": "how_well_curves",
+      "question": "How well does scaling work?",
+      "mechanism": "Report performance (Pass@1, Pass@k, Cons@k, pairwise win rate, task metrics), efficiency (tokens, FLOPs, latency, KV cache, reasoning-efficiency scores), controllability, and scalability.",
+      "token_connection": "Direct: scaling curves plot accuracy/pass rate versus token budgets, sample count, iterations, or total FLOPs; the survey highlights diminishing returns and saturation.",
+      "related_sections": ["5.1", "5.2", "5.3", "5.4"],
+      "survey_locator": "HTML lines 412-531"
+    },
+    {
+      "route_id": "efficiency_diagnostics",
+      "question": "How well does scaling spend tokens?",
+      "mechanism": "Reasoning efficiency is quality divided by computational cost; the survey distinguishes redundancy, underthinking, and overthinking, and defines underthinking, outcome-efficiency, and process-efficiency metrics.",
+      "token_connection": "Direct: diagnoses whether additional tokens produce correct answers, useful intermediate reasoning, or only repetition.",
+      "related_sections": ["5.2.1", "5.2.3", "8.2"],
+      "survey_locator": "HTML lines 438-483"
+    }
+  ],
+  "candidates": [
+    {"title":"Scaling LLM Test-Time Compute Optimally Can Be More Effective than Scaling Model Parameters","authors":"Charlie Snell; Jaehoon Lee; Kelvin Xu; Aviral Kumar","year":2024,"arxiv_id":"2408.03314","source_url":"https://arxiv.org/abs/2408.03314","survey_locator":"Sec. 2.1, 2.3, 3.2.4, 5.1-5.2; Table 5 (DSC)","route":"what_parallel;what_hybrid_search;how_well_curves","role":"起点","token_relevance":"direct","reason":"Core compute-optimal comparison: adaptive revisions/verifier search and model scaling are compared under matched inference FLOPs; central reference for accuracy-compute trade-offs."},
+    {"title":"Large Language Monkeys: Scaling Inference Compute with Repeated Sampling","authors":"Bradley Brown; Jordan Juravsky; Ryan Ehrlich; Ronald Clark; Quoc V. Le; Christopher Ré; Azalia Mirhoseini","year":2024,"arxiv_id":null,"source_url":null,"survey_locator":"Sec. 2.1, 5.1-5.2","route":"what_parallel;how_well_curves","role":"改进","token_relevance":"direct","reason":"Representative repeated-sampling scaling-law reference; survey characterizes the relationship as often log-linear with compute and uses it for Pass@k/token-cost discussion."},
+    {"title":"Self-Consistency Improves Chain of Thought Reasoning in Language Models","authors":"Xuezhi Wang; Jason Wei; Dale Schuurmans; Quoc V. Le; Ed H. Chi; Sharan Narang; Aakanksha Chowdhery; Denny Zhou","year":2023,"arxiv_id":null,"source_url":"https://openreview.net/forum?id=1PL1NIMMrw","survey_locator":"Sec. 2.1, 3.2.1-3.2.4, Appendix A.2; Table 1","route":"what_parallel;how_verification;how_search_aggregation","role":"起点","token_relevance":"direct","reason":"Canonical parallel sampling plus majority aggregation mechanism; establishes the coverage/consensus trade-off and is explicitly tied to Cons@k."},
+    {"title":"Tree of Thoughts: Deliberate Problem Solving with Large Language Models","authors":"Shunyu Yao; Dian Yu; Jeffrey Zhao; Izhak Shafran; Thomas L. Griffiths; Yuan Cao; Karthik R. Narasimhan","year":2023,"arxiv_id":null,"source_url":"https://openreview.net/forum?id=5Xc1ecxO1h","survey_locator":"Sec. 2.3, 3.2.2-3.2.3, Table 5, Appendix B.6","route":"what_hybrid_search;how_verification;how_search_aggregation","role":"起点","token_relevance":"direct","reason":"Canonical hybrid tree search with state evaluation; survey uses it to define search and process verification and to exemplify width/depth scaling."},
+    {"title":"Let’s Verify Step by Step","authors":"Hunter Lightman; Vineet Kosaraju; Yuri Burda; Harrison Edwards; Bowen Baker; Teddy Lee; Jan Leike; John Schulman; Ilya Sutskever; Karl Cobbe","year":2023,"arxiv_id":null,"source_url":"https://openreview.net/forum?id=8OVb8I1gZk","survey_locator":"Sec. 3.2.2, Table 2, Appendix B.3","route":"how_verification;how_search_aggregation","role":"起点","token_relevance":"direct","reason":"Foundational process-reward verification reference; survey maps it to step-level PRM/state verification that can guide search and candidate selection."},
+    {"title":"DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning","authors":"DeepSeek-AI","year":2025,"arxiv_id":null,"source_url":"https://arxiv.org/abs/2501.12948","survey_locator":"Sec. 2.4, 3.1.2, 5.1, Table 5, Appendix A.3","route":"what_internal;budget_stop;how_well_curves","role":"改进","token_relevance":"direct","reason":"Representative internal scaling via RL with rule-based/verifiable rewards; survey associates it with autonomous long CoT, heuristic verification, Pass@1/Cons@64 and domain scores."},
+    {"title":"s1: Simple Test-Time Scaling","authors":"Niklas Muennighoff; Zitong Yang; Weijia Shi; Xiang Lisa Li; Li Fei-Fei; Hannaneh Hajishirzi; Luke Zettlemoyer; Percy Liang; Emmanuel Candès; Tatsunori Hashimoto","year":2025,"arxiv_id":null,"source_url":null,"survey_locator":"Sec. 3.2.1, 5.1, 5.3-5.4, Table 5","route":"budget_stop;how_well_curves","role":"改进","token_relevance":"direct","reason":"Budget forcing is the survey’s concrete example of controlling internal reasoning length; source of Control metric and Scaling metric used for budget adherence and accuracy-compute slopes."},
+    {"title":"Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning","authors":"Wenkai Yang; Shuming Ma; Yankai Lin; Furu Wei","year":2025,"arxiv_id":"2502.18080","source_url":"https://arxiv.org/abs/2502.18080","survey_locator":"Sec. 5.1-5.3","route":"budget_stop;how_well_curves","role":"改进","token_relevance":"direct","reason":"Explicit fixed token-budget evaluation (1024/2048/4096 in the survey) and thinking-optimal scaling perspective; directly relevant to performance-token curves and controllability."},
+    {"title":"Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for LLM Problem-Solving","authors":"Yangzhen Wu; Zhiqing Sun; Shanda Li; Sean Welleck; Yiming Yang","year":2025,"arxiv_id":null,"source_url":"https://openreview.net/forum?id=4FWAwZtd2n","survey_locator":"Sec. 5.2, 5.4; Table 5","route":"how_well_curves;what_hybrid_search","role":"竞争","token_relevance":"direct","reason":"Primary scaling-law/compute-optimal reference for inference; survey uses it for FLOP-matched evaluation, scaling curves, and reward-balanced search context."},
+    {"title":"Can 1B LLM Surpass 405B LLM? Rethinking Compute-Optimal Test-Time Scaling","authors":"Runze Liu; Junqi Gao; Jian Zhao; Kaiyan Zhang; Xiu Li; Biqing Qi; Wanli Ouyang; Bowen Zhou","year":2025,"arxiv_id":"2502.06703","source_url":"https://arxiv.org/abs/2502.06703","survey_locator":"Table 5 (parallel/hybrid DVTS and beam search; PRM; Best-of-N; FLOPs)","route":"what_parallel;what_hybrid_search;how_well_curves","role":"竞争","token_relevance":"direct","reason":"Explicit small-versus-large model compute-optimal test-time scaling comparison; the survey records Pass@1/Pass@k/majority/FLOPs evaluation."},
+    {"title":"Revisiting the Test-Time Scaling of o1-like Models: Do They Truly Possess Test-Time Scaling Capabilities?","authors":"Zhiyuan Zeng; Qinyuan Cheng; Zhangyue Yin; Yunhua Zhou; Xipeng Qiu","year":2025,"arxiv_id":"2502.12215","source_url":"https://arxiv.org/abs/2502.12215","survey_locator":"Sec. 5.1 (Cons@k), Table 5","route":"how_well_curves;budget_stop","role":"反例","token_relevance":"direct","reason":"Survey cites this as a cautionary evaluation of whether o1-like models truly scale at test time; relevant counterpoint to blindly interpreting Cons@k or longer reasoning as scaling."},
+    {"title":"Do Not Think That Much for 2+3=? on the Overthinking of o1-like LLMs","authors":"Xingyu Chen; Jiahao Xu; Tian Liang; Zhiwei He; Jianhui Pang; Dian Yu; Linfeng Song; Qiuzhi Liu; Mengfei Zhou; Zhuosheng Zhang; et al.","year":2024,"arxiv_id":"2412.21187","source_url":"https://arxiv.org/abs/2412.21187","survey_locator":"Sec. 5.2.1, 5.2.3","route":"budget_stop;efficiency_diagnostics","role":"反例","token_relevance":"direct","reason":"Canonical overthinking counterexample: more reasoning/reverification on easy problems can increase cost without proportional correctness gains; informs stopping and outcome-efficiency analysis."},
+    {"title":"Thoughts Are All Over the Place: On the Underthinking of o1-like LLMs","authors":"Yue Wang; Qiuzhi Liu; Jiahao Xu; Tian Liang; Xingyu Chen; Zhiwei He; Linfeng Song; Dian Yu; Juntao Li; Zhuosheng Zhang; Rui Wang; Zhaopeng Tu; Haitao Mi; Dong Yu","year":2025,"arxiv_id":null,"source_url":null,"survey_locator":"Sec. 5.2.1, 5.2.3","route":"budget_stop;efficiency_diagnostics","role":"反例","token_relevance":"direct","reason":"Defines/ motivates the underthinking score in the survey: a correct intermediate thought is not pursued to a correct final answer, showing that too few or misallocated tokens can also hurt."},
+    {"title":"Make Every Penny Count: Difficulty-Adaptive Self-Consistency for Cost-Efficient Reasoning","authors":"Xinglin Wang; Shaoxiong Feng; Yiwei Li; Peiwen Yuan; Yueqi Zhang; Chuyi Tan; Boyuan Pan; Yao Hu; Kan Li","year":2025,"arxiv_id":null,"source_url":null,"survey_locator":"Sec. 5.2.2, Table 5 references","route":"what_parallel;budget_stop;how_well_curves","role":"改进","token_relevance":"direct","reason":"Difficulty-adaptive sampling is a concrete route to allocate parallel samples conditionally, connecting token/sample budgets to cost-efficient reasoning."},
+    {"title":"ETS: Efficient Tree Search for Inference-Time Scaling","authors":"Coleman Hooper; Sehoon Kim; Suhong Moon; Kerem Dilmen; Monishwaran Maheshwaran; Nicholas Lee; Michael W. Mahoney; Sophia Shao; Kurt Keutzer; Amir Gholami","year":2025,"arxiv_id":null,"source_url":null,"survey_locator":"Sec. 5.2.2","route":"what_hybrid_search;how_well_curves","role":"改进","token_relevance":"direct","reason":"Survey uses ETS as a KV-cache efficiency example, reporting cache sharing/reduction and inference-speed implications for tree search under unchanged accuracy."}
+  ],
+  "gaps_conflicts": [
+    "The taxonomy is broad but stopping is not a dedicated route: the survey mentions learned halt policies, budget forcing, fixed max lengths, verification-guided stopping, and asks whether an optimal stopping criterion exists, without a unified stopping taxonomy or a closed-loop stop benchmark.",
+    "Scaling curves are defined conceptually (accuracy/pass rate versus tokens, samples, iterations, or FLOPs), but the survey does not standardize x-axis accounting across parallel samples, verifier calls, search overhead, KV-cache memory, latency, or model heterogeneity.",
+    "Pass@k/coverage, Cons@k/aggregation, and accuracy-compute curves are distinct; high coverage does not guarantee good selected output, and consensus can be wrong. The survey explicitly separates coverage from aggregation quality but does not resolve their causal decomposition.",
+    "The survey reports redundancy, underthinking, and overthinking as inefficiency patterns and gives metrics, yet most cited evidence is method- or task-specific; cross-domain calibration and comparable continuous token-performance traces remain open.",
+    "Internal scaling is jointly a post-training route and an inference behavior. SFT/RL, distillation, and warmup are training mechanisms rather than inference-token efficiency by themselves; they should not be interpreted as direct token savings without a matched test-time budget.",
+    "Some references have ambiguous or changing bibliographic identifiers in the rendered survey (for example, no arXiv ID is printed for s1, Brown et al., Muennighoff-linked metrics, Wang underthinking, and ETS); this extraction preserves only IDs explicitly printed in the survey or stable source pages and flags search URLs where the survey did not provide an ID.",
+    "Coverage stops at the survey's arXiv v3 revision on 2025-05-04. This assignment's 2026-09-09 verification confirms the fixed version, but no post-v3 literature was added and no original cited paper was independently read."
+  ]
+}

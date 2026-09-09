@@ -1,0 +1,221 @@
+{
+  "task": "survey-metadata-recalibration-v2",
+  "scope": "只读取 metadata-snippets.json 中 ReWOO、LightMem、MEM1 的已读原始 PDF 头部节选与一个明确教学案例；未追读正文、未上网、未派发任务。",
+  "items": [
+    {
+      "paper_id": "2305.18323",
+      "literal_authors": [
+        "Binfeng Xu",
+        "Zhiyuan Peng",
+        "Bowen Lei",
+        "Subhabrata Mukherjee",
+        "Yuchen Liu",
+        "Dongkuan Xu"
+      ],
+      "authors_truncated": false,
+      "title": "ReWOO: Decoupling Reasoning from Observations for Efficient Augmented Language Models",
+      "first_publication_year": 2023,
+      "formal_publication_year": null,
+      "current_version_year": 2023,
+      "identifiers": {
+        "arxiv_id": "2305.18323",
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": {
+        "location": "metadata-snippets.json, item paper_id=2305.18323, header, first 45 lines",
+        "author_evidence": "Binfeng Xu; Zhiyuan Peng; Bowen Lei; Subhabrata Mukherjee; Yuchen Liu; Dongkuan Xu",
+        "title_evidence": "ReWOO: Decoupling Reasoning from Observations for Efficient Augmented Language Models",
+        "version_evidence": "arXiv:2305.18323v1 [cs.CL] 23 May 2023",
+        "year_boundary": "v1 is explicitly dated 23 May 2023, so 2023 is usable as first_publication_year and current_version_year; no formal publication is stated."
+      },
+      "candidate_comparison": {
+        "candidate_authors": [
+          "Boyuan Xu",
+          "Zhen Peng",
+          "Ben Lei",
+          "Shengnan Mukherjee",
+          "Yiqing Liu",
+          "Dahua Xu"
+        ],
+        "candidate_year": 2023,
+        "candidate_identifiers": {
+          "arxiv_id": "2305.18323",
+          "source_url": "https://arxiv.org/abs/2305.18323",
+          "doi": null
+        },
+        "conflicts": [
+          "候选表作者六项均与原始头部节选不一致；原始头部作者优先，不能用候选表扩写或替换。",
+          "候选表题名写作全大写 REWOO；原始头部写作 ReWOO，保留原始头部字面。",
+          "候选表的 source_url 未出现在本次原始头部节选中，属于本次节选未核实字段；不作为已核实 source_url 写入正式 identifiers。"
+        ]
+      }
+    },
+    {
+      "paper_id": "2510.18866",
+      "literal_authors": [
+        "Jizhan Fang",
+        "Xinle Deng",
+        "Haoming Xu",
+        "Ziyan Jiang",
+        "Yuqi Tang",
+        "Ziwen Xu",
+        "Shumin Deng",
+        "Yunzhi Yao",
+        "Mengru Wang",
+        "Shuofei Qiao",
+        "Huajun Chen",
+        "Ningyu Zhang"
+      ],
+      "authors_truncated": false,
+      "title": "LightMem: Lightweight and Efficient Memory-Augmented Generation",
+      "first_publication_year": null,
+      "formal_publication_year": 2026,
+      "current_version_year": 2026,
+      "identifiers": {
+        "arxiv_id": "2510.18866",
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": {
+        "location": "metadata-snippets.json, item paper_id=2510.18866, header, first 45 lines",
+        "author_evidence": "Jizhan Fang♠, Xinle Deng♠, Haoming Xu♠, Ziyan Jiang♠, Yuqi Tang♠, Ziwen Xu♠, Shumin Deng♢, Yunzhi Yao♠, Mengru Wang♠, Shuofei Qiao♠, Huajun Chen♠, Ningyu Zhang♠♣∗",
+        "title_evidence": "L IGHT M EM : L IGHTWEIGHT AND E FFICIENT M EMORY-AUGMENTED G ENERATION",
+        "version_evidence": "Published as a conference paper at ICLR 2026; arXiv:2510.18866v4 [cs.CL] 28 Feb 2026",
+        "year_boundary": "ICLR 2026 supplies formal_publication_year=2026 and the v4 date supplies current_version_year=2026; the first publication year is not stated, so it remains null."
+      },
+      "candidate_comparison": {
+        "candidate_authors": [
+          "Jiaqi Fang",
+          "Xiaolei Deng",
+          "Haoyu Xu",
+          "Zhaoyang Jiang",
+          "Yingqi Tang",
+          "Zhaocheng Xu",
+          "Shuai Deng",
+          "Yiming Yao",
+          "Ming Wang",
+          "Shuang Qiao"
+        ],
+        "candidate_year": 2025,
+        "candidate_identifiers": {
+          "arxiv_id": "2510.18866",
+          "source_url": "https://arxiv.org/abs/2510.18866",
+          "doi": null
+        },
+        "conflicts": [
+          "候选表给出 10 位作者，而原始头部节选给出 12 位；候选表作者姓名与原始头部逐项不一致，且漏掉 Shuofei Qiao、Huajun Chen、Ningyu Zhang。",
+          "候选表年份 2025 的语义（例如初次提交年）本次未核对；原始头部明确的是 ICLR 2026 与 v4 日期 2026，不能据此断言候选年份错误或与原文冲突。",
+          "候选表 source_url 未出现在本次原始头部节选中，属于本次节选未核实字段；不作为已核实 source_url 写入正式 identifiers。"
+        ]
+      }
+    },
+    {
+      "paper_id": "2506.15841",
+      "literal_authors": [
+        "Zijian Zhou",
+        "Ao Qu",
+        "Zhaoxuan Wu",
+        "Sunghwan Kim",
+        "Alok Prakash",
+        "Daniela Rus",
+        "Jinhua Zhao",
+        "Bryan Kian Hsiang Low",
+        "Paul Pu Liang"
+      ],
+      "authors_truncated": false,
+      "title": "MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents",
+      "first_publication_year": null,
+      "formal_publication_year": null,
+      "current_version_year": 2025,
+      "identifiers": {
+        "arxiv_id": "2506.15841",
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": {
+        "location": "metadata-snippets.json, item paper_id=2506.15841, header, first 45 lines",
+        "author_evidence": "Zijian Zhou*12; Ao Qu*13; Zhaoxuan Wu1; Sunghwan Kim4; Alok Prakash1; Daniela Rus13; Jinhua Zhao13; Bryan Kian Hsiang Low13; Paul Pu Liang3",
+        "title_evidence": "MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents",
+        "version_evidence": "arXiv:2506.15841v2 [cs.CL] 17 Jul 2025",
+        "year_boundary": "只有 v2 日期 17 Jul 2025 明确支持 current_version_year=2025；首次发表年和正式发表年材料不足，均为 null。"
+      },
+      "candidate_comparison": {
+        "candidate_authors": [
+          "Zhiqiang Zhou",
+          "Anjie Qu",
+          "Zhiqiang Wu",
+          "Sangdoo Kim",
+          "Aviral Prakash",
+          "Dieter Fox",
+          "Daniela Rus",
+          "Jing Zhao",
+          "Bo-Keun Low",
+          "Percy Liang"
+        ],
+        "candidate_year": 2025,
+        "candidate_identifiers": {
+          "arxiv_id": "2506.15841",
+          "source_url": "https://arxiv.org/abs/2506.15841",
+          "doi": null
+        },
+        "conflicts": [
+          "候选表给出 10 位作者，而原始头部节选给出 9 位；除 Daniela Rus 外，候选表姓名与原始头部均不一致，且含有原始头部未出现的 Dieter Fox、Percy Liang 等姓名。",
+          "候选表年份 2025 仅与当前 v2 日期年份相符；它不能据此证明首次发表年或正式发表年。",
+          "候选表 source_url 未出现在本次原始头部节选中，属于本次节选未核实字段；不作为已核实 source_url 写入正式 identifiers。"
+        ]
+      }
+    },
+    {
+      "teaching_case": true,
+      "literal_authors": [
+        "B. Xu",
+        "et al."
+      ],
+      "authors_truncated": true,
+      "title": "ReWOO: Decoupling Reasoning from Observations for Efficient Augmented Language Models",
+      "first_publication_year": null,
+      "formal_publication_year": null,
+      "current_version_year": null,
+      "year": 2023,
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": {
+        "location": "metadata-snippets.json, teaching_case.literal_reference",
+        "author_evidence": "B. Xu et al.",
+        "title_evidence": "ReWOO: Decoupling Reasoning from Observations for Efficient Augmented Language Models",
+        "version_evidence": null,
+        "year_boundary": "教学案例只明确给出 (2023)，未说明该年是首次发表年、正式发表年还是当前版本年；保留教学案例要求的 year=2023，并将未可判定的分字段置为 null。"
+      },
+      "candidate_comparison": {
+        "candidate_authors": [
+          "B. Xu",
+          "et al."
+        ],
+        "candidate_year": 2023,
+        "candidate_identifiers": {
+          "arxiv_id": null,
+          "source_url": null,
+          "doi": null
+        },
+        "conflicts": null,
+        "note": "明确教学案例，不作为新来源；et al. 必须保留，authors_truncated=true。"
+      }
+    }
+  ],
+  "training_rule_understanding": [
+    "作者、题名、年份和标识符只从眼前材料逐字提取；不得凭记忆纠正、展开缩写、改写姓名或补齐缺失。",
+    "作者含 et al. 时保留 et al.，并标记 authors_truncated=true；不能把缩写或不完整作者串误报为完整作者表。",
+    "初次发表年、正式发表年、当前版本年分开记录；当前版本日期不能自动填入初次发表年或正式发表年，材料不足就填 null。",
+    "候选表和原始头部冲突时逐项记录冲突，以原始头部作为已提供的直接证据；候选表的 URL 不等于已核实的原始元数据。",
+    "证据字段须保留短原文片段与材料位置；本次校准不追读正文，不把头部节选表述为全文核验。"
+  ],
+  "main_review": {
+    "status": "pass_upper_middle",
+    "scope": "3份元数据与缩写教学案例；没有验收综述全文或论文正文",
+    "reviewer": "main_agent"
+  }
+}

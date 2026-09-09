@@ -1,0 +1,359 @@
+[
+  {
+    "chapter": "01-data",
+    "logical_placements": 2,
+    "status": "PASS",
+    "scope": "chapter index only; independent Luna medium, one worker per logical figure",
+    "repairs": 1,
+    "assets": [
+      {
+        "figure_id": "figure-0001",
+        "sha256": "db264a9d6898fdebe3dda9d1143ae83051640a666b7d6c2736b8ab3263d40152"
+      },
+      {
+        "figure_id": "figure-0002",
+        "sha256": "1b330678c73212669831e2cbb044a2f3f360c76ad5aed4b06508e8e3416d8016"
+      }
+    ]
+  },
+  {
+    "chapter": "02-pretraining",
+    "logical_placements": 4,
+    "status": "PASS",
+    "scope": "chapter index only; independent Luna medium, one worker per logical figure",
+    "repairs": 0,
+    "assets": [
+      {
+        "figure_id": "figure-0001",
+        "sha256": "e7185b8c55f31ec2ef6ba10dab7a234efefb7b94d619a1582a3e2a2a4b69c4b8"
+      },
+      {
+        "figure_id": "figure-0002",
+        "sha256": "5fc3a6b36df6afb659b9d88fdc55c41273beb7c4807211c0c5af21305ec804f7"
+      },
+      {
+        "figure_id": "figure-0003",
+        "sha256": "8651036e6adbb8645428fcd2410c4d8d23f374b26e14c9f745feb4e7f7c84067"
+      },
+      {
+        "figure_id": "figure-0004",
+        "sha256": "7245293e846e4e35c249d81bd23f63e16ffd8e6c8a4cfb98c53d75f4d24851f6"
+      }
+    ]
+  },
+  {
+    "chapter": "03-midtraining",
+    "logical_placements": 2,
+    "status": "PASS",
+    "scope": "chapter index only; independent Luna medium, one worker per logical figure",
+    "repairs": 1,
+    "assets": [
+      {
+        "figure_id": "figure-0001",
+        "sha256": "de9cb082f2d6979ac28505d0b1cc590cc412088226fb05d021662cd4c4879c77"
+      },
+      {
+        "figure_id": "figure-0002",
+        "sha256": "999dadc5c2f42311f54a57ff096a7b48bb0e7b6b354dbc7dba2af7d7885b308b"
+      }
+    ]
+  },
+  {
+    "chapter": "04-architecture",
+    "logical_placements": 4,
+    "status": "PASS",
+    "scope": "chapter index only; independent Luna medium, one worker per logical figure",
+    "repairs": 0,
+    "assets": [
+      {
+        "figure_id": "figure-0001",
+        "sha256": "e93860211616d1545269cd606dfca42dc48237ee6cced9c263aa52ef5396ac7d"
+      },
+      {
+        "figure_id": "figure-0002",
+        "sha256": "032317b41ae4d0e76f475a85cf88bc046c1ff278b2171b90714368203f67bebe"
+      },
+      {
+        "figure_id": "figure-0003",
+        "sha256": "5adcacde86d800a9070f134b3ec7553684c95cbaf1acc83f61d6f6231eed3d4e"
+      },
+      {
+        "figure_id": "figure-0004",
+        "sha256": "69f1df6b2bc4ac01f9d37ce9c61c7e3fe91b58d3b7fc44f47d6b3781fdef94c4"
+      }
+    ]
+  },
+  {
+    "chapter": "05-posttraining",
+    "logical_placements": 9,
+    "status": "PASS",
+    "scope": "chapter index only; independent Luna medium, one worker per logical figure",
+    "repairs": 2,
+    "assets": [
+      {
+        "figure_id": "figure-0001",
+        "sha256": "f2f6766fe643bf9677a68362059357f980a485039e53f424cbd495454cae0b1b"
+      },
+      {
+        "figure_id": "figure-0002",
+        "sha256": "90a6e26ece8801a7b72e17f7b0dd788ab19bbbd07d511b1edafe42543318749c"
+      },
+      {
+        "figure_id": "figure-0003",
+        "sha256": "4211680a81d9612c8b8038049dea01403c32d08c5f3006d5964d56b09a0c31e7"
+      },
+      {
+        "figure_id": "figure-0004",
+        "sha256": "55a9dc21e597e3078051e32b7d7a63668f7c3a368548f68c1536beae76e49916"
+      },
+      {
+        "figure_id": "figure-0005",
+        "sha256": "d776a7414e51aa1204176c40b69d019f8ed1628df0caafb2f8c6b4d9e0093b39"
+      },
+      {
+        "figure_id": "figure-0006",
+        "sha256": "bb11b8e58557cd906df84f747dd4e9e27a6e6858d2a33769e58c104376486ac5"
+      },
+      {
+        "figure_id": "figure-0007",
+        "sha256": "ee59983a72a3d33efd1fe434f256b944e7da889a0064d3d1a1bf8feaef50a37e"
+      },
+      {
+        "figure_id": "figure-0008",
+        "sha256": "8b511d21eb93ae39f8523b1f4ba82bdfafb9cbb0d95a876680a3ae176c0b5c77"
+      },
+      {
+        "figure_id": "figure-0009",
+        "sha256": "50ce73301cd8c693888fc42bbde977cc9ea0044f591158f6f7fb6364b93a8784"
+      }
+    ]
+  },
+  {
+    "chapter": "06-reasoning",
+    "logical_placements": 4,
+    "status": "PASS",
+    "scope": "chapter index only; independent Luna medium, one worker per logical figure",
+    "repairs": 0,
+    "assets": [
+      {
+        "figure_id": "figure-0001",
+        "sha256": "fd942cfa2eb868de145cfc346d8da49a11db2c679ddf5d5f84f9f77f0835152e"
+      },
+      {
+        "figure_id": "figure-0002",
+        "sha256": "aee4507851e9ef4126a4dfd62c138785f6ec07150dd628345c0ec4e752669ac2"
+      },
+      {
+        "figure_id": "figure-0003",
+        "sha256": "b6359f1b45f7a3b069f93046de9f454a0afa25eec914caf23023b55be1cb7156"
+      },
+      {
+        "figure_id": "figure-0004",
+        "sha256": "3806657fb43310bbb2e22ee69f648674d0e2d66bacccc1606a650224a104aa07"
+      }
+    ]
+  },
+  {
+    "chapter": "07-context",
+    "logical_placements": 6,
+    "status": "PASS",
+    "scope": "chapter index only; independent Luna medium, one worker per logical figure",
+    "repairs": 1,
+    "assets": [
+      {
+        "figure_id": "figure-0001",
+        "sha256": "6a06b6ad1545902cf974893bd2751c3da91471cad0a2cd2f9e6304c4abfdb801"
+      },
+      {
+        "figure_id": "figure-0002",
+        "sha256": "499789a698084da6b7f5a0ca47a2143b9966521a287beb6aab58b338779e8de3"
+      },
+      {
+        "figure_id": "figure-0003",
+        "sha256": "90837b63071adbd2333c1051789d47e188f4b6e297d02ab38cf4d49181385177"
+      },
+      {
+        "figure_id": "figure-0004",
+        "sha256": "fbdc4a433cacbcd3e66c996644ed74affe003e260aee1501576790212fe842f4"
+      },
+      {
+        "figure_id": "figure-0005",
+        "sha256": "59b404609294146c8d826968048c2020aaa380f31dc49feab93973150bebb68d"
+      },
+      {
+        "figure_id": "figure-0006",
+        "sha256": "882bb733d810e93fb71ed995206ba8ec19206e5dad7480d73dd7564963aef302"
+      }
+    ]
+  },
+  {
+    "chapter": "08-agents",
+    "logical_placements": 8,
+    "status": "PASS",
+    "scope": "chapter index only; independent Luna medium, one worker per logical figure",
+    "repairs": 0,
+    "assets": [
+      {
+        "figure_id": "figure-0001",
+        "sha256": "cbd9cbf5efe6c5c59b6a11fd70b5ff68f10da6ff5694904e7fdafface999c554"
+      },
+      {
+        "figure_id": "figure-0002",
+        "sha256": "8ed9218d092cf7b23e4e672ff095c70ebb720d07eab37fac6b72108cedd25daa"
+      },
+      {
+        "figure_id": "figure-0003",
+        "sha256": "c63912f16062d3aee62b3b60f004cb3764c45e159722b4f7d552f06abbfb7605"
+      },
+      {
+        "figure_id": "figure-0004",
+        "sha256": "05403aa32e46153cfb286d1c7ab454d1369905fc02b78bf4c233c2f9f54d6b6c"
+      },
+      {
+        "figure_id": "figure-0005",
+        "sha256": "fa5398d1f55e0cb072e7d9306043644f49e26e3e60a53ee9df21de7e79da27e2"
+      },
+      {
+        "figure_id": "figure-0006",
+        "sha256": "ef5a9bf080863c769e25d16b2d36fbf323ef0eac29f06d03bedc632591768de3"
+      },
+      {
+        "figure_id": "figure-0007",
+        "sha256": "4741433f8f88b26a03b98549dbf03c0a30422fc06e444f37006c4f089d46c9b2"
+      },
+      {
+        "figure_id": "figure-0008",
+        "sha256": "cc7543e4b2cc2af66cea1be7fc6f060e2ce631ad3c31691bf48ff5e160f79730"
+      }
+    ]
+  },
+  {
+    "chapter": "09-multimodal",
+    "logical_placements": 6,
+    "status": "PASS",
+    "scope": "chapter index only; independent Luna medium, one worker per logical figure",
+    "repairs": 0,
+    "assets": [
+      {
+        "figure_id": "figure-0001",
+        "sha256": "29c063add2ebc567948c94779a4ee34a3eee4d922761ed54af81028a136d1ae1"
+      },
+      {
+        "figure_id": "figure-0002",
+        "sha256": "b3736701110850661cc332805d520d350b2085f68113892402b770cf05528ec9"
+      },
+      {
+        "figure_id": "figure-0003",
+        "sha256": "8d233eaec93adf5b2b32fb9d2acbfd3839711aa1a6e9aceb277035cea291b789"
+      },
+      {
+        "figure_id": "figure-0004",
+        "sha256": "8061643b339a7c9663b97f2231bfcf58481fecb27b5f3ad223b9ead8aa005dec"
+      },
+      {
+        "figure_id": "figure-0005",
+        "sha256": "501f29a471140283d985c8df8117bd7edc183eeb5954a08095c34ac00f2b63c8"
+      },
+      {
+        "figure_id": "figure-0006",
+        "sha256": "4555d7fb9820870b14f099119b75b1771da3b0ddcef1be73add728539327f4a0"
+      }
+    ]
+  },
+  {
+    "chapter": "10-systems",
+    "logical_placements": 4,
+    "status": "PASS",
+    "scope": "chapter index only; independent Luna medium, one worker per logical figure",
+    "repairs": 0,
+    "assets": [
+      {
+        "figure_id": "figure-0001",
+        "sha256": "0d63a0d33d1aba6264a875d355eb4cbf1a126dcd95fc76ff2c178933bd78e447"
+      },
+      {
+        "figure_id": "figure-0002",
+        "sha256": "0014d0d865498feb7553c4e478a0355b24db0b1b20c353223f8df0bec044fc4e"
+      },
+      {
+        "figure_id": "figure-0003",
+        "sha256": "fee2daba6098d46b38fbbf2fbc51778ea869c2ae6c8f3a1910e8e631b88ed5b8"
+      },
+      {
+        "figure_id": "figure-0004",
+        "sha256": "fee2daba6098d46b38fbbf2fbc51778ea869c2ae6c8f3a1910e8e631b88ed5b8"
+      }
+    ]
+  },
+  {
+    "chapter": "11-evaluation",
+    "logical_placements": 4,
+    "status": "PASS",
+    "scope": "chapter index only; independent Luna medium, one worker per logical figure",
+    "repairs": 0,
+    "assets": [
+      {
+        "figure_id": "figure-0001",
+        "sha256": "9db7d8b160758745678e40d47a191e72cce8b7a58fbdb51e300ac44f6b20d9ab"
+      },
+      {
+        "figure_id": "figure-0002",
+        "sha256": "c4d759c15a726285a6ad58e8241543650a8b16d8db93e8e3ff895ea33d150ea2"
+      },
+      {
+        "figure_id": "figure-0003",
+        "sha256": "4229745e81a38685d4831f83a50f816b3adc3d0591d355343b046a53ff8a7b8d"
+      },
+      {
+        "figure_id": "figure-0004",
+        "sha256": "a5606e0f587b2b0f3d2813b3cc4e4add21eb45c65c9b25ae35553622e4d57a4d"
+      }
+    ]
+  },
+  {
+    "chapter": "12-safety",
+    "logical_placements": 3,
+    "status": "PASS",
+    "scope": "chapter index only; independent Luna medium, one worker per logical figure",
+    "repairs": 0,
+    "assets": [
+      {
+        "figure_id": "figure-0001",
+        "sha256": "a3344ec28c294a07e5ee6aeb855333a974824313a186f08300098afb8dc4e1f8"
+      },
+      {
+        "figure_id": "figure-0002",
+        "sha256": "a65edf0f95564952e6207d12666f0c21942233dd74125de60e83cfb09789e790"
+      },
+      {
+        "figure_id": "figure-0003",
+        "sha256": "51d6d0bde33d1c4d9ea6cc9ed616b044c569394ac620487ad39977f232cab1d7"
+      }
+    ]
+  },
+  {
+    "chapter": "13-domains",
+    "logical_placements": 4,
+    "status": "PASS",
+    "scope": "chapter index only; independent Luna medium, one worker per logical figure",
+    "repairs": 0,
+    "assets": [
+      {
+        "figure_id": "figure-0001",
+        "sha256": "db42174051c1cef93295c24ee16dc92ec10801b263098e56b4638925d9fbec33"
+      },
+      {
+        "figure_id": "figure-0002",
+        "sha256": "9d4dc4968016bd799d1b190eccbfce994ec7535a55ce32a1d294411abee8ab22"
+      },
+      {
+        "figure_id": "figure-0003",
+        "sha256": "0c6a2064a443a47ac8a66220665e479546498a43e33ab3c73f29c4827e1a2422"
+      },
+      {
+        "figure_id": "figure-0004",
+        "sha256": "c03087d567fb654ea2e9a269760c3aa8682427eddf25049f6d57a87c19ab15ed"
+      }
+    ]
+  }
+]

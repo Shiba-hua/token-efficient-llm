@@ -1,0 +1,373 @@
+[
+  {
+    "slug": "01-data",
+    "title": "数据：选择对象决定偏差",
+    "nodes": [
+      "候选生成：简洁示例 + 默认采样",
+      "同题筛选：先正确，再选短",
+      "监督学习：部署时单次生成",
+      "问题难度：正奖励密度",
+      "表达压缩：TokenSkip / LLMLingua-2",
+      "题目覆盖与解法多样性"
+    ],
+    "edges": [
+      "候选生成 → 同题筛选 → 监督学习：最短正确自训练",
+      "问题难度 → 同题筛选：决定可学信号",
+      "默认采样 → 题目覆盖：为难题保留后备候选",
+      "表达压缩 ↔ 同题筛选：改表达 / 换解法的比较",
+      "表达压缩 ⇢ 监督学习：可组合，收益待独立验证"
+    ],
+    "notes": [
+      "训练生成成本单列",
+      "全局选最短可能丢掉难题"
+    ],
+    "prompt_file": "meta/research-map-v3/map-prompts/01-data.txt",
+    "target": "assets/maps-v3/01-data.png",
+    "status": "visual_pass",
+    "sha256": "db264a9d6898fdebe3dda9d1143ae83051640a666b7d6c2736b8ab3263d40152",
+    "superseded_sha256": "2f6f0024b5959c79a6631ce4e09bce8c85685a067efa2961d7959cbac0af931a",
+    "repair_round": 2
+  },
+  {
+    "slug": "02-pretraining",
+    "title": "预训练：通过什么改变部署预算",
+    "nodes": [
+      "MTP：多未来预测头",
+      "共享表示与长程依赖",
+      "固定自回归解码的任务表现",
+      "LCM：句子表示预测",
+      "文本编码与解码",
+      "实际 token—性能曲线"
+    ],
+    "edges": [
+      "MTP → 共享表示与长程依赖 → 固定自回归解码的任务表现：辅助监督",
+      "LCM → 文本编码与解码：概念单位仍需转换",
+      "固定自回归解码的任务表现 ⇢ 实际 token—性能曲线：需补测",
+      "文本编码与解码 ⇢ 实际 token—性能曲线：需统一单位"
+    ],
+    "notes": [
+      "训练 loss 改善不能直接推出推理变短",
+      "草稿解码提速另属执行效果"
+    ],
+    "prompt_file": "meta/research-map-v3/map-prompts/02-pretraining.txt",
+    "target": "assets/maps-v3/02-pretraining.png",
+    "status": "visual_pass",
+    "sha256": "e7185b8c55f31ec2ef6ba10dab7a234efefb7b94d619a1582a3e2a2a4b69c4b8"
+  },
+  {
+    "slug": "03-midtraining",
+    "title": "中训练：学习信号与部署成本的距离",
+    "nodes": [
+      "领域/任务持续训练",
+      "Rho-1：参考模型打分",
+      "当前 loss − 参考 loss",
+      "选择位置的预测损失",
+      "长上下文与推理模式",
+      "部署：检索、纠错、推理长度"
+    ],
+    "edges": [
+      "Rho-1：参考模型打分 → 当前 loss − 参考 loss → 选择位置的预测损失",
+      "领域/任务持续训练 ↔ 选择位置的预测损失：数据分布与位置选择可组合",
+      "领域/任务持续训练 ⇢ 部署：检索、纠错、推理长度：能力到成本需测量",
+      "长上下文与推理模式 ⇢ 部署：检索、纠错、推理长度：可能互补，也有干扰"
+    ],
+    "notes": [
+      "完整序列仍参与前向",
+      "窗口变长不等于任务更省"
+    ],
+    "prompt_file": "meta/research-map-v3/map-prompts/03-midtraining.txt",
+    "target": "assets/maps-v3/03-midtraining.png",
+    "status": "visual_pass",
+    "sha256": "de9cb082f2d6979ac28505d0b1cc590cc412088226fb05d021662cd4c4879c77",
+    "superseded_sha256": "e2bd57e8385129d6586d61791520d5ecc39b6eadb178b7d4d303666f91b3e816",
+    "repair_round": 2
+  },
+  {
+    "slug": "04-architecture",
+    "title": "架构：连续推理与表示粒度",
+    "nodes": [
+      "Coconut：隐状态继续计算",
+      "CODI：显式/连续路径对齐",
+      "连续思考的训练信号",
+      "BLT：字节 → patch → 字节",
+      "LCM：句子表示 → 文字",
+      "文本、latent 步、内部计算"
+    ],
+    "edges": [
+      "Coconut → 连续思考的训练信号：课程替换 CoT",
+      "CODI → 连续思考的训练信号：教师表示对齐",
+      "Coconut ↔ CODI：不同的连续路径训练方法",
+      "BLT：字节 → patch → 字节 → 文本、latent 步、内部计算：单位分别记账",
+      "LCM：句子表示 → 文字 → 文本、latent 步、内部计算：编码解码另计"
+    ],
+    "notes": [
+      "少可见文字不等于零计算",
+      "方法关系不代表统一性能排名"
+    ],
+    "prompt_file": "meta/research-map-v3/map-prompts/04-architecture.txt",
+    "target": "assets/maps-v3/04-architecture.png",
+    "status": "visual_pass",
+    "sha256": "e93860211616d1545269cd606dfca42dc48237ee6cced9c263aa52ef5396ac7d"
+  },
+  {
+    "slug": "05-posttraining",
+    "title": "后训练：学习什么，在哪些状态上学",
+    "nodes": [
+      "SFT：TokenSkip / CoT-Valve",
+      "蒸馏：System2→1 / GKD / OPSD",
+      "偏好：DAST",
+      "RLVR：The Art / L1",
+      "Agentic-RL：ReTool",
+      "正确性、长度与任务状态",
+      "推理时多预算评价"
+    ],
+    "edges": [
+      "正确性、长度与任务状态 → SFT：TokenSkip / CoT-Valve：轨迹监督",
+      "正确性、长度与任务状态 → 偏好：DAST：按难度构造偏好",
+      "正确性、长度与任务状态 → RLVR：The Art / L1：奖励与预算条件",
+      "蒸馏：System2→1 / GKD / OPSD → 推理时多预算评价：能力迁移仍需测长度",
+      "Agentic-RL：ReTool → 推理时多预算评价：计入工具和重试",
+      "SFT：TokenSkip / CoT-Valve ↔ RLVR：The Art / L1：不同训练接口的比较"
+    ],
+    "notes": [
+      "OPSD 原文节省的是训练采样 token",
+      "预算服从与最少 token 是不同目标"
+    ],
+    "prompt_file": "meta/research-map-v3/map-prompts/05-posttraining.txt",
+    "target": "assets/maps-v3/05-posttraining.png",
+    "status": "visual_pass",
+    "sha256": "f2f6766fe643bf9677a68362059357f980a485039e53f424cbd495454cae0b1b"
+  },
+  {
+    "slug": "06-reasoning",
+    "title": "推理：生成、验证与停止共同决定效率",
+    "nodes": [
+      "CoD：简洁草稿",
+      "串行修订",
+      "并行候选 / 树搜索",
+      "验证与选择",
+      "DeepConf：warmup → 窗口监测",
+      "继续 / 停止",
+      "难度与预算"
+    ],
+    "edges": [
+      "难度与预算 → 串行修订",
+      "难度与预算 → 并行候选 / 树搜索",
+      "并行候选 / 树搜索 → 验证与选择 → 继续 / 停止",
+      "DeepConf：warmup → 窗口监测 → 继续 / 停止：置信信号",
+      "CoD：简洁草稿 ↔ 串行修订：表达与计算分配不同",
+      "继续 / 停止 → 并行候选 / 树搜索：继续时反馈"
+    ],
+    "notes": [
+      "验证、warmup、被停止前缀都计成本",
+      "oracle 难度与部署预测须区分"
+    ],
+    "prompt_file": "meta/research-map-v3/map-prompts/06-reasoning.txt",
+    "target": "assets/maps-v3/06-reasoning.png",
+    "status": "visual_pass",
+    "sha256": "fd942cfa2eb868de145cfc346d8da49a11db2c679ddf5d5f84f9f77f0835152e"
+  },
+  {
+    "slug": "07-context",
+    "title": "上下文：选择、表示与保存时间",
+    "nodes": [
+      "LLMLingua-2：离散删词",
+      "RECOMP：检索效用压缩",
+      "ICAE：连续 memory slots",
+      "任务内：遮蔽 / 摘要 / 回读",
+      "跨会话：LightMem",
+      "目标模型读取与行动",
+      "维护成本与信息丢失"
+    ],
+    "edges": [
+      "LLMLingua-2：离散删词 → 目标模型读取与行动",
+      "RECOMP：检索效用压缩 → 目标模型读取与行动：可返回空摘要",
+      "ICAE：连续 memory slots → 目标模型读取与行动：需要内部接口",
+      "任务内：遮蔽 / 摘要 / 回读 → 目标模型读取与行动：减少重复读入",
+      "跨会话：LightMem → 维护成本与信息丢失：写入、更新、摊销",
+      "目标模型读取与行动 → 维护成本与信息丢失：检查额外重试"
+    ],
+    "notes": [
+      "抽取子序列仍可能改变语义",
+      "单次输入变短未必让整项任务更省"
+    ],
+    "prompt_file": "meta/research-map-v3/map-prompts/07-context.txt",
+    "target": "assets/maps-v3/07-context.png",
+    "status": "visual_pass",
+    "sha256": "6a06b6ad1545902cf974893bd2751c3da91471cad0a2cd2f9e6304c4abfdb801",
+    "superseded_sha256": "ef67431896122ad9ed77de45fbe4715aae4f024c70bd7b92d4abdd26a9f44598",
+    "repair_round": 2,
+    "repair_note": "删除两个多余比较连接，中心补明性能-token评价目标；不新增实证优劣关系。"
+  },
+  {
+    "slug": "08-agents",
+    "title": "智能体：结构决定哪些调用发生",
+    "nodes": [
+      "ReWOO：计划与观察解耦",
+      "LLMCompiler：依赖就绪调度",
+      "工具执行与反馈",
+      "MEM1：紧凑任务状态",
+      "AgentPrune：通信边选择",
+      "RouteLLM：强弱模型路由",
+      "完整任务成功与 token"
+    ],
+    "edges": [
+      "ReWOO：计划与观察解耦 → 工具执行与反馈",
+      "LLMCompiler：依赖就绪调度 → 工具执行与反馈",
+      "工具执行与反馈 → MEM1：紧凑任务状态 → 完整任务成功与 token",
+      "AgentPrune：通信边选择 → 完整任务成功与 token：减少重复通信",
+      "RouteLLM：强弱模型路由 → 工具执行与反馈：选择执行模型",
+      "ReWOO：计划与观察解耦 ↔ LLMCompiler：依赖就绪调度：不同编排结构"
+    ],
+    "notes": [
+      "并行降低等待，不必降低总 token",
+      "RouteLLM 的原始费用指标单列"
+    ],
+    "prompt_file": "meta/research-map-v3/map-prompts/08-agents.txt",
+    "target": "assets/maps-v3/08-agents.png",
+    "status": "visual_pass",
+    "sha256": "cbd9cbf5efe6c5c59b6a11fd70b5ff68f10da6ff5694904e7fdafface999c554"
+  },
+  {
+    "slug": "09-multimodal",
+    "title": "多模态：位置、顺序与信息保留",
+    "nodes": [
+      "图像：PruMerge 选择与合并",
+      "图像：FastV 层间剪枝",
+      "视频：LongVU 时空压缩",
+      "视频：LongVU-TTT 压缩前聚合",
+      "语音：SpeechPrune 两阶段选择",
+      "送入语言模型的特征位置",
+      "任务质量与完整成本"
+    ],
+    "edges": [
+      "图像：PruMerge 选择与合并 → 送入语言模型的特征位置：进入 LLM 之前",
+      "图像：FastV 层间剪枝 → 任务质量与完整成本：LLM 浅层之后",
+      "视频：LongVU-TTT 压缩前聚合 → 视频：LongVU 时空压缩：先状态聚合，再选择",
+      "视频：LongVU 时空压缩 → 送入语言模型的特征位置",
+      "语音：SpeechPrune 两阶段选择 → 送入语言模型的特征位置",
+      "送入语言模型的特征位置 → 任务质量与完整成本"
+    ],
+    "notes": [
+      "视觉/语音位置不等于文字 token",
+      "关键小物体、短暂事件与否定信息需保护"
+    ],
+    "prompt_file": "meta/research-map-v3/map-prompts/09-multimodal.txt",
+    "target": "assets/maps-v3/09-multimodal.png",
+    "status": "visual_pass",
+    "sha256": "29c063add2ebc567948c94779a4ee34a3eee4d922761ed54af81028a136d1ae1"
+  },
+  {
+    "slug": "10-systems",
+    "title": "系统：草稿、验证与执行成本",
+    "nodes": [
+      "便宜模型提出草稿",
+      "目标模型批量验证",
+      "接受的前缀",
+      "拒绝后的残差采样",
+      "EAGLE-3：特征与训练时测试",
+      "缓存 / 量化 / 调度",
+      "输出分布与实际系统指标"
+    ],
+    "edges": [
+      "便宜模型提出草稿 → 目标模型批量验证",
+      "目标模型批量验证 → 接受的前缀 → 输出分布与实际系统指标",
+      "目标模型批量验证 → 拒绝后的残差采样 → 输出分布与实际系统指标",
+      "EAGLE-3：特征与训练时测试 → 便宜模型提出草稿：改善草稿",
+      "缓存 / 量化 / 调度 → 输出分布与实际系统指标：另测质量与成本"
+    ],
+    "notes": [
+      "严格验证可保持目标分布",
+      "速度收益不等于最终 token 减少"
+    ],
+    "prompt_file": "meta/research-map-v3/map-prompts/10-systems.txt",
+    "target": "assets/maps-v3/10-systems.png",
+    "status": "visual_pass",
+    "sha256": "0d63a0d33d1aba6264a875d355eb4cbf1a126dcd95fc76ff2c178933bd78e447"
+  },
+  {
+    "slug": "11-evaluation",
+    "title": "评测：性能、成本、诊断与泛化",
+    "nodes": [
+      "固定任务与判分",
+      "完整调用轨迹",
+      "性能 + 实际 token",
+      "经验 Pareto 前沿",
+      "首次正确 / 策略多样性",
+      "独立题族与预算选择",
+      "不确定性与失败样本"
+    ],
+    "edges": [
+      "固定任务与判分 → 性能 + 实际 token",
+      "完整调用轨迹 → 性能 + 实际 token：包含辅助调用和失败",
+      "性能 + 实际 token → 经验 Pareto 前沿",
+      "完整调用轨迹 → 首次正确 / 策略多样性：离线诊断",
+      "独立题族与预算选择 → 经验 Pareto 前沿：检查泛化",
+      "不确定性与失败样本 → 经验 Pareto 前沿：检查证据强度"
+    ],
+    "notes": [
+      "预算上限不等于实际消耗",
+      "诊断首次正确不等于在线能免费知道"
+    ],
+    "prompt_file": "meta/research-map-v3/map-prompts/11-evaluation.txt",
+    "target": "assets/maps-v3/11-evaluation.png",
+    "status": "visual_pass",
+    "sha256": "9db7d8b160758745678e40d47a191e72cce8b7a58fbdb51e300ac44f6b20d9ab"
+  },
+  {
+    "slug": "12-safety",
+    "title": "安全：资源放大与正常任务能力",
+    "nodes": [
+      "不可信外部内容",
+      "OverThink：诱导额外推理",
+      "模型生成与资源消耗",
+      "RecurGuard：重复 + 增长 + 进度",
+      "连续异常后停止",
+      "正常难题与自适应压力测试",
+      "残余放大、误停与成本"
+    ],
+    "edges": [
+      "不可信外部内容 → OverThink：诱导额外推理 → 模型生成与资源消耗",
+      "模型生成与资源消耗 → RecurGuard：重复 + 增长 + 进度 → 连续异常后停止",
+      "正常难题与自适应压力测试 → 残余放大、误停与成本",
+      "连续异常后停止 → 残余放大、误停与成本：检查净收益"
+    ],
+    "notes": [
+      "答对也可能浪费大量 token",
+      "停止策略必须保留正常任务性能"
+    ],
+    "prompt_file": "meta/research-map-v3/map-prompts/12-safety.txt",
+    "target": "assets/maps-v3/12-safety.png",
+    "status": "visual_pass",
+    "sha256": "a3344ec28c294a07e5ee6aeb855333a974824313a186f08300098afb8dc4e1f8"
+  },
+  {
+    "slug": "13-domains",
+    "title": "领域：语言、工具与验证的分工",
+    "nodes": [
+      "原语言 / 英语 / 翻译",
+      "PAL：问题 → 程序 → 执行",
+      "ReTool：学习工具策略",
+      "Prover-V2：子目标分解",
+      "形式验证与任务结果",
+      "跨域和跨语言迁移",
+      "所有调用的完整成本"
+    ],
+    "edges": [
+      "原语言 / 英语 / 翻译 → 跨域和跨语言迁移：语言条件变化",
+      "PAL：问题 → 程序 → 执行 → 形式验证与任务结果",
+      "ReTool：学习工具策略 → 形式验证与任务结果",
+      "Prover-V2：子目标分解 → 形式验证与任务结果：验证并组合子目标",
+      "形式验证与任务结果 → 所有调用的完整成本",
+      "跨域和跨语言迁移 → 所有调用的完整成本：翻译、工具、重试另计"
+    ],
+    "notes": [
+      "领域能力提升仍需 token 证据",
+      "形式通过不能排除基准暴露"
+    ],
+    "prompt_file": "meta/research-map-v3/map-prompts/13-domains.txt",
+    "target": "assets/maps-v3/13-domains.png",
+    "status": "visual_pass",
+    "sha256": "db42174051c1cef93295c24ee16dc92ec10801b263098e56b4638925d9fbec33"
+  }
+]

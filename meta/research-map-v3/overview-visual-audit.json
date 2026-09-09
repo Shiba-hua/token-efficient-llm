@@ -1,0 +1,15 @@
+{
+  "logical_placements": 1,
+  "status": "PASS",
+  "source": "docs/00-overview.md",
+  "asset": "assets/maps-v3/00-overview.png",
+  "sha256": "5118e462e5ab5df244e24434c140d043adc8494ccd1c2e8003d9fca325290fbb",
+  "reviewer": "independent gpt-5.6-luna medium",
+  "result": {
+    "task_id": "figure-0001",
+    "status": "PASS",
+    "model": "gpt-5.6-luna",
+    "confidence_note": "已实际打开并检查候选图像及其完整 Markdown 上下文；图像清晰，章节节点、底部评测栏、关系线和图例均可观察且与冻结设计及正文说明一致，未发现阻断性缺陷。",
+    "findings": []
+  }
+}
