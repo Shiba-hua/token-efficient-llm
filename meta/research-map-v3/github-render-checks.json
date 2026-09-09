@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-09",
+  "method": "真实GitHub页面DOM加载状态与正常视口截图检查",
+  "content_commit": "2f14841cbeb875c4fbac28b4ddf5cbd0a2eac243",
+  "formatting_commit": "422b9b37c042baaa511853e8367ab802d9d835ae",
+  "pages": [
+    {
+      "path": "README.md",
+      "commit": "422b9b3",
+      "checked": "13个新章节链接均指向同一提交的对应index.md",
+      "status": "pass"
+    },
+    {
+      "path": "docs/00-overview.md",
+      "commit": "2f14841",
+      "checked": "全景图已加载，并实际查看GitHub正文中的正常视口；图像与最终版本相同",
+      "images_loaded": 1,
+      "status": "pass"
+    },
+    {
+      "path": "docs/chapters/05-posttraining/index.md",
+      "commit": "422b9b3",
+      "checked": "9张主页面图片已加载；检查RLVR段落截图与MathML，L(y)解析且集合大括号恢复",
+      "images_loaded": 9,
+      "math_elements": 41,
+      "observed_math_errors": 0,
+      "status": "pass"
+    },
+    {
+      "path": "docs/chapters/07-context/reference/src-7cc3fedc37b4.md",
+      "commit": "422b9b3",
+      "checked": "共享精读页图像和公式加载；未据此重做正文覆盖验收",
+      "images_loaded": 4,
+      "math_elements": 11,
+      "observed_math_errors": 0,
+      "status": "pass"
+    },
+    {
+      "path": "docs/09-evaluation.md",
+      "commit": "422b9b3",
+      "checked": "旧入口显示迁移说明并链接新11章、原技术专题与固定历史正文",
+      "status": "pass"
+    }
+  ],
+  "scope_limit": "这是实际列出的GitHub页面与视口检查，不声称逐页/逐公式视觉普查。61处主图的独立检查另记录。",
+  "workflow_runs": [
+    {
+      "sha": "2f14841cbeb875c4fbac28b4ddf5cbd0a2eac243",
+      "id": 34352905980,
+      "conclusion": "success"
+    },
+    {
+      "sha": "422b9b37c042baaa511853e8367ab802d9d835ae",
+      "id": 34353459820,
+      "conclusion": "success"
+    }
+  ]
+}

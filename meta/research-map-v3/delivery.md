@@ -34,3 +34,7 @@
 修订分支为 `codex/research-map-v3`。前序调度契约提交为 `63464eec844711ed0d51e3e4305e204384189c79`，已推送并核对远端。正文、精读和图像提交为 `2f14841cbeb875c4fbac28b4ddf5cbd0a2eac243`，已推送并通过 `git ls-remote` 核对；[该提交的 GitHub Actions](https://github.com/Shiba-hua/token-efficient-llm/actions/runs/34352905980) 已成功。实际 GitHub 检查发现并修正行内公式的定界符问题，记录见 [github-math-formatting.json](github-math-formatting.json)。
 
 用户原有未跟踪 `drafts/` 保留，不纳入本次提交。没有合并到 `main`，也没有运行或发布任何新的模型实验。
+
+公式修复提交 `422b9b37c042baaa511853e8367ab802d9d835ae` 已推送，[GitHub Actions](https://github.com/Shiba-hua/token-efficient-llm/actions/runs/34353459820) 成功。实际页面检查已完成，范围与结果见 [github-render-checks.json](github-render-checks.json)：新目录、全景、后训练机制与原图、LLMLingua-2 精读显示、旧评测入口。没有将这些页面检查描述为整库逐页视觉验收。
+
+[浏览修订分支](https://github.com/Shiba-hua/token-efficient-llm/tree/codex/research-map-v3) · [从总论开始](https://github.com/Shiba-hua/token-efficient-llm/blob/codex/research-map-v3/docs/00-overview.md)。最终记录提交的远端 SHA 核对由交付回复说明；本记录引用的是实际完成检查的内容版本。

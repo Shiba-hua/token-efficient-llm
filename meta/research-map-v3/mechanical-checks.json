@@ -91,14 +91,13 @@
         "scripts/check_content.py"
       ],
       "exit_code": 0,
-      "stdout": "Content checks passed: 113 Markdown files, 1175 local targets.\nChecked file existence, fences, and local user paths; external URLs, anchors, and content meaning were not validated.",
+      "stdout": "Content checks passed: 113 Markdown files, 1179 local targets.\nChecked file existence, fences, and local user paths; external URLs, anchors, and content meaning were not validated.",
       "stderr": ""
     },
     {
       "command": [
         "git",
         "diff",
-        "--cached",
         "--check"
       ],
       "exit_code": 0,
@@ -107,5 +106,6 @@
     }
   ],
   "correction_note": "首次按误写的 registry validate 运行返回不支持操作；README 改为已有的 check 子命令后通过。该记录不涉及内容质量。",
-  "scope": "CPU teaching examples, unit tests, local file/identity/navigation/hash consistency; not model experiments"
+  "scope": "CPU teaching examples, unit tests, local file/identity/navigation/hash consistency; not model experiments",
+  "post_render_formatting_check": "protected inline TeX is idempotent; GitHub actual rendering checked at 422b9b3"
 }
