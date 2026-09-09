@@ -54,7 +54,7 @@
 
 [Zhang 等，Cut the Crap: An Economical Communication Pipeline for LLM-based Multi-Agent Systems，2410.02506](https://arxiv.org/abs/2410.02506)，ICLR 2025。已读图建模、优化、实验、表 4 和敏感性；由 S06 拓扑稀疏化进入。
 
-学习空间/时间通信图的 mask，再剪掉冗余边；主要设置为多个 GPT-4、有限轮次，任务包括 MMLU/GSM8K/HumanEval。作者报告 token 下降 28.1–72.8%。类型 T；这是特定多代理基线上的范围，离线学习通信图成本和单代理强基线都应另比较。
+学习空间/时间通信图的 mask，再剪掉冗余边；主要设置为多个 GPT-4、有限轮次，任务包括 MMLU/GSM8K/HumanEval。摘要报告 token 降幅28.1–72.8%，正文输入/输出须分别核对，不能直接套用该范围为总I/O。类型T；具体绝对数、原表算术不一致与前期拓扑优化见本文件定向复核补记，单代理强基线仍需比较。
 
 ## H08 — S²-MAD
 

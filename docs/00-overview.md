@@ -117,3 +117,14 @@ FrugalGPT/RouteLLM 分配强弱模型，主要目标常是费用；Self-Consiste
 每章结尾的“初步 idea—最近邻—待检验差异”用于帮助查重。尚未开展读者或研究 Agent 的对照实验，不能把这种设计直接写成“重复概率显著降低”的实测结论。可检验的验收方案见[交付审查](../meta/research-map-audit.md)。
 
 [下一步：数据准备](01-data.md) · [跨阶段索引](../sources/coverage.md) · [推导与教学代码](technical/README.md)
+
+<a id="00-总论把性能token-曲线向左上移动"></a>
+<a id="1-先定义任务再定义效率"></a>
+<a id="2-一项任务应该记哪些-token"></a>
+<a id="3-不同阶段怎样改变同一张图"></a>
+<a id="4-已经有行业共识了吗"></a>
+<a id="5-用-grpo-练习区分直觉和准确表述"></a>
+<a id="6-从想法到可证伪实验"></a>
+<a id="练习"></a>
+
+旧版小节链接已保留。原来的推导、算例和练习见[本章技术专题](technical/00-overview.md)。

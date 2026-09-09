@@ -1,4 +1,4 @@
-name: Tutorial checks
+name: Research map checks
 
 on:
   push:

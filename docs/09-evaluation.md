@@ -246,3 +246,8 @@ OckScore 和 AUCOAA 则把正确率与长度压成标量。它们适合统一约
 可运行的评分程序、真实题目重算与练习保留在[评测技术专题](technical/09-evaluation.md)和[evaluation_lab.py](../examples/evaluation_lab.py)。这些程序验证计量逻辑，没有产生本地图的模型实测排行榜。
 
 [返回目录](../README.md) · [上一章：智能体编排](08-harness-agents.md) · [下一章：相邻方向](10-other-directions.md)
+
+<a id="3-怎样复用而不是重造一个榜单"></a>
+<a id="练习与检查提示"></a>
+
+旧版小节链接已保留。原来的推导、算例和练习见[本章技术专题](technical/09-evaluation.md)。

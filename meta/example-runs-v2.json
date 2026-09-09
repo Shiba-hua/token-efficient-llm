@@ -1,0 +1,102 @@
+{
+  "date": "2026-09-09",
+  "scope": "Teaching arithmetic and existing unit tests, not new model experiments",
+  "runs": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "returncode": 0,
+      "seconds": 0.125,
+      "stdout": "",
+      "stderr": "test_aucoaa_keeps_accuracy_length_pairing (test_evaluation.EvaluationContracts.test_aucoaa_keeps_accuracy_length_pairing) ... ok\ntest_bootstrap_pairs_by_id_and_rejects_dropped_failures (test_evaluation.EvaluationContracts.test_bootstrap_pairs_by_id_and_rejects_dropped_failures) ... ok\ntest_cache_is_subset_and_missing_usage_fails (test_evaluation.EvaluationContracts.test_cache_is_subset_and_missing_usage_fails) ... ok\ntest_deployment_selector_is_counted_grader_separate (test_evaluation.EvaluationContracts.test_deployment_selector_is_counted_grader_separate) ... ok\ntest_pareto_does_not_trade_quality_for_cost (test_evaluation.EvaluationContracts.test_pareto_does_not_trade_quality_for_cost) ... ok\ntest_scenario_requires_all_variants_and_binary_task_score (test_evaluation.EvaluationContracts.test_scenario_requires_all_variants_and_binary_task_score) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.008s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "examples/evaluation_lab.py"
+      ],
+      "returncode": 0,
+      "seconds": 0.055,
+      "stdout": "SYNTHETIC TEACHING EXAMPLES — no LLM performance measured\nMethod total: 4600 grader: 980\nOckScore(80%, 1000 output tokens): 79.0469\nAUCOAA, paired correct/length: 0.5\nProduct of means (different statistic): 0.25\nOTB harmonic score: 0.6153846153846154\nPareto indices: [0, 1, 3]\nTGC/SGC: (0.6666666666666666, 0)\nPaired difference and illustrative 95% interval: (0.1, (0, 0.25))\nAll-task cost: 400 success-only cost: 100\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "examples/data_audit.py"
+      ],
+      "returncode": 0,
+      "seconds": 0.046,
+      "stdout": "SYNTHETIC TEACHING FIXTURE — not a real corpus audit\n{\n  \"rows\": 8,\n  \"known_families\": 4,\n  \"duplicate_question_groups\": [\n    [\n      \"a1\",\n      \"a2\"\n    ]\n  ],\n  \"conflicting_answer_groups\": [\n    [\n      \"a1\",\n      \"a2\"\n    ]\n  ],\n  \"exact_test_overlap_ids\": [\n    \"a1\",\n    \"a2\"\n  ],\n  \"known_family_test_overlap_ids\": [\n    \"a1\",\n    \"a2\",\n    \"a3\"\n  ],\n  \"candidate_ids_after_family_exclusion\": [\n    \"b1\",\n    \"b2\",\n    \"c1\",\n    \"c2\",\n    \"d1\"\n  ],\n  \"process_status\": {\n    \"unchecked\": 4,\n    \"invalid\": 2,\n    \"valid\": 2\n  },\n  \"checker_status\": {\n    \"pass\": 6,\n    \"fail\": 1,\n    \"unsupported\": 1\n  }\n}\n\nSCORING DEMO — label and verifier errors have different directions\ntrue_success=0.50, judge_success=0.50, FP=1, FN=1\nEqual aggregate scores can hide different misjudged examples.\n\nTOTAL REQUEST TOKEN ACCOUNTING — fabricated call logs\none_call: mean_total=170.0, mean_final_output=70.0\nshorter_final_with_retry: mean_total=285.0, mean_final_output=25.0\nNo performance claim: we have not run a language model.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "examples/tokenization_lab.py"
+      ],
+      "returncode": 0,
+      "seconds": 0.05,
+      "stdout": "SYNTHETIC CPU LESSON — no LLM training or deployment result\n\nBPE: learned only on synthetic TRAIN text; evaluated on held-out strings\ntext='the model predicts text', chars=23, utf8_bytes=23\n  char           tokens=23 pieces=['t', 'h', 'e', ' ', 'm', 'o', 'd', 'e', 'l', ' ', 'p', 'r', 'e', 'd', 'i', 'c', 't', 's', ' ', 't', 'e', 'x', 't']\n  english_bpe    tokens= 9 pieces=['the model ', 'p', 're', 'd', 'i', 'ct', 's', ' t', 'ext']\n  balanced_bpe   tokens=10 pieces=['the model ', 'p', 're', 'd', 'i', 'c', 't', 's', ' t', 'ext']\ntext='模型预测文本', chars=6, utf8_bytes=18\n  char           tokens= 6 pieces=['模', '型', '预', '测', '文', '本']\n  english_bpe    tokens= 6 pieces=['模', '型', '预', '测', '文', '本']\n  balanced_bpe   tokens= 5 pieces=['模型', '预', '测', '文', '本']\ntext='def f(x): return x + 1', chars=22, utf8_bytes=22\n  char           tokens=22 pieces=['d', 'e', 'f', ' ', 'f', '(', 'x', ')', ':', ' ', 'r', 'e', 't', 'u', 'r', 'n', ' ', 'x', ' ', '+', ' ', '1']\n  english_bpe    tokens=20 pieces=['de', 'f', ' ', 'f', '(', 'x', ')', ':', ' ', 're', 't', 'u', 'r', 'n', ' ', 'x', ' ', '+', ' ', '1']\n  balanced_bpe   tokens=20 pieces=['de', 'f', ' ', 'f', '(', 'x', ')', ':', ' ', 're', 't', 'u', 'r', 'n', ' ', 'x', ' ', '+', ' ', '1']\nFewer pieces here measure representation length, not task accuracy or speed.\n\nNTP: smoothed bigram probability conditioned on ONE previous token\np('reads' | 'model') = 0.510204\np('predicts' | 'model') = 0.265306\np('proves' | 'model') = 0.020408\nheldout_nll_nats_per_token=1.152296, perplexity=3.165451\nMTP targets for prefix ['the', 'model']: k=1: 'reads'; k=2: 'text'\nA second marginal head does not condition on the sampled first target.\n\nDOMAIN MIXTURE: exact count refits; NOT gradient-based continued pretraining\ndomain_weight,general_nll,domain_nll\n0.00,1.152296,2.145109\n0.25,1.210384,1.519143\n0.50,1.299399,1.332070\n0.75,1.460397,1.234550\n1.00,1.938933,1.174524\nThe mixture holds weighted training mass fixed and exposes a distribution trade-off.\nIt illustrates adaptation/retention, not the dynamics or magnitude of LLM forgetting.\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "examples/posttraining_lab.py"
+      ],
+      "returncode": 0,
+      "seconds": 0.054,
+      "stdout": "{\n  \"notice\": \"Synthetic arithmetic only; no LLM, optimizer framework, rollout, or performance claim.\",\n  \"sft\": {\n    \"synthetic\": true,\n    \"target_lengths\": [\n      2,\n      8\n    ],\n    \"token_average_nll\": 1.0,\n    \"sequence_average_nll\": 1.0,\n    \"long_example_token_weight\": 0.8,\n    \"long_example_sequence_weight\": 0.5,\n    \"student\": [\n      0.45062670595568977,\n      0.24730917976320385,\n      0.30206411428110647\n    ],\n    \"teacher\": [\n      0.7,\n      0.2,\n      0.1\n    ],\n    \"forward_kl_teacher_student\": 0.15529743265210078,\n    \"reverse_kl_student_teacher\": 0.18795721299424428,\n    \"forward_gradient\": [\n      -0.2493732940443102,\n      0.04730917976320384,\n      0.20206411428110646\n    ],\n    \"reverse_gradient\": [\n      -0.2831730353414116,\n      0.006025617494951822,\n      0.27714741784645974\n    ]\n  },\n  \"dpo\": {\n    \"synthetic\": true,\n    \"scalar_margin_updates\": [\n      {\n        \"step\": 0,\n        \"margin\": 0.0,\n        \"loss\": 0.6931471805599453,\n        \"gradient_wrt_margin\": -0.25\n      },\n      {\n        \"step\": 1,\n        \"margin\": 0.125,\n        \"loss\": 0.6623853823577756,\n        \"gradient_wrt_margin\": -0.24219004213849218\n      },\n      {\n        \"step\": 2,\n        \"margin\": 0.24609502106924608,\n        \"loss\": 0.6335148187666254,\n        \"gradient_wrt_margin\": -0.23463843834735493\n      },\n      {\n        \"step\": 3,\n        \"margin\": 0.36341424024292357,\n        \"loss\": 0.6064151397693142,\n        \"gradient_wrt_margin\": -0.22734889923316592\n      },\n      {\n        \"step\": 4,\n        \"margin\": 0.47708868985950653,\n        \"loss\": 0.5809711327890401,\n        \"gradient_wrt_margin\": -0.2203225525812899\n      },\n      {\n        \"step\": 5,\n        \"margin\": 0.5872499661501515,\n        \"loss\": 0.5570731496858092,\n        \"gradient_wrt_margin\": -0.21355832185837526\n      }\n    ],\n    \"clip_examples\": [\n      {\n        \"advantage\": -1,\n        \"ratio\": 0.5,\n        \"surrogate\": -0.8\n      },\n      {\n        \"advantage\": -1,\n        \"ratio\": 1,\n        \"surrogate\": -1\n      },\n      {\n        \"advantage\": -1,\n        \"ratio\": 1.5,\n        \"surrogate\": -1.5\n      },\n      {\n        \"advantage\": 1,\n        \"ratio\": 0.5,\n        \"surrogate\": 0.5\n      },\n      {\n        \"advantage\": 1,\n        \"ratio\": 1,\n        \"surrogate\": 1\n      },\n      {\n        \"advantage\": 1,\n        \"ratio\": 1.5,\n        \"surrogate\": 1.2\n      }\n    ]\n  },\n  \"grpo\": {\n    \"synthetic\": true,\n    \"binary_mixed\": [\n      0.9999999800000003,\n      0.9999999800000003,\n      -0.9999999800000003,\n      -0.9999999800000003\n    ],\n    \"binary_all_correct\": [\n      0.0,\n      0.0,\n      0.0,\n      0.0\n    ],\n    \"binary_all_wrong\": [\n      0.0,\n      0.0,\n      0.0,\n      0.0\n    ],\n    \"gated_rewards\": [\n      0.94,\n      0.8,\n      0.0,\n      0.0\n    ],\n    \"gated_advantages\": [\n      1.1534761846107957,\n      0.8337006086790902,\n      -0.993588396644943,\n      -0.993588396644943\n    ],\n    \"all_correct_different_cost_advantages\": [\n      1.3416405864999037,\n      0.4472135288333001,\n      -0.4472135288333018,\n      -1.3416405864999037\n    ],\n    \"unsafe_ungated_reward\": {\n      \"long_correct\": -1.0,\n      \"short_wrong\": -0.02\n    }\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "examples/context_lab.py"
+      ],
+      "returncode": 0,
+      "seconds": 0.049,
+      "stdout": "{\n  \"label\": \"SYNTHETIC TEACHING UNITS; NOT LLM RESULTS\",\n  \"trajectory\": [\n    {\n      \"strategy\": \"raw\",\n      \"main_input_units\": 6960,\n      \"main_output_units\": 160,\n      \"compressor_input_plus_output_units\": 0,\n      \"total_units\": 7120,\n      \"planted_fact_in_final_context\": true\n    },\n    {\n      \"strategy\": \"mask\",\n      \"main_input_units\": 3990,\n      \"main_output_units\": 160,\n      \"compressor_input_plus_output_units\": 0,\n      \"total_units\": 4150,\n      \"planted_fact_in_final_context\": false\n    },\n    {\n      \"strategy\": \"summary\",\n      \"main_input_units\": 3580,\n      \"main_output_units\": 160,\n      \"compressor_input_plus_output_units\": 945,\n      \"total_units\": 4685,\n      \"planted_fact_in_final_context\": true\n    }\n  ],\n  \"retrieval\": {\n    \"all_document_units\": 26,\n    \"selected_document_units\": 6,\n    \"selected\": \"warehouse code K7 closes at 18:00\",\n    \"relevant_fact_retained\": true,\n    \"method\": \"handwritten lexical overlap; not dense RAG or LLMLingua-2\"\n  },\n  \"cache\": {\n    \"input_units\": 2000,\n    \"cached_units\": 900,\n    \"uncached_units\": 1100,\n    \"output_units\": 100,\n    \"total_units\": 2100,\n    \"synthetic_weighted_cost\": 1490.0\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "examples/agent_budget_lab.py"
+      ],
+      "returncode": 0,
+      "seconds": 0.039,
+      "stdout": "{\n  \"label\": \"SYNTHETIC DEMONSTRATION; NOT AGENT BENCHMARK RESULTS\",\n  \"budget\": {\n    \"events\": [\n      {\n        \"call\": \"search\",\n        \"admitted\": true,\n        \"spent_before\": 0\n      },\n      {\n        \"call\": \"inspect\",\n        \"admitted\": true,\n        \"spent_before\": 280\n      },\n      {\n        \"call\": \"retry\",\n        \"admitted\": false,\n        \"spent_before\": 670\n      }\n    ],\n    \"total_units\": 770,\n    \"limit\": 1000,\n    \"final_status\": \"stopped_with_partial_answer\"\n  },\n  \"routing\": [\n    {\n      \"threshold\": 0.0,\n      \"strong_calls\": 10,\n      \"success_rate\": 0.9,\n      \"mean_total_units\": 520.0\n    },\n    {\n      \"threshold\": 0.3,\n      \"strong_calls\": 7,\n      \"success_rate\": 0.9,\n      \"mean_total_units\": 430.0\n    },\n    {\n      \"threshold\": 0.6,\n      \"strong_calls\": 4,\n      \"success_rate\": 0.9,\n      \"mean_total_units\": 340.0\n    },\n    {\n      \"threshold\": 0.9,\n      \"strong_calls\": 1,\n      \"success_rate\": 0.6,\n      \"mean_total_units\": 250.0\n    },\n    {\n      \"threshold\": 1.0,\n      \"strong_calls\": 0,\n      \"success_rate\": 0.6,\n      \"mean_total_units\": 220.0\n    }\n  ],\n  \"communication\": {\n    \"workers\": 4,\n    \"rounds\": 3,\n    \"message_units\": 100,\n    \"all_to_all_generated_units\": 1200,\n    \"all_to_all_read_units\": 3600,\n    \"all_to_all_total_units\": 4800,\n    \"star_total_units\": 4800,\n    \"caution\": \"does not compare task quality; full replay adds more input\"\n  },\n  \"tool_filter\": {\n    \"raw_whitespace_units\": 4600,\n    \"filtered_whitespace_units\": 5,\n    \"result\": {\n      \"total\": 100,\n      \"failed\": [\n        7,\n        81\n      ]\n    },\n    \"method\": \"exact programmatic aggregation\"\n  },\n  \"resources\": {\n    \"speculative_target_distribution\": [\n      0.1,\n      0.6,\n      0.3\n    ],\n    \"speculative_recovered_distribution\": [\n      0.1,\n      0.6,\n      0.3\n    ],\n    \"draft_acceptance_probability\": 0.6,\n    \"final_output_positions_both_methods\": 128,\n    \"ar_new_position_visits_ignoring_prefill\": 128,\n    \"full_sequence_diffusion_position_visits\": 2048,\n    \"diffusion_forward_calls\": 16,\n    \"warning\": \"position visits are not FLOPs or wall-clock latency\",\n    \"one_billion_weight_bytes_16bit\": 2000000000,\n    \"one_billion_weight_bytes_4bit_idealized\": 500000000\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "examples/efficient_reasoning_lab.py"
+      ],
+      "returncode": 0,
+      "seconds": 0.033,
+      "stdout": "retained units: ['速度=3', '时间=4', '位移=12']\ncorrectness-gated relative-length rewards: [0.946212, 0.853788, 0.0]\nSynthetic arithmetic checks passed; no model performance was measured.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "examples/posttraining_lab.py",
+        "--self-test"
+      ],
+      "returncode": 0,
+      "seconds": 0.052,
+      "stdout": "{\n  \"notice\": \"Synthetic arithmetic only; no LLM, optimizer framework, rollout, or performance claim.\",\n  \"self_test\": \"PASS: finite-difference KL/DPO gradients, clipping signs, constant groups, correctness gate\",\n  \"sft\": {\n    \"synthetic\": true,\n    \"target_lengths\": [\n      2,\n      8\n    ],\n    \"token_average_nll\": 1.0,\n    \"sequence_average_nll\": 1.0,\n    \"long_example_token_weight\": 0.8,\n    \"long_example_sequence_weight\": 0.5,\n    \"student\": [\n      0.45062670595568977,\n      0.24730917976320385,\n      0.30206411428110647\n    ],\n    \"teacher\": [\n      0.7,\n      0.2,\n      0.1\n    ],\n    \"forward_kl_teacher_student\": 0.15529743265210078,\n    \"reverse_kl_student_teacher\": 0.18795721299424428,\n    \"forward_gradient\": [\n      -0.2493732940443102,\n      0.04730917976320384,\n      0.20206411428110646\n    ],\n    \"reverse_gradient\": [\n      -0.2831730353414116,\n      0.006025617494951822,\n      0.27714741784645974\n    ]\n  },\n  \"dpo\": {\n    \"synthetic\": true,\n    \"scalar_margin_updates\": [\n      {\n        \"step\": 0,\n        \"margin\": 0.0,\n        \"loss\": 0.6931471805599453,\n        \"gradient_wrt_margin\": -0.25\n      },\n      {\n        \"step\": 1,\n        \"margin\": 0.125,\n        \"loss\": 0.6623853823577756,\n        \"gradient_wrt_margin\": -0.24219004213849218\n      },\n      {\n        \"step\": 2,\n        \"margin\": 0.24609502106924608,\n        \"loss\": 0.6335148187666254,\n        \"gradient_wrt_margin\": -0.23463843834735493\n      },\n      {\n        \"step\": 3,\n        \"margin\": 0.36341424024292357,\n        \"loss\": 0.6064151397693142,\n        \"gradient_wrt_margin\": -0.22734889923316592\n      },\n      {\n        \"step\": 4,\n        \"margin\": 0.47708868985950653,\n        \"loss\": 0.5809711327890401,\n        \"gradient_wrt_margin\": -0.2203225525812899\n      },\n      {\n        \"step\": 5,\n        \"margin\": 0.5872499661501515,\n        \"loss\": 0.5570731496858092,\n        \"gradient_wrt_margin\": -0.21355832185837526\n      }\n    ],\n    \"clip_examples\": [\n      {\n        \"advantage\": -1,\n        \"ratio\": 0.5,\n        \"surrogate\": -0.8\n      },\n      {\n        \"advantage\": -1,\n        \"ratio\": 1,\n        \"surrogate\": -1\n      },\n      {\n        \"advantage\": -1,\n        \"ratio\": 1.5,\n        \"surrogate\": -1.5\n      },\n      {\n        \"advantage\": 1,\n        \"ratio\": 0.5,\n        \"surrogate\": 0.5\n      },\n      {\n        \"advantage\": 1,\n        \"ratio\": 1,\n        \"surrogate\": 1\n      },\n      {\n        \"advantage\": 1,\n        \"ratio\": 1.5,\n        \"surrogate\": 1.2\n      }\n    ]\n  },\n  \"grpo\": {\n    \"synthetic\": true,\n    \"binary_mixed\": [\n      0.9999999800000003,\n      0.9999999800000003,\n      -0.9999999800000003,\n      -0.9999999800000003\n    ],\n    \"binary_all_correct\": [\n      0.0,\n      0.0,\n      0.0,\n      0.0\n    ],\n    \"binary_all_wrong\": [\n      0.0,\n      0.0,\n      0.0,\n      0.0\n    ],\n    \"gated_rewards\": [\n      0.94,\n      0.8,\n      0.0,\n      0.0\n    ],\n    \"gated_advantages\": [\n      1.1534761846107957,\n      0.8337006086790902,\n      -0.993588396644943,\n      -0.993588396644943\n    ],\n    \"all_correct_different_cost_advantages\": [\n      1.3416405864999037,\n      0.4472135288333001,\n      -0.4472135288333018,\n      -1.3416405864999037\n    ],\n    \"unsafe_ungated_reward\": {\n      \"long_correct\": -1.0,\n      \"short_wrong\": -0.02\n    }\n  }\n}\n",
+      "stderr": ""
+    }
+  ]
+}
