@@ -25,8 +25,8 @@ Rho-1 的问题是：文档级过滤之后，一段文本内部的 token 是否�
 先在高质量数据上得到参考模型 $`p_{\mathrm{ref}}`$。给定序列 $`x_{1:T}`$，位置 $`i`$ 的参考损失和当前模型损失为：
 
 ```math
-\ell_i^{\mathrm{ref}}=-\log p_{\mathrm{ref}}(x_i\mid x_{<i}),\qquad
-\ell_i^\theta=-\log p_\theta(x_i\mid x_{<i}),\qquad
+\ell_i^{\mathrm{ref}}=-\log p_{\mathrm{ref}}(x_i\mid x_{\lt i}),\qquad
+\ell_i^\theta=-\log p_\theta(x_i\mid x_{\lt i}),\qquad
 e_i=\ell_i^\theta-\ell_i^{\mathrm{ref}}.
 ```
 

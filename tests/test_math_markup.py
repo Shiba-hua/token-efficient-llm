@@ -36,5 +36,11 @@ class MathMarkupTests(unittest.TestCase):
         fragments=extract('\\(x\\)')
         self.assertEqual(len(fragments),1)
         self.assertIn('unprotected_math_markup',fragment_errors(fragments[0]))
+    def test_display_angle_bracket_regression(self):
+        self.assertTrue(fragment_errors(extract('```math\nx_{<t}\n```')[0]))
+        self.assertEqual(fragment_errors(extract('```math\nx_{\\lt t}\n```')[0]),[])
+    def test_double_escaped_command_is_not_a_row_break(self):
+        self.assertTrue(inspect(r'K^\\top'))
+        self.assertEqual(inspect('a&b\\\\\nc&d'),[])
 
 if __name__=='__main__':unittest.main()

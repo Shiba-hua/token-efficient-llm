@@ -61,7 +61,7 @@ RECOMP 位于检索器与生成模型之间。抽取式压缩器选择有用的�
 用一个说明性评分表达这种区别：给定问题或前缀 $`x`$、目标后续 $`y`$ 和候选信息 $`c`$，可比较
 
 ```math
-U(c)=\sum_t\log p_{\mathrm{LM}}(y_t\mid x,c,y_{<t}).
+U(c)=\sum_t\log p_{\mathrm{LM}}(y_t\mid x,c,y_{\lt t}).
 ```
 
 这是用真实目标后续评价候选信息的训练视角，部署时并不知道 $`y`$。它能帮助构造正负样本或摘要监督，但不能把这种训练评分当作线上可免费取得的oracle。
@@ -81,8 +81,8 @@ ICAE 在上下文后附加可学习的 memory tokens，通过目标LLM的LoRA编
 设上下文为 $`c`$，编码器产生 $`z_\phi(c)`$，冻结解码器参数为 $`\theta_0`$。两类目标可以用负对数似然解释：
 
 ```math
-\mathcal L_{\mathrm{AE}}=-\sum_i\log p_{\theta_0}(c_i\mid z_\phi(c),c_{<i}),\qquad
-\mathcal L_{\mathrm{LM}}=-\sum_t\log p_{\theta_0}(y_t\mid z_\phi(c),y_{<t}).
+\mathcal L_{\mathrm{AE}}=-\sum_i\log p_{\theta_0}(c_i\mid z_\phi(c),c_{\lt i}),\qquad
+\mathcal L_{\mathrm{LM}}=-\sum_t\log p_{\theta_0}(y_t\mid z_\phi(c),y_{\lt t}).
 ```
 
 第一项重建上下文，第二项预测上下文之后的文本；后续指令训练再让memory适配问答。解码器权重冻结，并不阻断损失对输入向量和编码器的梯度。

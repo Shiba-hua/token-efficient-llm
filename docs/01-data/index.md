@@ -37,7 +37,7 @@ y_x^*=\underset{y\in\mathcal C_x}{\mathrm{arg\,min}}\ell(y).
 
 ```math
 \mathcal L_x=-\sum_{t=1}^{\ell(y_x^*)}
-\log\pi_\theta(y^*_{x,t}\mid x,y^*_{x,<t}).
+\log\pi_\theta(y^*_{x,t}\mid x,y^*_{x,\lt t}).
 ```
 
 模型学习的是选中轨迹里的下一 token 条件分布。部署时不再需要重复生成所有候选，也不必带上收集训练数据时的长 few-shot 示例。这就是训练阶段花预算、部署阶段收回节省的联系。上式仅说明监督对象；跨样本如何归一化必须按实际训练实现记录。

@@ -71,6 +71,9 @@ def inspect(tex:str)->list[str]:
     errors=[]
     for command in sorted(set(re.findall(r'\\([A-Za-z]+)',tex))):
         if command not in ALLOWED:errors.append('unsupported_or_unknown_macro: '+command)
+    for match in re.finditer(r'(?<!\\)\\\\([A-Za-z]+)', tex):
+        if match[1] in ALLOWED:
+            errors.append('double_escaped_math_command: '+match[1])
     plain=re.sub(r'\\(?:text\w*|mathrm|mathsf|mathtt)\{[^{}]*\}','',tex)
     for m in SUSPECT.finditer(plain):errors.append('missing_command_backslash: '+m[1])
     depth=0
@@ -85,6 +88,8 @@ def fragment_errors(fragment:Fragment)->list[str]:
     if fragment.kind.startswith('unclosed_'):errors.append(fragment.kind)
     if fragment.kind in ('unprotected_inline','inline_parentheses','display_brackets'):
         errors.append('unprotected_math_markup')
+    if fragment.kind.startswith('display') and '<' in fragment.tex:
+        errors.append('html_sensitive_angle_bracket: use \\lt in display math')
     return errors
 
 def collect():

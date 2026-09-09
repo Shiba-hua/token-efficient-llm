@@ -32,7 +32,7 @@ TokenSkip 使用已有重要性模型对推理轨迹中的 token 评分，在指
 S_r=\mathrm{TopK}(s_{1:T},k_r),\qquad
 \widetilde y_r=(y_t:t\in S_r\text{，按原位置排序}),
 \qquad
-\mathcal L=-\sum_t\log\pi_\theta(\widetilde y_{r,t}\mid x,r,\widetilde y_{r,<t}).
+\mathcal L=-\sum_t\log\pi_\theta(\widetilde y_{r,t}\mid x,r,\widetilde y_{r,\lt t}).
 ```
 
 $`k_r`$ 是由比例与具体实现确定的保留数量。这个简式强调筛选与训练的顺序，不规定作者实现之外的取整或并列处理。模型学到的是在压缩条件下生成的概率分布，因此 $`r`$ 是软控制条件，不是每个新题都严格实现的 token 上限。
@@ -98,8 +98,8 @@ Self-Distilled Reasoner 的学生只看题目，教师分支额外看参考解�
 \widehat y\sim\pi_\theta(\cdot\mid x),\qquad
 \mathcal L=\mathbb E\left[
 \frac1{|\widehat y|}\sum_t
-D\!\left(p_T(\cdot\mid x,y^*,\widehat y_{<t})\Vert
-\pi_\theta(\cdot\mid x,\widehat y_{<t})\right)\right].
+D\!\left(p_T(\cdot\mid x,y^*,\widehat y_{\lt t})\Vert
+\pi_\theta(\cdot\mid x,\widehat y_{\lt t})\right)\right].
 ```
 
 其中 $`y^*`$ 是只进入教师条件的参考解，非空学生轨迹上的平均损失只更新学生分支。论文还分析全词表散度的重尾贡献和逐项裁剪；其目的包括避免少数风格词主导训练。

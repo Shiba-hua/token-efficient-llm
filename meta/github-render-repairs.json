@@ -1,0 +1,331 @@
+[
+  {
+    "file": "docs/01-data/index.md",
+    "line": 39,
+    "before": "\\mathcal L_x=-\\sum_{t=1}^{\\ell(y_x^*)}\n\\log\\pi_\\theta(y^*_{x,t}\\mid x,y^*_{x,<t}).\n",
+    "after": "\\mathcal L_x=-\\sum_{t=1}^{\\ell(y_x^*)}\n\\log\\pi_\\theta(y^*_{x,t}\\mid x,y^*_{x,\\lt t}).\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/03-midtraining/index.md",
+    "line": 28,
+    "before": "\\ell_i^{\\mathrm{ref}}=-\\log p_{\\mathrm{ref}}(x_i\\mid x_{<i}),\\qquad\n\\ell_i^\\theta=-\\log p_\\theta(x_i\\mid x_{<i}),\\qquad\ne_i=\\ell_i^\\theta-\\ell_i^{\\mathrm{ref}}.\n",
+    "after": "\\ell_i^{\\mathrm{ref}}=-\\log p_{\\mathrm{ref}}(x_i\\mid x_{\\lt i}),\\qquad\n\\ell_i^\\theta=-\\log p_\\theta(x_i\\mid x_{\\lt i}),\\qquad\ne_i=\\ell_i^\\theta-\\ell_i^{\\mathrm{ref}}.\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/05-posttraining/index.md",
+    "line": 32,
+    "before": "S_r=\\mathrm{TopK}(s_{1:T},k_r),\\qquad\n\\widetilde y_r=(y_t:t\\in S_r\\text{，按原位置排序}),\n\\qquad\n\\mathcal L=-\\sum_t\\log\\pi_\\theta(\\widetilde y_{r,t}\\mid x,r,\\widetilde y_{r,<t}).\n",
+    "after": "S_r=\\mathrm{TopK}(s_{1:T},k_r),\\qquad\n\\widetilde y_r=(y_t:t\\in S_r\\text{，按原位置排序}),\n\\qquad\n\\mathcal L=-\\sum_t\\log\\pi_\\theta(\\widetilde y_{r,t}\\mid x,r,\\widetilde y_{r,\\lt t}).\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/05-posttraining/index.md",
+    "line": 98,
+    "before": "\\widehat y\\sim\\pi_\\theta(\\cdot\\mid x),\\qquad\n\\mathcal L=\\mathbb E\\left[\n\\frac1{|\\widehat y|}\\sum_t\nD\\!\\left(p_T(\\cdot\\mid x,y^*,\\widehat y_{<t})\\Vert\n\\pi_\\theta(\\cdot\\mid x,\\widehat y_{<t})\\right)\\right].\n",
+    "after": "\\widehat y\\sim\\pi_\\theta(\\cdot\\mid x),\\qquad\n\\mathcal L=\\mathbb E\\left[\n\\frac1{|\\widehat y|}\\sum_t\nD\\!\\left(p_T(\\cdot\\mid x,y^*,\\widehat y_{\\lt t})\\Vert\n\\pi_\\theta(\\cdot\\mid x,\\widehat y_{\\lt t})\\right)\\right].\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/07-context/index.md",
+    "line": 64,
+    "before": "U(c)=\\sum_t\\log p_{\\mathrm{LM}}(y_t\\mid x,c,y_{<t}).\n",
+    "after": "U(c)=\\sum_t\\log p_{\\mathrm{LM}}(y_t\\mid x,c,y_{\\lt t}).\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/07-context/index.md",
+    "line": 84,
+    "before": "\\mathcal L_{\\mathrm{AE}}=-\\sum_i\\log p_{\\theta_0}(c_i\\mid z_\\phi(c),c_{<i}),\\qquad\n\\mathcal L_{\\mathrm{LM}}=-\\sum_t\\log p_{\\theta_0}(y_t\\mid z_\\phi(c),y_{<t}).\n",
+    "after": "\\mathcal L_{\\mathrm{AE}}=-\\sum_i\\log p_{\\theta_0}(c_i\\mid z_\\phi(c),c_{\\lt i}),\\qquad\n\\mathcal L_{\\mathrm{LM}}=-\\sum_t\\log p_{\\theta_0}(y_t\\mid z_\\phi(c),y_{\\lt t}).\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/08-agents/reference/2406.18665.md",
+    "line": 36,
+    "before": "R^\\alpha(q)=\n\\begin{cases}\n\\mathcal M_{\\mathrm{weak}},&P(\\mathrm{win}_s\\mid q)<\\alpha,\\\\\n\\mathcal M_{\\mathrm{strong}},&P(\\mathrm{win}_s\\mid q)\\ge\\alpha.\n\\end{cases}\n",
+    "after": "R^\\alpha(q)=\n\\begin{cases}\n\\mathcal M_{\\mathrm{weak}},&P(\\mathrm{win}_s\\mid q)\\lt \\alpha,\\\\\n\\mathcal M_{\\mathrm{strong}},&P(\\mathrm{win}_s\\mid q)\\ge\\alpha.\n\\end{cases}\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/11-evaluation/reference/2407.01502.md",
+    "line": 54,
+    "before": "100+0.7N < 1.0N \\quad\\Longleftrightarrow\\quad N>333.3\n",
+    "after": "100+0.7N \\lt  1.0N \\quad\\Longleftrightarrow\\quad N>333.3\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/07-context/reference/2508.21433.md",
+    "line": 36,
+    "before": "o'_i=\\begin{cases}\np_i,&i<t-M,\\\\\no_i,&i\\ge t-M,\n\\end{cases}\n",
+    "after": "o'_i=\\begin{cases}\np_i,&i\\lt t-M,\\\\\no_i,&i\\ge t-M,\n\\end{cases}\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/07-context/reference/2510.18866.md",
+    "line": 57,
+    "before": "B_1=\\{k\\mid M_{k,k-1}>M_{k-1,k-2},\\ M_{k,k-1}>M_{k+1,k},\\ 1<k<n\\}.\n",
+    "after": "B_1=\\{k\\mid M_{k,k-1}>M_{k-1,k-2},\\ M_{k,k-1}>M_{k+1,k},\\ 1\\lt k\\lt n\\}.\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/07-context/reference/2510.18866.md",
+    "line": 63,
+    "before": "B_2=\\{k\\mid \\mathrm{sim}(s_{k-1},s_k)<\\tau,\\ 1\\le k<n\\},\\qquad B=B_1\\cap B_2.\n",
+    "after": "B_2=\\{k\\mid \\mathrm{sim}(s_{k-1},s_k)\\lt \\tau,\\ 1\\le k\\lt n\\},\\qquad B=B_1\\cap B_2.\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/05-posttraining/reference/2306.13649.md",
+    "line": 49,
+    "before": "D(p_T\\|p_S^\\theta)(y\\mid x)=\\frac1{L_y}\\sum_{n=1}^{L_y}\nD\\bigl(p_T(\\cdot\\mid y_{<n},x)\\|p_S^\\theta(\\cdot\\mid y_{<n},x)\\bigr).\n",
+    "after": "D(p_T\\|p_S^\\theta)(y\\mid x)=\\frac1{L_y}\\sum_{n=1}^{L_y}\nD\\bigl(p_T(\\cdot\\mid y_{\\lt n},x)\\|p_S^\\theta(\\cdot\\mid y_{\\lt n},x)\\bigr).\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/05-posttraining/reference/2601.18734.md",
+    "line": 62,
+    "before": "D(p_T\\|p_S)(\\hat y\\mid x)=\n\\frac1{|\\hat y|}\\sum_{n=1}^{|\\hat y|}\nD\\!\\left(p_T(\\cdot\\mid x,y^\\star,\\hat y_{<n})\\;\\middle\\|\\;\np_S(\\cdot\\mid x,\\hat y_{<n})\\right).\n",
+    "after": "D(p_T\\|p_S)(\\hat y\\mid x)=\n\\frac1{|\\hat y|}\\sum_{n=1}^{|\\hat y|}\nD\\!\\left(p_T(\\cdot\\mid x,y^\\star,\\hat y_{\\lt n})\\;\\middle\\|\\;\np_S(\\cdot\\mid x,\\hat y_{\\lt n})\\right).\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/05-posttraining/reference/2601.18734.md",
+    "line": 107,
+    "before": "A_n=\\log p_T(\\hat y_n\\mid x,y^\\star,\\hat y_{<n})-\n\\log p_S(\\hat y_n\\mid x,\\hat y_{<n}),\n",
+    "after": "A_n=\\log p_T(\\hat y_n\\mid x,y^\\star,\\hat y_{\\lt n})-\n\\log p_S(\\hat y_n\\mid x,\\hat y_{\\lt n}),\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/05-posttraining/reference/2602.20945.md",
+    "line": 55,
+    "before": "R_{\\rm Laser}=\\mathbf1(\\text{correct})[1+\\alpha\\mathbf1(L<L_T)].\n",
+    "after": "R_{\\rm Laser}=\\mathbf1(\\text{correct})[1+\\alpha\\mathbf1(L\\lt L_T)].\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/05-posttraining/reference/2602.20945.md",
+    "line": 61,
+    "before": "R_{\\rm Laser-D}=\\mathbf1(\\text{correct})[1+\\alpha\\mathbf1(L<L_T)]\n +\\mathbf1(\\text{incorrect})\\alpha\\mathbf1(L\\ge L_T).\n",
+    "after": "R_{\\rm Laser-D}=\\mathbf1(\\text{correct})[1+\\alpha\\mathbf1(L\\lt L_T)]\n +\\mathbf1(\\text{incorrect})\\alpha\\mathbf1(L\\ge L_T).\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/05-posttraining/reference/2502.12067.md",
+    "line": 28,
+    "before": "I_1(x_i)=-\\log P(x_i\\mid x_{<i};\\theta_{M_L}).\n",
+    "after": "I_1(x_i)=-\\log P(x_i\\mid x_{\\lt i};\\theta_{M_L}).\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/05-posttraining/reference/2502.12067.md",
+    "line": 86,
+    "before": "\\mathcal L=-\\sum_{i=1}^{l}\\log P(y_i\\mid x,\\gamma,y_{<i};\\theta_M).\n",
+    "after": "\\mathcal L=-\\sum_{i=1}^{l}\\log P(y_i\\mid x,\\gamma,y_{\\lt i};\\theta_M).\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/05-posttraining/reference/2502.09601.md",
+    "line": 27,
+    "before": "p(a\\mid t_1,\\ldots,t_n,q;\\theta)\\prod_{i=1}^{n}p(t_i\\mid t_{<i},q;\\theta).\n",
+    "after": "p(a\\mid t_1,\\ldots,t_n,q;\\theta)\\prod_{i=1}^{n}p(t_i\\mid t_{\\lt i},q;\\theta).\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/05-posttraining/reference/2502.09601.md",
+    "line": 33,
+    "before": "\\max_{\\Delta\\theta}\\;\\mathbb E_{(q,a)\\sim D}\\left[p(a\\mid t_{1:m},q;\\theta+\\Delta\\theta)\\prod_{i=1}^{m}p(t_i\\mid t_{<i},q;\\theta+\\Delta\\theta)\\right].\n",
+    "after": "\\max_{\\Delta\\theta}\\;\\mathbb E_{(q,a)\\sim D}\\left[p(a\\mid t_{1:m},q;\\theta+\\Delta\\theta)\\prod_{i=1}^{m}p(t_i\\mid t_{\\lt i},q;\\theta+\\Delta\\theta)\\right].\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/05-posttraining/reference/2504.11536.md",
+    "line": 70,
+    "before": "\\mathcal{J}_{\\mathrm{PPO}}(\\theta)=\n\\mathbb{E}\\left[\\min\\left(\n\\frac{\\pi_\\theta(o_t\\mid q,o_{<t};\\mathrm{CI})}\n{\\pi_{\\theta_{\\mathrm{old}}}(o_t\\mid q,o_{<t};\\mathrm{CI})}\\hat A_t,\n\\mathrm{clip}\\left(\\frac{\\pi_\\theta(o_t\\mid q,o_{<t};\\mathrm{CI})}\n{\\pi_{\\theta_{\\mathrm{old}}}(o_t\\mid q,o_{<t};\\mathrm{CI})},1-\\epsilon,1+\\epsilon\\right)\\hat A_t\n\\right)\\right].\n",
+    "after": "\\mathcal{J}_{\\mathrm{PPO}}(\\theta)=\n\\mathbb{E}\\left[\\min\\left(\n\\frac{\\pi_\\theta(o_t\\mid q,o_{\\lt t};\\mathrm{CI})}\n{\\pi_{\\theta_{\\mathrm{old}}}(o_t\\mid q,o_{\\lt t};\\mathrm{CI})}\\hat A_t,\n\\mathrm{clip}\\left(\\frac{\\pi_\\theta(o_t\\mid q,o_{\\lt t};\\mathrm{CI})}\n{\\pi_{\\theta_{\\mathrm{old}}}(o_t\\mid q,o_{\\lt t};\\mathrm{CI})},1-\\epsilon,1+\\epsilon\\right)\\hat A_t\n\\right)\\right].\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/03-midtraining/reference/2404.07965.md",
+    "line": 39,
+    "before": "\\mathcal{L}_{\\mathrm{ref}}(x_i)=-\\log P_{\\mathrm{RM}}(x_i\\mid x_{<i}).\n",
+    "after": "\\mathcal{L}_{\\mathrm{ref}}(x_i)=-\\log P_{\\mathrm{RM}}(x_i\\mid x_{\\lt i}).\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/03-midtraining/reference/2404.07965.md",
+    "line": 63,
+    "before": "\\mathcal{L}_{\\mathrm{SLM}}(\\theta)=\n-\\frac{1}{N\\,k\\%}\\sum_{i=1}^{N}I_{k\\%}(x_i)\\log P_{\\theta}(x_i\\mid x_{<i}).\n",
+    "after": "\\mathcal{L}_{\\mathrm{SLM}}(\\theta)=\n-\\frac{1}{N\\,k\\%}\\sum_{i=1}^{N}I_{k\\%}(x_i)\\log P_{\\theta}(x_i\\mid x_{\\lt i}).\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2403.15388.md",
+    "line": 13,
+    "before": "336\\\\times336",
+    "after": "336\\times336",
+    "reason": "PruMerge formula commands were double escaped"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2403.15388.md",
+    "line": 13,
+    "before": "24\\\\times24=576",
+    "after": "24\\times24=576",
+    "reason": "PruMerge formula commands were double escaped"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2403.15388.md",
+    "line": 13,
+    "before": "16\\\\times16",
+    "after": "16\\times16",
+    "reason": "PruMerge formula commands were double escaped"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2403.15388.md",
+    "line": 15,
+    "before": "N\\\\times N",
+    "after": "N\\times N",
+    "reason": "PruMerge formula commands were double escaped"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2403.15388.md",
+    "line": 21,
+    "before": "\\\\mathbf{Y}=\\\\{\\\\mathbf{y}_1,\\\\ldots,\\\\mathbf{y}_n\\\\}",
+    "after": "\\mathbf{Y}=\\{\\mathbf{y}_1,\\ldots,\\mathbf{y}_n\\}",
+    "reason": "PruMerge formula commands were double escaped"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2403.15388.md",
+    "line": 21,
+    "before": "\\\\mathbf K=\\\\{\\\\mathbf k_i\\\\}",
+    "after": "\\mathbf K=\\{\\mathbf k_i\\}",
+    "reason": "PruMerge formula commands were double escaped"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2403.15388.md",
+    "line": 21,
+    "before": "\\\\mathbf Q=\\\\{\\\\mathbf q_i\\\\}",
+    "after": "\\mathbf Q=\\{\\mathbf q_i\\}",
+    "reason": "PruMerge formula commands were double escaped"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2403.15388.md",
+    "line": 24,
+    "before": "\\\\mathbf Y_{out}=\\\\mathbf A\\\\mathbf V,\n\\\\qquad\n\\\\mathbf A=\\\\mathrm{softmax}\\\\left(\\\\frac{\\\\mathbf Q\\\\mathbf K^\\\\top}{\\\\sqrt{d_k}}\\\\right).\n",
+    "after": "\\mathbf Y_{out}=\\mathbf A\\mathbf V,\n\\qquad\n\\mathbf A=\\mathrm{softmax}\\left(\\frac{\\mathbf Q\\mathbf K^\\top}{\\sqrt{d_k}}\\right).\n",
+    "reason": "PruMerge formula commands were double escaped"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2403.15388.md",
+    "line": 32,
+    "before": "\\\\mathbf a_{cls}=\\\\mathrm{softmax}\\\\left(\n\\\\frac{\\\\mathbf q_{cls}\\\\mathbf K^\\\\top}{\\\\sqrt{d_k}}\n\\\\right).\n",
+    "after": "\\mathbf a_{cls}=\\mathrm{softmax}\\left(\n\\frac{\\mathbf q_{cls}\\mathbf K^\\top}{\\sqrt{d_k}}\n\\right).\n",
+    "reason": "PruMerge formula commands were double escaped"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2403.15388.md",
+    "line": 37,
+    "before": "\\\\mathbf Y",
+    "after": "\\mathbf Y",
+    "reason": "PruMerge formula commands were double escaped"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2403.15388.md",
+    "line": 37,
+    "before": "\\\\Theta_{X\\\\to T}",
+    "after": "\\Theta_{X\\to T}",
+    "reason": "PruMerge formula commands were double escaped"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2403.15388.md",
+    "line": 44,
+    "before": "u=Q_3+1.5\\\\,IQR .\n",
+    "after": "u=Q_3+1.5\\,IQR .\n",
+    "reason": "PruMerge formula commands were double escaped"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2403.15388.md",
+    "line": 62,
+    "before": "\\\\mathrm{Sim}(\\\\mathbf y_i,\\\\mathbf y_j)\n=\\\\mathbf k_i\\\\mathbf k_j^\\\\top .\n",
+    "after": "\\mathrm{Sim}(\\mathbf y_i,\\mathbf y_j)\n=\\mathbf k_i\\mathbf k_j^\\top .\n",
+    "reason": "PruMerge formula commands were double escaped"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2403.15388.md",
+    "line": 66,
+    "before": "\\\\mathbf K\\\\mathbf K^\\\\top",
+    "after": "\\mathbf K\\mathbf K^\\top",
+    "reason": "PruMerge formula commands were double escaped"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2403.15388.md",
+    "line": 66,
+    "before": "p\\\\in S",
+    "after": "p\\in S",
+    "reason": "PruMerge formula commands were double escaped"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2403.15388.md",
+    "line": 69,
+    "before": "\\\\mathbf y'_p=\\\\sum_{q=1}^{k}a_{cls}[j_q]\\\\,\\\\mathbf y_{j_q}.\n",
+    "after": "\\mathbf y'_p=\\sum_{q=1}^{k}a_{cls}[j_q]\\,\\mathbf y_{j_q}.\n",
+    "reason": "PruMerge formula commands were double escaped"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2403.15388.md",
+    "line": 94,
+    "before": "\\\\{i_{m+1},\\\\ldots,i_{2m}\\\\}",
+    "after": "\\{i_{m+1},\\ldots,i_{2m}\\}",
+    "reason": "PruMerge formula commands were double escaped"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2403.15388.md",
+    "line": 124,
+    "before": "576/14.4\\\\approx40",
+    "after": "576/14.4\\approx40",
+    "reason": "PruMerge formula commands were double escaped"
+  },
+  {
+    "file": "docs/12-safety/reference/2606.07968.md",
+    "line": 36,
+    "before": "LF(Y)=\\mathbf{1}[\\text{answer tokens}<5\\ \\lor\\ T_{attack}\\ge T_{max}] .\n",
+    "after": "LF(Y)=\\mathbf{1}[\\text{answer tokens}\\lt 5\\ \\lor\\ T_{attack}\\ge T_{max}] .\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/12-safety/reference/2606.07968.md",
+    "line": 68,
+    "before": "MPD(S)=\\frac{2}{|S|(|S|-1)}\\sum_{i<j}\\|e_i-e_j\\|_2,\n",
+    "after": "MPD(S)=\\frac{2}{|S|(|S|-1)}\\sum_{i\\lt j}\\|e_i-e_j\\|_2,\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/12-safety/reference/2606.07968.md",
+    "line": 92,
+    "before": "A_t=\\mathbf{1}[RR_t>\\tau_R\\ \\land\\ VG_t<\\tau_V\\ \\land\\ TP_t<\\tau_P\\ \\land\\ t\\ge c_{min}].\n",
+    "after": "A_t=\\mathbf{1}[RR_t>\\tau_R\\ \\land\\ VG_t\\lt \\tau_V\\ \\land\\ TP_t\\lt \\tau_P\\ \\land\\ t\\ge c_{min}].\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/04-architecture/reference/2412.09871.md",
+    "line": 34,
+    "before": "H(x_i)=\\sum_{v\\in\\mathcal V}p_e(x_i=v\\mid\\mathbf{x}_{<i})\\log p_e(x_i=v\\mid\\mathbf{x}_{<i}).\n",
+    "after": "H(x_i)=\\sum_{v\\in\\mathcal V}p_e(x_i=v\\mid\\mathbf{x}_{\\lt i})\\log p_e(x_i=v\\mid\\mathbf{x}_{\\lt i}).\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/04-architecture/reference/2412.09871.md",
+    "line": 53,
+    "before": "f_p(\\mathbf{x}_{<i})=f_p(\\mathbf{x})_{<i}.\n",
+    "after": "f_p(\\mathbf{x}_{\\lt i})=f_p(\\mathbf{x})_{\\lt i}.\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  },
+  {
+    "file": "docs/02-pretraining/reference/2412.08821.md",
+    "line": 65,
+    "before": "\\hat x_n=f_\\theta(x_{<n}),\\qquad\n\\mathcal L_{\\mathrm{Base}}(\\theta)=\\mathbb E_{x\\sim q}\\left[\\sum_{n=1}^{N}\\|f_\\theta(x_{<n})-x_n\\|_2^2\\right].\n",
+    "after": "\\hat x_n=f_\\theta(x_{\\lt n}),\\qquad\n\\mathcal L_{\\mathrm{Base}}(\\theta)=\\mathbb E_{x\\sim q}\\left[\\sum_{n=1}^{N}\\|f_\\theta(x_{\\lt n})-x_n\\|_2^2\\right].\n",
+    "reason": "GitHub display HTML angle bracket conflict"
+  }
+]
