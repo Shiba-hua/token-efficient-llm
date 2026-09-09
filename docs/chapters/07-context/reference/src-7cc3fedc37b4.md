@@ -99,7 +99,7 @@ $$p(x_i,\Theta)=\mathrm{softmax}(W h_i+b),$$
 
 $$L(\Theta)=\frac{1}{N}\sum_{i=1}^{N}\mathrm{CrossEntropy}\bigl(y_i,p(x_i,\Theta)\bigr).$$
 
-这里的 $N$ 是分类序列中的词数；VR/AG 则使用空格切分得到的词集合，部署阶段的实际长度还受目标 tokenizer 的子词计数影响。
+这里的 $`N`$ 是分类序列中的词数；VR/AG 则使用空格切分得到的词集合，部署阶段的实际长度还受目标 tokenizer 的子词计数影响。
 
 模型有两种：`LLMLingua-2` 用 355M 参数的 XLM-RoBERTa-large，`LLMLingua-2-small` 用 110M multilingual-BERT。两者在 MeetingBank 蒸馏数据上训练 10 epochs，Adam，learning rate `1e-5`，batch size 10；PyTorch 2.0.1、CUDA 11.7。训练约 23 小时（XLM-R-large）和 16 小时（mBERT）。附录 I 的 2.1GB 是 LLMLingua-2 在 MeetingBank 推理时的峰值 GPU memory，不是训练峰值；附录 H 只报告训练时长和模型规模。
 
@@ -111,7 +111,7 @@ $$L(\Theta)=\frac{1}{N}\sum_{i=1}^{N}\mathrm{CrossEntropy}\bigl(y_i,p(x_i,\Theta
 
 $$\widetilde{N}=\tau N.$$
 
-如果原文有 $N=20$ 个词，目标 $1/\tau=4\times$，则 $\tau=0.25$、$\widetilde{N}=5$。分类器给出 `p_preserve`：例如位置 1–20 中概率最高的五个位置为 `{2,6,9,14,18}`，保留原文第 2、6、9、14、18 词，再按原位置排序拼接。不会按概率排序重排，也不会生成新词。
+如果原文有 $`N=20`$ 个词，目标 $`1/\tau=4\times`$，则 $`\tau=0.25`$、$`\widetilde{N}=5`$。分类器给出 `p_preserve`：例如位置 1–20 中概率最高的五个位置为 `{2,6,9,14,18}`，保留原文第 2、6、9、14、18 词，再按原位置排序拼接。不会按概率排序重排，也不会生成新词。
 
 实现时还要处理子词：附注 2 规定多 token 词的完整性必须保留，将一个词的所有 subword preserve 概率平均，使用平均值决定该词，防止拆出半个词。部署目标率可以按词/模型 token 近似控制；论文表格中的 Tokens 是下游输入 token 计数，压缩器输出率并非所有 tokenizer 完全相同。
 

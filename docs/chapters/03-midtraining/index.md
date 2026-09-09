@@ -22,7 +22,7 @@
 
 Rho-1 的问题是：文档级过滤之后，一段文本内部的 token 是否都值得用相同权重训练？它的 Selective Language Modeling（SLM）仍读入完整序列，通过参考模型与当前模型的损失差异选择训练信号。这里减少的是进入目标函数的位置，不能理解成从推理 prompt 删除文字。[原论文 §2](https://arxiv.org/abs/2404.07965v1)
 
-先在高质量数据上得到参考模型 $p_{\mathrm{ref}}$。给定序列 $x_{1:T}$，位置 $i$ 的参考损失和当前模型损失为：
+先在高质量数据上得到参考模型 $`p_{\mathrm{ref}}`$。给定序列 $`x_{1:T}`$，位置 $`i`$ 的参考损失和当前模型损失为：
 
 ```math
 \ell_i^{\mathrm{ref}}=-\log p_{\mathrm{ref}}(x_i\mid x_{<i}),\qquad
@@ -30,15 +30,15 @@ Rho-1 的问题是：文档级过滤之后，一段文本内部的 token 是否�
 e_i=\ell_i^\theta-\ell_i^{\mathrm{ref}}.
 ```
 
-式子要求目标 token 的概率为正。$e_i$ 是 excess loss：若参考模型认为某位置容易，而当前模型还不会，差值较大；若两者都觉得它困难，差值未必大。因此只按当前 loss 取最高，会与按 excess loss 选择得到不同结果。参考模型表达的是目标分布的偏好，不是通用正确性 oracle。
+式子要求目标 token 的概率为正。$`e_i`$ 是 excess loss：若参考模型认为某位置容易，而当前模型还不会，差值较大；若两者都觉得它困难，差值未必大。因此只按当前 loss 取最高，会与按 excess loss 选择得到不同结果。参考模型表达的是目标分布的偏好，不是通用正确性 oracle。
 
-对一个 batch 的有效位置选取 excess loss 最高的非空集合 $S$，对应目标写为：
+对一个 batch 的有效位置选取 excess loss 最高的非空集合 $`S`$，对应目标写为：
 
 ```math
 \mathcal L_{\mathrm{SLM}}=\frac{1}{|S|}\sum_{i\in S}\ell_i^\theta.
 ```
 
-原论文用选择比例控制 $|S|$。上式按实际选中数量归一化，便于说明边界；实现中的比例取整、并列值和分布式排序不能从这个简式推断。
+原论文用选择比例控制 $`|S|`$。上式按实际选中数量归一化，便于说明边界；实现中的比例取整、并列值和分布式排序不能从这个简式推断。
 
 ```python
 def selected_positions(current_loss, reference_loss, keep):

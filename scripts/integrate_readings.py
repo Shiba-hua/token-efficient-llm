@@ -14,6 +14,8 @@ import shutil
 import subprocess
 from pathlib import Path
 
+from check_content import prose_only
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -40,6 +42,27 @@ def markdown_hard_breaks(text: str) -> str:
             line = line.rstrip()
         output.append(line)
     return '\n'.join(output).rstrip() + '\n'
+
+
+def github_inline_math(text: str) -> str:
+    """Protect TeX escapes and Chinese punctuation with GitHub's $`...`$ form.
+
+    Fenced examples and inline code are excluded; existing protected math is
+    masked as code and retained. This changes delimiters, not formula content.
+    """
+    prose, _ = prose_only(text)
+    pattern = re.compile(r'(?<![\\$])\$(?!\$)([^$\n]+?)(?<!\\)\$(?!\$)')
+    replacements = []
+    for match in pattern.finditer(prose):
+        if not match[1].strip():
+            continue
+        start, end = match.span()
+        original = text[start + 1:end - 1]
+        if '`' not in original:
+            replacements.append((start, end, '$`' + original + '`$'))
+    for start, end, replacement in reversed(replacements):
+        text = text[:start] + replacement + text[end:]
+    return text
 
 
 def main() -> None:
@@ -137,7 +160,7 @@ def main() -> None:
         text = '\n'.join(lines).rstrip() + '\n'
         if pid == '2404.19737':
             text = text.replace('它不是在没有中间 token 的情况下直接建模一个严格的联合概率 $P(x_{t+1},\\ldots,x_{t+n}\\mid x_{t:1})$。', '这些边缘分布的乘积可以定义带条件独立假设的模型联合分布，但不保证恢复真实未来 token 的相关性，也不等同于主自回归模型逐步条件化得到的联合分布。')
-        page.write_text(markdown_hard_breaks(text))
+        page.write_text(github_inline_math(markdown_hard_breaks(text)))
         paper['artifact'] = str(page.relative_to(ROOT))
         paper['reading_version'] = handoff.get('version')
         paper['read_scope'] = handoff.get('read_scope')

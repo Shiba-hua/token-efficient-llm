@@ -31,6 +31,6 @@
 
 ## Git 与渲染交付
 
-修订分支为 `codex/research-map-v3`。前序调度契约提交为 `63464eec844711ed0d51e3e4305e204384189c79`，已推送并核对远端。正文与导航的本轮提交、远端检查和 GitHub 实际渲染记录将在完成时追加。
+修订分支为 `codex/research-map-v3`。前序调度契约提交为 `63464eec844711ed0d51e3e4305e204384189c79`，已推送并核对远端。正文、精读和图像提交为 `2f14841cbeb875c4fbac28b4ddf5cbd0a2eac243`，已推送并通过 `git ls-remote` 核对；[该提交的 GitHub Actions](https://github.com/Shiba-hua/token-efficient-llm/actions/runs/34352905980) 已成功。实际 GitHub 检查发现并修正行内公式的定界符问题，记录见 [github-math-formatting.json](github-math-formatting.json)。
 
 用户原有未跟踪 `drafts/` 保留，不纳入本次提交。没有合并到 `main`，也没有运行或发布任何新的模型实验。

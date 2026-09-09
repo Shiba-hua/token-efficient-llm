@@ -22,7 +22,7 @@
 
 Gloeckle 等的 Multi-token Prediction（MTP）在共享 Transformer 主干上增加多个未来预测头。训练时，每个位置都利用多个未来 token 的监督；部署时既可以只使用第一个头，也可以把额外的头用于自草稿解码。这两种部署方式让我们能够区分训练目标的作用与解码器的作用。[原论文 §2](https://arxiv.org/abs/2404.19737v1)
 
-设输入历史为 $x_{\le t}$，共享主干输出 $h_t=f_\theta(x_{\le t})$。第 $k$ 个头预测 $x_{t+k}$，预测跨度为 $K\ge1$。忽略 padding 后，一个说明性损失为：
+设输入历史为 $`x_{\le t}`$，共享主干输出 $`h_t=f_\theta(x_{\le t})`$。第 $`k`$ 个头预测 $`x_{t+k}`$，预测跨度为 $`K\ge1`$。忽略 padding 后，一个说明性损失为：
 
 ```math
 \mathcal L_{\mathrm{MTP}}=
@@ -32,7 +32,7 @@ Gloeckle 等的 Multi-token Prediction（MTP）在共享 Transformer 主干上�
 Z=\sum_t\sum_k\mathbf 1[t+k\le T]\lambda_k>0.
 ```
 
-其中 $T$ 是序列长度，$\lambda_k\ge0$ 表示各预测距离的权重。上式显式写出边界和归一化，只用于解释多个监督项怎样回到主干；原方法的 head 结构和实验配置以论文为准。
+其中 $`T`$ 是序列长度，$`\lambda_k\ge0`$ 表示各预测距离的权重。上式显式写出边界和归一化，只用于解释多个监督项怎样回到主干；原方法的 head 结构和实验配置以论文为准。
 
 第 2 个头没有看到第 1 个头实际采样出的词。因此，把两个头的边缘分布相乘，不会自动得到真实的未来联合分布。考虑教学分布：未来两个 token 只可能为 `AB` 或 `CD`，各占一半。两个独立边缘头都可以完全学对各位置的分布，但独立采样仍会产生原分布没有的 `AD` 或 `CB`。这解释了为什么额外预测头可以作为监督或候选，却需要明确的验证过程才能作为最终输出。
 
@@ -70,7 +70,7 @@ independent = {a + b: pa * pb
 
 Large Concept Models（LCM）把句子经SONAR编码为连续表示，在这个空间中预测后续句子，再由解码器恢复文字。与逐token预测相比，一个预测位置对应更粗的语义单位，但编码器和文字解码器仍是完整系统的一部分。[原论文](https://arxiv.org/abs/2412.08821)
 
-令第 $t$ 句的表示为 $z_t=E(s_t)$，Base-LCM可通过平方误差学习预测：
+令第 $`t`$ 句的表示为 $`z_t=E(s_t)`$，Base-LCM可通过平方误差学习预测：
 
 ```math
 \widehat z_{t+1}=f_\theta(z_{\le t}),\qquad

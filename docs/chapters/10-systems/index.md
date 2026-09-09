@@ -21,9 +21,9 @@
 
 ## 投机解码：便宜地提案，严格地验证
 
-Speculative decoding 让便宜的模型 $q$ 提出候选，目标模型 $p$ 批量验证。若验证与拒绝后的采样正确执行，目标是保持 $p$ 的输出分布，同时减少昂贵模型的串行调用。[原论文](https://arxiv.org/abs/2211.17192v2)
+Speculative decoding 让便宜的模型 $`q`$ 提出候选，目标模型 $`p`$ 批量验证。若验证与拒绝后的采样正确执行，目标是保持 $`p`$ 的输出分布，同时减少昂贵模型的串行调用。[原论文](https://arxiv.org/abs/2211.17192v2)
 
-考虑一个位置的离散分布，$p$、$q$ 都非负且总和为1。候选 $x\sim q$ 在 $q(x)>0$ 时以
+考虑一个位置的离散分布，$`p`$、$`q`$ 都非负且总和为1。候选 $`x\sim q`$ 在 $`q(x)>0`$ 时以
 
 ```math
 a(x)=\min\left(1,\frac{p(x)}{q(x)}\right)
@@ -36,7 +36,7 @@ r(x)=\frac{[p(x)-q(x)]_+}{Z},\qquad
 Z=\sum_x[p(x)-q(x)]_+.
 ```
 
-当 $Z=0$ 时两分布相同，拒绝事件概率为零，不应再计算这个分母。令接受概率 $\alpha=\sum_x\min(p(x),q(x))$，则 $Z=1-\alpha$。最终每个token的质量为接受部分与拒绝后补偿之和：
+当 $`Z=0`$ 时两分布相同，拒绝事件概率为零，不应再计算这个分母。令接受概率 $`\alpha=\sum_x\min(p(x),q(x))`$，则 $`Z=1-\alpha`$。最终每个token的质量为接受部分与拒绝后补偿之和：
 
 ```math
 \min(p(x),q(x))+(1-\alpha)r(x)=p(x).
@@ -60,7 +60,7 @@ final_mass = [a + b for a, b in zip(accepted_mass, residual)]
 
 作者图中的候选块按前缀依次接受，到第一次拒绝时使用对应修正；全部接受时还可利用目标模型多产生一个位置。每个目标条件分布都必须对应已经确认的前缀，不能把多个无条件候选概率混起来。
 
-若用相同接受率近似每个位置，候选数为 $\gamma$，目标一次验证成本归一化为1，草稿每步成本为 $c$，则预期输出位置数与速度近似为：
+若用相同接受率近似每个位置，候选数为 $`\gamma`$，目标一次验证成本归一化为1，草稿每步成本为 $`c`$，则预期输出位置数与速度近似为：
 
 ```math
 \mathbb E[N_{\mathrm{accepted+extra}}]
@@ -69,7 +69,7 @@ final_mass = [a + b for a, b in zip(accepted_mass, residual)]
 \frac{\mathbb E[N_{\mathrm{accepted+extra}}]}{1+\gamma c}.
 ```
 
-$\alpha=1$ 时第一项取极限 $\gamma+1$。这个模型依赖成本与接受率的近似，真实硬件、batch、序列和算子会改变收益。草稿太慢或接受率太低就可能不划算；候选数也不是越大越好。[精读：推导、主表与限制](reference/2211.17192.md)
+$`\alpha=1`$ 时第一项取极限 $`\gamma+1`$。这个模型依赖成本与接受率的近似，真实硬件、batch、序列和算子会改变收益。草稿太慢或接受率太低就可能不划算；候选数也不是越大越好。[精读：推导、主表与限制](reference/2211.17192.md)
 
 对本地图尤其重要的是：目标输出分布保持时，最终回答的长度分布也保持。若还统计内部草稿和被拒候选，方法侧处理的token甚至可能更多。它提供的是执行效率，可与短CoT或输入压缩组合，但不能单独充当输出token减少的证据。
 
@@ -77,7 +77,7 @@ $\alpha=1$ 时第一项取极限 $\gamma+1$。这个模型依赖成本与接受�
 
 EAGLE系列利用目标模型的中间特征辅助草稿。EAGLE-3结合不同深度的信息，并通过 training-time test 改善训练与推理时的输入差异，让草稿学习面对自身预测带来的状态，而不只面对理想教师特征。[原论文](https://arxiv.org/abs/2503.01840)
 
-可将多层特征融合的作用概括为 $\widetilde h_t=W[h_t^{\mathrm{low}};h_t^{\mathrm{mid}};h_t^{\mathrm{high}}]$。这些特征提供不同层次的条件信息，草稿仍需预测候选token，再由目标模型验证。融合本身没有取消最后的正确性约束。
+可将多层特征融合的作用概括为 $`\widetilde h_t=W[h_t^{\mathrm{low}};h_t^{\mathrm{mid}};h_t^{\mathrm{high}}]`$。这些特征提供不同层次的条件信息，草稿仍需预测候选token，再由目标模型验证。融合本身没有取消最后的正确性约束。
 
 ![Training-time test compared with EAGLE feature prediction and unconstrained direct prediction.](../../../assets/papers-v3/2503.01840/fig-nofe-part-1.png)
 

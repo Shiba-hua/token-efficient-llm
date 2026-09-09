@@ -29,7 +29,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Efficient Inference for Large Reasoning Models: A Survey"
+      ]
     },
     {
       "paper_id": "2510.25817",
@@ -55,7 +58,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "A Survey on Efficient Large Language Model Training: From Data-centric Perspectives"
+      ]
     },
     {
       "paper_id": "2406.17557",
@@ -81,7 +87,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "FineWeb / FineWeb-Edu"
+      ]
     },
     {
       "paper_id": "2404.07965",
@@ -138,7 +147,11 @@
       "read_scope": "arXiv v1 HTML正文 §§1-5、图1-9、表1-3；为正文必要条件补读附录B/C/D/E的相关说明。固定版本提交日期2024-04-11。",
       "reading_version": "v1",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "Rho-1: Not All Tokens Are What You Need",
+        "Rho-1"
+      ]
     },
     {
       "paper_id": "2404.19737",
@@ -196,7 +209,11 @@
       "reading_version": "arXiv v1, 2024-04-30",
       "qc_record": "meta/research-map-v3/qc-samples.json#production-sample-01",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "Better & Faster Large Language Models via Multi-token Prediction",
+        "Multi-token Prediction"
+      ]
     },
     {
       "paper_id": "2412.19437",
@@ -222,7 +239,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "DeepSeek-V3 Technical Report"
+      ]
     },
     {
       "paper_id": "2412.09871",
@@ -274,7 +294,11 @@
       "read_scope": "完整固定版 PDF、paper.txt、paper.tex；正文第1-9节、正文图1-8、表1-9；附录仅读取表10、FLOPs、rolling hash、frequency n-gram和MMLU patch示例以解释正文。",
       "qc_record": "meta/research-map-v3/qc-samples.json#production-sample-02",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "Byte Latent Transformer: Patches Scale Better Than Tokens",
+        "BLT"
+      ]
     },
     {
       "paper_id": "src-05617b507f38",
@@ -300,7 +324,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Tokenizer Choice For LLM Training: Negligible or Crucial?"
+      ]
     },
     {
       "paper_id": "2402.10171",
@@ -326,7 +353,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Data Engineering for Scaling Language Models to 128K Context"
+      ]
     },
     {
       "paper_id": "2501.19393",
@@ -352,7 +382,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "s1: Simple Test-time Scaling"
+      ]
     },
     {
       "paper_id": "src-7cc3fedc37b4",
@@ -435,7 +468,10 @@
       },
       "read_scope": "完整读取固定正式 PDF 的正文第1-6节及附录A-P；核对方法公式、Algorithm 1、Fig.1-16、Table 1-13以及正文主实验、消融、延迟、局限。全文抽取缓存于 source/paper.txt，PDF缓存于 source/paper.pdf。",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "LLMLingua-2"
+      ]
     },
     {
       "paper_id": "2305.10429",
@@ -461,7 +497,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "DoReMi"
+      ]
     },
     {
       "paper_id": "2406.11794",
@@ -487,7 +526,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "DCLM"
+      ]
     },
     {
       "paper_id": "src-21857c5f5369",
@@ -513,7 +555,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Don’t Stop Pretraining"
+      ]
     },
     {
       "paper_id": "src-531620d2d5a4",
@@ -539,7 +584,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "SmolLM3"
+      ]
     },
     {
       "paper_id": "2203.15556",
@@ -565,7 +613,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Chinchilla"
+      ]
     },
     {
       "paper_id": "2401.00448",
@@ -591,7 +642,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Beyond Chinchilla-Optimal"
+      ]
     },
     {
       "paper_id": "2503.16419",
@@ -617,7 +671,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Stop Overthinking"
+      ]
     },
     {
       "paper_id": "2503.21614",
@@ -656,7 +713,10 @@
         }
       ],
       "survey_version": "v2 (arXiv HTML dated 2025-12-31; checked 2026-09-09)",
-      "read_scope": "Read the abstract, introduction/figures, §2 framing of token efficiency, §6 Efficient Reasoning during Pretraining (6.1 latent space, 6.2 subquadratic attention, 6.3 linearization, 6.4 efficient reasoning with subquadratic attention), §7 outlook/evaluation where it clarifies token-quality evidence, and the direct reference entries for the selected pretraining/architecture works. Did not read any cited original paper. Earlier inference/SFT/RL sections were not re-read except where needed to distinguish pretraining claims."
+      "read_scope": "Read the abstract, introduction/figures, §2 framing of token efficiency, §6 Efficient Reasoning during Pretraining (6.1 latent space, 6.2 subquadratic attention, 6.3 linearization, 6.4 efficient reasoning with subquadratic attention), §7 outlook/evaluation where it clarifies token-quality evidence, and the direct reference entries for the selected pretraining/architecture works. Did not read any cited original paper. Earlier inference/SFT/RL sections were not re-read except where needed to distinguish pretraining claims.",
+      "title_aliases": [
+        "A Survey of Efficient Reasoning for Large Reasoning Models"
+      ]
     },
     {
       "paper_id": "2411.01855",
@@ -682,7 +742,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Can Language Models Learn to Skip Steps?"
+      ]
     },
     {
       "paper_id": "2407.06023",
@@ -733,7 +796,10 @@
       "read_scope": "固定版本 paper.pdf/paper.txt 与作者 LaTeX 工程正文第1-6节、正文全部表图；附录全部 prompts、训练设置、BSM样例、MT-Bench分类表及作者图源。未逐一阅读参考文献正文。",
       "reading_version": "2407.06023v3",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "Distilling System 2 into System 1"
+      ]
     },
     {
       "paper_id": "2412.11664",
@@ -759,7 +825,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "C3oT"
+      ]
     },
     {
       "paper_id": "2502.20122",
@@ -810,7 +879,11 @@
       "read_scope": "完整阅读正文摘要、第1-5节、图1-7、表1-5；补读附录C、D.1-D.9、E、F中主实验所需的实验细节、完整结果、效率表和样例。",
       "reading_version": "arXiv v3, 2025-06-10",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "Self-Training Elicits Concise Reasoning in Large Language Models",
+        "Shortest-correct self-training"
+      ]
     },
     {
       "paper_id": "2502.12067",
@@ -882,6 +955,10 @@
           "locator": "§3.1.2, Table 2; ref. Xia et al. (2025)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "TokenSkip",
+        "TokenSkip: Controllable chain-of-thought compression in LLMs"
       ]
     },
     {
@@ -908,7 +985,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "TALE"
+      ]
     },
     {
       "paper_id": "2501.12570",
@@ -951,6 +1031,10 @@
           "locator": "§3.1.1, §4.1.2; ref. Luo et al. (2025a)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "O1-Pruner",
+        "O1-Pruner: Length-harmonizing fine-tuning for o1-like reasoning pruning"
       ]
     },
     {
@@ -1017,6 +1101,10 @@
           "locator": "§3.1.2, §4.1.2, Table 2; ref. Ma et al. (2025)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "CoT-Valve",
+        "CoT-Valve: Length-compressible chain-of-thought tuning"
       ]
     },
     {
@@ -1084,6 +1172,10 @@
           "locator": "§3.1.1; ref. Aggarwal & Welleck (2025)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "L1",
+        "L1: Controlling how long a reasoning model thinks with reinforcement learning"
       ]
     },
     {
@@ -1157,6 +1249,10 @@
           "locator": "§3.1.1; ref. Shen et al. (2025b)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "DAST",
+        "DAST: Difficulty-adaptive slow-thinking for large reasoning models"
       ]
     },
     {
@@ -1230,6 +1326,10 @@
           "locator": "§3.1.4, Table 2; ref. Hao et al. (2024)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Coconut",
+        "Coconut: Chain of continuous thought"
       ]
     },
     {
@@ -1296,6 +1396,10 @@
           "locator": "§3.1.4, Table 2; ref. Shen et al. (2025c)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "CODI",
+        "CODI: Compressing chain-of-thought into continuous space via self-distillation"
       ]
     },
     {
@@ -1322,7 +1426,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Demystifying Long Chain-of-Thought Reasoning in LLMs"
+      ]
     },
     {
       "paper_id": "2306.13649",
@@ -1371,7 +1478,11 @@
       "read_scope": "固定 PDF paper.pdf、paper.txt、TeX main.tex/task_agnostic.tex 及正文引用的附录 A.1-A.7；覆盖正文第1-6节、方法公式、Algorithm 1、Figure 1-10、正文直接依赖的训练超参与计算开销。原图从随附 TeX 工程复制到 assets/，未裁剪。",
       "reading_version": "2306.13649v3 (2024-01-17), ICLR 2024 camera-ready",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "GKD / On-policy Distillation of Language Models",
+        "GKD"
+      ]
     },
     {
       "paper_id": "src-7cdb59a34280",
@@ -1397,7 +1508,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Thinking Machines On-Policy Distillation"
+      ]
     },
     {
       "paper_id": "2503.09516",
@@ -1440,6 +1554,10 @@
           "locator": "[27]; §2.2, §3.3.2, Table 4",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Search-R1",
+        "Search-R1: Training LLMs to Reason and Leverage Search Engines with Reinforcement Learning"
       ]
     },
     {
@@ -1492,7 +1610,10 @@
       "read_scope": "固定版 PDF 全文与 LaTeX 源文件；正文摘要、引言、方法、实验、相关工作、结论、参考文献；附录两个 prompt 图。",
       "reading_version": "2504.11536v2",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "ReTool"
+      ]
     },
     {
       "paper_id": "2507.05707",
@@ -1518,7 +1639,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Agentic-R1"
+      ]
     },
     {
       "paper_id": "2510.11701",
@@ -1544,7 +1668,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Demystifying Reinforcement Learning in Agentic Reasoning"
+      ]
     },
     {
       "paper_id": "2203.02155",
@@ -1570,7 +1697,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "InstructGPT"
+      ]
     },
     {
       "paper_id": "2212.08073",
@@ -1596,7 +1726,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Constitutional AI"
+      ]
     },
     {
       "paper_id": "2305.18290",
@@ -1639,6 +1772,10 @@
           "locator": "ref [57], §III-B6/IV-F",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "DPO",
+        "Direct preference optimization: Your language model is secretly a reward model"
       ]
     },
     {
@@ -1665,7 +1802,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "SimPO"
+      ]
     },
     {
       "paper_id": "2502.04463",
@@ -1691,7 +1831,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Training Language Models to Reason Efficiently"
+      ]
     },
     {
       "paper_id": "src-7f9e533203c6",
@@ -1717,7 +1860,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Prompt Compression for Large Language Models: A Survey"
+      ]
     },
     {
       "paper_id": "2601.14192",
@@ -1745,7 +1891,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Toward Efficient Agents"
+      ]
     },
     {
       "paper_id": "src-e6831934f1eb",
@@ -1771,7 +1920,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Large Language Model Based Multi-agents: A Survey of Progress and Challenges"
+      ]
     },
     {
       "paper_id": "src-657b923f160d",
@@ -1797,7 +1949,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "LLMLingua"
+      ]
     },
     {
       "paper_id": "src-290c4594eb7d",
@@ -1823,7 +1978,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "LongLLMLingua"
+      ]
     },
     {
       "paper_id": "2310.04408",
@@ -1873,7 +2031,10 @@
       "read_scope": "读取 arXiv v1 正文第1-8节、Figure 1-4、Table 1-4，并为正文必要条件补读 Appendix A.1-A.2 的训练统计、提示词、压缩案例、LLaMA-13B 转移表和人工摘要示例；读取作者 TeX 工程 iclr2024_conference.tex 与 figs/*.pdf。",
       "reading_version": "v1 (2023-10-06)",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "RECOMP"
+      ]
     },
     {
       "paper_id": "2407.14057",
@@ -1899,7 +2060,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "LazyLLM"
+      ]
     },
     {
       "paper_id": "2508.21433",
@@ -1951,7 +2115,10 @@
       "read_scope": "固定 paper.pdf 正文第1-10页（Introduction、Related Work、Experimental Configuration、Main Results、Discussion、Limitations、Conclusion）、正文图1-5和表1-2；补读LaTeX附录 Experimental Configuration、Qwen3-32B thinking异常、Detailed Main Results的bootstrap统计、Additional Studies、跨turn模拟和summary/critic prompt。参考文献及NeurIPS checklist未逐条精读。",
       "reading_version": "2508.21433v3",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "The Complexity Trap"
+      ]
     },
     {
       "paper_id": "2410.02506",
@@ -2001,7 +2168,10 @@
       "read_scope": "固定缓存 paper.pdf、paper.txt、TeX 正文第1-10页与附录A-I第16-37页；阅读算法、主表Table 1-3、附录Table 5-6、Figure 1-6、17-34及G类实验细节；未做代码复现或独立实验。",
       "reading_version": "2410.02506v1",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "AgentPrune"
+      ]
     },
     {
       "paper_id": "src-ec1b5c3a604b",
@@ -2027,7 +2197,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "S²-MAD"
+      ]
     },
     {
       "paper_id": "2305.05176",
@@ -2070,6 +2243,10 @@
           "locator": "[991], §IX-D3",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "FrugalGPT",
+        "FrugalGPT: how to use large language models while reducing cost and improving performance"
       ]
     },
     {
@@ -2121,7 +2298,10 @@
       "read_scope": "固定版本 PDF 全文（16页）；作者 TeX 的摘要、Introduction/Related Work、问题定义与指标、Methodology、Experiments、Conclusion；附录的模型 tiers、数据污染、benchmark-data similarity、成本计算、独立基准和补充曲线。作者原始 Figs PNG 已从 latex-source.tar 提取到 assets/。",
       "reading_version": "2406.18665v4",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "RouteLLM"
+      ]
     },
     {
       "paper_id": "src-53893cb4a19e",
@@ -2147,7 +2327,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Anthropic 多智能体研究系统"
+      ]
     },
     {
       "paper_id": "src-48e62608de20",
@@ -2173,7 +2356,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Anthropic context engineering"
+      ]
     },
     {
       "paper_id": "2402.09727",
@@ -2199,7 +2385,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "ReadAgent"
+      ]
     },
     {
       "paper_id": "2510.24699",
@@ -2225,7 +2414,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "AgentFold"
+      ]
     },
     {
       "paper_id": "2310.03714",
@@ -2251,7 +2443,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "DSPy"
+      ]
     },
     {
       "paper_id": "2507.19457",
@@ -2277,7 +2472,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "GEPA"
+      ]
     },
     {
       "paper_id": "2210.03629",
@@ -2303,7 +2501,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "ReAct"
+      ]
     },
     {
       "paper_id": "2312.04511",
@@ -2354,7 +2555,10 @@
       "read_scope": "正文第1–9页（摘要、引言、相关工作、方法、实验、结论）；为解释正文图表、流式调度、失败和延迟模型补读附录A、B、D、E、F、G、H、I、J、K。固定源为source/paper.pdf与source/tex/。",
       "reading_version": "2312.04511v3",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "LLMCompiler"
+      ]
     },
     {
       "paper_id": "2203.11171",
@@ -2380,7 +2584,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Self-Consistency"
+      ]
     },
     {
       "paper_id": "2305.10601",
@@ -2406,7 +2613,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Tree of Thoughts"
+      ]
     },
     {
       "paper_id": "2408.03314",
@@ -2506,6 +2716,12 @@
           "locator": "[134]; §§1, 5.2, 9.1",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Compute-optimal Test-Time Scaling",
+        "Compute-optimal test-time scaling",
+        "Scaling LLM Test-Time Compute Optimally Can Be More Effective than Scaling Model Parameters",
+        "Scaling LLM test-time compute optimally can be more effective than scaling model parameters"
       ]
     },
     {
@@ -2532,7 +2748,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "DEER"
+      ]
     },
     {
       "paper_id": "2511.17006",
@@ -2558,7 +2777,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "BATS"
+      ]
     },
     {
       "paper_id": "2305.14788",
@@ -2584,7 +2806,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "AutoCompressors"
+      ]
     },
     {
       "paper_id": "2307.06945",
@@ -2635,7 +2860,10 @@
       "read_scope": "Read cached paper.pdf, paper.txt, and icae_iclr24.tex. Read all main text sections 1-5 and the main tables/figures; additionally read Appendix A training configuration, Appendix B profiling setup, Appendix C PwC construction, and Appendix D GPT-4 evaluation/output examples. Extracted all figure PDFs from latex-source.tar into assets/figures/.",
       "reading_version": "2307.06945v4 (ICLR 2024 camera-ready source; arXiv 2024-05-08)",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "ICAE"
+      ]
     },
     {
       "paper_id": "2211.17192",
@@ -2686,7 +2914,11 @@
       "reading_version": "2211.17192v2",
       "qc_record": "meta/research-map-v3/qc-samples.json#production-sample-03",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "Speculative Decoding",
+        "Speculative decoding"
+      ]
     },
     {
       "paper_id": "2503.01840",
@@ -2736,7 +2968,10 @@
       "read_scope": "Fixed cached paper.pdf, paper.txt, and author LaTeX paper.tex. Read the full main text Sections 1-6, all method and experiment figures/tables, conclusion, and Appendix A implementation details. References were not individually read.",
       "reading_version": "2503.01840v3",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "EAGLE-3"
+      ]
     },
     {
       "paper_id": "2508.15487",
@@ -2762,7 +2997,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Dream 7B"
+      ]
     },
     {
       "paper_id": "2502.05171",
@@ -2788,7 +3026,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Recurrent Depth / Huginn"
+      ]
     },
     {
       "paper_id": "2403.06764",
@@ -2839,7 +3080,10 @@
       "read_scope": "固定 paper.pdf/paper.txt 的摘要、正文§1-§6、图1-7、表1-7；补读固定 TeX 工程 content/phenomena.tex、fastv.tex、experiment.tex、appendix.tex、tables/*.tex；检查附录图8；未读取作者 GitHub 实现代码。",
       "reading_version": "2403.06764v3",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "FastV"
+      ]
     },
     {
       "paper_id": "2403.15388",
@@ -2889,7 +3133,10 @@
       "read_scope": "Read fixed v6 PDF (12 pages), paper.txt, all TeX正文 files 0Abstract-5Conclusion, and Appendix Algorithm 1 plus token visualization. Extracted six figure PDFs from the TeX source archive. References were not individually read.",
       "reading_version": "2403.15388v6",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "LLaVA-PruMerge"
+      ]
     },
     {
       "paper_id": "src-5209f297f28f",
@@ -2915,7 +3162,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "A Survey on Evaluation of LLM-based Agents"
+      ]
     },
     {
       "paper_id": "2407.01502",
@@ -2965,7 +3215,10 @@
       "read_scope": "固定缓存 source/paper.pdf、source/paper.txt 与 source/tex/main.tex；完整阅读正文 Sections 1-7，并为正文实验补读 Appendices A-I（HumanEval、HotPotQA、NovelQA、WebArena、复现、局限和资源说明）。参考文献未逐篇精读。",
       "reading_version": "2407.01502v1",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "AI Agents That Matter"
+      ]
     },
     {
       "paper_id": "2511.02734",
@@ -2991,7 +3244,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "CostBench"
+      ]
     },
     {
       "paper_id": "2404.07972",
@@ -3017,7 +3273,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "OSWorld"
+      ]
     },
     {
       "paper_id": "2307.13854",
@@ -3043,7 +3302,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "WebArena"
+      ]
     },
     {
       "paper_id": "2306.06070",
@@ -3069,7 +3331,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Mind2Web"
+      ]
     },
     {
       "paper_id": "2412.21139",
@@ -3095,7 +3360,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "SWE-Gym"
+      ]
     },
     {
       "paper_id": "src-e073acdc49e7",
@@ -3121,7 +3389,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "OpenAI reasoning effort"
+      ]
     },
     {
       "paper_id": "src-eaa44c6dbba9",
@@ -3147,7 +3418,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "OpenAI GPT-5.1 adaptive reasoning"
+      ]
     },
     {
       "paper_id": "src-7e6d117e8671",
@@ -3173,7 +3447,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "OpenAI GPT-5.1-Codex-Max"
+      ]
     },
     {
       "paper_id": "src-84d772175bef",
@@ -3199,7 +3476,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "OpenAI compaction"
+      ]
     },
     {
       "paper_id": "src-c6503fa4a9c5",
@@ -3225,7 +3505,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "OpenAI tool search"
+      ]
     },
     {
       "paper_id": "src-4484f41ae689",
@@ -3251,7 +3534,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "OpenAI prompt caching"
+      ]
     },
     {
       "paper_id": "src-cc183bea768d",
@@ -3277,7 +3563,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "OpenAI o1：RL 与推理时计算"
+      ]
     },
     {
       "paper_id": "src-ebac892b941d",
@@ -3303,7 +3592,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "OpenAI deliberative alignment"
+      ]
     },
     {
       "paper_id": "src-4370d9b5cc61",
@@ -3329,7 +3621,10 @@
       "mechanism_tags": [],
       "status": "legacy_partial",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Anthropic advanced tool use"
+      ]
     },
     {
       "paper_id": "2602.20945",
@@ -3376,7 +3671,10 @@
       "reading_version": "v3",
       "read_scope": "固定版本 arXiv v3 PDF 与全文抽取；完整正文第1-6节、图2-7、表1-2；为解释主结论补读附录A-G（图8-14、表3-7及案例）。PDF共21页。",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "The Art of Efficient Reasoning: Data, Reward, and Optimization"
+      ]
     },
     {
       "paper_id": "2503.24235",
@@ -3407,6 +3705,9 @@
           "scope": "survey_taxonomy_and_candidates",
           "prompt_version": "survey-extraction-v1"
         }
+      ],
+      "title_aliases": [
+        "What, How, Where, and How Well? A Survey on Test-Time Scaling in Large Language Models"
       ]
     },
     {
@@ -3438,6 +3739,9 @@
           "scope": "survey_taxonomy_and_candidates",
           "prompt_version": "survey-extraction-v1"
         }
+      ],
+      "title_aliases": [
+        "A Survey of Reinforcement Learning for Large Reasoning Models"
       ]
     },
     {
@@ -3469,6 +3773,9 @@
           "scope": "survey_taxonomy_and_candidates",
           "prompt_version": "survey-extraction-v1"
         }
+      ],
+      "title_aliases": [
+        "Efficient Reasoning Models: A Survey"
       ]
     },
     {
@@ -3500,6 +3807,9 @@
           "scope": "survey_taxonomy_and_candidates",
           "prompt_version": "survey-extraction-v1"
         }
+      ],
+      "title_aliases": [
+        "Towards Large Reasoning Models: A Survey of Reinforced Reasoning with Large Language Models"
       ]
     },
     {
@@ -3531,6 +3841,9 @@
           "scope": "survey_taxonomy_and_candidates",
           "prompt_version": "survey-extraction-v1"
         }
+      ],
+      "title_aliases": [
+        "LLM Post-Training: A Deep Dive into Reasoning Large Language Models"
       ]
     },
     {
@@ -3562,6 +3875,9 @@
           "scope": "survey_taxonomy_and_candidates",
           "prompt_version": "survey-extraction-v1"
         }
+      ],
+      "title_aliases": [
+        "The Landscape of Agentic Reinforcement Learning for LLMs: A Survey"
       ]
     },
     {
@@ -3609,6 +3925,9 @@
           "locator": "Abstract; §§1-8; Tables 1-10",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Agentic Reasoning for Large Language Models"
       ]
     },
     {
@@ -3650,6 +3969,9 @@
           "scope": "survey_taxonomy_and_candidates",
           "prompt_version": "survey-extraction-v1"
         }
+      ],
+      "title_aliases": [
+        "A Survey of Large Language Models"
       ]
     },
     {
@@ -3714,6 +4036,10 @@
           "id": "survey-metadata-01",
           "scope": "survey candidate author metadata only; primary reading authors unaffected"
         }
+      ],
+      "title_aliases": [
+        "REWOO: Decoupling Reasoning from Observations for Efficient Augmented Language Models",
+        "ReWOO"
       ]
     },
     {
@@ -3749,6 +4075,9 @@
           "locator": "[36]; §1, §4.3, Table 5, §6.3.2, §8.2",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Voyager: An Open-Ended Embodied Agent with Large Language Models"
       ]
     },
     {
@@ -3784,6 +4113,9 @@
           "locator": "[265]; §4.1.1, Table 5, Table 6",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "MemGPT: Towards LLMs as Operating Systems"
       ]
     },
     {
@@ -3846,6 +4178,10 @@
           "id": "survey-metadata-01",
           "scope": "survey candidate author metadata only; primary reading authors unaffected"
         }
+      ],
+      "title_aliases": [
+        "LightMem: Lightweight and Efficient Memory-Augmented Generation",
+        "LightMem"
       ]
     },
     {
@@ -3925,6 +4261,10 @@
           "id": "survey-metadata-01",
           "scope": "survey candidate author metadata only; primary reading authors unaffected"
         }
+      ],
+      "title_aliases": [
+        "MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents",
+        "MEM1"
       ]
     },
     {
@@ -3960,6 +4300,9 @@
           "locator": "[273]; §4.2.1, §4.3.3, Table 6",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models"
       ]
     },
     {
@@ -3995,6 +4338,9 @@
           "locator": "[380]; §5.2.2",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Optimal-Agent-Selection: State-Aware Routing Framework for Efficient Multi-Agent Collaboration"
       ]
     },
     {
@@ -4030,6 +4376,9 @@
           "locator": "[282]; Table 6, §7.1.3",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Mem-Gallery: Benchmarking Multimodal Long-Term Conversational Memory for MLLM Agents"
       ]
     },
     {
@@ -4100,6 +4449,11 @@
           "locator": "[1070], §IX-H2–H4",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+        "DeepSeek-R1: Incentivizing reasoning capability in LLMs via reinforcement learning",
+        "DeepSeek-R1: incentivizing reasoning capability in LLMs via reinforcement learning"
       ]
     },
     {
@@ -4149,6 +4503,10 @@
           "locator": "ref [59], §III-B8/III-C3",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+        "DeepSeekMath: Pushing the limits of mathematical reasoning in open language models"
       ]
     },
     {
@@ -4184,6 +4542,9 @@
           "locator": "Yu et al. [2025d], Sections 3.1.1, 3.2.3, 3.3.1-3.3.2",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "DAPO: An Open-Source LLM Reinforcement Learning System at Scale"
       ]
     },
     {
@@ -4219,6 +4580,9 @@
           "locator": "Cui et al. [2025a], Sections 3.1.3, 3.3.1, 5.1",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "PRIME: Process Reinforcement through Implicit Rewards"
       ]
     },
     {
@@ -4254,6 +4618,9 @@
           "locator": "Cheng et al. [2025b], Section 3.1.3",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Stop Summation: Min-Form Credit Assignment Is All Process Reward Model Needs for Reasoning"
       ]
     },
     {
@@ -4289,6 +4656,9 @@
           "locator": "Guo et al. [2025c], Sections 3.1.3, 3.3.1",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Segment Policy Optimization: Effective Segment-Level Credit Assignment in RL for Large Language Models"
       ]
     },
     {
@@ -4324,6 +4694,9 @@
           "locator": "Li et al. [2025t], Sections 3.1.3, 3.3.1",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "TreePO: Bridging the Gap of Policy Optimization and Efficacy and Inference Efficiency with Heuristic Tree-Based Modeling"
       ]
     },
     {
@@ -4359,6 +4732,9 @@
           "locator": "Sun et al. [2025e], Section 3.3.1",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Improving Data Efficiency for LLM Reinforcement Fine-Tuning through Difficulty-Targeted Online Data Selection and Rollout Replay"
       ]
     },
     {
@@ -4394,6 +4770,9 @@
           "locator": "Liu et al. [2025b], Sections 3.1.5, 3.2.5, 7.4",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Learn to Reason Efficiently with Adaptive Length-Based Reward Shaping"
       ]
     },
     {
@@ -4429,6 +4808,9 @@
           "locator": "Yuan et al. [2025a], Sections 3.2.5, 7.4",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Efficient RL Training for Reasoning Models via Length-Aware Optimization"
       ]
     },
     {
@@ -4464,6 +4846,9 @@
           "locator": "Shrivastava et al. [2025], Sections 3.3.2, 4.4",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Sample More to Think Less: Group Filtered Policy Optimization for Concise Reasoning"
       ]
     },
     {
@@ -4499,6 +4884,9 @@
           "locator": "Chen et al. [2025z], Sections 3.1.5, 4.1",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Pass@k Training for Adaptively Balancing Exploration and Exploitation of Large Reasoning Models"
       ]
     },
     {
@@ -4534,6 +4922,9 @@
           "locator": "Sec. 5.1-5.3",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning"
       ]
     },
     {
@@ -4569,6 +4960,9 @@
           "locator": "Table 5 (parallel/hybrid DVTS and beam search; PRM; Best-of-N; FLOPs)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Can 1B LLM Surpass 405B LLM? Rethinking Compute-Optimal Test-Time Scaling"
       ]
     },
     {
@@ -4604,6 +4998,9 @@
           "locator": "Sec. 5.1 (Cons@k), Table 5",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Revisiting the Test-Time Scaling of o1-like Models: Do They Truly Possess Test-Time Scaling Capabilities?"
       ]
     },
     {
@@ -4663,6 +5060,10 @@
           "locator": "Sec. 5.2.1, 5.2.3",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Do Not Think That Much for 2+3=? on the Overthinking of o1-like LLMs",
+        "Overthinking of o1-like LLMs"
       ]
     },
     {
@@ -4689,7 +5090,10 @@
       "mechanism_tags": [],
       "status": "candidate",
       "qc_status": "not_sampled",
-      "artifact": null
+      "artifact": null,
+      "title_aliases": [
+        "Chain-of-thought prompting elicits reasoning in large language models"
+      ]
     },
     {
       "paper_id": "2411.15382",
@@ -4724,6 +5128,9 @@
           "locator": "ref [55], §IV introduction",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "On the impact of fine-tuning on chain-of-thought reasoning"
       ]
     },
     {
@@ -4759,6 +5166,9 @@
           "locator": "ref [229], §IV-E",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Distilling step-by-step! Outperforming larger language models with less training data and smaller model sizes"
       ]
     },
     {
@@ -4794,6 +5204,9 @@
           "locator": "ref [230], §IV-E",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "MiniLLM: Knowledge distillation of large language models"
       ]
     },
     {
@@ -4829,6 +5242,9 @@
           "locator": "ref [307], §V-B/VII",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Regularized best-of-n sampling to mitigate reward hacking for language model alignment"
       ]
     },
     {
@@ -4864,6 +5280,9 @@
           "locator": "ref [308], §VII trend discussion",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Odin: Disentangled reward mitigates hacking in RLHF"
       ]
     },
     {
@@ -4899,6 +5318,9 @@
           "locator": "[75]; §§3.1, 3.3, 4.4",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Let's Verify Step by Step"
       ]
     },
     {
@@ -4934,6 +5356,9 @@
           "locator": "[85]; Table 1; §§3.3, 5.2, 6.2",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Improve Mathematical Reasoning in Language Models by Automated Process Supervision"
       ]
     },
     {
@@ -4969,6 +5394,9 @@
           "locator": "[148]-[149]; §§3.3, 4.4",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Math-Shepherd: Verify and Reinforce LLMs Step-by-Step without Human Annotations"
       ]
     },
     {
@@ -5004,6 +5432,9 @@
           "locator": "[156]; Table 1; §§3.3, 4.4",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Multi-Step Problem Solving through a Verifier: An Empirical Analysis on Model-Induced Process Supervision"
       ]
     },
     {
@@ -5039,6 +5470,9 @@
           "locator": "[183]; Table 1; §§3.3, 4.3-4.4, 6.2",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "LLM Self-Training via Process Reward Guided Tree Search"
       ]
     },
     {
@@ -5074,6 +5508,9 @@
           "locator": "[45]; §2.3",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Reinforced Self-Training (ReST) for Language Modeling"
       ]
     },
     {
@@ -5109,6 +5546,9 @@
           "locator": "[64]; §§2.3, 7.1",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Training Language Models to Self-Correct via Reinforcement Learning"
       ]
     },
     {
@@ -5144,6 +5584,9 @@
           "locator": "[60]; §4.3",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "VinePPO: Unlocking RL Potential for LLM Reasoning through Refined Credit Assignment"
       ]
     },
     {
@@ -5179,6 +5622,9 @@
           "locator": "[145]; Table 2; §6.2",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "OpenR: An Open Source Framework for Advanced Reasoning with Large Language Models"
       ]
     },
     {
@@ -5214,6 +5660,9 @@
           "locator": "[110]; Table 2; §6.2",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "O1 Replication Journey: A Strategic Progress Report–Part 1"
       ]
     },
     {
@@ -5249,6 +5698,9 @@
           "locator": "[185]; Table 2; §6.2",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Llama-Berry: Pairwise Optimization for O1-like Olympiad-level Mathematical Reasoning"
       ]
     },
     {
@@ -5284,6 +5736,9 @@
           "locator": "[94]; §9.2",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "When a Language Model Is Optimized for Reasoning, Does It Still Show Embers of Autoregression? An Analysis of OpenAI o1"
       ]
     },
     {
@@ -5319,6 +5774,9 @@
           "locator": "[988], §IX-D3",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Accelerating large language model decoding with speculative sampling"
       ]
     },
     {
@@ -5354,6 +5812,9 @@
           "locator": "[989], §IX-D3",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "SpecInfer: accelerating generative LLM serving with speculative inference and token tree verification"
       ]
     },
     {
@@ -5389,6 +5850,9 @@
           "locator": "[990], §IX-D3",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Accelerating LLM inference with staged speculative decoding"
       ]
     },
     {
@@ -5424,6 +5888,9 @@
           "locator": "[992], §IX-D3",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Large language model cascades with mixture of thoughts representations for cost-efficient reasoning"
       ]
     },
     {
@@ -5459,6 +5926,9 @@
           "locator": "[995], §IX-D3",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Medusa: simple LLM inference acceleration framework with multiple decoding heads"
       ]
     },
     {
@@ -5494,6 +5964,9 @@
           "locator": "[998], §IX-D3",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Mixture-of-depths: dynamically allocating compute in transformer-based language models"
       ]
     },
     {
@@ -5529,6 +6002,9 @@
           "locator": "[1067], §IX-H2–H4",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Imitate, explore, and self-improve: a reproduction report on slow-thinking reasoning systems"
       ]
     },
     {
@@ -5564,6 +6040,9 @@
           "locator": "[1074], §IX-H3",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Kimi k1.5: scaling reinforcement learning with llms"
       ]
     },
     {
@@ -5622,6 +6101,10 @@
           "locator": "[526], §VI-C3, §VII-A3",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Language models are multilingual chain-of-thought reasoners",
+        "Multilingual CoT reasoning"
       ]
     },
     {
@@ -5657,6 +6140,9 @@
           "locator": "[730], TABLE XV",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "SciBench: evaluating college-level scientific problem-solving abilities of large language models"
       ]
     },
     {
@@ -5692,6 +6178,9 @@
           "locator": "[923], §VIII-B",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "OceanGPT: A large language model for ocean science tasks"
       ]
     },
     {
@@ -5727,6 +6216,9 @@
           "locator": "[71], §II-A",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Do emergent abilities of large language models exist? A closer look at the claims and evidence"
       ]
     },
     {
@@ -5762,6 +6254,9 @@
           "locator": "§3.1; ref Hong et al. (2025d)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Planning without Search: Refining Frontier LLMs with Offline Goal-Conditioned RL"
       ]
     },
     {
@@ -5797,6 +6292,9 @@
           "locator": "§3.2; ref Qian et al. (2025)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "ToolRL: Reward is All Tool Learning Needs"
       ]
     },
     {
@@ -5832,6 +6330,9 @@
           "locator": "§3.2; §4.3.1; ref Li et al. (2025l)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "ToRL: Scaling Tool-Integrated RL"
       ]
     },
     {
@@ -5867,6 +6368,9 @@
           "locator": "§3.2; ref Lin and Xu (2025)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Understanding Tool-Integrated Reasoning"
       ]
     },
     {
@@ -5902,6 +6406,9 @@
           "locator": "§3.3; Table 3; ref Yan et al. (2025b)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning"
       ]
     },
     {
@@ -5937,6 +6444,9 @@
           "locator": "§3.3; Table 3; ref Yu et al. (2025d)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "MemAgent: Reshaping Long-Context LLM with Multi-Conv RL-based Memory Agent"
       ]
     },
     {
@@ -5972,6 +6482,9 @@
           "locator": "§3.2; §4.1.1; ref Chen et al. (2025d)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "ReSearch: Learning to Reason with Search for LLMs via Reinforcement Learning"
       ]
     },
     {
@@ -6032,6 +6545,10 @@
           "locator": "§4.3.2; ref Ren et al. (2025)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "DeepSeek-Prover-V2: Advancing Formal Mathematical Reasoning via Reinforcement Learning for Subgoal Decomposition",
+        "DeepSeek-Prover-V2"
       ]
     },
     {
@@ -6067,6 +6584,9 @@
           "locator": "§3.5; Table 2; ref Hou et al. (2025)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "ThinkPrune: Pruning Long Chain-of-Thought of LLMs via Reinforcement Learning"
       ]
     },
     {
@@ -6102,6 +6622,9 @@
           "locator": "§5.1.4; Table 10; ref Qiang et al. (2025)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "MLE-Dojo: Interactive Environments for Empowering LLM Agents in Machine Learning Engineering"
       ]
     },
     {
@@ -6158,6 +6681,10 @@
           "locator": "§3.1.3; ref. Xu et al. (2025c)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Chain of Draft: Thinking faster by writing less",
+        "Chain of Draft"
       ]
     },
     {
@@ -6193,6 +6720,9 @@
           "locator": "§3.1.3, Table 2; ref. Aytes et al. (2025)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Sketch-of-Thought: Efficient LLM reasoning with adaptive cognitive-inspired sketching"
       ]
     },
     {
@@ -6228,6 +6758,9 @@
           "locator": "§3.1.4; ref. Deng et al. (2023)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Implicit chain of thought reasoning via knowledge distillation"
       ]
     },
     {
@@ -6263,6 +6796,9 @@
           "locator": "§3.1.4, Table 2; ref. Xu et al. (2025d)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "SoftCoT: Soft chain-of-thought for efficient reasoning with LLMs"
       ]
     },
     {
@@ -6298,6 +6834,9 @@
           "locator": "§3.1.4, §4.1.2, Table 2; ref. Zhang et al. (2025a)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "LightThinker: Thinking step-by-step compression"
       ]
     },
     {
@@ -6333,6 +6872,9 @@
           "locator": "§3.3.1, Table 4; ref. Xu et al. (2025a)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "φ-decoding: Adaptive foresight sampling for balanced inference-time exploration and exploitation"
       ]
     },
     {
@@ -6368,6 +6910,9 @@
           "locator": "§3.3.1, Table 4/5; ref. Zhu et al. (2024a)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "Path-consistency: Prefix enhancement for efficient inference in LLM"
       ]
     },
     {
@@ -6403,6 +6948,9 @@
           "locator": "§1, §2.5; ref. Wu et al. (2025d)",
           "match_basis": "explicit arXiv identifier; candidate metadata itself is not primary evidence"
         }
+      ],
+      "title_aliases": [
+        "When more is less: Understanding chain-of-thought length in LLMs"
       ]
     },
     {
@@ -6436,7 +6984,10 @@
         }
       ],
       "survey_version": "v5 (01 Feb 2026; formerly When Tokens Talk Too Much)",
-      "read_scope": "arXiv HTML v5 abstract, introduction, taxonomy/definition, §§2–6 (image/video/audio methods, trade-offs, evaluation/challenges/future directions), application overview, and full reference list; cited original papers were not read."
+      "read_scope": "arXiv HTML v5 abstract, introduction, taxonomy/definition, §§2–6 (image/video/audio methods, trade-offs, evaluation/challenges/future directions), application overview, and full reference list; cited original papers were not read.",
+      "title_aliases": [
+        "A Survey of Token Compression for Efficient Multimodal Large Language Models"
+      ]
     },
     {
       "paper_id": "2601.18734",
@@ -6480,7 +7031,11 @@
       "read_scope": "固定版本 paper.pdf 正文第1-9页；附录A-D；source/tex/sections/{intro,preliminary,method,experiments,appendix,theory,conclusion,related}.tex；固定工程中的四个图形资产。参考文献未逐条核验。",
       "reading_version": "2601.18734v3 (2026-03-20)",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "Self-Distilled Reasoner: On-Policy Self-Distillation for Large Language Models",
+        "Self-Distilled Reasoner"
+      ]
     },
     {
       "paper_id": "2606.07968",
@@ -6532,7 +7087,11 @@
       "read_scope": "Full 15-page v1 PDF正文: abstract, Sections 1-11, Tables 1-10, Figures 1-2, Algorithm 1 and in-text references; supplementary artifact not used as正文证据.",
       "reading_version": "v1 (2026-06-06)",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "RecurGuard: Runtime Monitoring for Reasoning-Token Consumption Attacks",
+        "RecurGuard"
+      ]
     },
     {
       "paper_id": "2508.15260",
@@ -6575,7 +7134,10 @@
       "read_scope": "固定版本PDF全文正文（摘要、§1-§6、正文图1-7、表1-2）及解释正文算法所需附录B-F（表3-12、图8-11、生成设置）；检查LaTeX工程并提取四幅图资产。",
       "reading_version": "2508.15260v1",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "DeepConf"
+      ]
     },
     {
       "paper_id": "2502.02542",
@@ -6619,7 +7181,10 @@
       "read_scope": "完整阅读 source/paper.pdf、source/paper.txt、source/tex/1_intro.tex 至 8_conclusion.tex，所有启用的正文表格和算法；补读 appendix.tex 的数据集、提示与示例、多模态表、聊天机器人图。未使用二手摘要填补正文。",
       "reading_version": "2502.02542v4",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "OverThink"
+      ]
     },
     {
       "paper_id": "2211.10435",
@@ -6662,7 +7227,10 @@
       "read_scope": "完整读取固定 PDF 正文及对应 LaTeX 源：摘要、引言、few-shot/CoT 背景、PAL 方法、实验设置、数学/符号/算法任务、主结果、分析、相关工作、结论；补读正文结论所需的 GSM-HARD 构造与分析、提示和模型消融、Least-to-Most、符号失败案例、token-level 小样本分析。未把附录当作正文主实验。",
       "reading_version": "2211.10435v2 (2023-01-27)",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "PAL"
+      ]
     },
     {
       "paper_id": "2412.08821",
@@ -6705,7 +7273,10 @@
       "read_scope": "完整阅读固定缓存 paper.txt、paper.pdf 对应正文第1-8节、表1-13、图1-17及 lcm.tex；附录仅补读正文所需的分段、LPCM提示与评价上下文。",
       "reading_version": "2412.08821v2",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "Large Concept Models"
+      ]
     },
     {
       "paper_id": "2410.17434",
@@ -6750,7 +7321,10 @@
       "read_scope": "固定版 paper.pdf 全文正文第1-13页（引言、相关工作、方法、第4节实验、结论）；补读 TeX 第5节用于训练数据、FPE、DINOv2/SigLIP 图、needle 补充结果和局限；读取并视觉检查作者 TeX 图资产 main/teaser/qual/reduce/needle/dinosim/needle1。",
       "reading_version": "2410.17434v1",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "LongVU"
+      ]
     },
     {
       "paper_id": "2412.12009",
@@ -6794,7 +7368,10 @@
       "read_scope": "Read cached paper.pdf/paper.txt and complete cached LaTeX正文: Introduction, Speech Information Retrieval, SpeechPrune, Experiments, Conclusion; checked all three figures and Tables I-II. No appendix was present.",
       "reading_version": "2412.12009v2 (arXiv online 2025-03-30)",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "SpeechPrune"
+      ]
     },
     {
       "paper_id": "2608.25729",
@@ -6841,7 +7418,10 @@
       "read_scope": "完整阅读固定版本正文第1-5节、正文Figure 1-2与Tables 1-4；补读附录A.1-A.8中正文结论所需的训练数据/设置、TTT-Conv实现与伪代码、消融定义、长度扫描、速度表和定性图。使用缓存source/paper.pdf、source/paper.txt及source/tex。未逐篇追读参考文献、未独立复现训练或评测。",
       "reading_version": "2608.25729v1",
       "reading_prompt_version": "luna-reading-v2",
-      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。"
+      "index_note": "机制标签只表示研究关联；直接/间接效率证据以章节正文为准。",
+      "title_aliases": [
+        "LongVU-TTT"
+      ]
     }
   ],
   "status_semantics": {

@@ -69,7 +69,7 @@ Multilingual CoT研究模型能否在不同语言的问题上进行链式思考�
 
 DeepSeek-Prover-V2将自然语言分析、形式化子目标、递归求解和Lean验证串成训练数据构造与证明生成流程。分解能让较小的求解器处理局部问题，也可以让验证结果反馈到后续策略；训练仍包含昂贵的生成、筛选、SFT和RL环节。[原论文](https://arxiv.org/abs/2504.21801)
 
-一个不冒充论文原例的教学分解是证明“两个偶整数之和仍为偶数”：先从 $a$ 偶取得整数 $m$ 使 $a=2m$，从 $b$ 偶取得整数 $n$ 使 $b=2n$，再组合 $a+b=2(m+n)$。分解为局部任务能明确每一步需要什么前提，但组合是否符合原目标仍需验证。
+一个不冒充论文原例的教学分解是证明“两个偶整数之和仍为偶数”：先从 $`a`$ 偶取得整数 $`m`$ 使 $`a=2m`$，从 $`b`$ 偶取得整数 $`n`$ 使 $`b=2n`$，再组合 $`a+b=2(m+n)`$。分解为局部任务能明确每一步需要什么前提，但组合是否符合原目标仍需验证。
 
 ![Overview of the cold-start data collection process employed by DeepSeek-Prover-V2. DeepSeek-V3 produces a natural-language proof sketch and Lean statements with sorry placeholders; a 7B prover recursively solves subgoals; proofs are composed and appended to the chain of thought.](../../../assets/papers-v3/2504.21801/figure-2-overview-decomposition.png)
 
