@@ -48,7 +48,7 @@
 
 [Lindenbauer 等，Simple Observation Masking Is as Efficient as LLM Summarization for Agent Context Management，2508.21433v3](https://arxiv.org/html/2508.21433v3)，2025-10。已读 §2–5、主表、轨迹与附录；主代理复核。由 S06 的长程上下文分支进入。
 
-比较保留动作/推理而遮蔽旧观察、LLM 摘要和混合策略。SWE-bench Verified，Qwen3-Coder-480B：raw $1.29、mask $0.61、summary $0.64/轨迹；Gemini 摘要轨迹平均 52 turns，mask 44。类型 C，主成本是美元，不能冒充原始 token 比例。窗口阈值和 scaffold 改变结论；摘要可能掩盖失败信号，较短上下文不保证较短任务。
+比较保留动作/推理而遮蔽旧观察、LLM 摘要和混合策略。SWE-bench Verified，Qwen3-Coder-480B：raw53.4%/$1.29、mask54.8%/$0.61、summary53.8%/$0.64每实例；Gemini 摘要轨迹平均 52 turns，mask 44。类型 C，主成本是每实例美元，不能冒充原始 token 比例。窗口阈值和 scaffold 改变结论；摘要可能掩盖失败信号，较短上下文不保证较短任务。
 
 ## H07 — AgentPrune
 
@@ -121,3 +121,51 @@ Opus 4 lead + Sonnet 4 workers 进行并行研究，lead 整合。内部评测�
 [Kim 等，An LLM Compiler for Parallel Function Calling，2312.04511v3](https://arxiv.org/html/2312.04511v3)，ICML 2024。已读 §3–5、附录；由 ReAct→依赖图执行进入。
 
 Planner 建 DAG，调度就绪工具，必要时重规划。GPT-3.5/Llama2-70B，HotpotQA、Movie Recommendation、ParallelQA；表 2 中 HotpotQA 原始 ReAct 输入/输出约 2,900/120，LLMCompiler 1,300/80。类型 T/C；token 表对照原始 ReAct，其他结果常用修过循环/早停的 ReAct†，不能跨表拼为同一准确率—成本点。
+
+## H19 — Self-Consistency
+
+[Wang 等，Self-Consistency Improves Chain of Thought Reasoning in Language Models，2203.11171v4](https://arxiv.org/abs/2203.11171v4)，ICLR 2023。已读 §1–5、附录 A.2；由多路径搜索前作链进入。
+
+同题采不同链、最终答案多数投票。PaLM-540B/GSM8K，CoT 56.5%→74.4%，主要设置 40 样本、重复评估。类型 I：增加生成路径换性能，没有完整 I/O 等预算节省证据。开放式答案难以投票，概率加权也不统一优于多数票。
+
+## H20 — Tree of Thoughts
+
+[Yao 等，Deliberate Problem Solving with Large Language Models，2305.10601](https://arxiv.org/abs/2305.10601)，NeurIPS 2023。已读 §2–4、三类任务及消融；沿 Self-Consistency→可搜索思维结构追读。
+
+思维节点树配 BFS/DFS、候选扩展、价值评估和回溯。GPT-4、100 个 Game of 24 题，宽度5的 ToT 74%，CoT-SC(100) 9%；生成与评价预算不同。类型 I，未按完整输入+输出 token 等预算比较；crossword 等仍受评价器错误和搜索开销限制。
+
+## H21 — Compute-optimal Test-Time Scaling
+
+[Snell 等，Scaling LLM Test-Time Compute Optimally Can Be More Effective than Scaling Model Parameters，2408.03314](https://arxiv.org/abs/2408.03314)，ICLR 2025。已读 §1、§3、§5–6、search/revision 实验。
+
+按难度分配并行采样、顺序 revision、PRM 搜索；PaLM 2-S* 系列，数学任务。相对固定 best-of-N，报告更好的测试时计算效率。类型 I/C/T（生成预算）；完整输入重读与评价器调用不等于论文的单一预算轴。更难题可能需要更强基座，而非一直增加搜索。
+
+## H22 — DEER
+
+[Yang 等，Dynamic Early Exit in Reasoning Models，2504.15895v3](https://arxiv.org/abs/2504.15895v3)，2025-09。已读 §1–6、附录；由动态停止分支进入。
+
+在推理转折或其他触发处试答，再以置信度退出；DEER-Pro 使用额外试答等缓解敏感性。R1-Distill-Qwen-7B/MATH-500 示例 87.4%/3,858→89.8%/2,143。类型 T：Tok 为生成推理长度；试答、输入重读与白盒实现成本应另核算，不能直接宣称全任务同比例节省。
+
+## H23 — BATS
+
+[Liu 等，Budget-Aware Tool-Use Enables Effective Agent Scaling，2511.17006v1](https://arxiv.org/html/2511.17006v1)，2025-11。主代理已读 §3–6、表 1–3；由 S06 的预算规划引用进入。
+
+Budget Tracker 在工具反馈后提示剩余预算，BATS 再结合计划、验证、继续/重试。Gemini-2.5-Pro/BrowseComp：ReAct 预算100为12.6%、9.9美分；Tracker预算10为12.8%、6.8美分。类型 C/I；金额包括 token 和工具费用，预算上限缩十倍不等于实际消耗缩十倍。表3的其他基线部分来自文献，不能假定是完全受控重跑。
+
+## H24 — AutoCompressors
+
+[Chevalier、Wettig、Ajith、Chen，Adapting Language Models to Compress Contexts，2305.14788v2](https://arxiv.org/abs/2305.14788v2)，2023-11-04，EMNLP 2023。Luna 已读 §3–7、附录 A–F；交叉分类检查发现软压缩缺口后补读。
+
+通过 summary tokens 生成连续摘要，累积给后续片段，随机分段并用语言建模训练。OPT1.3/2.7B用2B Pile，Llama2-7B LoRA用15B RedPajama；长文PPL、ICL与检索。6,144→150 vectors的OPT2.7B PPL为5.93域内/8.10域外；这是输入表示和特定PPL证据，不是全任务token结果。summary预计算有利复用，累积长度仍增长、存在二次复杂度，长上下文/OOD仍有损失。类型C/T（连续输入）。
+
+## H25 — ICAE
+
+[Ge 等，In-context Autoencoder for Context Compression in a Large Language Model，2307.06945v4](https://arxiv.org/abs/2307.06945v4)，2024-05-08，ICLR 2024。Luna 已读 §2–5、表1–7、附录A–D。
+
+LoRA encoder压缩原文为memory slots，冻结decoder读入；先重建/续写，再用GPT-4生成PwC响应训练。Llama/Llama2-7B/13B，PwC240K训练/18K测试；512→128 slots使continuation PPL9.01→9.50。类型C/T（连续输入）；不改变最终答案长度，压缩器先读全文，缓存/FlashAttention条件影响净速度。不能外推为黑盒API压缩，也不等于latent CoT。
+
+## 定向复核补记
+
+Luna再读H06/H07/H08/H18，主代理复核原表并修正文稿：H06的Qwen费用是按API价后处理，Gemini thinking存在成功率下降；H18的表2美元为每千任务换算，token基线ReAct与部分其他表ReAct†不同。H08的GSM8K强节省对应GPT-4-0613、MAD(5,4)，MMLU有90.8→88.1下降。
+
+H07表3 AutoGen/HumanEval 的输入492,273→315,105，输出130,196→139,714，分数85.41→86.65；不能把摘要28.1–72.8%的范围统称完整I/O降幅。GSM8K原表3,791,251/4,327,740约87.6%，却标59.9%，应按绝对数检查。多查询拓扑优化的前Q′题、角色生成和泛化代价不能漏计。上述核查没有重新执行这些实验。

@@ -1,6 +1,6 @@
 # 后训练效率路线：原文阅读记录
 
-阅读日：2026-09-09。Luna 阅读原文；主代理整合并复核 TokenSkip 表 2、DAST 表 1、System 2 蒸馏表 4、L1 表 2 与预算违约定义。T/I/C 的含义见[证据协议](README.md)。下文的不同论文数字不能横向排名；点估计近似相同不等于通过统计等效性检验。
+阅读日：2026-09-09。Luna 阅读原文；主代理整合并复核 TokenSkip 表 2、DAST 表 1、System 2 蒸馏表 4、L1 短链比较表 与预算违约定义。T/I/C 的含义见[证据协议](README.md)。下文的不同论文数字不能横向排名；点估计近似相同不等于通过统计等效性检验。
 
 ## S03 — Stop Overthinking
 
@@ -48,9 +48,9 @@
 
 ## P07 — O1-Pruner
 
-[Luo 等，Length-Harmonizing Reasoning via Reinforcement Learning，2501.12570v2](https://arxiv.org/html/2501.12570v2)，2025-01。已读 §3–5、消融；由长度奖励分支进入。
+[Luo 等，O1-Pruner: Length-Harmonizing Fine-Tuning for O1-Like Reasoning Pruning，2501.12570v2](https://arxiv.org/html/2501.12570v2)，2025-01。已读 §3–5、消融；由长度奖励分支进入。
 
-机制：根据冻结参考模型在每题上的长度/正确性构造奖励，将缩短与改善解题平衡，用 PPO 更新。Marco-o1-7B/QwQ-32B，在 MATH 数据训练，评测 MATH/GSM8K/GaoKao；报告平均长度和准确率同时改善。类型 T；大量参考采样与标准答案是前提，原论文的平均增益不能排除难题子群下降。
+机制：根据冻结参考模型在每题上的长度/正确性构造奖励，将缩短与改善解题平衡，用 PPO 更新。Marco-o1-7B/QwQ-32B，在 MATH 数据训练，评测 MATH/GSM8K/GaoKao；表2的Marco三集平均932→554 tokens、73.4→76.8%，是点估计同时改善，没有固定准确率匹配或统计等效性检验。类型 T；大量参考采样与标准答案是前提，原论文的平均增益不能排除难题子群下降。
 
 ## P08 — CoT-Valve
 
@@ -62,7 +62,7 @@
 
 [Aggarwal、Welleck，Controlling How Long A Reasoning Model Thinks With Reinforcement Learning，2503.04697v2](https://arxiv.org/html/2503.04697v2)，2025-10，COLM 2025。已读 §3–5、附录；主代理复核短链表与 soft violation 定义。
 
-机制：将目标长度给模型，LCPO 同时奖励正确性和长度匹配；Exact 匹配目标，Max 允许更短。DeepScaleR-1.5B，40K 数学训练数据，主要训练目标 100–4,000 token；与 s1 截断等在固定预算比较。类型 T。**表中 L1-Max 385 tokens/39.1% 低于 Qwen 的 752/41.0%；L1-Short 才是 382/42.6%。** 论文低违约率采用容忍 500-token 偏差的 soft 定义，不是严格上限违约率。
+机制：将目标长度给模型，LCPO 同时奖励正确性和长度匹配；Exact 匹配目标，Max 通过软惩罚鼓励不超目标，允许更短，也可能超目标。DeepScaleR-1.5B，40K 数学训练数据，主要训练目标 100–4,000 token；与 s1 截断等在固定预算比较。类型 T。**表中 L1-Max 385 tokens/39.1% 低于 Qwen-1.5 的 752/41.0%；L1-Short 才是 382/42.6%。** 论文低违约率采用容忍 500-token 偏差的 soft 定义，不是严格上限违约率。
 
 ## P10 — DAST
 
@@ -155,3 +155,7 @@ SFT→人类偏好奖励模型→PPO。GPT-3 1.3B/6B/175B，在 API 类指令与
 [Arora、Zanette，2502.04463v4](https://arxiv.org/html/2502.04463v4)，2025-11。已读 §3–5、附录 F–J。
 
 对正确回答加题内标准化长度的平滑惩罚，效率系数控制取舍；R1-Distill-Qwen-1.5B/7B，约 3.2K Numina 题，数学/常识/逻辑评测。7B MATH 某系数约 4K→2.6K token，同时损失约 2.2 个百分点。类型 T。理论的表格策略、正确解覆盖及总体最优假设不保证有限神经网络训练零性能损失；不同归一化和长训练也可能失败。
+
+## 定向复核补记
+
+Luna 对 P07/P09/P24 再读方法、实验表与限制；主代理据原文定位修正 O1-Pruner 标题，区分平均点估计与等性能检验，补充 Arora–Zanette 的 MATH500/α=0.1 条件，以及 L1-Max 的软约束。三篇均未提供本项目所需的独立污染审计，不能将域外评测名称等同于绝对干净。未重新执行训练。
