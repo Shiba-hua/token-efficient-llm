@@ -1,0 +1,56 @@
+[
+  {
+    "file": "assets/papers/2502.12067/fig1.png",
+    "original_pdf": "assets/papers/2502.12067/fig1.pdf",
+    "method": "Poppler region rendering from unchanged source PDF; blank page margin removed only",
+    "original_preview_size": [
+      2200,
+      1238
+    ],
+    "content_bbox_on_old_preview": [
+      641,
+      380,
+      1308,
+      756
+    ],
+    "render_scale_to": 6000,
+    "render_crop": [
+      1715,
+      1003,
+      1884,
+      1091
+    ],
+    "new_preview_size": [
+      1884,
+      1091
+    ],
+    "preview_sha256": "90a6e26ece8801a7b72e17f7b0dd788ab19bbbd07d511b1edafe42543318749c"
+  },
+  {
+    "file": "assets/papers/2601.18734/fig-opsd-overview.png",
+    "original_pdf": "assets/papers/2601.18734/fig-opsd-overview.pdf",
+    "method": "Poppler region rendering from unchanged source PDF; blank page margin removed only",
+    "original_preview_size": [
+      1700,
+      2200
+    ],
+    "content_bbox_on_old_preview": [
+      160,
+      91,
+      1644,
+      493
+    ],
+    "render_scale_to": 6000,
+    "render_crop": [
+      403,
+      215,
+      4113,
+      1162
+    ],
+    "new_preview_size": [
+      4113,
+      1162
+    ],
+    "preview_sha256": "55a9dc21e597e3078051e32b7d7a63668f7c3a368548f68c1536beae76e49916"
+  }
+]

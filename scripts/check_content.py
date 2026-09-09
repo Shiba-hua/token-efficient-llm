@@ -32,7 +32,7 @@ INLINE_CODE = re.compile(r"(?<![\\`])(`+)(?!`)(.+?)(?<!`)\1(?!`)", re.DOTALL)
 
 
 def published_markdown(root: Path) -> list[Path]:
-    paths = {root / "README.md", root / "CONTRIBUTING.md"}
+    paths = {root / "README.md", root / "CONTRIBUTING.md", root / "VERSIONS.md"}
     for directory in ("docs", "meta", "assets", "sources"):
         paths.update(
             path for path in (root / directory).rglob("*.md")

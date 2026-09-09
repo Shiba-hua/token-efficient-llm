@@ -9,9 +9,9 @@
 | [统一文献台账](papers.json) | 唯一工作、别名、版本、发现来源、主归属、任务历史、已读范围与抽查状态 |
 | [覆盖与交叉索引](coverage.md) | 13 章边界、综述发现路径、生命周期和机制入口 |
 | 各章 `reference/` | 固定版本的正文级精读；一篇工作一份共享笔记 |
-| [综述候选提取](../meta/research-map-v3/survey-extractions/) | 只提取综述分类、引用和定位，不把综述转述算作原文复核 |
-| [抽查记录](../meta/research-map-v3/qc-samples.json) | 实际抽样与发现，不对未抽查材料宣称逐篇验收 |
-| [论文图像来源](../assets/papers-v3/README.md) | 图号、原始版本、文件、许可声明与格式转换 |
+| [综述候选提取](../meta/survey-extractions) | 只提取综述分类、引用和定位，不把综述转述算作原文复核 |
+| [抽查记录](../meta/qc-samples.json) | 实际抽样与发现，不对未抽查材料宣称逐篇验收 |
+| [论文图像来源](../assets/papers/README.md) | 图号、原始版本、文件、许可声明与格式转换 |
 
 [早期阶段](early-stages.md)、[后训练](posttraining-map.md)、[上下文与 Agent](context-agents-map.md)、[评测](evaluation-map.md)、[相邻方向](adjacent-map.md)是保留的历史局部阅读卡。卡内 E/P/H/A 等编号不是唯一论文身份；同一论文可能曾在不同卡出现。本版以 `papers.json` 的 `paper_id` 为准。[企业公开实践](vendor-practice.md)和[视频入口](videos.md)保留各自的实际访问与披露边界。
 
@@ -25,11 +25,11 @@
 
 ## 四级深度与培训
 
-偏好依据为用户指定的 **research-map-preferences** 技能。可移植的执行要点见[执行契约](../meta/research-map-v3/workflow.md)与[定版培训 prompt](../meta/research-map-v3/luna-reading-prompt-v2.md)；它们落实总论、章节概要、方法详解和论文正文级精读四级深度。
+偏好依据为用户指定的 **research-map-preferences** 技能。可移植的执行要点见[执行契约](../meta/workflow.md)与[定版培训 prompt](../meta/luna-reading-prompt-v2.md)；它们落实总论、章节概要、方法详解和论文正文级精读四级深度。
 
-使用 The Art of Efficient Reasoning 与 LLMLingua-2 两篇异质论文校准。首版样稿的具体问题经过定点修正，达到中等偏上后固定 v2 prompt。[培训记录](../meta/research-map-v3/calibration.md)保留过程。合格样稿直接整合，没有再次派发首读。
+使用 The Art of Efficient Reasoning 与 LLMLingua-2 两篇异质论文校准。首版样稿的具体问题经过定点修正，达到中等偏上后固定 v2 prompt。[培训记录](../meta/calibration.md)保留过程。合格样稿直接整合，没有再次派发首读。
 
-生产阶段完成 41 篇唯一原始论文阅读，按完成队列每 10 篇抽 1 篇，进行了 4 次正文质量抽查。及格及以上继续生产；局部问题定点修复。第四级没有逐篇正文覆盖或图文普查。主代理因章节写作阅读重要原文，不据此将整批精读标为已核验。严重虚构或整体失控须暂停受影响配置、重新培训并记录事故；本版有 1 次综述候选作者元数据事故，已定点修正并重新校准，详见[事故表](../meta/research-map-v3/incidents.json)。这不是第四级正文事故；未借此扩大精读普查。
+生产阶段完成 41 篇唯一原始论文阅读，按完成队列每 10 篇抽 1 篇，进行了 4 次正文质量抽查。及格及以上继续生产；局部问题定点修复。第四级没有逐篇正文覆盖或图文普查。主代理因章节写作阅读重要原文，不据此将整批精读标为已核验。严重虚构或整体失控须暂停受影响配置、重新培训并记录事故；本版有 1 次综述候选作者元数据事故，已定点修正并重新校准，详见[事故表](../meta/incidents.json)。这不是第四级正文事故；未借此扩大精读普查。
 
 ## 怎样表达证据
 

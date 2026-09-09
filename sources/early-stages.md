@@ -64,7 +64,7 @@
 
 机制：GPT-4 生成保留/删除标签，训练双向 encoder 作抽取式压缩，部署时使用小压缩器。MeetingBank、Mistral-7B 的约 3× 压缩实验，输入约 3,003→970，QA F1 66.95→76.22；LongBench 更高压缩比有明显质量损失。类型 T，压缩器有计算开销；只支持指定任务的输入节省，不能把输入压缩比当作总输出或整项 Agent 成本比例。
 
-更多早期数据质量的逐条核查保留在[第一版数据来源记录](../meta/foundations-sources.md)及[数据技术专题](../docs/technical/01-data.md)。那些检查不提供“绝对干净”的数据量保证。
+更多早期数据质量的逐条核查保留在[第一版数据来源记录](https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/meta/foundations-sources.md)及[数据技术专题](../docs/appendix/benchmark-guide.md)。那些检查不提供“绝对干净”的数据量保证。
 
 ## E10 — DoReMi
 

@@ -1,0 +1,346 @@
+{
+  "survey_id": "2507.20198",
+  "title": "A Survey of Token Compression for Efficient Multimodal Large Language Models",
+  "version": "v5 (01 Feb 2026; formerly When Tokens Talk Too Much)",
+  "source_url": "https://arxiv.org/html/2507.20198v5",
+  "date": "2026-02-01",
+  "actual_read_scope": "arXiv HTML v5 abstract, introduction, taxonomy/definition, §§2–6 (image/video/audio methods, trade-offs, evaluation/challenges/future directions), application overview, and full reference list; cited original papers were not read.",
+  "routes": [
+    {
+      "route": "image/transformation",
+      "problem": "Spatially dense image patches create redundant multimodal context.",
+      "mechanism": "Pixel unshuffle, pooling/interpolation, or strided convolution reduce a 2D grid before the LLM.",
+      "token_connection": "Direct physical reduction N→M; usually fixed ratios (often 25% retained), with locality preserved.",
+      "related_chapters": [
+        "13.1 image transformation"
+      ],
+      "survey_locator": "§3.1, Table 2"
+    },
+    {
+      "route": "image/similarity",
+      "problem": "Neighboring or semantically similar visual tokens duplicate information.",
+      "mechanism": "Similarity clustering, bipartite merging, or diversity-aware selection merges/selects representative patches.",
+      "token_connection": "Direct N→M; may lose spatial detail and fine-grained distinctions.",
+      "related_chapters": [
+        "13.2 image similarity/merge"
+      ],
+      "survey_locator": "§3.2, Table 2"
+    },
+    {
+      "route": "image/attention",
+      "problem": "Many visual tokens receive little attention after early layers.",
+      "mechanism": "Use encoder or decoder attention to prune low-saliency tokens, sometimes progressively by layer.",
+      "token_connection": "Direct N→M and usually training-free/post-training; attention-score computation and kernel compatibility add deployment caveats.",
+      "related_chapters": [
+        "13.3 image attention pruning"
+      ],
+      "survey_locator": "§3.3, Table 2"
+    },
+    {
+      "route": "image/query",
+      "problem": "Only a subset of image content is relevant to the text query.",
+      "mechanism": "Q-Former/query tokens distill visual content or cross-modal relevance selects patches.",
+      "token_connection": "Direct and query-conditioned; fixed query length is compact but may require re-condensation in multi-turn use.",
+      "related_chapters": [
+        "13.4 query-guided image compression"
+      ],
+      "survey_locator": "§3.4, Table 2"
+    },
+    {
+      "route": "video/spatiotemporal",
+      "problem": "Video token counts scale with both frame count and spatial resolution.",
+      "mechanism": "Frame sampling, temporal clustering, adjacent-token merging, density pruning, and grouped frame compression remove static/spatiotemporal redundancy.",
+      "token_connection": "Direct input/feature token reduction; temporal compression must preserve motion and rare events.",
+      "related_chapters": [
+        "13.5 video temporal compression"
+      ],
+      "survey_locator": "§4.1–§4.3, Table 3"
+    },
+    {
+      "route": "video/query",
+      "problem": "Long videos contain many frames unrelated to the user query.",
+      "mechanism": "Cross-modal frame relevance assigns lower compression to salient frames and higher compression elsewhere; Q-former/token distillation is another route.",
+      "token_connection": "Direct, query-adaptive N→M, with explicit long-video budget control.",
+      "related_chapters": [
+        "13.6 video query compression"
+      ],
+      "survey_locator": "§4.4"
+    },
+    {
+      "route": "audio/transformation",
+      "problem": "High-rate, long-duration audio yields dense temporal/spectral tokens.",
+      "mechanism": "Token stacking, pooling, and temporal convolution/downsampling (often to 12.5 Hz) reduce sequence length.",
+      "token_connection": "Direct temporal token reduction; stacking changes hidden dimension and needs an MLP realignment.",
+      "related_chapters": [
+        "13.7 audio transformation"
+      ],
+      "survey_locator": "§5.1"
+    },
+    {
+      "route": "audio/similarity-attention",
+      "problem": "Adjacent/spectral audio segments contain redundant or low-saliency information.",
+      "mechanism": "Adjacent-token cosine merging, top-K spectrogram attention, first-layer decoder attention pruning, and audio-text cross-modal selection.",
+      "token_connection": "Direct, but silence/noise and contextual cues make aggressive pruning risky.",
+      "related_chapters": [
+        "13.8 audio similarity/attention"
+      ],
+      "survey_locator": "§5.2–§5.4"
+    },
+    {
+      "route": "audio/query-distillation",
+      "problem": "Variable-length audio needs a compact representation aligned to text.",
+      "mechanism": "Audio Q-Formers, AV Q-Formers, and learnable queries distill global/local acoustic context to fixed length.",
+      "token_connection": "Direct fixed-length bottleneck; can combine early audio-visual fusion with query distillation.",
+      "related_chapters": [
+        "13.9 audio query distillation"
+      ],
+      "survey_locator": "§5.4"
+    },
+    {
+      "route": "cross-modal/architecture",
+      "problem": "Token compression, weight compression, sparse attention, and modality alignment affect different cost axes.",
+      "mechanism": "Treat token compression as sequence-length N reduction; combine it with quantization/pruning or improved encoders/projectors.",
+      "token_connection": "Token compression is direct N→M; attention sparsity alone remains N→N and is explicitly out of scope, while weight compression targets D/FLOPs.",
+      "related_chapters": [
+        "13.10 cross-modal/architecture boundary"
+      ],
+      "survey_locator": "§2.4, §6.1, §6.4–§6.7"
+    }
+  ],
+  "candidates": [
+    {
+      "title": "An image is worth 1/2 tokens after layer 2: plug-and-play inference acceleration for large vision-language models",
+      "authors": [
+        "L. Chen",
+        "H. Zhao",
+        "T. Liu",
+        "S. Bai",
+        "J. Lin",
+        "C. Zhou",
+        "B. Chang"
+      ],
+      "year": 2024,
+      "arxiv_id": null,
+      "source_url": null,
+      "survey_locator": "§3.3.2, Tables 2–3; ref. Chen et al. (2024a)",
+      "route": "image/attention",
+      "role": "起点",
+      "token_relevance": "direct",
+      "reason": "FastV observes very low visual-token attention after early layers and prunes 50% after layer 2 while retaining performance; the survey table provides retained-token/benchmark comparisons."
+    },
+    {
+      "title": "PruMerge: pruning and merging tokens for efficient vision language models",
+      "authors": [
+        "Q. Cao",
+        "B. Paranjape",
+        "H. Hajishirzi"
+      ],
+      "year": 2023,
+      "arxiv_id": "2305.17530",
+      "source_url": "https://arxiv.org/abs/2305.17530",
+      "survey_locator": "§1, Table 2; ref. Cao et al. (2023)",
+      "route": "image/similarity",
+      "role": "起点",
+      "token_relevance": "direct",
+      "reason": "Required prior combining visual-token pruning and merging; included as the requested PruMerge lineage and a representative similarity/attention hybrid."
+    },
+    {
+      "title": "LLaVA-PruMerge: Adaptive token reduction for efficient large multimodal models",
+      "authors": [
+        "Y. Shang",
+        "M. Cai",
+        "B. Xu",
+        "Y. J. Lee",
+        "Y. Yan"
+      ],
+      "year": 2025,
+      "arxiv_id": null,
+      "source_url": null,
+      "survey_locator": "§3.3.1, Table 2; ref. Shang et al. (2025)",
+      "route": "image/attention",
+      "role": "改进",
+      "token_relevance": "direct",
+      "reason": "Adaptive visual-token reduction is compared at 144/192/336 retained visual tokens; it is a key requested contemporary PruMerge candidate, with exact survey-table numbers but no arXiv ID in the reference entry."
+    },
+    {
+      "title": "DyCoke: Dynamic compression of tokens for fast video large language models",
+      "authors": [
+        "Keda Tao",
+        "Can Qin",
+        "Haoxuan You",
+        "Yang Sui",
+        "Huan Wang"
+      ],
+      "year": 2025,
+      "arxiv_id": null,
+      "source_url": null,
+      "survey_locator": "§4.2, Table 3; ref. Tao et al. (2025a)",
+      "route": "video/spatiotemporal",
+      "role": "改进",
+      "token_relevance": "direct",
+      "reason": "Groups four frames and performs temporal pruning within each group; Table 3 compares 50%/35% retained ratios against FastV and other video methods."
+    },
+    {
+      "title": "FastVID: Dynamic density pruning for fast video large language models",
+      "authors": [
+        "L. Shen",
+        "G. Gong",
+        "T. He",
+        "Y. Zhang",
+        "P. Liu",
+        "S. Zhao",
+        "G. Ding"
+      ],
+      "year": 2025,
+      "arxiv_id": null,
+      "source_url": null,
+      "survey_locator": "§4.2, Table 3; ref. Shen et al. (2025a)",
+      "route": "video/spatiotemporal",
+      "role": "改进",
+      "token_relevance": "direct",
+      "reason": "Clusters adjacent frame representations and applies DPC-KNN to merge tokens; survey reports 25% and 10% retained-ratio rows, making it a typical temporal redundancy method."
+    },
+    {
+      "title": "PruneVid: Visual token pruning for efficient video large language models",
+      "authors": [
+        "X. Huang",
+        "H. Zhou",
+        "K. Han"
+      ],
+      "year": 2025,
+      "arxiv_id": null,
+      "source_url": null,
+      "survey_locator": "§4.2, Table 3; ref. Huang et al. (2025b)",
+      "route": "video/spatiotemporal",
+      "role": "竞争",
+      "token_relevance": "direct",
+      "reason": "Uses frame clustering followed by static-token merging and spatiotemporal consolidation; Table 3 shows performance at 25% and 10% retained ratios."
+    },
+    {
+      "title": "HoliTom: Holistic token merging for fast video large language models",
+      "authors": [
+        "Kele Shao",
+        "Keda Tao",
+        "Can Qin",
+        "Haoxuan You",
+        "Yang Sui",
+        "Huan Wang"
+      ],
+      "year": 2025,
+      "arxiv_id": null,
+      "source_url": null,
+      "survey_locator": "§4.2, Table 3; ref. Shao et al. (2025)",
+      "route": "video/spatiotemporal",
+      "role": "改进",
+      "token_relevance": "direct",
+      "reason": "Recasts temporal redundancy compression as maximizing compressible redundant features over clustered frames, addressing detail loss from single frame-level representatives; reported at 25%/10% retained ratios."
+    },
+    {
+      "title": "LongVU: Spatiotemporal adaptive compression for long video-language understanding",
+      "authors": [
+        "X. Shen",
+        "Y. Xiong",
+        "C. Zhao",
+        "L. Wu",
+        "J. Chen",
+        "C. Zhu",
+        "Z. Liu",
+        "F. Xiao",
+        "B. Varadarajan",
+        "F. Bordes"
+      ],
+      "year": 2025,
+      "arxiv_id": null,
+      "source_url": null,
+      "survey_locator": "§4.4.2; ref. Shen et al. (2025b)",
+      "route": "video/query",
+      "role": "改进",
+      "token_relevance": "direct",
+      "reason": "Computes query–frame cross-modal relevance and preserves salient frames with lower compression while enforcing the LLM context budget."
+    },
+    {
+      "title": "An embarrassingly simple approach for LLM with strong ASR capacity",
+      "authors": [
+        "Z. Ma",
+        "G. Yang",
+        "Y. Yang",
+        "Z. Gao",
+        "J. Wang",
+        "Z. Du",
+        "F. Yu",
+        "Q. Chen",
+        "S. Zheng",
+        "S. Zhang"
+      ],
+      "year": 2024,
+      "arxiv_id": "2402.08846",
+      "source_url": "https://arxiv.org/abs/2402.08846",
+      "survey_locator": "§5.1.1; ref. Ma et al. (2024c)",
+      "route": "audio/transformation",
+      "role": "背景",
+      "token_relevance": "direct",
+      "reason": "Representative audio token stacking route: stacks audio tokens and realigns the changed hidden dimension with an MLP, a concrete audio compression primitive."
+    },
+    {
+      "title": "Adaptive audio-visual speech recognition via Matryoshka-based multimodal LLMs",
+      "authors": [
+        "U. Cappellazzo",
+        "M. Kim",
+        "S. Petridis"
+      ],
+      "year": 2025,
+      "arxiv_id": "2503.06362",
+      "source_url": "https://arxiv.org/abs/2503.06362",
+      "survey_locator": "§5.1.2; ref. Cappellazzo et al. (2025b)",
+      "route": "audio/transformation",
+      "role": "改进",
+      "token_relevance": "direct",
+      "reason": "Uses multi-scale audio/video training with pooling or stacking at different rates, enabling inference-time compression/performance trade-offs within one model."
+    },
+    {
+      "title": "Token pruning in audio transformers: optimizing performance and decoding patch importance",
+      "authors": [
+        "T. Lee",
+        "H. Lee"
+      ],
+      "year": 2025,
+      "arxiv_id": "2504.01690",
+      "source_url": "https://arxiv.org/abs/2504.01690",
+      "survey_locator": "§5.3.1; ref. Lee and Lee (2025)",
+      "route": "audio/similarity-attention",
+      "role": "起点",
+      "token_relevance": "direct",
+      "reason": "Top-K selection inside audio spectrogram transformer blocks retains tokens ranked by attention magnitude, directly targeting audio-token sequence length."
+    },
+    {
+      "title": "SpeechPrune: Context-aware token pruning for speech information retrieval",
+      "authors": [
+        "Y. Lin",
+        "Y. Fu",
+        "J. Zhang",
+        "Y. Liu",
+        "J. Zhang",
+        "J. Sun",
+        "H. Li",
+        "Y. Chen"
+      ],
+      "year": 2025,
+      "arxiv_id": null,
+      "source_url": null,
+      "survey_locator": "§5.3.2, §5.4.2; ref. Lin et al. (2025b)",
+      "route": "audio/similarity-attention",
+      "role": "改进",
+      "token_relevance": "direct",
+      "reason": "Uses first-layer decoder attention and audio–text cosine similarity to discard less relevant audio tokens, connecting attention pruning with query-guided selection."
+    }
+  ],
+  "gaps/conflicts": [
+    "The survey’s strict inclusion rule is physical sequence reduction M<N; attention sparsity that preserves N is excluded even if it lowers FLOPs. Keep this boundary when mapping architecture proposals.",
+    "Image/video/audio are the primary axes and transformation/similarity/attention/query the mechanism axes, but several methods combine axes (e.g., query relevance plus clustering, or early fusion plus Q-Former). Assign a primary route and retain cross-links.",
+    "Compression ratios and benchmark scores are not a universal performance–token curve: tables mix models, retained-ratio definitions, datasets, and evaluation protocols. A lower ratio can preserve aggregate scores while losing rare spatial, temporal, or acoustic details.",
+    "Video compression has a rare-event and motion risk: frame sampling, clustering, or static-token merging may discard short events; query-guided methods depend on the quality of cross-modal relevance and context-budget allocation.",
+    "Audio has distinctive spectral/temporal redundancy, silence, and noise. Aggressive pruning can remove contextual cues; the survey identifies principled audio-token pruning as an open challenge.",
+    "Weight quantization/pruning and sparse attention are complementary efficiency mechanisms, not token compression under the survey’s definition. Report them separately from N→M token reduction.",
+    "The v5 revision is dated 2026-02-01. The reference list includes works through 2025 and the survey’s own 2026 revision; it does not establish coverage of papers released after that date."
+  ]
+}

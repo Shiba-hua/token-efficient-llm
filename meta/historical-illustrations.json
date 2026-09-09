@@ -1,0 +1,352 @@
+[
+  {
+    "figure_id": "figure-0001",
+    "historical_file": "assets/papers/appworld-main.png",
+    "historical_source_sha256": "57f4fd714451a76b8bb9e54d7cfc518d8d529d984cfe4212a3afcb91d298960f",
+    "historical_versions": [
+      "codex/archive-v1-tutorial",
+      "codex/archive-v2-lifecycle-map",
+      "codex/archive-v3-topic-map"
+    ],
+    "visual_status": "PASS",
+    "decision": "retain",
+    "reason": "提供与当前正文对应的概念、方法接口或教学算例，保留原文件字节。",
+    "current_asset": "assets/papers/2407.18901/appworld-main.png",
+    "placements": [
+      {
+        "page": "docs/appendix/benchmark-guide.md",
+        "line": 207
+      }
+    ]
+  },
+  {
+    "figure_id": "figure-0002",
+    "historical_file": "assets/plots/context-pipeline.svg",
+    "historical_source_sha256": "47bf27044c3dbd33f0e0ade60eb0d3f524e029d2edf90831944d3b788c65a56c",
+    "historical_versions": [
+      "codex/archive-v1-tutorial",
+      "codex/archive-v2-lifecycle-map",
+      "codex/archive-v3-topic-map"
+    ],
+    "visual_status": "PASS",
+    "decision": "retain",
+    "reason": "提供与当前正文对应的概念、方法接口或教学算例，保留原文件字节。",
+    "current_asset": "assets/teaching/context-pipeline.svg",
+    "placements": [
+      {
+        "page": "docs/appendix/worked-examples.md",
+        "line": 158
+      }
+    ]
+  },
+  {
+    "figure_id": "figure-0003",
+    "historical_file": "assets/plots/data-four-axes.svg",
+    "historical_source_sha256": "ca9a3836362a3d0bd3e046ce3f8a3c2af694e9d2815f67a6930e0d991cf5ffba",
+    "historical_versions": [
+      "codex/archive-v1-tutorial",
+      "codex/archive-v2-lifecycle-map",
+      "codex/archive-v3-topic-map"
+    ],
+    "visual_status": "PASS",
+    "decision": "retain",
+    "reason": "提供与当前正文对应的概念、方法接口或教学算例，保留原文件字节。",
+    "current_asset": "assets/teaching/data-four-axes.svg",
+    "placements": [
+      {
+        "page": "docs/appendix/benchmark-guide.md",
+        "line": 17
+      }
+    ]
+  },
+  {
+    "figure_id": "figure-0004",
+    "historical_file": "assets/plots/evaluation-aucoaa.png",
+    "historical_source_sha256": "a3226150de457bbdc3e5374cc41a7e9ac1b92c066dbaa9586076d4b472586d19",
+    "historical_versions": [
+      "codex/archive-v1-tutorial",
+      "codex/archive-v2-lifecycle-map",
+      "codex/archive-v3-topic-map"
+    ],
+    "visual_status": "PASS",
+    "decision": "retain",
+    "reason": "提供与当前正文对应的概念、方法接口或教学算例，保留原文件字节。",
+    "current_asset": "assets/teaching/evaluation-aucoaa.png",
+    "placements": [
+      {
+        "page": "docs/appendix/benchmark-guide.md",
+        "line": 167
+      }
+    ]
+  },
+  {
+    "figure_id": "figure-0005",
+    "historical_file": "assets/plots/evaluation-frontier.png",
+    "historical_source_sha256": "18ab176da675c3f0360aa80a5e5f0a4005e8e1e4c0241407d50034a0a7842f1b",
+    "historical_versions": [
+      "codex/archive-v1-tutorial",
+      "codex/archive-v2-lifecycle-map",
+      "codex/archive-v3-topic-map"
+    ],
+    "visual_status": "PASS",
+    "decision": "retain",
+    "reason": "提供与当前正文对应的概念、方法接口或教学算例，保留原文件字节。",
+    "current_asset": "assets/teaching/evaluation-frontier.png",
+    "placements": [
+      {
+        "page": "docs/appendix/benchmark-guide.md",
+        "line": 86
+      }
+    ]
+  },
+  {
+    "figure_id": "figure-0006",
+    "historical_file": "assets/plots/evaluation-ock-triangle.png",
+    "historical_source_sha256": "cf71d5f93a196149570e2c9284d387c88c2aecd6d92a49110464120a3eac9640",
+    "historical_versions": [
+      "codex/archive-v1-tutorial",
+      "codex/archive-v2-lifecycle-map",
+      "codex/archive-v3-topic-map"
+    ],
+    "visual_status": "PASS",
+    "decision": "retain",
+    "reason": "提供与当前正文对应的概念、方法接口或教学算例，保留原文件字节。",
+    "current_asset": "assets/teaching/evaluation-ock-triangle.png",
+    "placements": [
+      {
+        "page": "docs/appendix/benchmark-guide.md",
+        "line": 113
+      }
+    ]
+  },
+  {
+    "figure_id": "figure-0007",
+    "historical_file": "assets/plots/evaluation-otb-maze.png",
+    "historical_source_sha256": "3c02f34f9f6f56675227a24c671a7329d0cd60354d2548f13449162ed3767bee",
+    "historical_versions": [
+      "codex/archive-v1-tutorial",
+      "codex/archive-v2-lifecycle-map",
+      "codex/archive-v3-topic-map"
+    ],
+    "visual_status": "PASS",
+    "decision": "retain",
+    "reason": "提供与当前正文对应的概念、方法接口或教学算例，保留原文件字节。",
+    "current_asset": "assets/teaching/evaluation-otb-maze.png",
+    "placements": [
+      {
+        "page": "docs/appendix/benchmark-guide.md",
+        "line": 148
+      }
+    ]
+  },
+  {
+    "figure_id": "figure-0008",
+    "historical_file": "assets/plots/evaluation-think-ratio.png",
+    "historical_source_sha256": "a11d23a1d113a3830aad510d5b033e40bf88f615919dc24d66713a96fd1ec40a",
+    "historical_versions": [
+      "codex/archive-v1-tutorial",
+      "codex/archive-v2-lifecycle-map",
+      "codex/archive-v3-topic-map"
+    ],
+    "visual_status": "PASS",
+    "decision": "retain",
+    "reason": "提供与当前正文对应的概念、方法接口或教学算例，保留原文件字节。",
+    "current_asset": "assets/teaching/evaluation-think-ratio.png",
+    "placements": [
+      {
+        "page": "docs/appendix/benchmark-guide.md",
+        "line": 197
+      }
+    ]
+  },
+  {
+    "figure_id": "figure-0009",
+    "historical_file": "assets/generated/frontier-concept.png",
+    "historical_source_sha256": "2bb755339bf3bdc708b05d3b17f38fdf1192e4a5e779f960672539115a63f6ef",
+    "historical_versions": [
+      "codex/archive-v1-tutorial",
+      "codex/archive-v2-lifecycle-map",
+      "codex/archive-v3-topic-map"
+    ],
+    "visual_status": "PASS",
+    "decision": "retain",
+    "reason": "提供与当前正文对应的概念、方法接口或教学算例，保留原文件字节。",
+    "current_asset": "assets/concepts/frontier-concept.png",
+    "placements": [
+      {
+        "page": "docs/00-overview.md",
+        "line": 11
+      }
+    ]
+  },
+  {
+    "figure_id": "figure-0010",
+    "historical_file": "assets/plots/harness-loop.svg",
+    "historical_source_sha256": "31d6a9e06ec46dba5a8f52ef957a23999d97403ed53f94cdd129d9d80182f68a",
+    "historical_versions": [
+      "codex/archive-v1-tutorial",
+      "codex/archive-v2-lifecycle-map",
+      "codex/archive-v3-topic-map"
+    ],
+    "visual_status": "PASS",
+    "decision": "retain",
+    "reason": "提供与当前正文对应的概念、方法接口或教学算例，保留原文件字节。",
+    "current_asset": "assets/teaching/harness-loop.svg",
+    "placements": [
+      {
+        "page": "docs/appendix/worked-examples.md",
+        "line": 220
+      }
+    ]
+  },
+  {
+    "figure_id": "figure-0011",
+    "historical_file": "assets/plots/harness-resource-metrics.svg",
+    "historical_source_sha256": "8994ce145301dd5fbedd9c4493915630ed75db7bd9fcbe36b35c4ef4d9313202",
+    "historical_versions": [
+      "codex/archive-v1-tutorial",
+      "codex/archive-v2-lifecycle-map",
+      "codex/archive-v3-topic-map"
+    ],
+    "visual_status": "PASS",
+    "decision": "retain",
+    "reason": "提供与当前正文对应的概念、方法接口或教学算例，保留原文件字节。",
+    "current_asset": "assets/teaching/harness-resource-metrics.svg",
+    "placements": [
+      {
+        "page": "docs/appendix/math-foundations.md",
+        "line": 465
+      }
+    ]
+  },
+  {
+    "figure_id": "figure-0012",
+    "historical_file": "assets/papers/mtp-main.png",
+    "historical_source_sha256": "5fc3a6b36df6afb659b9d88fdc55c41273beb7c4807211c0c5af21305ec804f7",
+    "historical_versions": [
+      "codex/archive-v1-tutorial",
+      "codex/archive-v2-lifecycle-map",
+      "codex/archive-v3-topic-map"
+    ],
+    "visual_status": "PASS",
+    "decision": "retain",
+    "reason": "提供与当前正文对应的概念、方法接口或教学算例，保留原文件字节。",
+    "current_asset": "assets/papers/2404.19737/mtp-main.png",
+    "placements": [
+      {
+        "page": "docs/02-pretraining/index.md",
+        "line": 48
+      }
+    ]
+  },
+  {
+    "figure_id": "figure-0013",
+    "historical_file": "assets/plots/posttraining-clip.svg",
+    "historical_source_sha256": "37e6e47b34a27801abba7f1cf7f32c0341e5921fbce36136f0fbd772b3d0cda1",
+    "historical_versions": [
+      "codex/archive-v1-tutorial",
+      "codex/archive-v2-lifecycle-map",
+      "codex/archive-v3-topic-map"
+    ],
+    "visual_status": "PASS",
+    "decision": "retain",
+    "reason": "提供与当前正文对应的概念、方法接口或教学算例，保留原文件字节。",
+    "current_asset": "assets/teaching/posttraining-clip.svg",
+    "placements": [
+      {
+        "page": "docs/appendix/math-foundations.md",
+        "line": 353
+      }
+    ]
+  },
+  {
+    "figure_id": "figure-0014",
+    "historical_file": "assets/plots/posttraining-grpo.svg",
+    "historical_source_sha256": "8a91f40af05f9ed7f6fecb78b9a87175591d30206ea0751b37b0cae441bffc35",
+    "historical_versions": [
+      "codex/archive-v1-tutorial",
+      "codex/archive-v2-lifecycle-map",
+      "codex/archive-v3-topic-map"
+    ],
+    "visual_status": "PASS",
+    "decision": "retain",
+    "reason": "提供与当前正文对应的概念、方法接口或教学算例，保留原文件字节。",
+    "current_asset": "assets/teaching/posttraining-grpo.svg",
+    "placements": [
+      {
+        "page": "docs/appendix/math-foundations.md",
+        "line": 418
+      }
+    ]
+  },
+  {
+    "figure_id": "figure-0015",
+    "historical_file": "assets/plots/posttraining-kl.svg",
+    "historical_source_sha256": "628d15c61c4c20bce5c905acce39cf4dfc027c3b9590b629c2bdc869d5d0ea5a",
+    "historical_versions": [
+      "codex/archive-v1-tutorial",
+      "codex/archive-v2-lifecycle-map",
+      "codex/archive-v3-topic-map"
+    ],
+    "visual_status": "PASS",
+    "decision": "retain",
+    "reason": "提供与当前正文对应的概念、方法接口或教学算例，保留原文件字节。",
+    "current_asset": "assets/teaching/posttraining-kl.svg",
+    "placements": [
+      {
+        "page": "docs/appendix/math-foundations.md",
+        "line": 214
+      }
+    ]
+  },
+  {
+    "figure_id": "figure-0016",
+    "historical_file": "assets/plots/pretraining-midtraining.svg",
+    "historical_source_sha256": "5a3c88a21cf24ad653be76619a44bce180841b0a48be8bde9dfbd7b93812a77c",
+    "historical_versions": [
+      "codex/archive-v1-tutorial",
+      "codex/archive-v2-lifecycle-map",
+      "codex/archive-v3-topic-map"
+    ],
+    "visual_status": "PASS",
+    "decision": "history_only",
+    "reason": "当前13方向及章节地图已承担总览关系表达；此阶段总览与新版重复，保留历史快照。",
+    "current_asset": null,
+    "placements": []
+  },
+  {
+    "figure_id": "figure-0017",
+    "historical_file": "assets/plots/pretraining-objectives.svg",
+    "historical_source_sha256": "7d0d963e85a8999b1be699f1c54fa74502f89ea75b6d4f0b374eae71c869f083",
+    "historical_versions": [
+      "codex/archive-v1-tutorial",
+      "codex/archive-v2-lifecycle-map",
+      "codex/archive-v3-topic-map"
+    ],
+    "visual_status": "PASS",
+    "decision": "retain",
+    "reason": "提供与当前正文对应的概念、方法接口或教学算例，保留原文件字节。",
+    "current_asset": "assets/teaching/pretraining-objectives.svg",
+    "placements": [
+      {
+        "page": "docs/appendix/worked-examples.md",
+        "line": 13
+      }
+    ]
+  },
+  {
+    "figure_id": "figure-0018",
+    "historical_file": "assets/plots/research-map.svg",
+    "historical_source_sha256": "79083f41ab293eaa4dfd22287156d40e41e3c6aad588e4d931f1cd175b40f19b",
+    "historical_versions": [
+      "codex/archive-v1-tutorial",
+      "codex/archive-v2-lifecycle-map",
+      "codex/archive-v3-topic-map"
+    ],
+    "visual_status": "PASS",
+    "decision": "history_only",
+    "reason": "当前13方向及章节地图已承担总览关系表达；此阶段总览与新版重复，保留历史快照。",
+    "current_asset": null,
+    "placements": []
+  }
+]

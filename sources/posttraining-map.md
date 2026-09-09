@@ -88,7 +88,7 @@
 
 机制/结果：Llama3.1-8B/Qwen-Math-7B 的正确性奖励会推动长链；cosine 奖励约束长度，但长训练可能利用重复文本钻奖励空子。类型 I/T；并非证明所有长度 RL 都会崩溃，而是提示训练稳定、重复和难题能力需要同时验证。
 
-RLHF/DPO/GRPO 的原始数学来源保留在[技术来源记录](../meta/posttraining-sources.md)；这些基础算法的存在和采用情况不能代替上述效率机制的证据。
+RLHF/DPO/GRPO 的原始数学来源保留在[技术来源记录](https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/meta/posttraining-sources.md)；这些基础算法的存在和采用情况不能代替上述效率机制的证据。
 
 ## P14 — GKD / On-policy Distillation of Language Models
 

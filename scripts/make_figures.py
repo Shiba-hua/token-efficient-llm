@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "assets" / "plots"
+OUT = ROOT / "assets" / "teaching"
 OUT.mkdir(parents=True, exist_ok=True)
 plt.rcParams.update({"font.size": 12, "axes.spines.top": False,
                      "axes.spines.right": False, "figure.dpi": 160})

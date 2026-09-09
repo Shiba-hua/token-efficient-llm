@@ -1,0 +1,462 @@
+[
+  {
+    "file": "docs/04-architecture/index.md",
+    "line": 65,
+    "before": "\\mathcal L_{\\mathrm{KD}}\n=\\frac1M\\sum_{l=1}^{M}\\left\\|\\operatorname{sg}(h_T^l)-h_S^l\\right\\|_1,\n\\qquad\n\\mathcal L=\\alpha\\mathcal L_S+\\beta\\mathcal L_{\\mathrm{KD}}+\\gamma\\mathcal L_T.\n",
+    "after": "\\mathcal L_{\\mathrm{KD}}\n=\\frac1M\\sum_{l=1}^{M}\\left\\|\\mathrm{sg}(h_T^l)-h_S^l\\right\\|_1,\n\\qquad\n\\mathcal L=\\alpha\\mathcal L_S+\\beta\\mathcal L_{\\mathrm{KD}}+\\gamma\\mathcal L_T.\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/04-architecture/index.md",
+    "line": 71,
+    "before": "\\operatorname{sg}",
+    "after": "\\mathrm{sg}",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/06-reasoning/index.md",
+    "line": 31,
+    "before": "\\pi^*(x,B)\\in\\operatorname*{argmax}_{\\pi\\in\\Pi}\n\\mathbb E[S\\mid x,\\pi],\\qquad\n\\mathbb E[C\\mid x,\\pi]\\le B.\n",
+    "after": "\\pi^*(x,B)\\in\\underset{\\pi\\in\\Pi}{\\mathrm{arg\\,max}}\n\\mathbb E[S\\mid x,\\pi],\\qquad\n\\mathbb E[C\\mid x,\\pi]\\le B.\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/06-reasoning/index.md",
+    "line": 81,
+    "before": "V(a)=\\sum_t w_t\\mathbf1[\\operatorname{answer}(t)=a],\\qquad\n\\rho=\\frac{\\max_aV(a)}{\\sum_aV(a)}.\n",
+    "after": "V(a)=\\sum_t w_t\\mathbf1[\\mathrm{answer}(t)=a],\\qquad\n\\rho=\\frac{\\max_aV(a)}{\\sum_aV(a)}.\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/01-data/index.md",
+    "line": 30,
+    "before": "\\mathcal C_x=\\{y\\in\\mathcal Y_x:v(x,y)=1\\},\\qquad\ny_x^*=\\operatorname*{argmin}_{y\\in\\mathcal C_x}\\ell(y).\n",
+    "after": "\\mathcal C_x=\\{y\\in\\mathcal Y_x:v(x,y)=1\\},\\qquad\ny_x^*=\\underset{y\\in\\mathcal C_x}{\\mathrm{arg\\,min}}\\ell(y).\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/05-posttraining/index.md",
+    "line": 32,
+    "before": "S_r=\\operatorname{TopK}(s_{1:T},k_r),\\qquad\n\\widetilde y_r=(y_t:t\\in S_r\\text{，按原位置排序}),\n\\qquad\n\\mathcal L=-\\sum_t\\log\\pi_\\theta(\\widetilde y_{r,t}\\mid x,r,\\widetilde y_{r,<t}).\n",
+    "after": "S_r=\\mathrm{TopK}(s_{1:T},k_r),\\qquad\n\\widetilde y_r=(y_t:t\\in S_r\\text{，按原位置排序}),\n\\qquad\n\\mathcal L=-\\sum_t\\log\\pi_\\theta(\\widetilde y_{r,t}\\mid x,r,\\widetilde y_{r,<t}).\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/05-posttraining/index.md",
+    "line": 190,
+    "before": "r_{\\mathrm{Max}}=c(y)\\operatorname{clip}\\bigl(\\alpha[b-L(y)]+0.5,0,1\\bigr).\n",
+    "after": "r_{\\mathrm{Max}}=c(y)\\mathrm{clip}\\bigl(\\alpha[b-L(y)]+0.5,0,1\\bigr).\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/07-context/index.md",
+    "line": 32,
+    "before": "p_i=\\operatorname{softmax}(Wh_i+b)_{\\mathrm{preserve}},\\qquad\n\\mathcal L=-\\frac1N\\sum_{i=1}^{N}\n[y_i\\log p_i+(1-y_i)\\log(1-p_i)].\n",
+    "after": "p_i=\\mathrm{softmax}(Wh_i+b)_{\\mathrm{preserve}},\\qquad\n\\mathcal L=-\\frac1N\\sum_{i=1}^{N}\n[y_i\\log p_i+(1-y_i)\\log(1-p_i)].\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/08-agents/index.md",
+    "line": 116,
+    "before": "\\operatorname{route}(x)=\n\\begin{cases}\\text{strong},&s(x)>\\tau,\\\\\n\\text{weak},&\\text{otherwise}.\n\\end{cases}\n",
+    "after": "\\mathrm{route}(x)=\n\\begin{cases}\\text{strong},&s(x)>\\tau,\\\\\n\\text{weak},&\\text{otherwise}.\n\\end{cases}\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/08-agents/reference/2410.02506.md",
+    "line": 69,
+    "before": "\\max_{S^S,S^T\\in\\mathcal S}\\;\\mathbb E_{\\widehat G^S,\\widetilde G^T\\sim G}\n\\left[\\phi(\\{\\widehat G^S,\\widetilde G^T\\})\\right]\n-\\sum_{X\\in\\{S,T\\}}\\operatorname{rank}(S^X),\n\\quad\\text{s.t. }\\|A^X-S^X\\|_F\\leq\\delta.\n",
+    "after": "\\max_{S^S,S^T\\in\\mathcal S}\\;\\mathbb E_{\\widehat G^S,\\widetilde G^T\\sim G}\n\\left[\\phi(\\{\\widehat G^S,\\widetilde G^T\\})\\right]\n-\\sum_{X\\in\\{S,T\\}}\\mathrm{rank}(S^X),\n\\quad\\text{s.t. }\\|A^X-S^X\\|_F\\leq\\delta.\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/08-agents/reference/2410.02506.md",
+    "line": 105,
+    "before": "B=\\mathbf 1\\!\\left(A\\neq0\\;\\land\\;\n\\operatorname{TopK}\\big(S,|A|\\times(1-p\\%)\\big)\\right).\n",
+    "after": "B=\\mathbf 1\\!\\left(A\\neq0\\;\\land\\;\n\\mathrm{TopK}\\big(S,|A|\\times(1-p\\%)\\big)\\right).\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/08-agents/reference/2305.18323.md",
+    "line": 47,
+    "before": "\\begin{aligned}\n\\#Token_I^{TAO}\n&=\\Theta(C+\\bm S+Q)\n +\\sum_{j=1}^{k-1}\\Theta\\left(C+\\bm S+Q+\\sum_{t=1}^{j}(T_t+A_t+O_t)\\right)\\\\\n&=k\\Theta(Q)+k\\Theta(C)+k\\Theta(\\bm S)\n +\\sum_{j=1}^{k-1}(k-j)\\Theta(T_j+A_j+O_j).\n\\end{aligned}\n",
+    "after": "\\begin{aligned}\n\\#Token_I^{TAO}\n&=\\Theta(C+\\mathbf S+Q)\n +\\sum_{j=1}^{k-1}\\Theta\\left(C+\\mathbf S+Q+\\sum_{t=1}^{j}(T_t+A_t+O_t)\\right)\\\\\n&=k\\Theta(Q)+k\\Theta(C)+k\\Theta(\\mathbf S)\n +\\sum_{j=1}^{k-1}(k-j)\\Theta(T_j+A_j+O_j).\n\\end{aligned}\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/08-agents/reference/2305.18323.md",
+    "line": 56,
+    "before": "Q,C,\\bm S",
+    "after": "Q,C,\\mathbf S",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/08-agents/reference/2305.18323.md",
+    "line": 63,
+    "before": "\\begin{aligned}\n\\#Token_I^{ReWOO}\n&=\\Theta(C_{planner}+\\bm S+Q)\n +\\Theta(C_{solver}+Q+\\sum_{j=1}^kP_j+E_j)\\\\\n&\\approx 2\\Theta(Q)+2\\Theta(C)+\\Theta(\\bm S)\n +\\sum_{j=1}^k\\Theta(P_j+E_j).\n\\end{aligned}\n",
+    "after": "\\begin{aligned}\n\\#Token_I^{ReWOO}\n&=\\Theta(C_{planner}+\\mathbf S+Q)\n +\\Theta(C_{solver}+Q+\\sum_{j=1}^kP_j+E_j)\\\\\n&\\approx 2\\Theta(Q)+2\\Theta(C)+\\Theta(\\mathbf S)\n +\\sum_{j=1}^k\\Theta(P_j+E_j).\n\\end{aligned}\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/08-agents/reference/2305.18323.md",
+    "line": 72,
+    "before": "Q,C,\\bm S",
+    "after": "Q,C,\\mathbf S",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/10-systems/reference/2211.17192.md",
+    "line": 30,
+    "before": "p'(x)=\\operatorname{norm}\\bigl(\\max(0,p(x)-q(x))\\bigr)\n",
+    "after": "p'(x)=\\mathrm{norm}\\bigl(\\max(0,p(x)-q(x))\\bigr)\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/10-systems/reference/2211.17192.md",
+    "line": 92,
+    "before": "p'(x)=\\operatorname{norm}\\bigl(\\max(0,p_{n+1}(x)-q_{n+1}(x))\\bigr);\n",
+    "after": "p'(x)=\\mathrm{norm}\\bigl(\\max(0,p_{n+1}(x)-q_{n+1}(x))\\bigr);\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/10-systems/reference/2503.01840.md",
+    "line": 31,
+    "before": "T_{1:j}=t_1,ldots,t_j",
+    "after": "T_{1:j}=t_1,\\ldots,t_j",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/10-systems/reference/2503.01840.md",
+    "line": 31,
+    "before": "hat T_{j+1:j+k}",
+    "after": "\\hat T_{j+1:j+k}",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/10-systems/reference/2503.01840.md",
+    "line": 31,
+    "before": "hat p_{j+i}(hat t_{j+i})",
+    "after": "\\hat p_{j+i}(\\hat t_{j+i})",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/10-systems/reference/2503.01840.md",
+    "line": 31,
+    "before": "hat t_{j+i}",
+    "after": "\\hat t_{j+i}",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/10-systems/reference/2503.01840.md",
+    "line": 40,
+    "before": "\\operatorname{norm}\\!\\left(\\max(0,p_{j+i}-\\hat p_{j+i})\\right)\n",
+    "after": "\\mathrm{norm}\\!\\left(\\max(0,p_{j+i}-\\hat p_{j+i})\\right)\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/07-context/reference/2510.18866.md",
+    "line": 35,
+    "before": "x=(x_1,ldots,x_m)",
+    "after": "x=(x_1,\\ldots,x_m)",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/05-posttraining/reference/2601.18734.md",
+    "line": 80,
+    "before": "\\operatorname{JSD}_\\beta(p_T\\|p_S)=\n\\beta D_{KL}(p_T\\|m)+(1-\\beta)D_{KL}(p_S\\|m),\n\\quad m=\\beta p_T+(1-\\beta)p_S.\n",
+    "after": "\\mathrm{JSD}_\\beta(p_T\\|p_S)=\n\\beta D_{KL}(p_T\\|m)+(1-\\beta)D_{KL}(p_S\\|m),\n\\quad m=\\beta p_T+(1-\\beta)p_S.\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/05-posttraining/reference/2601.18734.md",
+    "line": 122,
+    "before": "A_i=\\frac{r_i-\\operatorname{mean}(r_1,\\ldots,r_G)}\n{\\operatorname{std}(r_1,\\ldots,r_G)}.\n",
+    "after": "A_i=\\frac{r_i-\\mathrm{mean}(r_1,\\ldots,r_G)}\n{\\mathrm{std}(r_1,\\ldots,r_G)}.\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/05-posttraining/reference/2502.12067.md",
+    "line": 25,
+    "before": "c=(c_1,ldots,c_m)",
+    "after": "c=(c_1,\\ldots,c_m)",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/05-posttraining/reference/2502.12067.md",
+    "line": 47,
+    "before": "c=(c_1,ldots,c_m)",
+    "after": "c=(c_1,\\ldots,c_m)",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/05-posttraining/reference/2503.04697.md",
+    "line": 30,
+    "before": "x_i^{new}=\\operatorname{Concat}\\bigl(x_i,\\;\\text{“Think for }n_{gold,i}\\text{ tokens.”}\\bigr).\n",
+    "after": "x_i^{new}=\\mathrm{Concat}\\bigl(x_i,\\;\\text{“Think for }n_{gold,i}\\text{ tokens.”}\\bigr).\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/05-posttraining/reference/2503.04697.md",
+    "line": 57,
+    "before": "r_{\\mathrm{Max}}(y,y_{gold},n_{gold})\n=\\mathbb{I}(y=y_{gold})\\cdot\n\\operatorname{clip}\\bigl(\\alpha(n_{gold}-n_y)+\\delta,0,1\\bigr),\n\\qquad \\delta=0.5.\n",
+    "after": "r_{\\mathrm{Max}}(y,y_{gold},n_{gold})\n=\\mathbb{I}(y=y_{gold})\\cdot\n\\mathrm{clip}\\bigl(\\alpha(n_{gold}-n_y)+\\delta,0,1\\bigr),\n\\qquad \\delta=0.5.\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/05-posttraining/reference/2503.04697.md",
+    "line": 67,
+    "before": "\\operatorname{clip}(0.003(-100)+0.5,0,1)=0.2",
+    "after": "\\mathrm{clip}(0.003(-100)+0.5,0,1)=0.2",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/05-posttraining/reference/2503.04697.md",
+    "line": 67,
+    "before": "\\operatorname{clip}(0.003(300)+0.5,0,1)=1",
+    "after": "\\mathrm{clip}(0.003(300)+0.5,0,1)=1",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/05-posttraining/reference/2504.11536.md",
+    "line": 70,
+    "before": "\\mathcal{J}_{\\mathrm{PPO}}(\\theta)=\n\\mathbb{E}\\left[\\min\\left(\n\\frac{\\pi_\\theta(o_t\\mid q,o_{<t};\\mathrm{CI})}\n{\\pi_{\\theta_{\\mathrm{old}}}(o_t\\mid q,o_{<t};\\mathrm{CI})}\\hat A_t,\n\\operatorname{clip}\\left(\\frac{\\pi_\\theta(o_t\\mid q,o_{<t};\\mathrm{CI})}\n{\\pi_{\\theta_{\\mathrm{old}}}(o_t\\mid q,o_{<t};\\mathrm{CI})},1-\\epsilon,1+\\epsilon\\right)\\hat A_t\n\\right)\\right].\n",
+    "after": "\\mathcal{J}_{\\mathrm{PPO}}(\\theta)=\n\\mathbb{E}\\left[\\min\\left(\n\\frac{\\pi_\\theta(o_t\\mid q,o_{<t};\\mathrm{CI})}\n{\\pi_{\\theta_{\\mathrm{old}}}(o_t\\mid q,o_{<t};\\mathrm{CI})}\\hat A_t,\n\\mathrm{clip}\\left(\\frac{\\pi_\\theta(o_t\\mid q,o_{<t};\\mathrm{CI})}\n{\\pi_{\\theta_{\\mathrm{old}}}(o_t\\mid q,o_{<t};\\mathrm{CI})},1-\\epsilon,1+\\epsilon\\right)\\hat A_t\n\\right)\\right].\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/05-posttraining/reference/2504.11536.md",
+    "line": 82,
+    "before": "R(a,\\hat a)=\n\\begin{cases}\n1,&\\operatorname{is\\_equivalent}(a,\\hat a),\\\\\n-1,&\\text{otherwise}.\n\\end{cases}\n",
+    "after": "R(a,\\hat a)=\n\\begin{cases}\n1,&\\mathrm{is\\_equivalent}(a,\\hat a),\\\\\n-1,&\\text{otherwise}.\n\\end{cases}\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2608.25729.md",
+    "line": 31,
+    "before": "X_{out}=X+\\operatorname{TTT\\mbox{-}Conv}(\\operatorname{RMSNorm}(X)).\n",
+    "after": "X_{out}=X+\\mathrm{TTT\\mbox{-}Conv}(\\mathrm{RMSNorm}(X)).\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2608.25729.md",
+    "line": 76,
+    "before": "z_t=\\operatorname{SiLU}(\\operatorname{Conv2d}(q_t,W_{1,t})),\n\\qquad\n\\hat{x}_t=\\operatorname{Conv2d}(z_t,W_{2,t}).\n",
+    "after": "z_t=\\mathrm{SiLU}(\\mathrm{Conv2d}(q_t,W_{1,t})),\n\\qquad\n\\hat{x}_t=\\mathrm{Conv2d}(z_t,W_{2,t}).\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2608.25729.md",
+    "line": 117,
+    "before": "\\mathcal{F}_{final}=\\operatorname{Sort}(S\\cup U),\n\\qquad |\\mathcal{F}_{final}|=N_{sel}.\n",
+    "after": "\\mathcal{F}_{final}=\\mathrm{Sort}(S\\cup U),\n\\qquad |\\mathcal{F}_{final}|=N_{sel}.\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2403.15388.md",
+    "line": 24,
+    "before": "\\\\mathbf Y_{out}=\\\\mathbf A\\\\mathbf V,\n\\\\qquad\n\\\\mathbf A=\\\\operatorname{softmax}\\\\left(\\\\frac{\\\\mathbf Q\\\\mathbf K^\\\\top}{\\\\sqrt{d_k}}\\\\right).\n",
+    "after": "\\\\mathbf Y_{out}=\\\\mathbf A\\\\mathbf V,\n\\\\qquad\n\\\\mathbf A=\\\\mathrm{softmax}\\\\left(\\\\frac{\\\\mathbf Q\\\\mathbf K^\\\\top}{\\\\sqrt{d_k}}\\\\right).\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2403.15388.md",
+    "line": 32,
+    "before": "\\\\mathbf a_{cls}=\\\\operatorname{softmax}\\\\left(\n\\\\frac{\\\\mathbf q_{cls}\\\\mathbf K^\\\\top}{\\\\sqrt{d_k}}\n\\\\right).\n",
+    "after": "\\\\mathbf a_{cls}=\\\\mathrm{softmax}\\\\left(\n\\\\frac{\\\\mathbf q_{cls}\\\\mathbf K^\\\\top}{\\\\sqrt{d_k}}\n\\\\right).\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2403.15388.md",
+    "line": 62,
+    "before": "\\\\operatorname{Sim}(\\\\mathbf y_i,\\\\mathbf y_j)\n=\\\\mathbf k_i\\\\mathbf k_j^\\\\top .\n",
+    "after": "\\\\mathrm{Sim}(\\\\mathbf y_i,\\\\mathbf y_j)\n=\\\\mathbf k_i\\\\mathbf k_j^\\\\top .\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2412.12009.md",
+    "line": 28,
+    "before": "A=(a_1,ldots,a_n)",
+    "after": "A=(a_1,\\ldots,a_n)",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2412.12009.md",
+    "line": 76,
+    "before": "\\hat F_i=\\sum_{j=0}^{f-1}\n\\operatorname{mean}(F_{i f+j,:},\\operatorname{axis}=1).\n",
+    "after": "\\hat F_i=\\sum_{j=0}^{f-1}\n\\mathrm{mean}(F_{i f+j,:},\\mathrm{axis}=1).\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2412.12009.md",
+    "line": 83,
+    "before": "p=\\operatorname{softmax}(\\hat F),\\qquad\n\\operatorname{indices}_{i}=\\operatorname{topk}\n\\left(\\operatorname{mean}(F_{if:(i+1)f,:},\\operatorname{axis}=1),n_i\\right).\n",
+    "after": "p=\\mathrm{softmax}(\\hat F),\\qquad\n\\mathrm{indices}_{i}=\\mathrm{topk}\n\\left(\\mathrm{mean}(F_{if:(i+1)f,:},\\mathrm{axis}=1),n_i\\right).\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2412.12009.md",
+    "line": 88,
+    "before": "\\mathbf S_{p1}=\\mathbf S[\\cup_i\\operatorname{indices}_i]",
+    "after": "\\mathbf S_{p1}=\\mathbf S[\\cup_i\\mathrm{indices}_i]",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2412.12009.md",
+    "line": 99,
+    "before": "(W_Q^b,W_K^b,S^b)=\\operatorname{sign}(W_Q,W_K,S_{p1}).\n",
+    "after": "(W_Q^b,W_K^b,S^b)=\\mathrm{sign}(W_Q,W_K,S_{p1}).\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2412.12009.md",
+    "line": 111,
+    "before": "A=\\operatorname{softmax}\\left(\\frac{Q'K'^\\top}{\\sqrt{d_k}}\\right).\n",
+    "after": "A=\\mathrm{softmax}\\left(\\frac{Q'K'^\\top}{\\sqrt{d_k}}\\right).\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2412.12009.md",
+    "line": 114,
+    "before": "\\operatorname{mean}(A,\\operatorname{axis}=1)",
+    "after": "\\mathrm{mean}(A,\\mathrm{axis}=1)",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/09-multimodal/reference/2412.12009.md",
+    "line": 117,
+    "before": "S_{p2}=S_{p1}[\\operatorname{topk}(\\operatorname{mean}(A,\\operatorname{axis}=1),k)].\n",
+    "after": "S_{p2}=S_{p1}[\\mathrm{topk}(\\mathrm{mean}(A,\\mathrm{axis}=1),k)].\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/12-safety/reference/2606.07968.md",
+    "line": 60,
+    "before": "RR_t=\\frac{1}{|W_t|}\\sum_{i\\in W_t}\\mathbf{1}[\\operatorname{sim}(e_t,e_i)>0.70].\n",
+    "after": "RR_t=\\frac{1}{|W_t|}\\sum_{i\\in W_t}\\mathbf{1}[\\mathrm{sim}(e_t,e_i)>0.70].\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/12-safety/reference/2606.07968.md",
+    "line": 79,
+    "before": "a_t=\\operatorname{sim}(e_t,q)",
+    "after": "a_t=\\mathrm{sim}(e_t,q)",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/12-safety/reference/2606.07968.md",
+    "line": 79,
+    "before": "r_t=\\max_{i<t}\\operatorname{sim}(e_t,e_i)",
+    "after": "r_t=\\max_{i<t}\\mathrm{sim}(e_t,e_i)",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/12-safety/reference/2606.07968.md",
+    "line": 104,
+    "before": "QDM(Y,Q)=\\frac{1}{M}\\sum_{m=1}^{M}\\operatorname{sim}(f(y_m),f(Q)).\n",
+    "after": "QDM(Y,Q)=\\frac{1}{M}\\sum_{m=1}^{M}\\mathrm{sim}(f(y_m),f(Q)).\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/06-reasoning/reference/2408.03314.md",
+    "line": 22,
+    "before": "\\operatorname{Target}(\\theta,N,q)",
+    "after": "\\mathrm{Target}(\\theta,N,q)",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/06-reasoning/reference/2408.03314.md",
+    "line": 25,
+    "before": "\\theta^{*}_{q,a^{*}(q)}(N)=\\operatorname*{argmax}_{\\theta}\n\\mathbb{E}_{y\\sim\\operatorname{Target}(\\theta,N,q)}\n[\\mathbbm{1}_{y=y^{*}(q)}].\n",
+    "after": "\\theta^{*}_{q,a^{*}(q)}(N)=\\underset{\\theta}{\\mathrm{arg\\,max}}\n\\mathbb{E}_{y\\sim\\mathrm{Target}(\\theta,N,q)}\n[\\mathbf{1}_{y=y^{*}(q)}].\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/04-architecture/reference/2412.06769.md",
+    "line": 19,
+    "before": "x=(x_1,ldots,x_T)",
+    "after": "x=(x_1,\\ldots,x_T)",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/04-architecture/reference/2412.06769.md",
+    "line": 19,
+    "before": "E_t=[e(x_1),ldots,e(x_t)]",
+    "after": "E_t=[e(x_1),\\ldots,e(x_t)]",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/04-architecture/reference/2412.06769.md",
+    "line": 22,
+    "before": "H_t=\\operatorname{Transformer}(E_t),\\qquad\n\\mathcal M(x_{t+1}\\mid x_{\\le t})=\\operatorname{softmax}(Wh_t).\n",
+    "after": "H_t=\\mathrm{Transformer}(E_t),\\qquad\n\\mathcal M(x_{t+1}\\mid x_{\\le t})=\\mathrm{softmax}(Wh_t).\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/04-architecture/reference/2412.06769.md",
+    "line": 32,
+    "before": "\\operatorname{softmax}(Wh_t)",
+    "after": "\\mathrm{softmax}(Wh_t)",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/04-architecture/reference/2502.21074.md",
+    "line": 56,
+    "before": "\\mathcal{L}_{\\text{KD}}\n=\\frac1M\\sum_{l=1}^{M}\\left|\\operatorname{sg}[h^l_{\\text{teacher}}]-h^l_{\\text{student}}\\right|.\n",
+    "after": "\\mathcal{L}_{\\text{KD}}\n=\\frac1M\\sum_{l=1}^{M}\\left|\\mathrm{sg}[h^l_{\\text{teacher}}]-h^l_{\\text{student}}\\right|.\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/04-architecture/reference/2412.09871.md",
+    "line": 67,
+    "before": "g_{i,n}=\\{b_{i-n+1},\\ldots,b_i\\},\\qquad\ne_i=x_i+\\sum_{n=3}^{8}E_n^{hash}(\\operatorname{Hash}(g_{i,n})).\n",
+    "after": "g_{i,n}=\\{b_{i-n+1},\\ldots,b_i\\},\\qquad\ne_i=x_i+\\sum_{n=3}^{8}E_n^{hash}(\\mathrm{Hash}(g_{i,n})).\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/04-architecture/reference/2412.09871.md",
+    "line": 76,
+    "before": "P_{0,j}=E_C(f_{bytes}(p_j)),\\qquad\nP_l=P_{l-1}+W_o\\operatorname{softmax}\\left(\\frac{QK^\\top}{\\sqrt{d_k}}\\right)V.\n",
+    "after": "P_{0,j}=E_C(f_{bytes}(p_j)),\\qquad\nP_l=P_{l-1}+W_o\\mathrm{softmax}\\left(\\frac{QK^\\top}{\\sqrt{d_k}}\\right)V.\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/04-architecture/reference/2412.09871.md",
+    "line": 91,
+    "before": "\\operatorname{FL}_{BLT}=\n\\frac{\\operatorname{TransfFL}(h_G,l_G,m=n_{ctx}/n_p,V=0)}{n_p}\n+\\operatorname{TransfFL}_E+\\operatorname{TransfFL}_D\n+\\operatorname{CrossAttnFL}_E+\\operatorname{CrossAttnFL}_D.\n",
+    "after": "\\mathrm{FL}_{BLT}=\n\\frac{\\mathrm{TransfFL}(h_G,l_G,m=n_{ctx}/n_p,V=0)}{n_p}\n+\\mathrm{TransfFL}_E+\\mathrm{TransfFL}_D\n+\\mathrm{CrossAttnFL}_E+\\mathrm{CrossAttnFL}_D.\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/04-architecture/reference/2412.09871.md",
+    "line": 102,
+    "before": "\\operatorname{BPB}(x)=\\frac{\\mathcal L_{CE}(\\mathbf{x})}{\\ln 2\\cdot n_{bytes}}.\n",
+    "after": "\\mathrm{BPB}(x)=\\frac{\\mathcal L_{CE}(\\mathbf{x})}{\\ln 2\\cdot n_{bytes}}.\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/02-pretraining/reference/2404.19737.md",
+    "line": 45,
+    "before": "P_\\theta(x_{t+i}\\mid x_{t:1})=\n\\operatorname{softmax}\\bigl(f_u(f_{h_i}(f_s(x_{t:1})))\\bigr),\\quad i=1,\\ldots,n.\n",
+    "after": "P_\\theta(x_{t+i}\\mid x_{t:1})=\n\\mathrm{softmax}\\bigl(f_u(f_{h_i}(f_s(x_{t:1})))\\bigr),\\quad i=1,\\ldots,n.\n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/02-pretraining/reference/2412.08821.md",
+    "line": 13,
+    "before": "d_{mathrm{SONAR}}",
+    "after": "d_{\\mathrm{SONAR}}",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/02-pretraining/reference/2412.08821.md",
+    "line": 29,
+    "before": "hat x_n",
+    "after": "\\hat x_n",
+    "reason": "confirmed transcription or equivalent GitHub-compatible notation"
+  },
+  {
+    "file": "docs/08-agents/reference/2406.18665.md",
+    "reason": "依据RouteLLM固定v4作者TeX 3methods.tex的SW-ranking公式，补齐最外层分母末尾大括号；最大相似度属于分母，不是乘数。",
+    "source": "https://arxiv.org/abs/2406.18665v4"
+  }
+]

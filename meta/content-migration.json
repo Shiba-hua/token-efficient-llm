@@ -1,0 +1,632 @@
+[
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/00-overview.md",
+    "section": "1. 先定义任务，再定义效率",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/math-foundations.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/00-overview.md",
+    "section": "2. 一项任务应该记哪些 token",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/math-foundations.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/00-overview.md",
+    "section": "3. 不同阶段怎样改变同一张图",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/11-evaluation/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/00-overview.md",
+    "section": "4. 已经有行业共识了吗",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/11-evaluation/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/00-overview.md",
+    "section": "5. 用 GRPO 练习区分直觉和准确表述",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/11-evaluation/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/00-overview.md",
+    "section": "6. 从想法到可证伪实验",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/11-evaluation/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/00-overview.md",
+    "section": "练习",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/11-evaluation/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/01-data.md",
+    "section": "学习目标",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/01-data/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/01-data.md",
+    "section": "1. 先沿着一条样本走完训练流水线",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/01-data/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/01-data.md",
+    "section": "2. “干净”至少要拆成四项",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/benchmark-guide.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/01-data.md",
+    "section": "3. 三个真实数据集教会我们什么",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/benchmark-guide.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/01-data.md",
+    "section": "4. 数学上，我们到底在估计什么",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/math-foundations.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/01-data.md",
+    "section": "5. 实现一个最小审核，而不是宣称完成去污",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/benchmark-guide.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/01-data.md",
+    "section": "6. 局限与下一步实验",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/01-data/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/01-data.md",
+    "section": "练习",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/01-data/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/01-data.md",
+    "section": "主源参考",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/01-data/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/02-pretraining.md",
+    "section": "学习目标",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/02-pretraining/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/02-pretraining.md",
+    "section": "1. 直觉：一句文本提供许多有条件的预测题",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/worked-examples.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/02-pretraining.md",
+    "section": "2. 从序列概率推导训练损失",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/math-foundations.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/02-pretraining.md",
+    "section": "3. 数据选择：已有证据与可以迁移的实验方法",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/02-pretraining/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/02-pretraining.md",
+    "section": "4. 分词：改变计量单位，也改变学习难度",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/math-foundations.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/02-pretraining.md",
+    "section": "5. 多 token 预测：增加监督，不必然减少输出",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/02-pretraining/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/02-pretraining.md",
+    "section": "6. CPU 实验：亲手看见 token 和条件概率",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/worked-examples.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/02-pretraining.md",
+    "section": "7. 局限与练习",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/worked-examples.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/02-pretraining.md",
+    "section": "主源参考",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/02-pretraining/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/03-midtraining.md",
+    "section": "学习目标",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/03-midtraining/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/03-midtraining.md",
+    "section": "1. 为什么会需要中间这一段",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/03-midtraining/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/03-midtraining.md",
+    "section": "2. 继续预训练、DAPT 与 TAPT",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/03-midtraining/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/03-midtraining.md",
+    "section": "3. 数据分布改变，最优解也会改变",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/math-foundations.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/03-midtraining.md",
+    "section": "4. 遗忘为何可能发生：看一次梯度更新",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/math-foundations.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/03-midtraining.md",
+    "section": "5. 长上下文课程：能放进去与能用起来",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/03-midtraining/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/03-midtraining.md",
+    "section": "6. CPU 实验：固定总量，改变领域权重",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/worked-examples.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/03-midtraining.md",
+    "section": "7. 怎样判断它是否值得用于 token 效率研究",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/03-midtraining/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/03-midtraining.md",
+    "section": "练习",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/worked-examples.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/03-midtraining.md",
+    "section": "主源参考",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/03-midtraining/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/04-sft-distillation.md",
+    "section": "1. 我们要改善的是部署曲线",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/05-posttraining/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/04-sft-distillation.md",
+    "section": "2. SFT：在给定示范前缀下预测下一个 token",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/math-foundations.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/04-sft-distillation.md",
+    "section": "3. 长度归一化改变了谁拥有更大权重",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/math-foundations.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/04-sft-distillation.md",
+    "section": "4. 蒸馏：模仿答案，还是模仿概率分布？",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/math-foundations.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/04-sft-distillation.md",
+    "section": "5. OPD：让教师在学生会走到的地方纠正它",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/math-foundations.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/04-sft-distillation.md",
+    "section": "6. 跑一次标准库实验",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/worked-examples.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/05-preference-rl.md",
+    "section": "1. 先区分三件常被混在一起的事",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/05-posttraining/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/05-preference-rl.md",
+    "section": "2. 用成对选择训练奖励模型",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/math-foundations.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/05-preference-rl.md",
+    "section": "3. 为什么最大化奖励时还需要 KL？",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/math-foundations.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/05-preference-rl.md",
+    "section": "4. 从最优策略推到 DPO",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/math-foundations.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/05-preference-rl.md",
+    "section": "5. PPO：用试出来的回报更新策略",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/math-foundations.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/05-preference-rl.md",
+    "section": "6. 效率偏好如何避免变成短答案竞赛",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/05-posttraining/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/05-preference-rl.md",
+    "section": "7. CPU 小实验与练习",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/worked-examples.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/06-rlvr-agentic.md",
+    "section": "1. RLVR：把判断标准接到执行结果上",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/05-posttraining/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/06-rlvr-agentic.md",
+    "section": "2. GRPO：同一道题多做几次，再比较",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/math-foundations.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/06-rlvr-agentic.md",
+    "section": "3. 两种 epsilon，解决两个完全不同的问题",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/math-foundations.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/06-rlvr-agentic.md",
+    "section": "4. 想省 token，先防止奖励鼓励失败",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/math-foundations.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/06-rlvr-agentic.md",
+    "section": "5. Agentic-RL：从一段回答到一个环境过程",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/05-posttraining/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/06-rlvr-agentic.md",
+    "section": "6. 终止、验证和环境版本也是学习问题",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/05-posttraining/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/06-rlvr-agentic.md",
+    "section": "7. CPU 小实验与练习",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/worked-examples.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/07-prompt-context.md",
+    "section": "7.1 从一个很普通的浪费开始",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/worked-examples.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/07-prompt-context.md",
+    "section": "7.2 Prompt 优化首先改变行为",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/07-context/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/07-prompt-context.md",
+    "section": "7.3 检索决定把哪些材料搬进上下文",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/07-context/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/07-prompt-context.md",
+    "section": "7.4 LLMLingua-2：已经选中的材料还可以再压缩",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/07-context/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/07-prompt-context.md",
+    "section": "7.5 观察遮蔽和摘要为什么要正面比较",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/07-context/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/07-prompt-context.md",
+    "section": "7.6 动手：同一轨迹，三种上下文",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/worked-examples.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/07-prompt-context.md",
+    "section": "7.7 一次摘要什么时候回本",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/math-foundations.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/07-prompt-context.md",
+    "section": "7.8 缓存账：重复输入没有消失",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/math-foundations.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/07-prompt-context.md",
+    "section": "7.9 练习与参考答案",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/worked-examples.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/07-prompt-context.md",
+    "section": "延伸阅读",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/07-context/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/08-harness-agents.md",
+    "section": "8.1 Agent 的成本是整条轨迹的成本",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/worked-examples.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/08-harness-agents.md",
+    "section": "8.2 持久状态和聊天历史不是同一个东西",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/08-agents/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/08-harness-agents.md",
+    "section": "8.3 工具输出应该服务于下一步决策",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/08-agents/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/08-harness-agents.md",
+    "section": "8.4 预算必须约束完整调用",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/08-agents/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/08-harness-agents.md",
+    "section": "8.5 路由：便宜模型不一定更省 token",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/08-agents/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/08-harness-agents.md",
+    "section": "8.6 多 Agent：并行时间和通信 token 各有一本账",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/08-agents/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/08-harness-agents.md",
+    "section": "8.7 动手：预算、路由、通信与工具筛选",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/worked-examples.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/08-harness-agents.md",
+    "section": "8.8 怎样把教学系统升级成有效实验",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/08-agents/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/08-harness-agents.md",
+    "section": "8.9 练习与参考答案",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/worked-examples.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/08-harness-agents.md",
+    "section": "延伸阅读",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/08-agents/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/09-evaluation.md",
+    "section": "1. 先固定实验合同",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/benchmark-guide.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/09-evaluation.md",
+    "section": "2. 四个基准分别回答什么",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/benchmark-guide.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/09-evaluation.md",
+    "section": "3. 怎样复用，而不是重造一个榜单",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/benchmark-guide.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/09-evaluation.md",
+    "section": "练习与检查提示",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/benchmark-guide.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/10-other-directions.md",
+    "section": "10.1 先分开四种问题",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/10-systems/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/10-other-directions.md",
+    "section": "10.2 推测解码：让大模型一次验证多个候选",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/10-systems/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/10-other-directions.md",
+    "section": "10.3 Latent reasoning：不写成文字，也仍然需要计算",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/10-systems/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/10-other-directions.md",
+    "section": "10.4 扩散语言模型：少轮数不等于少工作",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/10-systems/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/10-other-directions.md",
+    "section": "10.5 量化：降低表示精度，不改变 token 的定义",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/10-systems/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/10-other-directions.md",
+    "section": "10.6 MoE：每个 token 只激活部分专家",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/10-systems/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/10-other-directions.md",
+    "section": "10.7 动手：三个计量错觉",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/worked-examples.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/10-other-directions.md",
+    "section": "10.8 用一张比较表约束研究结论",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/10-systems/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/10-other-directions.md",
+    "section": "10.9 练习与参考答案",
+    "disposition": "appendix_excerpt",
+    "destination": "docs/appendix/worked-examples.md",
+    "note": "保留原文段落并按用途重组，局部文字适配"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/technical/10-other-directions.md",
+    "section": "延伸阅读",
+    "disposition": "current_coverage_or_history",
+    "destination": "docs/10-systems/index.md",
+    "note": "机制以新版对应章节为准；未移入附录的旧论述完整保存在历史分支，不宣称逐段已并入正文。"
+  },
+  {
+    "historical_source": "https://github.com/Shiba-hua/token-efficient-llm/blob/codex/archive-v3-topic-map/docs/efficient-reasoning-recipes.md",
+    "section": "长度奖励算例 / TokenSkip / budget forcing",
+    "disposition": "split",
+    "destination": "docs/appendix/worked-examples.md",
+    "note": "奖励算例保留；TokenSkip正文已在05章，s1预算强制补入06章；旧实验方案保留历史。"
+  }
+]

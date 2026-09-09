@@ -4,8 +4,8 @@
 
 | 入口 | 可确认内容 | 对应地图 | 实际访问范围 |
 | --- | --- | --- | --- |
-| [NICE学术：LLMLingua，压缩prompt构造LLMs的语言](https://www.bilibili.com/video/BV19K41187Ny/) | 姜慧强，2024-01-28；页面列出长上下文挑战、LLMLingua/LongLLMLingua、实验和问答 | [07章](../docs/07-prompt-context.md)，原文H01/H02 | 已直接读取标题、日期、讲者和简介；未观看音视频 |
-| [Stanford Online：CS336 Spring 2026 Lecture 10 — Inference](https://www.youtube.com/watch?v=EfM546A79aM) | 1:25:30，公开英文字幕可取得 | [02](../docs/02-pretraining.md)/[10](../docs/10-other-directions.md) | 网页文本工具只返回页脚，后通过浏览器导出字幕；阅读0:05–9:09、1:11:43–1:14:16、1:17:39–1:20:23片段 |
+| [NICE学术：LLMLingua，压缩prompt构造LLMs的语言](https://www.bilibili.com/video/BV19K41187Ny/) | 姜慧强，2024-01-28；页面列出长上下文挑战、LLMLingua/LongLLMLingua、实验和问答 | [07章](../docs/07-context/index.md)，原文H01/H02 | 已直接读取标题、日期、讲者和简介；未观看音视频 |
+| [Stanford Online：CS336 Spring 2026 Lecture 10 — Inference](https://www.youtube.com/watch?v=EfM546A79aM) | 1:25:30，公开英文字幕可取得 | [02](../docs/02-pretraining/index.md)/[10](../docs/10-systems/index.md) | 网页文本工具只返回页脚，后通过浏览器导出字幕；阅读0:05–9:09、1:11:43–1:14:16、1:17:39–1:20:23片段 |
 
 ## CS336中值得对照地图的片段
 

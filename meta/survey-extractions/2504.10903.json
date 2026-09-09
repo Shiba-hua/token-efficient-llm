@@ -1,0 +1,433 @@
+{
+  "survey_id": "2504.10903",
+  "title": "Efficient Reasoning Models: A Survey",
+  "version": "v2 (29 Sep 2025)",
+  "source_url": "https://arxiv.org/abs/2504.10903",
+  "date": "2025-09-29",
+  "actual_read_scope": "arXiv HTML v2 abstract, introduction, taxonomy/contents, Sections 2-5 (especially 3.1-3.3, 4.1, 5), Appendix A.2-A.4, and the complete reference list; no cited paper was read beyond the survey.",
+  "routes": [
+    {
+      "route": "shorter/rl-length-control",
+      "problem": "Long or overthinking CoTs waste generated tokens and can hurt accuracy.",
+      "mechanism": "Add length/accuracy-aware rewards, budgets, or pairwise preferences in RL; allocate more reasoning to hard inputs.",
+      "token_connection": "Direct: optimizes output-token count or a per-instance budget while preserving answer accuracy.",
+      "related_chapters": [
+        "13.1 RL length control"
+      ],
+      "survey_locator": "§3.1.1, Table 2"
+    },
+    {
+      "route": "shorter/variable-length-sft",
+      "problem": "Fixed long CoT supervision does not teach controllable concise reasoning.",
+      "mechanism": "Compress or select short correct traces, generate traces at multiple effort levels, and train standard/progressive SFT or DPO.",
+      "token_connection": "Direct: conditions or trains the model to emit fewer reasoning tokens.",
+      "related_chapters": [
+        "13.2 variable-length SFT"
+      ],
+      "survey_locator": "§3.1.2, Table 2"
+    },
+    {
+      "route": "shorter/prompt-and-routing",
+      "problem": "The same inference budget is spent on easy and hard questions.",
+      "mechanism": "Concise instructions, token-budget estimation, shorthand/symbolic sketches, and classifier/uncertainty routing select shorter paths or smaller models.",
+      "token_connection": "Direct for output shortening; routing also reduces model-side compute and may change the token target.",
+      "related_chapters": [
+        "13.3 prompt/routing"
+      ],
+      "survey_locator": "§3.1.3, Table 2"
+    },
+    {
+      "route": "shorter/latent-reasoning",
+      "problem": "Explicit intermediate language tokens are a verbose interface for internal computation.",
+      "mechanism": "Distill hidden states, recycle continuous hidden states, use auxiliary latent-token modules, looped transformers, or mix text and VQ-VAE tokens; compress KV-visible steps.",
+      "token_connection": "Direct when latent steps replace explicit CoT tokens; latency gains can instead reflect architecture/KV changes and are not automatically equivalent to fewer compute steps.",
+      "related_chapters": [
+        "13.4 latent/continuous reasoning",
+        "13.5 latent architecture"
+      ],
+      "survey_locator": "§3.1.4, Table 2"
+    },
+    {
+      "route": "smaller/distillation",
+      "problem": "Large reasoning models impose parameter, memory, and per-token compute costs.",
+      "mechanism": "Transfer CoT/PoT, long/short, counterfactual, feedback-refined, or simplified reasoning data to a small student.",
+      "token_connection": "Indirect for token-count objective; direct for model-size and per-token compute. Student may still produce long CoTs.",
+      "related_chapters": [
+        "13.6 smaller via KD"
+      ],
+      "survey_locator": "§3.2.1, Table 3"
+    },
+    {
+      "route": "smaller/quantization-pruning",
+      "problem": "Parameter representation and redundant weights increase deployment cost.",
+      "mechanism": "PTQ/QAT, structured/unstructured/semi-structured pruning, and importance-based compression.",
+      "token_connection": "Compute/memory only in this survey; no claim that generated reasoning-token count falls. Hardware support determines actual latency.",
+      "related_chapters": [
+        "13.7 quantization/pruning"
+      ],
+      "survey_locator": "§3.2.2, Appendix A.1"
+    },
+    {
+      "route": "smaller/rl-small-models",
+      "problem": "Small models lack reasoning ability even when their inference footprint is low.",
+      "mechanism": "Use GRPO/RL and curated blended data to improve reasoning in 1.5B-scale models.",
+      "token_connection": "Indirect: lowers parameter-side cost; token efficiency is not the optimization target unless reward includes length.",
+      "related_chapters": [
+        "13.8 RL for small models"
+      ],
+      "survey_locator": "§3.2.3, Table 3"
+    },
+    {
+      "route": "faster/efficient-sampling",
+      "problem": "Best-of-N/tree/test-time sampling spends work on low-quality branches.",
+      "mechanism": "Speculative rejection, early consistency/path evaluation, value prediction, foresight trajectories, dynamic tree search, and state merging.",
+      "token_connection": "Indirect/direct at decoding budget level: reduces redundant sampled tokens or branches, while a single accepted answer may have unchanged length.",
+      "related_chapters": [
+        "13.9 efficient sampling"
+      ],
+      "survey_locator": "§3.3.1, Table 4"
+    },
+    {
+      "route": "faster/efficient-self-consistency",
+      "problem": "Repeated samples and voting create redundant decoding.",
+      "mechanism": "Confidence/difficulty-aware early stopping, prefix reuse, perplexity pruning, confidence-weighted voting, or distilled calibration.",
+      "token_connection": "Direct for aggregate sampled-token count; per-sample CoT length need not change.",
+      "related_chapters": [
+        "13.10 self-consistency"
+      ],
+      "survey_locator": "§3.3.1, Table 4"
+    },
+    {
+      "route": "faster/parallel-and-decomposition",
+      "problem": "Autoregressive serial decoding and repeated subproblem work create latency overhead.",
+      "mechanism": "Decompose into atoms/DAGs, skeleton-then-fill, graph decoding, parallel branches, and dynamic early stopping.",
+      "token_connection": "Primarily latency/parallelism; total generated tokens may stay constant or increase, so classify as compute/decoding efficiency unless token accounting is shown.",
+      "related_chapters": [
+        "13.11 parallel/decomposition"
+      ],
+      "survey_locator": "§3.3.2"
+    },
+    {
+      "route": "evaluation/token-performance-curve",
+      "problem": "Accuracy and efficiency are often reported separately, obscuring the Pareto curve.",
+      "mechanism": "Token count, latency, model size, ACU, optimal token budget, outcome/process efficiency, overthinking, reasoning boundary, underthinking, and AES.",
+      "token_connection": "Defines the measurement contract for performance versus generated tokens; survey warns token count is not always deployment latency.",
+      "related_chapters": [
+        "13.12 evaluation and Pareto evidence"
+      ],
+      "survey_locator": "§4.1.2, Appendix A.4"
+    }
+  ],
+  "candidates": [
+    {
+      "title": "L1: Controlling how long a reasoning model thinks with reinforcement learning",
+      "authors": [
+        "Pranjal Aggarwal",
+        "Sean Welleck"
+      ],
+      "year": 2025,
+      "arxiv_id": "2503.04697",
+      "source_url": "https://arxiv.org/abs/2503.04697",
+      "survey_locator": "§3.1.1; ref. Aggarwal & Welleck (2025)",
+      "route": "shorter/rl-length-control",
+      "role": "起点",
+      "token_relevance": "direct",
+      "reason": "Introduces length-constraint instructions in training data and RL control of reasoning duration; a clean direct precedent for a token-budget objective."
+    },
+    {
+      "title": "O1-Pruner: Length-harmonizing fine-tuning for o1-like reasoning pruning",
+      "authors": [
+        "Haotian Luo",
+        "Li Shen",
+        "Haiying He",
+        "Yibo Wang",
+        "Shiwei Liu",
+        "Wei Li",
+        "Naiqiang Tan",
+        "Xiaochun Cao",
+        "Dacheng Tao"
+      ],
+      "year": 2025,
+      "arxiv_id": "2501.12570",
+      "source_url": "https://arxiv.org/abs/2501.12570",
+      "survey_locator": "§3.1.1, §4.1.2; ref. Luo et al. (2025a)",
+      "route": "shorter/rl-length-control",
+      "role": "改进",
+      "token_relevance": "direct",
+      "reason": "Uses length and accuracy baselines in reward and proposes AES; survey table reports GSM8K 96.50%/543 tokens and 1.5–2.0x latency speedup."
+    },
+    {
+      "title": "DAST: Difficulty-adaptive slow-thinking for large reasoning models",
+      "authors": [
+        "Yi Shen",
+        "Jian Zhang",
+        "Jieyun Huang",
+        "Shuming Shi",
+        "Wenjing Zhang",
+        "Jiangze Yan",
+        "Ning Wang",
+        "Kai Wang",
+        "Shiguo Lian"
+      ],
+      "year": 2025,
+      "arxiv_id": "2503.04472",
+      "source_url": "https://arxiv.org/abs/2503.04472",
+      "survey_locator": "§3.1.1; ref. Shen et al. (2025b)",
+      "route": "shorter/rl-length-control",
+      "role": "改进",
+      "token_relevance": "direct",
+      "reason": "Token Length Budget penalizes verbose easy answers while preserving budget for hard ones; exemplifies per-instance performance–token allocation."
+    },
+    {
+      "title": "TokenSkip: Controllable chain-of-thought compression in LLMs",
+      "authors": [
+        "Heming Xia",
+        "Yongqi Li",
+        "Chak Tou Leong",
+        "Wenjie Wang",
+        "Wenjie Li"
+      ],
+      "year": 2025,
+      "arxiv_id": "2502.12067",
+      "source_url": "https://arxiv.org/abs/2502.12067",
+      "survey_locator": "§3.1.2, Table 2; ref. Xia et al. (2025)",
+      "route": "shorter/variable-length-sft",
+      "role": "改进",
+      "token_relevance": "direct",
+      "reason": "Selects/skips low-semantic-contribution tokens and trains controllable short CoT; survey reports 78.20% GSM8K and 1.7–1.8x latency speedup."
+    },
+    {
+      "title": "CoT-Valve: Length-compressible chain-of-thought tuning",
+      "authors": [
+        "Xinyin Ma",
+        "Guangnian Wan",
+        "Runpeng Yu",
+        "Gongfan Fang",
+        "Xinchao Wang"
+      ],
+      "year": 2025,
+      "arxiv_id": "2502.09601",
+      "source_url": "https://arxiv.org/abs/2502.09601",
+      "survey_locator": "§3.1.2, §4.1.2, Table 2; ref. Ma et al. (2025)",
+      "route": "shorter/variable-length-sft",
+      "role": "改进",
+      "token_relevance": "direct",
+      "reason": "Uses parameter-space direction/model merging and progressive SFT for length control; introduces ACU combining accuracy, parameters, and token count."
+    },
+    {
+      "title": "Chain of Draft: Thinking faster by writing less",
+      "authors": [
+        "Silei Xu",
+        "Wenhao Xie",
+        "Lingxiao Zhao",
+        "Pengcheng He"
+      ],
+      "year": 2025,
+      "arxiv_id": "2502.18600",
+      "source_url": "https://arxiv.org/abs/2502.18600",
+      "survey_locator": "§3.1.3; ref. Xu et al. (2025c)",
+      "route": "shorter/prompt-and-routing",
+      "role": "改进",
+      "token_relevance": "direct",
+      "reason": "Few-shot prompt asks for at most five words per thought step; survey records strong token reduction but explicitly notes degradation in zero-shot and small-model settings."
+    },
+    {
+      "title": "Sketch-of-Thought: Efficient LLM reasoning with adaptive cognitive-inspired sketching",
+      "authors": [
+        "Simon A Aytes",
+        "Jinheon Baek",
+        "Sung Ju Hwang"
+      ],
+      "year": 2025,
+      "arxiv_id": "2503.05179",
+      "source_url": "https://arxiv.org/abs/2503.05179",
+      "survey_locator": "§3.1.3, Table 2; ref. Aytes et al. (2025)",
+      "route": "shorter/prompt-and-routing",
+      "role": "竞争",
+      "token_relevance": "direct",
+      "reason": "Routes inputs to compact conceptual, symbolic, or expert-lexicon sketches; survey reports 3.6x token speedup but no accuracy in Table 2."
+    },
+    {
+      "title": "Implicit chain of thought reasoning via knowledge distillation",
+      "authors": [
+        "Yuntian Deng",
+        "Kiran Prasad",
+        "Roland Fernandez",
+        "Paul Smolensky",
+        "Vishrav Chaudhary",
+        "Stuart Shieber"
+      ],
+      "year": 2023,
+      "arxiv_id": "2311.01460",
+      "source_url": "https://arxiv.org/abs/2311.01460",
+      "survey_locator": "§3.1.4; ref. Deng et al. (2023)",
+      "route": "shorter/latent-reasoning",
+      "role": "起点",
+      "token_relevance": "direct",
+      "reason": "Seminal latent route: student mimics hidden states of explicit-CoT teacher and later removes teacher at inference; direct replacement of explicit reasoning tokens, though reported GSM8K accuracy is only 20% in the survey table."
+    },
+    {
+      "title": "Coconut: Chain of continuous thought",
+      "authors": [
+        "Haozhe Hao",
+        "Xuefeng Li",
+        "Yingkai Xie",
+        "Soroush Vosoughi"
+      ],
+      "year": 2024,
+      "arxiv_id": "2412.06769",
+      "source_url": "https://arxiv.org/abs/2412.06769",
+      "survey_locator": "§3.1.4, Table 2; ref. Hao et al. (2024)",
+      "route": "shorter/latent-reasoning",
+      "role": "竞争",
+      "token_relevance": "direct",
+      "reason": "Feeds final-layer hidden states back without decoding text, enabling continuous reasoning, backtracking, and parallel decoding; survey reports GSM8K 34.10% with 8 tokens and 3x token speedup."
+    },
+    {
+      "title": "CODI: Compressing chain-of-thought into continuous space via self-distillation",
+      "authors": [
+        "Zhenyi Shen",
+        "Hanqi Yan",
+        "Linhai Zhang",
+        "Zhanghao Hu",
+        "Yali Du",
+        "Yulan He"
+      ],
+      "year": 2025,
+      "arxiv_id": "2502.21074",
+      "source_url": "https://arxiv.org/abs/2502.21074",
+      "survey_locator": "§3.1.4, Table 2; ref. Shen et al. (2025c)",
+      "route": "shorter/latent-reasoning",
+      "role": "改进",
+      "token_relevance": "direct",
+      "reason": "Self-distills explicit LM CoT and implicit hidden activation immediately before the answer; direct continuous compression, with low GPT-2-small GSM8K accuracy (43.70%) in the survey table."
+    },
+    {
+      "title": "SoftCoT: Soft chain-of-thought for efficient reasoning with LLMs",
+      "authors": [
+        "Yige Xu",
+        "Xu Guo",
+        "Zhiwei Zeng",
+        "Chunyan Miao"
+      ],
+      "year": 2025,
+      "arxiv_id": "2502.12134",
+      "source_url": "https://arxiv.org/abs/2502.12134",
+      "survey_locator": "§3.1.4, Table 2; ref. Xu et al. (2025d)",
+      "route": "shorter/latent-reasoning",
+      "role": "改进",
+      "token_relevance": "direct",
+      "reason": "A lightweight assistant generates implicit representations conditioned on input; survey reports 85.81% GSM8K and 4–5x latency speedup, making it a key latent performance–latency candidate."
+    },
+    {
+      "title": "LightThinker: Thinking step-by-step compression",
+      "authors": [
+        "Jintian Zhang",
+        "Yuqi Zhu",
+        "Mengshu Sun",
+        "Yujie Luo",
+        "Shuofei Qiao",
+        "Lun Du",
+        "Da Zheng",
+        "Huajun Chen",
+        "Ningyu Zhang"
+      ],
+      "year": 2025,
+      "arxiv_id": "2502.15589",
+      "source_url": "https://arxiv.org/abs/2502.15589",
+      "survey_locator": "§3.1.4, §4.1.2, Table 2; ref. Zhang et al. (2025a)",
+      "route": "shorter/latent-reasoning",
+      "role": "改进",
+      "token_relevance": "direct",
+      "reason": "Segments CoT and compresses each step into special tokens with attention masks and KV-cache focus; survey reports 90.14% GSM8K and up to 1.4x latency speedup."
+    },
+    {
+      "title": "Deepscaler: Surpassing o1-preview with a 1.5B model by scaling RL",
+      "authors": [
+        "Michael Luo",
+        "Sijun Tan",
+        "Justin Wong",
+        "Xiaoxiang Shi",
+        "William Y Tang",
+        "Manan Roongta",
+        "Colin Cai",
+        "Jeffrey Luo",
+        "Tianjun Zhang",
+        "Li Erran Li"
+      ],
+      "year": 2025,
+      "arxiv_id": null,
+      "source_url": "https://github.com/open-thoughts/OpenThoughts",
+      "survey_locator": "§3.2.3, Table 3; ref. Luo et al. (2025b)",
+      "route": "smaller/rl-small-models",
+      "role": "反例",
+      "token_relevance": "indirect",
+      "reason": "Shows small-model reasoning can improve through RL, but the survey gives no token count and cites a Notion blog rather than an arXiv paper; model-size gain must not be treated as token compression."
+    },
+    {
+      "title": "φ-decoding: Adaptive foresight sampling for balanced inference-time exploration and exploitation",
+      "authors": [
+        "Fangzhi Xu",
+        "Hang Yan",
+        "Chang Ma",
+        "Haiteng Zhao",
+        "Jun Liu",
+        "Qika Lin",
+        "Zhiyong Wu"
+      ],
+      "year": 2025,
+      "arxiv_id": "2503.13288",
+      "source_url": "https://arxiv.org/abs/2503.13288",
+      "survey_locator": "§3.3.1, Table 4; ref. Xu et al. (2025a)",
+      "route": "faster/efficient-sampling",
+      "role": "竞争",
+      "token_relevance": "indirect",
+      "reason": "Simulates future paths and clusters their distributions to choose each next step; survey reports 2.8x inference speedup and +6.14% accuracy, but this is decoding compute/latency rather than necessarily fewer final answer tokens."
+    },
+    {
+      "title": "Path-consistency: Prefix enhancement for efficient inference in LLM",
+      "authors": [
+        "Jiace Zhu",
+        "Yingtao Shen",
+        "Jie Zhao",
+        "An Zou"
+      ],
+      "year": 2024,
+      "arxiv_id": "2409.01281",
+      "source_url": "https://arxiv.org/abs/2409.01281",
+      "survey_locator": "§3.3.1, Table 4/5; ref. Zhu et al. (2024a)",
+      "route": "faster/efficient-self-consistency",
+      "role": "竞争",
+      "token_relevance": "indirect",
+      "reason": "Reuses high-confidence prefixes across samples to accelerate self-consistency; survey reports +3.80% GSM8K and 1.2x latency speedup, with aggregate-sampling savings rather than a shorter CoT target."
+    },
+    {
+      "title": "When more is less: Understanding chain-of-thought length in LLMs",
+      "authors": [
+        "Yuyang Wu",
+        "Yifei Wang",
+        "Tianqi Du",
+        "Stefanie Jegelka",
+        "Yisen Wang"
+      ],
+      "year": 2025,
+      "arxiv_id": "2502.07266",
+      "source_url": "https://arxiv.org/abs/2502.07266",
+      "survey_locator": "§1, §2.5; ref. Wu et al. (2025d)",
+      "route": "shorter/performance-boundary",
+      "role": "反例",
+      "token_relevance": "direct",
+      "reason": "Survey cites it as evidence that longer CoT can yield negative returns and accumulated errors; it is a necessary counterexample against equating more tokens with better reasoning."
+    }
+  ],
+  "gaps/conflicts": [
+    "The taxonomy cleanly separates shorter, smaller, and faster, but latent reasoning, KV/context compression, architecture changes, routing, and parallel decoding cross boundaries; assign the primary route by the measured resource and retain secondary links.",
+    "The survey often reports token count, latency, model size, or sampling count separately; a lower token count is not automatically lower end-to-end latency, and fewer sampled paths is not necessarily a shorter accepted CoT.",
+    "Latent methods claim explicit-token compression, yet early entries have weak GSM8K accuracy (Implicit-KD 20%, SI 30%, CCoT 17.90%, CODI 43.70%, Coconut 34.10% in Table 2). These are evidence-boundary/counterexample signals, not validated superiority.",
+    "Smaller-model RL/KD and quantization/pruning are mainly parameter, memory, or per-token-compute improvements. The survey explicitly says LoRA savings apply to training and do not reduce inference memory; quantization/pruning do not imply fewer reasoning tokens.",
+    "The survey's reported token–latency correlation (Pearson 0.9998 on Qwen2.5-7B/MAHT-500) is one model/dataset result; it does not replace deployment measurements across hardware, batching, parallelism, or KV-cache policy.",
+    "Reported benchmark rows mix base models, datasets, decoding protocols, and accuracy scales; they are candidate evidence for a performance–token curve, not a fair cross-paper ranking.",
+    "Version coverage is fixed at v2, last revised 2025-09-29 (TMLR 2025). No later revision was visible on the arXiv record as of 2026-09-09; the survey cannot cover post-v2 work, including later latent/architecture/decoding papers.",
+    "Training-efficiency items in §5 (Light-R1, FASTCURL, DAPO, LIMO, s1) were excluded from candidates unless they directly affect inference-time token/size/decoding behavior; they are background only for this map."
+  ]
+}

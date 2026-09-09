@@ -41,21 +41,38 @@ def anchors(text: str) -> set[str]:
 
 
 def main() -> int:
-    metadata = ROOT / "meta/research-map-v3"
+    metadata = ROOT / "meta"
     registry = json.loads((ROOT / "sources/papers.json").read_text())
     errors = validate(registry)
     chapters = json.loads((metadata / "chapters.json").read_text())
     slugs = {chapter["slug"] for chapter in chapters}
+    for forbidden in ['docs/chapters', 'docs/technical', 'meta/research-map-v3',
+                      'assets/maps-v3', 'assets/papers-v3', 'assets/plots', 'assets/generated']:
+        if (ROOT / forbidden).exists():
+            errors.append(f'obsolete directory recreated: {forbidden}')
+    for legacy in (ROOT / 'docs').glob('[0-9][0-9]-*.md'):
+        if legacy.name != '00-overview.md':
+            errors.append(f'obsolete numbered compatibility page: {legacy.name}')
     if len(chapters) != 13 or len(slugs) != 13:
         errors.append("expected 13 unique chapter destinations")
     for chapter in chapters:
         if not (ROOT / chapter["page"]).is_file():
             errors.append(f"missing chapter: {chapter['page']}")
     published = [p for p in registry["papers"] if p["status"] == "published"]
+    for paper in registry['papers']:
+        if paper.get('artifact') and not (ROOT / paper['artifact']).is_file():
+            errors.append(f'missing reading/survey artifact: {paper["paper_id"]}')
+        if paper.get('qc_record'):
+            path, _, record_id = paper['qc_record'].partition('#')
+            location = ROOT / path
+            if not location.is_file():
+                errors.append(f'missing QC file: {paper["paper_id"]}')
+            elif record_id and record_id not in {r.get('id') for r in json.loads(location.read_text())}:
+                errors.append(f'missing QC record: {paper["paper_id"]}')
     artifacts = []
     for paper in published:
         pid = paper["paper_id"]
-        expected = f"docs/chapters/{paper['primary_chapter']}/reference/{pid}.md"
+        expected = f"docs/{paper['primary_chapter']}/reference/{pid}.md"
         if paper.get("artifact") != expected or not (ROOT / expected).is_file():
             errors.append(f"invalid primary artifact: {pid}")
         artifacts.append(expected)
@@ -68,7 +85,7 @@ def main() -> int:
         if paper.get("active_task"):
             errors.append(f"published paper still has active reading: {pid}")
     physical = {str(p.relative_to(ROOT)) for p in
-                (ROOT / "docs/chapters").glob("*/reference/*.md")}
+                (ROOT / "docs").glob("*/reference/*.md")}
     if set(artifacts) != physical or len(artifacts) != len(set(artifacts)):
         errors.append("reference files and unique publication records differ")
     queue = json.loads((metadata / "reading-queue.json").read_text())
@@ -83,6 +100,18 @@ def main() -> int:
             errors.append(f"map asset changed since record: {item['slug']}")
         if item["status"] != "visual_pass":
             errors.append(f"map review incomplete: {item['slug']}")
+    for ledger, fields in [('map-specifications.json', ('prompt_file', 'target')),
+                          ('paper-assets.json', ('file', 'preview')),
+                          ('main-figure-placements.json', ('page', 'file'))]:
+        for record in json.loads((metadata / ledger).read_text()):
+            for field in fields:
+                if record.get(field) and not (ROOT / record[field]).is_file():
+                    errors.append(f'{ledger}: missing {field}: {record[field]}')
+    for item in json.loads((metadata / 'paper-assets.json').read_text()):
+        for path_field, hash_field in [('file', 'sha256'), ('preview', 'preview_sha256')]:
+            asset = ROOT / item[path_field]
+            if asset.is_file() and item.get(hash_field) and hashlib.sha256(asset.read_bytes()).hexdigest() != item[hash_field]:
+                errors.append(f'paper asset changed: {item[path_field]}')
     # This checks navigability, not the quality of every paper's body.
     cache: dict[Path, set[str]] = {}
     fragment_count = 0

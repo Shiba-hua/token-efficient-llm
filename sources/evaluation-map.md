@@ -1,6 +1,6 @@
 # 评测与可执行数据：原文记录
 
-阅读日：2026-09-09。主代理阅读 S08、B01、B02；Luna 阅读 B03–B06 并专门复核 SWE-Gym 仓库隔离，主代理写作。四个原有基准的固定数据、源码、样例和论文差异见[评测章](../docs/09-evaluation.md)及[固定样例目录](../data/benchmarks/)；保留的历史核查只支持其注明的版本。
+阅读日：2026-09-09。主代理阅读 S08、B01、B02；Luna 阅读 B03–B06 并专门复核 SWE-Gym 仓库隔离，主代理写作。四个原有基准的固定数据、源码、样例和论文差异见[评测章](../docs/11-evaluation/index.md)及[固定样例目录](../data/benchmarks)；保留的历史核查只支持其注明的版本。
 
 ## S08 — A Survey on Evaluation of LLM-based Agents
 

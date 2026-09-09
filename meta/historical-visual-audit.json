@@ -1,0 +1,133 @@
+{
+  "scope": "18 historical logical figures; one independent Luna medium per figure; byte-identical versions and PDF/PNG formats grouped",
+  "overall_status": "PASS",
+  "results": [
+    {
+      "task_id": "figure-0001",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "The supplied 1324x422 PNG was opened at original resolution and compared with the AppWorld section context. The full three-panel framework is visible, including headers, application icons, task/instruction loop, stateful execution environments, and EvalTests assertions; no truncation, collision, detached label, or unreadable required element was observed.",
+      "findings": []
+    },
+    {
+      "task_id": "figure-0002",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "原始分辨率图像已实际检查；主流程、箭头、下方说明框和全部文字均完整可读。正文 docs/technical/07-prompt-context.md 第16行附近将其定位为上下文处理流程自绘概念图，图示内容与正文说明一致。",
+      "findings": []
+    },
+    {
+      "task_id": "figure-0003",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "实际打开的 1800×950 PNG 清晰可读；四个面板、标题和底部说明均完整，且与源 SVG、正文和图注逐项对应。",
+      "findings": []
+    },
+    {
+      "task_id": "figure-0004",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "已实际检查原始分辨率图像（1574×666）；两幅图的坐标轴、刻度、标题、柱形、曲线、注释和底部 synthetic-responses 说明均完整且清晰。正文 docs/technical/09-evaluation.md 第105行附近明确将其用于 AUCOAA 阈值与聚合顺序的教学说明，并明确示例数值 0.5 与 0.25；图中对应一致。",
+      "findings": []
+    },
+    {
+      "task_id": "figure-0005",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "The supplied 1116x756 PNG was opened at original resolution and compared with the historical context in docs/technical/09-evaluation.md. The axes, four observed points per series, legend, annotation arrow, title, and synthetic-data disclaimer are visible and legible; no crop, collision, detached label, or figure-text contradiction was observed.",
+      "findings": []
+    },
+    {
+      "task_id": "figure-0006",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "原图已按原始分辨率打开（743x781）。三角格点、标题、底部问题文字均完整可见且可读；正文上下文明确其为根据题面代码绘制的教学示意，不冒充论文截图或实验结果。",
+      "findings": []
+    },
+    {
+      "task_id": "figure-0007",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "原图已按原始分辨率打开检查；网格、起终点、路径、标题和说明均完整且清晰。正文上下文将其明确为 OTB 官方迷宫实例的视觉重绘，并说明橙色路径为教程补充的 BFS 解，语义一致。",
+      "findings": []
+    },
+    {
+      "task_id": "figure-0008",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "已按原始分辨率实际打开 1574×694 PNG，并对照 docs/technical/09-evaluation.md 第135行附近正文检查。左右两幅图的标题、坐标轴、刻度、分组标签、堆叠柱、图例和底部 synthetic counterexample 说明均完整可见且清晰；图中 100/900 与 0.1/0.9 的对比和正文对首次正确前缀比率的解释一致。未观察到裁切、重叠、溢出、脱离标签或语义冲突。",
+      "findings": []
+    },
+    {
+      "task_id": "figure-0009",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "The supplied 1536x1024 PNG was inspected at full resolution. The complete axes, labels, curves, annotations, and disclaimer are visible; the body text explicitly identifies it as a conceptual illustration and limits its claim accordingly.",
+      "findings": []
+    },
+    {
+      "task_id": "figure-0010",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "已实际打开并复查 1800×900 PNG；角色、语义和正式位置已由任务上下文明确为本仓库作者自绘教学流程，无配对原图。图面完整、清晰，证据足以完成独立视觉审查。",
+      "findings": []
+    },
+    {
+      "task_id": "figure-0011",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "实际打开并检查了 1800×884 PNG；标题、三栏指标、底部说明和所有中文/英文标注均完整清晰，无可观察裁切、重叠、溢出或缺失字形。图像是自绘概念图，且正文图注与图中主张一致。",
+      "findings": []
+    },
+    {
+      "task_id": "figure-0012",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "Direct inspection of the 2908x3640 source PNG shows both panels and all required labels, targets, model-size labels, bars, and error lines. The supplied body context identifies the same MTP Figure 1 and explains the two distinct roles.",
+      "findings": []
+    },
+    {
+      "task_id": "figure-0013",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "已按原始分辨率实际打开 1800×1080 PNG，并结合任务提供的 PPO 正负优势裁剪正文上下文检查。标题、副标题、坐标轴、刻度、两条曲线及图例均完整可见，蓝线在 1.2 右侧变平、红线在 0.8 左侧变平；未观察到裁切、重叠、溢出、脱离标签或不可读文字。图中合成目标与正文对 epsilon_clip=0.2、优势符号和比值不被强制限制的说明一致。",
+      "findings": []
+    },
+    {
+      "task_id": "figure-0014",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "实际打开的 1800×1080 PNG 清晰可读；标题、副标题、坐标轴、四个 token-cost 点、两条曲线和图例均完整。历史正文明确将其描述为四个合成正确回答的公式行为示意，并明确不能作为模型训练有效证据。",
+      "findings": []
+    },
+    {
+      "task_id": "figure-0015",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "The supplied PNG was opened and inspected at full resolution. The chart has complete axes, labels, two curves, and legend; the visible subtitle explicitly identifies a synthetic two-action distribution and says it is not an LLM experiment. The historical caption and body claim match the plotted KL-direction comparison.",
+      "findings": []
+    },
+    {
+      "task_id": "figure-0016",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "The supplied PNG was opened and inspected at full resolution (1800x984). The self-drawn flow diagram has intact boxes, arrows, labels, subtitle, and footer; all visible Chinese text is legible. Its displayed process (general/domain data mixing, continued training, retention checks, target/general capability, and deployment cost) matches the supplied historical caption and body context, which explicitly identifies it as a teaching structure without real-model gain numbers.",
+      "findings": []
+    },
+    {
+      "task_id": "figure-0017",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "The supplied 1800x1000 PNG was opened at original resolution; the full self-drawn diagram, labels, arrows, bottom qualification, and footer are visible and legible. The historical body text identifies it as a concept diagram and explicitly disclaims experimental numerical gains.",
+      "findings": []
+    },
+    {
+      "task_id": "figure-0018",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "The supplied 1800x443 PNG was opened and inspected at full resolution. All nine labeled boxes, connecting arrows, and the bottom teaching note are visible; no crop, overlap, detached label, clipped glyph, or unreadable region is evident. The flow is a coherent teaching schematic, and the historical body text describes the same progression from data/training and context/harness changes to task-level performance and budget validation.",
+      "findings": []
+    }
+  ],
+  "metadata_recheck": "Harness loop role clarified as repository-authored SVG, then same reviewer passed; no graphic edits"
+}

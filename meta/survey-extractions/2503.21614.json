@@ -1,0 +1,180 @@
+{
+  "survey_id": "2503.21614",
+  "title": "A Survey of Efficient Reasoning for Large Reasoning Models: Language, Multimodality, and Beyond",
+  "version": "v2 (arXiv HTML dated 2025-12-31; checked 2026-09-09)",
+  "source_url": "https://arxiv.org/abs/2503.21614",
+  "date": "2026-09-09",
+  "actual_read_scope": "Read the abstract, introduction/figures, §2 framing of token efficiency, §6 Efficient Reasoning during Pretraining (6.1 latent space, 6.2 subquadratic attention, 6.3 linearization, 6.4 efficient reasoning with subquadratic attention), §7 outlook/evaluation where it clarifies token-quality evidence, and the direct reference entries for the selected pretraining/architecture works. Did not read any cited original paper. Earlier inference/SFT/RL sections were not re-read except where needed to distinguish pretraining claims.",
+  "routes": [
+    {
+      "problem": "Standard CoT makes reasoning cost grow with generated intermediate tokens and long-context attention.",
+      "mechanism": "The survey organizes pretraining methods around latent-space reasoning, subquadratic attention/linear sequence models, and linearization of pretrained Transformers.",
+      "inference_token_connection": "Latent or sentence/concept-level units can reduce explicit textual intermediate tokens, but the survey mostly argues computational/memory efficiency and does not establish matched-accuracy output-token savings for general reasoning.",
+      "related_chapters": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "13"
+      ],
+      "survey_locator": "§6.1–§6.5; Fig. 8"
+    },
+    {
+      "problem": "A model may be trained to reason in a compressed latent representation rather than emitting every step as text.",
+      "mechanism": "Latent thought vectors, latent/concept tokens, and mixed latent/text objectives replace or interleave discrete CoT with continuous hidden-state representations.",
+      "inference_token_connection": "Potentially direct for visible reasoning-token reduction, but evidence in this survey is qualitative or framed as sample/computation efficiency; it does not provide a task-level quality-versus-output-token curve.",
+      "related_chapters": [
+        "4",
+        "6",
+        "13"
+      ],
+      "survey_locator": "§6.1, plus §4 summary cross-reference"
+    },
+    {
+      "problem": "Long reasoning traces create quadratic attention and KV/memory overhead.",
+      "mechanism": "Linear attention, SSM/RNN-like models, sparse attention, and Transformer-to-linear distillation reduce sequence-processing complexity while retaining pretrained knowledge.",
+      "inference_token_connection": "Compute_only unless a cited work measures fewer generated tokens: these methods reduce per-token cost/long-context memory, not necessarily the number of reasoning tokens needed for a correct answer.",
+      "related_chapters": [
+        "6",
+        "12",
+        "13"
+      ],
+      "survey_locator": "§6.2–§6.4"
+    },
+    {
+      "problem": "Pretraining architecture can affect reasoning quality under a fixed compute budget.",
+      "mechanism": "Distilled subquadratic models and hybrid Mamba/MLP/Transformer backbones are presented as ways to generate multiple reasoning paths faster and retain reasoning quality.",
+      "inference_token_connection": "Indirect: faster or cheaper multi-path generation may permit a different token budget, but the survey does not claim fewer final reasoning tokens at matched quality.",
+      "related_chapters": [
+        "6",
+        "13"
+      ],
+      "survey_locator": "§6.4 (Think Slow Fast, CRQs, Cosmos-Reason1)"
+    }
+  ],
+  "candidates": [
+    {
+      "title": "Byte latent transformer: patches scale better than tokens",
+      "authors": "A. Pagnoni et al.",
+      "year": 2024,
+      "arxiv_id": "2412.09871",
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2412.09871",
+      "survey_locator": "[Pagnoni et al. 2024], §6.1",
+      "route": "latent/patch-level pretraining",
+      "role": "起点",
+      "token_relevance": "indirect",
+      "reason": "Entropy-based byte patches replace fixed tokenizer units and are described as reducing computational overhead; the survey does not show fewer reasoning/output tokens at matched quality."
+    },
+    {
+      "title": "Large concept models: language modeling in a sentence representation space",
+      "authors": "L. The, L. Barrault, P. Duquenne et al.",
+      "year": 2024,
+      "arxiv_id": "2412.08821",
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2412.08821",
+      "survey_locator": "[The et al. 2024], §6.1",
+      "route": "concept-level latent pretraining",
+      "role": "改进",
+      "token_relevance": "indirect",
+      "reason": "Sentence-level concepts become autoregressive units, which can shorten explicit textual reasoning traces; no task-level token-quality evidence is given in this survey."
+    },
+    {
+      "title": "Token assorted: mixing latent and text tokens for improved language model reasoning",
+      "authors": "D. Su, H. Zhu, Y. Xu et al.",
+      "year": 2025,
+      "arxiv_id": "2502.03275",
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2502.03275",
+      "survey_locator": "[Su et al. 2025], §4 summary and §6.1 cross-reference",
+      "route": "mixed latent/text training",
+      "role": "改进",
+      "token_relevance": "indirect",
+      "reason": "Mixed latent/text representations are explicitly presented as reducing memory and computational cost; the survey does not establish fewer visible reasoning tokens for equal accuracy."
+    },
+    {
+      "title": "Latent thought models",
+      "authors": "Kong et al.",
+      "year": 2025,
+      "arxiv_id": null,
+      "doi": null,
+      "source_url": null,
+      "survey_locator": "[Kong et al. 2025], §6.1",
+      "route": "latent thought pretraining",
+      "role": "改进",
+      "token_relevance": "direct",
+      "reason": "The survey says latent thought vectors guide token generation and allow adjustment of inference steps/dimensions; this is the clearest pretraining-to-inference-token connection, but no exact benchmark curve or identifier is supplied in the survey text."
+    },
+    {
+      "title": "Thinking slow, fast: scaling inference compute with distilled reasoners",
+      "authors": "D. Paliotta et al.",
+      "year": 2025,
+      "arxiv_id": "2502.20339",
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2502.20339",
+      "survey_locator": "[Paliotta et al. 2025], §2.3 and §6.4",
+      "route": "subquadratic distilled reasoning",
+      "role": "改进",
+      "token_relevance": "indirect",
+      "reason": "The survey reports distilled Mamba models enabling faster multi-path CoT under fixed compute and improved MATH/GSM8K performance; this is compute/throughput evidence, not proof of fewer generated tokens."
+    },
+    {
+      "title": "Compositional reasoning with transformers, rnns, and chain of thought",
+      "authors": "G. Yehudai, N. Amsel, J. Bruna",
+      "year": 2025,
+      "arxiv_id": "2503.01544",
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2503.01544",
+      "survey_locator": "[Yehudai et al. 2025], §2.3 and §6.4",
+      "route": "architecture/reasoning complexity",
+      "role": "背景",
+      "token_relevance": "compute_only",
+      "reason": "Provides formal complexity trade-offs among Transformers, RNNs, and CoT-augmented models; it informs architecture cost, not an empirical reduction in required reasoning tokens."
+    },
+    {
+      "title": "Mamba-2: the new SSM architecture",
+      "authors": "T. Dao, A. Gu",
+      "year": 2024,
+      "arxiv_id": "2405.21060",
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2405.21060",
+      "survey_locator": "[Dao and Gu 2024], §6.2.1",
+      "route": "linear sequence modeling",
+      "role": "竞争",
+      "token_relevance": "compute_only",
+      "reason": "The survey presents Mamba2/state-space duality as improving hardware efficiency and supporting recurrent inference; it reduces per-token/sequence cost rather than token count."
+    },
+    {
+      "title": "Transformers to SSMs: distilling quadratic knowledge to subquadratic models",
+      "authors": "A. Bick, K. Li, E. Xing, J. Z. Kolter, A. Gu",
+      "year": 2024,
+      "arxiv_id": null,
+      "doi": null,
+      "source_url": null,
+      "survey_locator": "[Bick et al. 2024], §6.3",
+      "route": "Transformer-to-SSM distillation",
+      "role": "改进",
+      "token_relevance": "compute_only",
+      "reason": "MOHAWK is cited for distilling pretrained Transformer knowledge into subquadratic models; the claimed benefit is efficient inference, with no fewer-output-token claim in this survey."
+    }
+  ],
+  "gaps_conflicts": {
+    "classification_gaps": [
+      "The pretraining section is primarily an architectural and sequence-complexity taxonomy. It does not separate visible reasoning-token reduction from lower FLOPs/KV/memory per token.",
+      "No pretraining recipe is shown to produce a calibrated task-dependent stopping policy; adaptive token allocation appears mainly in inference/RL sections, outside this requested pretraining read."
+    ],
+    "evidence_conflicts": [
+      "The abstract and §2 define efficiency using quality divided by cost, where cost may include generated tokens, FLOPs, or latency; §6 evidence mostly concerns FLOPs, memory, throughput, or asymptotic sequence cost.",
+      "Latent/concept-level methods may hide reasoning in continuous states rather than remove computation; visible-token savings must not be treated as total reasoning-cost savings."
+    ],
+    "training_only_or_compute_only": [
+      "Linear attention, SSMs, sparse attention, linearization, and Transformer distillation are compute_only unless an original paper reports matched-quality token counts.",
+      "BLT's patch/token processing and LCM's sentence units concern representation granularity; the survey does not show that a task needs fewer semantic reasoning steps."
+    ],
+    "pretraining_answer": "Pretraining can influence inference efficiency by changing the unit of prediction (bytes, concepts, latent vectors), internalizing some reasoning, or enabling subquadratic architectures. In this survey, only latent/concept approaches have a plausible direct connection to fewer visible reasoning tokens; the reported evidence is not sufficient to claim a validated quality-preserving token reduction. Most §6 claims are compute_only or indirect.",
+    "security_resource_waste": "This survey does discuss overthinking, redundant reasoning, and long-CoT safety in §§2 and 7, but the requested pretraining section does not connect security attacks to token waste. Safety/overthinking evidence belongs to other lifecycle stages.",
+    "update_cutoff": "v2 dated 2025-12-31; checked 2026-09-09."
+  }
+}

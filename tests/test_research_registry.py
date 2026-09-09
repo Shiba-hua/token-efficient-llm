@@ -41,7 +41,7 @@ class RegistryTests(unittest.TestCase):
         self.assertEqual(validate(self.data), [])
         self.data['papers'][0]['qc_status'] = 'sample_pass'
         self.assertTrue(validate(self.data))
-        self.data['papers'][0]['qc_record'] = 'meta/research-map-v3/qc-samples.json#sample-1'
+        self.data['papers'][0]['qc_record'] = 'meta/qc-samples.json#sample-1'
         self.assertEqual(validate(self.data), [])
 
 

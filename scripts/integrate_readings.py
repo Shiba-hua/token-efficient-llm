@@ -15,6 +15,7 @@ import subprocess
 from pathlib import Path
 
 from check_content import prose_only
+from check_math import extract, fragment_errors
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -68,24 +69,35 @@ def github_inline_math(text: str) -> str:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument('--scratch', type=Path, required=True)
+    ap.add_argument('--replace-published', action='store_true', help='Explicitly replace integrated readings; otherwise preserve the current mother text.')
     args = ap.parse_args()
     registry_path = ROOT / 'sources/papers.json'
     data = json.loads(registry_path.read_text())
-    previous_path = ROOT / 'meta/research-map-v3/paper-assets.json'
+    previous_path = ROOT / 'meta/paper-assets.json'
     previous_assets = {a['file']: a for a in json.loads(previous_path.read_text())} if previous_path.exists() else {}
-    assets, pending, published = [], [], []
+    pending_path = ROOT / 'meta/pending-figures.json'
+    assets = list(previous_assets.values())
+    pending = json.loads(pending_path.read_text()) if pending_path.exists() else []
+    published = []
     for paper in data['papers']:
         pid = paper['paper_id']
         chapter = paper.get('primary_chapter')
         packet = args.scratch / pid
+        if paper['status'] == 'published' and not args.replace_published:
+            continue
         if not chapter or paper['status'] not in ('draft_ready', 'calibration_pass', 'published'):
             continue
         if not (packet / 'draft.md').exists() or not (packet / 'handoff.json').exists():
             continue
         handoff = json.loads((packet / 'handoff.json').read_text())
         text = math_format((packet / 'draft.md').read_text())
+        math_errors = [(f.line, fragment_errors(f)) for f in extract(github_inline_math(text)) if fragment_errors(f)]
+        if math_errors:
+            raise SystemExit(f'{pid}: draft needs math repair before publication: {math_errors}')
+        assets = [a for a in assets if a['paper_id'] != pid]
+        pending = [a for a in pending if a['paper_id'] != pid]
         text = re.sub(r'`(\{\{FIG:[^}]+\}\})`', r'\1', text)
-        page = ROOT / 'docs/chapters' / chapter / 'reference' / (pid + '.md')
+        page = ROOT / 'docs' / chapter / 'reference' / (pid + '.md')
         page.parent.mkdir(parents=True, exist_ok=True)
         resolved = {}
         source_targets, digest_targets = {}, {}
@@ -112,7 +124,7 @@ def main() -> None:
             if not allowed or not original.is_file() or original.suffix.lower() not in ('.png', '.jpg', '.jpeg', '.pdf', '.svg'):
                 continue
             safe = re.sub(r'[^A-Za-z0-9._-]+', '-', fid)
-            target_dir = ROOT / 'assets/papers-v3' / pid
+            target_dir = ROOT / 'assets/papers' / pid
             target_dir.mkdir(parents=True, exist_ok=True)
             target = target_dir / (safe + original.suffix.lower())
             shutil.copyfile(original, target)
@@ -156,7 +168,7 @@ def main() -> None:
         # Source-packet paths are provenance bookkeeping, not public download links.
         text = re.sub(r'/private/tmp/token-efficient-map-v3/[^\s)\]`]+', '[temporary reading packet]', text)
         lines = text.splitlines()
-        lines[1:1] = ['', '[所属章节](../index.md) · [来源与阅读状态](../../../../sources/papers.json)', '']
+        lines[1:1] = ['', '[所属章节](../index.md) · [来源与阅读状态](' + os.path.relpath(registry_path, page.parent) + ')' , '']
         text = '\n'.join(lines).rstrip() + '\n'
         if pid == '2404.19737':
             text = text.replace('它不是在没有中间 token 的情况下直接建模一个严格的联合概率 $P(x_{t+1},\\ldots,x_{t+n}\\mid x_{t:1})$。', '这些边缘分布的乘积可以定义带条件独立假设的模型联合分布，但不保证恢复真实未来 token 的相关性，也不等同于主自回归模型逐步条件化得到的联合分布。')
@@ -167,8 +179,10 @@ def main() -> None:
         paper['status'] = 'published'
         published.append(pid)
     registry_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
-    folder = ROOT / 'meta/research-map-v3'
+    folder = ROOT / 'meta'
     for asset in assets:
+        if asset['paper_id'] not in published:
+            continue
         old = previous_assets.get(asset['file'], {})
         if old.get('sha256') == asset['sha256']:
             for key in ('use_basis', 'transformation', 'preview_transformation'):
