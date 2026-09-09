@@ -6,4 +6,6 @@
 
 18个旧逻辑图示已由独立Luna逐一检查，通过；主代理按新版用途保留16个、另2个只留历史。用户指定的性能—token概念图已恢复总论开头。见[逐图取舍](historical-illustrations.json)和[历史图检查](historical-visual-audit.json)。
 
-公式修复记录见[math-repairs.json](math-repairs.json)。当前源检查覆盖全部当前正文与精读；实际GitHub页面渲染与最终CI结果将在发布前记录。
+公式修复记录见[math-repairs.json](math-repairs.json)。当前源检查覆盖全部当前正文与精读。已实际扫描65个当前阅读页面：首轮发现15页渲染问题，修复涉及19页，再检查19页全部通过；未修改页面确认内容字节一致后复用首轮结果。共2687个数学片段与页面MathML数量对应，无错误框或未解析定界符。见[逐页渲染记录](github-render-audit.json)。
+
+本地26个测试、7个教学程序、算术自测、目录/链接/来源/素材/数学检查通过。整理提交与公式修复提交的GitHub Actions均成功，链接见逐页记录。Coconut报错位置和总论概念图已查看实际GitHub视口；该检查不声称逐篇科学内容重新验收。

@@ -15,6 +15,7 @@ from urllib.parse import unquote, urlsplit
 
 from check_content import ROOT, links_in, prose_only, published_markdown
 from research_registry import validate
+from check_math import collect as collect_math
 
 
 def anchors(text: str) -> set[str]:
@@ -112,6 +113,21 @@ def main() -> int:
             asset = ROOT / item[path_field]
             if asset.is_file() and item.get(hash_field) and hashlib.sha256(asset.read_bytes()).hexdigest() != item[hash_field]:
                 errors.append(f'paper asset changed: {item[path_field]}')
+    # A changed formula requires new real-render evidence, not just a known macro.
+    # Prose-only edits do not invalidate a formula receipt.
+    receipt = metadata / 'github-render-audit.json'
+    if receipt.exists():
+        report = json.loads(receipt.read_text())
+        checked = {page['path']: page for page in report['pages']}
+        formulas: dict[str, list[dict]] = {}
+        for expression in collect_math():
+            formulas.setdefault(expression['file'], []).append(
+                {'kind': expression['kind'], 'sha256': expression['sha256']})
+        for path, expressions in formulas.items():
+            signature = hashlib.sha256(json.dumps(expressions, sort_keys=True).encode()).hexdigest()
+            page = checked.get(path, {})
+            if not page.get('pass') or page.get('math_signature') != signature:
+                errors.append(f'missing or stale GitHub formula rendering evidence: {path}')
     # This checks navigability, not the quality of every paper's body.
     cache: dict[Path, set[str]] = {}
     fragment_count = 0

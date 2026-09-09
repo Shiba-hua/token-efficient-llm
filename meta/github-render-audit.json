@@ -1,0 +1,3149 @@
+{
+  "status": "PASS",
+  "pages": [
+    {
+      "article": true,
+      "failures": [],
+      "images": [],
+      "mathml": 0,
+      "pending": 0,
+      "ready": true,
+      "renderers": 0,
+      "title": "Token-efficient LLM：推理时 token 效率研究地图",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/README.md",
+      "path": "README.md",
+      "expected": 0,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "5570e4401dda68fc4b8893c3dddc5a248f44d9ece9a4a3b82f6d143ff8d5a97a",
+      "math_signature": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "同等性能少 token、同预算更高性能的概念插画",
+          "complete": true,
+          "width": 1536
+        },
+        {
+          "alt": "研究全景：推理时性能与实际 token",
+          "complete": true,
+          "width": 1586
+        }
+      ],
+      "mathml": 10,
+      "pending": 0,
+      "ready": true,
+      "renderers": 10,
+      "title": "00 总论：怎样让同样的任务少用 token",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/00-overview.md",
+      "path": "docs/00-overview.md",
+      "expected": 10,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "16bef863e1efc244f17913ff0ea01fb746fad4fa787c7d0c741579bf7c746442",
+      "math_signature": "f15bc76b720b7f66f72f665979b0f1ff445902fdc8b2cc6ec8d0201b977a0d0b",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "本章研究路线图",
+          "complete": true,
+          "width": 1536
+        },
+        {
+          "alt": "BoN与few-shot条件的采样效率",
+          "complete": true,
+          "width": 2200
+        }
+      ],
+      "mathml": 8,
+      "pending": 0,
+      "ready": true,
+      "renderers": 8,
+      "title": "01 数据准备与合成：模型应该从哪些解法中学会节省",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/01-data/index.md",
+      "path": "docs/01-data/index.md",
+      "expected": 8,
+      "commit": "298c94d",
+      "pass": true,
+      "source_sha256": "fdf4866439fe231e42e5b9699d8f144fe283a4fd1a4d15049f305e7399ebee94",
+      "math_signature": "1ec33eea41211eb29425655214923cf226a9ecc820fdce6ae32165d516c2f2da",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "潜在简洁推理：冗余/简洁轨迹与Llama-3.1-8B长度分布",
+          "complete": true,
+          "width": 2001
+        },
+        {
+          "alt": "五模型正确推理路径归一化长度分布",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "BoN与few-shot条件的采样效率",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "主方法相对准确率与长度减少的trade-off",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "按MATH题目难度的自适应token减少",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Llama 1B/3B/8B规模实验",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "训练数据长度向测试输出长度的迁移",
+          "complete": true,
+          "width": 2200
+        }
+      ],
+      "mathml": 12,
+      "pending": 0,
+      "ready": true,
+      "renderers": 12,
+      "title": "Self-Training Elicits Concise Reasoning in Large Language Models：正文级中文精读",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/01-data/reference/2502.20122.md",
+      "path": "docs/01-data/reference/2502.20122.md",
+      "expected": 12,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "89cf4e9fcd9a73d96403821a6a51cdf744c144da39f3a9d4977d9b71a0e0138e",
+      "math_signature": "5dcd26202ebf0813bcc51e44793d2c4617baf740d0ecc4f2d2004c423a0a956a",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "本章研究路线图",
+          "complete": true,
+          "width": 1536
+        },
+        {
+          "alt": "MTP 作者原图",
+          "complete": true,
+          "width": 2908
+        },
+        {
+          "alt": "Reasoning in concept embedding space and fundamental LCM architecture",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Reasoning in concept embedding space and fundamental LCM architecture",
+          "complete": true,
+          "width": 2200
+        }
+      ],
+      "mathml": 11,
+      "pending": 0,
+      "ready": true,
+      "renderers": 11,
+      "title": "02 预训练与 Scaling：更好的底座能否少用外部推理",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/02-pretraining/index.md",
+      "path": "docs/02-pretraining/index.md",
+      "expected": 11,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "312b320a4ab605a37e01bc02ea4731c0d506e77b12d988b8a7cafdc2d316a5f6",
+      "math_signature": "2161b0102481dcf473d0ce789b2be2ee3bc1f651bb54d2eb95ebe2a6430fece3",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Overview of multi-token prediction and MBPP scaling trend (TeX label fig:main_figure_col; img/main_fig_col.png)",
+          "complete": true,
+          "width": 2908
+        },
+        {
+          "alt": "Sequential forward/backward over prediction heads for memory efficiency (TeX label fig:backward; img/backward_order.png)",
+          "complete": true,
+          "width": 2852
+        },
+        {
+          "alt": "Scaling results on MBPP and HumanEval (TeX label fig:scaling_model; img/scaling.pdf)",
+          "complete": true,
+          "width": 1898
+        },
+        {
+          "alt": "CodeContests finetuning comparison (TeX label fig:dm_contests; img/codecontests.pdf)",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Natural-language choice-task average accuracy (TeX label fig:nlp_evol; img/dill_evals_choice.pdf)",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Abstractive summarization ROUGE-L (TeX figure input summarize_scale; img/summarization_valid.pdf)",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Induction capability by model size (TeX label fig:induction_size; img/induction.pdf)",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Polynomial arithmetic in-domain and OOD accuracy (TeX label fig:poly_0; img/poly_100M_pause_0.pdf)",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Lookahead reinforces consequential choice points (TeX label fig:weights; img/implicit_weights.png)",
+          "complete": true,
+          "width": 4096
+        },
+        {
+          "alt": "Self-speculative decoding relative speed and latency (TeX label fig:decoding; composite of img/throughput.pdf and img/latency.pdf; no single source image)",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Self-speculative decoding relative speed and latency (TeX label fig:decoding; composite of img/throughput.pdf and img/latency.pdf; no single source image)",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "GSM8K results at 200B and 500B natural-language training (TeX label fig:gsm8k; img/gsm8k.pdf)",
+          "complete": true,
+          "width": 2200
+        }
+      ],
+      "mathml": 86,
+      "pending": 0,
+      "ready": true,
+      "renderers": 86,
+      "title": "Better & Faster Large Language Models via Multi-token Prediction",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/02-pretraining/reference/2404.19737.md",
+      "path": "docs/02-pretraining/reference/2404.19737.md",
+      "expected": 86,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "498786739f5f11fcc5c75c3f8df3290e3f2c7c37731011213fda794c10f4196c",
+      "math_signature": "92f01b746f894e04b85c577738283f3c3aa6873c464aae9bc6a6ffabfbf0032b",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Reasoning in concept embedding space and fundamental LCM architecture",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Reasoning in concept embedding space and fundamental LCM architecture",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Inference guidance, initial noise and sample-step sweeps",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Cosine, quadratic and sigmoid noise schedules",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Cosine, quadratic and sigmoid noise schedules",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Cosine, quadratic and sigmoid noise schedules",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "XLSum Rouge-L across languages",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "LCM conditioned on prior context and a high-level plan",
+          "complete": true,
+          "width": 1842
+        }
+      ],
+      "mathml": 70,
+      "pending": 0,
+      "ready": true,
+      "renderers": 70,
+      "title": "Large Concept Models: Language Modeling in a Sentence Representation Space",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/02-pretraining/reference/2412.08821.md",
+      "path": "docs/02-pretraining/reference/2412.08821.md",
+      "expected": 70,
+      "commit": "298c94d",
+      "pass": true,
+      "source_sha256": "d625c8fce692ef1cfa664e66f983860bfac5d3e9a7d7dfb6404e97a15e80fc19",
+      "math_signature": "f6bff5b60053dcf882741a2d88828e0e87496129562948016b8e51ef8d0558e7",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "本章研究路线图",
+          "complete": false,
+          "width": 1536
+        },
+        {
+          "alt": "Three-step SLM pipeline",
+          "complete": true,
+          "width": 2200
+        }
+      ],
+      "mathml": 8,
+      "pending": 0,
+      "ready": true,
+      "renderers": 8,
+      "title": "03 中训练与持续适配：补充能力怎样改变推理预算",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/03-midtraining/index.md",
+      "path": "docs/03-midtraining/index.md",
+      "expected": 8,
+      "commit": "298c94d",
+      "pass": true,
+      "source_sha256": "f5097e660922216ef17b64cbe8fb0275c457c3aa683354f951fc1b136292e235",
+      "math_signature": "8fb5ca25e9e638aab6d8fa5f3c8dd32e3bdb41c21f84f0b472d87d8af43b08df",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Math continual pretraining accuracy curves; SLM reaches CLM baseline about 5-10x faster",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Token noise after document filtering; CLM versus SLM loss mask",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Four token loss trajectory categories and fluctuations",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Three-step SLM pipeline",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "General pretraining results on 80B tokens",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Pretraining selected/unselected loss and downstream loss",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Selected/unselected loss versus downstream accuracy",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "PPL of tokens selected at different checkpoints",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Effect of token selection ratio",
+          "complete": false,
+          "width": 0
+        }
+      ],
+      "mathml": 21,
+      "pending": 0,
+      "ready": true,
+      "renderers": 21,
+      "title": "Rho-1: Not All Tokens Are What You Need",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/03-midtraining/reference/2404.07965.md",
+      "path": "docs/03-midtraining/reference/2404.07965.md",
+      "expected": 21,
+      "commit": "298c94d",
+      "pass": true,
+      "source_sha256": "b30f5a78d8c7e7b99d8c80f32575c863ba3cef308fc36ad5f5f6988ddbecb173",
+      "math_signature": "94839232396d35d990dbbe110398d40e539fa584dcb0c8139c83e12e893e23da",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "本章研究路线图",
+          "complete": true,
+          "width": 1536
+        },
+        {
+          "alt": "Training procedure of Chain of Continuous Thought (Coconut).",
+          "complete": false,
+          "width": 3090
+        },
+        {
+          "alt": "CODI student and teacher tasks with cross-layer hidden-state L1 self-distillation.",
+          "complete": true,
+          "width": 2406
+        },
+        {
+          "alt": "BLT三模块：Local Encoder、Latent Transformer、Local Decoder及byte/patch流",
+          "complete": true,
+          "width": 2200
+        }
+      ],
+      "mathml": 22,
+      "pending": 0,
+      "ready": true,
+      "renderers": 22,
+      "title": "04 架构、表示与内部计算：少写 token 之后，计算去了哪里",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/04-architecture/index.md",
+      "path": "docs/04-architecture/index.md",
+      "expected": 22,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "c5e065287feceec0d2da5677faf5545d39ea30071014000b5b9ff9a606ca2788",
+      "math_signature": "c871c821e26f8695fb370fd398613d581392d162c8e4e3dc6fcb0e04656bbcbe",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "The accuracy of final answer and reasoning process of multiple variants of Coconut and baselines on ProsQA.",
+          "complete": true,
+          "width": 2164
+        },
+        {
+          "alt": "A case study of ProsQA: CoT hallucination, Coconut k=1, and Coconut k=2.",
+          "complete": true,
+          "width": 3348
+        },
+        {
+          "alt": "An illustration of the latent search trees and implicit value function.",
+          "complete": true,
+          "width": 3352
+        },
+        {
+          "alt": "Analysis of parallelism in the first two steps of the latent tree search.",
+          "complete": true,
+          "width": 3492
+        },
+        {
+          "alt": "The correlation between the predicted value of correct/incorrect nodes and their heights.",
+          "complete": true,
+          "width": 1080
+        },
+        {
+          "alt": "Efficiency comparison of reasoning space and Coconut with different c.",
+          "complete": true,
+          "width": 1354
+        },
+        {
+          "alt": "Decoding a continuous thought into language tokens in a math word problem.",
+          "complete": true,
+          "width": 1586
+        }
+      ],
+      "mathml": 70,
+      "pending": 0,
+      "ready": true,
+      "renderers": 70,
+      "title": "Training Large Language Models to Reason in a Continuous Latent Space（Coconut）",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/04-architecture/reference/2412.06769.md",
+      "path": "docs/04-architecture/reference/2412.06769.md",
+      "expected": 70,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "852bb0f16e449b43b3c922c583784f58e043fd9af9a02a45f0f2a5412b350795",
+      "math_signature": "85457feaa5c643819d237a1074ed9401810274e9e6e38e8bc951c1825da8da30",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "stride、BPE、entropy、space和CNN entropy的patch分割",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "BLT三模块：Local Encoder、Latent Transformer、Local Decoder及byte/patch流",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "space与entropy BLT的compute-optimal scaling",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "space与entropy BLT的compute-optimal scaling",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "两个inference FLOPs档的固定推理成本scaling",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "两个inference FLOPs档的固定推理成本scaling",
+          "complete": false,
+          "width": 0
+        }
+      ],
+      "mathml": 27,
+      "pending": 0,
+      "ready": true,
+      "renderers": 27,
+      "title": "Byte Latent Transformer: Patches Scale Better Than Tokens",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/04-architecture/reference/2412.09871.md",
+      "path": "docs/04-architecture/reference/2412.09871.md",
+      "expected": 27,
+      "commit": "298c94d",
+      "pass": true,
+      "source_sha256": "1d948d718b28e3d4d32881c028cf4079e426c3623457030ab605b8301c03985e",
+      "math_signature": "55d28d93fd3a5d9c8394b599f4f9ba1c897dd69cf9db81bea588703294ec0862",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Results on five datasets (Top: GPT-2, Bottom: LLaMA3.2-1b-Instruct).",
+          "complete": true,
+          "width": 1740
+        },
+        {
+          "alt": "Accuracy on GSM8k against the number of continuous thought tokens used during training.",
+          "complete": true,
+          "width": 1500
+        },
+        {
+          "alt": "Interpretability case study: attended tokens and decoded tokens of six latent thought tokens.",
+          "complete": true,
+          "width": 2674
+        },
+        {
+          "alt": "Comparison of reasoning strategies: No-CoT-SFT, CoT-SFT, Coconut, CODI.",
+          "complete": true,
+          "width": 970
+        },
+        {
+          "alt": "CODI student and teacher tasks with cross-layer hidden-state L1 self-distillation.",
+          "complete": true,
+          "width": 2406
+        },
+        {
+          "alt": "Results on five datasets (Top: GPT-2, Bottom: LLaMA3.2-1b-Instruct).",
+          "complete": true,
+          "width": 1740
+        },
+        {
+          "alt": "Efficiency comparison in inference time per math problem on GSM8k; batch size 1 on Nvidia A100; CoT token counts in parentheses.",
+          "complete": true,
+          "width": 1574
+        },
+        {
+          "alt": "Accuracy on GSM8k against the number of continuous thought tokens used during training.",
+          "complete": true,
+          "width": 1500
+        },
+        {
+          "alt": "Interpretability case study: attended tokens and decoded tokens of six latent thought tokens.",
+          "complete": true,
+          "width": 2674
+        }
+      ],
+      "mathml": 42,
+      "pending": 0,
+      "ready": true,
+      "renderers": 42,
+      "title": "CODI：通过自蒸馏把思维链压缩到连续空间",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/04-architecture/reference/2502.21074.md",
+      "path": "docs/04-architecture/reference/2502.21074.md",
+      "expected": 42,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "50c0c3a196c0b71c0ddf84b491e10b10d9d227dc92b4ddf715d68cf4ec1cc104",
+      "math_signature": "658329e3a5eb1470fc8998a6785400015f08d1e60099e7cf23bb95f8bfa277bf",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "本章研究路线图",
+          "complete": false,
+          "width": 1536
+        },
+        {
+          "alt": "Original CoT vs TokenSkip pruning and fine-tuning",
+          "complete": true,
+          "width": 1884
+        },
+        {
+          "alt": "Fig.2 CoT-Valve stages and MixChain construction",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Overview of On-Policy Self-Distillation (OPSD)",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Overview of our proposed DAST method",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "负rollout奖励mask策略",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "奖励策略训练动力学与两阶段范式",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Performance under varying token budgets",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Text-based RL and ReTool interleaved code execution process",
+          "complete": false,
+          "width": 0
+        }
+      ],
+      "mathml": 44,
+      "pending": 0,
+      "ready": true,
+      "renderers": 44,
+      "title": "05 后训练与对齐：学习短表达、好解法和合适的停止策略",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/05-posttraining/index.md",
+      "path": "docs/05-posttraining/index.md",
+      "expected": 44,
+      "commit": "298c94d",
+      "pass": true,
+      "source_sha256": "df4b87b93741594b9548836d634e8b5d47698be02d830b7147e591c19e13c279",
+      "math_signature": "24915f235c549a0c5a8b95e2b13a9d45dd01e332706d47e739dad276e5d1567c",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Comparing GKD with KD approaches across student model sizes and tasks",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Comparing GKD to baselines on XSum",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Effect of divergence on performance and diversity",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "RLAIF plus on-policy GKD trade-off",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "作者原图 fig6_wmt_small",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "作者原图 fig6_wmt_base",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Ablating GKD on GSM8K",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Varying on-policy data on GSM8K",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Distillation on GSM8K with few-shot CoT prompting",
+          "complete": true,
+          "width": 2200
+        }
+      ],
+      "mathml": 77,
+      "pending": 0,
+      "ready": true,
+      "renderers": 77,
+      "title": "On-Policy Distillation of Language Models: Learning from Self-Generated Mistakes（GKD）",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/05-posttraining/reference/2306.13649.md",
+      "path": "docs/05-posttraining/reference/2306.13649.md",
+      "expected": 77,
+      "commit": "298c94d",
+      "pass": true,
+      "source_sha256": "4086306c590180c42b9c8bb629ed273479ac9534becf522e8efd042d9dce3c52",
+      "math_signature": "d6927a7ab0f3bdda6c17e26ddbc8eaaaad3e1ce4b5cfdd3c214d7b863faca1d6",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Overview of System 2 Distillation",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "An illustration of Branch-solve-merge with Llama-2-70B-chat for pairwise evaluation",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "The agreement between LLM judges and human preferences per evaluated category on MT-bench",
+          "complete": true,
+          "width": 9122
+        }
+      ],
+      "mathml": 21,
+      "pending": 0,
+      "ready": true,
+      "renderers": 21,
+      "title": "Distilling System 2 into System 1：把慢思考编译进直接生成",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/05-posttraining/reference/2407.06023.md",
+      "path": "docs/05-posttraining/reference/2407.06023.md",
+      "expected": 21,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "a66b7a071230cfb4c802c9a25f76a828efe9dcc9b32024c8959f16e705f4aff8",
+      "math_signature": "18831f68f53fc0f60eb6727bafdc87038e8be1869392946f6f3fcdfdec48211d",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Fig.1 Long/medium/short CoT example and LoRA valve",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig.2 CoT-Valve stages and MixChain construction",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig.3a/正文曲线: GSM8K QwQ length and accuracy",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig.3b/正文曲线: GSM8K LLaMA-3.2-1B length and accuracy",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig.3c: AIME Qwen2.5-32B-Instruct with LIMO, short-long-short and epoch dynamics",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig.1 Long/medium/short CoT example and LoRA valve",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig.2 CoT-Valve stages and MixChain construction",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "作者原图 exp_main",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "作者原图 exp_main",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "作者原图 gsm8k_qwq_curve",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "作者原图 gsm8k_qwq_curve",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "作者原图 gsm8k_llama1b_curve",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "作者原图 gsm8k_llama1b_curve",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Fig.3c: AIME Qwen2.5-32B-Instruct with LIMO, short-long-short and epoch dynamics",
+          "complete": true,
+          "width": 2200
+        }
+      ],
+      "mathml": 60,
+      "pending": 0,
+      "ready": true,
+      "renderers": 60,
+      "title": "CoT-Valve：可按长度压缩的 Chain-of-Thought 调优",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/05-posttraining/reference/2502.09601.md",
+      "path": "docs/05-posttraining/reference/2502.09601.md",
+      "expected": 60,
+      "commit": "298c94d",
+      "pass": true,
+      "source_sha256": "0499d95f8d1f9dd906a480e13802f582710be1df992605b0c76ca4e97088a300",
+      "math_signature": "8aaa6bb50a71ace235c18ef2fbb9aae15f7f2b8e8a1116e28d0715989483c6a3",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Original CoT vs TokenSkip pruning and fine-tuning",
+          "complete": true,
+          "width": 1884
+        },
+        {
+          "alt": "Selective Context and LLMLingua-2 token importance on an age word problem",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Three original vs compressed CoT examples",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "TokenSkip training and inference pipeline",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Qwen2.5-Instruct compression performance on GSM8K",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Specified vs actual compression ratio, including More Ratio",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "TokenSkip under adjusted and original max length budgets",
+          "complete": false,
+          "width": 0
+        }
+      ],
+      "mathml": 52,
+      "pending": 0,
+      "ready": true,
+      "renderers": 52,
+      "title": "TokenSkip：可控的 LLM 思维链压缩",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/05-posttraining/reference/2502.12067.md",
+      "path": "docs/05-posttraining/reference/2502.12067.md",
+      "expected": 52,
+      "commit": "298c94d",
+      "pass": true,
+      "source_sha256": "4b3fcf89192e1e00252383acfbc05743ca0ba7d150db7c61ef6fdebe72b15330",
+      "math_signature": "02d2286b557fb7ea6108c2a4de65a3b78f8ff5c7b908b1aa75df879a8f974d9e",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "An Example to illustrate the overthinking phenomenon",
+          "complete": true,
+          "width": 2116
+        },
+        {
+          "alt": "Overview of our proposed DAST method",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Average token budget distribution across difficulty levels (Lmax = 4096)",
+          "complete": true,
+          "width": 1274
+        },
+        {
+          "alt": "Calibrated reward function with TLB",
+          "complete": true,
+          "width": 3000
+        },
+        {
+          "alt": "Comparative results for different difficulty levels on MATH-500; subfigures: Accuracy on different levels; Token length on different levels",
+          "complete": true,
+          "width": 4098
+        },
+        {
+          "alt": "Comparative results for different difficulty levels on MATH-500; subfigures: Accuracy on different levels; Token length on different levels",
+          "complete": true,
+          "width": 4098
+        },
+        {
+          "alt": "The impact of truncation threshold delta",
+          "complete": true,
+          "width": 630
+        }
+      ],
+      "mathml": 55,
+      "pending": 0,
+      "ready": true,
+      "renderers": 55,
+      "title": "DAST: Difficulty-Adaptive Slow-Thinking for Large Reasoning Models",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/05-posttraining/reference/2503.04472.md",
+      "path": "docs/05-posttraining/reference/2503.04472.md",
+      "expected": 55,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "853a6819a357aff85ab8c79bc99a284d57093deedb275ca9d8b404296b298818",
+      "math_signature": "a3cdcd4df97564870d8c79b8491a3ae17133f74a7e1c95392ed24f6175bc961a",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Performance under varying token budgets",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "OOD length-control performance",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Length-control distributions",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "L1-Max soft budget violations",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Reasoning-pattern keyword comparison",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Thinking versus solution token distribution",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "LCPO-Exact training logs",
+          "complete": false,
+          "width": 0
+        }
+      ],
+      "mathml": 45,
+      "pending": 0,
+      "ready": true,
+      "renderers": 45,
+      "title": "L1: Controlling How Long A Reasoning Model Thinks With Reinforcement Learning",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/05-posttraining/reference/2503.04697.md",
+      "path": "docs/05-posttraining/reference/2503.04697.md",
+      "expected": 45,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "9e2c42ccfc41f887dfc96960dddd769fee3360642d16882675245f1e5a54fd9a",
+      "math_signature": "c663f15e7c88ca56314a69fdebfacfdac207cb54604a2037118b5705cfc56ef5",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "AIME 2024/2025 scores of ReTool and text-based RL baseline",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Text-based RL and ReTool interleaved code execution process",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "CI-related behavior evolution during RL training",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "The case of aha moment about code self-correction",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Code purpose analysis",
+          "complete": true,
+          "width": 1518
+        },
+        {
+          "alt": "Case of CI-powered reasoning vs. text-based reasoning",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Template prompt for ReTool rollout",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Template prompt for data curation",
+          "complete": true,
+          "width": 2200
+        }
+      ],
+      "mathml": 23,
+      "pending": 0,
+      "ready": true,
+      "renderers": 23,
+      "title": "ReTool: Reinforcement Learning for Strategic Tool Use in LLMs",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/05-posttraining/reference/2504.11536.md",
+      "path": "docs/05-posttraining/reference/2504.11536.md",
+      "expected": 23,
+      "commit": "298c94d",
+      "pass": true,
+      "source_sha256": "7ada0da5ab360d962a932cd01a525170cc0b7e616ad625777a6e3c412de0aabf",
+      "math_signature": "fa4191552515d2daef8f284d7ce6cb9a63fb4be35a57bae9137206081a3248c8",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Token Efficiency of OPSD; Qwen3-1.7B comparison with GRPO",
+          "complete": true,
+          "width": 2200
+        }
+      ],
+      "mathml": 38,
+      "pending": 0,
+      "ready": true,
+      "renderers": 38,
+      "title": "Self-Distilled Reasoner: On-Policy Self-Distillation for Large Language Models",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/05-posttraining/reference/2601.18734.md",
+      "path": "docs/05-posttraining/reference/2601.18734.md",
+      "expected": 38,
+      "commit": "298c94d",
+      "pass": true,
+      "source_sha256": "fabd4c111e9792908c24aab13297eadc7abde1fba49318c2afbed5e9771cd40a",
+      "math_signature": "b5b4c40f2bca6f98a844e53366b7d8a8120347c6f004d8f806537a486a2f2b54",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "奖励策略训练动力学与两阶段范式",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Full/Easy/Hard训练对比",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "不同rollout数N在DeepScaleR-Easy上的表现",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "负rollout奖励mask策略",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "不同staleness的off-policy动力学",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "作者原图 fig9-10",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "作者原图 fig9-10",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "自适应目标长度Q0.9",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Qwen3 0.6B-30B AIME’25长度与Mean@8对比",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "奖励策略训练动力学与两阶段范式",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Full/Easy/Hard训练对比",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "不同rollout数N在DeepScaleR-Easy上的表现",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "负rollout奖励mask策略",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "不同staleness的off-policy动力学",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "自适应目标长度Q0.9",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "作者原图 fig9-10",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "作者原图 fig9-10",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "作者原图 fig11-14",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "作者原图 fig11-14",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "作者原图 fig11-14",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "作者原图 fig11-14",
+          "complete": false,
+          "width": 0
+        }
+      ],
+      "mathml": 95,
+      "pending": 0,
+      "ready": true,
+      "renderers": 95,
+      "title": "The Art of Efficient Reasoning: Data, Reward, and Optimization：正文级中文精读",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/05-posttraining/reference/2602.20945.md",
+      "path": "docs/05-posttraining/reference/2602.20945.md",
+      "expected": 95,
+      "commit": "298c94d",
+      "pass": true,
+      "source_sha256": "9da67329faf0c48bd1e20b2358c8b4edba36c533d46ec8d7206628619ecc5c44",
+      "math_signature": "b2a15438bf95685a9cf40875705ea50430365f1eac08c5f60e922b41ea422656",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "本章研究路线图",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Best-of-N, beam search, and lookahead search against a PRM",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "DeepConf during online generation.",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Comparison of Claude 3.5 Sonnet accuracy and token usage across GSM8K, Date, Sports, and Coin Flip for Standard, CoT, and CoD.",
+          "complete": false,
+          "width": 0
+        }
+      ],
+      "mathml": 12,
+      "pending": 0,
+      "ready": true,
+      "renderers": 12,
+      "title": "06 推理、验证与规划：把预算分配给有收益的计算",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/06-reasoning/index.md",
+      "path": "docs/06-reasoning/index.md",
+      "expected": 12,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "1fb831d730a7e157d637240aef9d827500c4e5ce8794a31f39c6cff2abe9bc97",
+      "math_signature": "fba42316deed3223c18386f92dc61214a3f63cedd6fa1636e57ee68c78dcce0f",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "作者原图 fig2-prm-search",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "作者原图 fig2-prm-search",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "作者原图 fig3-search-sweep",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "作者原图 fig3-search-sweep",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "作者原图 fig4-compute-optimal-search",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "作者原图 fig4-compute-optimal-search",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "作者原图 fig5-revision-vs-parallel",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "作者原图 fig5-revision-vs-parallel",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "作者原图 fig6-revision-pass1",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "作者原图 fig6-revision-pass1",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "作者原图 fig7-sequential-parallel-ratio",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "作者原图 fig7-sequential-parallel-ratio",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "作者原图 fig8-compute-optimal-revision",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "作者原图 fig8-compute-optimal-revision",
+          "complete": false,
+          "width": 0
+        }
+      ],
+      "mathml": 55,
+      "pending": 0,
+      "ready": true,
+      "renderers": 55,
+      "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/06-reasoning/reference/2408.03314.md",
+      "path": "docs/06-reasoning/reference/2408.03314.md",
+      "expected": 55,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "536f2e627abcac9551baf4252cd946734a5132b86df8c2c78b68035ca491b4bc",
+      "math_signature": "3e88b36ab96707c1254c4d8739d85467ab7e95f2be90b4ff43a8b290d307d996",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Comparison of Claude 3.5 Sonnet accuracy and token usage across GSM8K, Date, Sports, and Coin Flip for Standard, CoT, and CoD.",
+          "complete": true,
+          "width": 600
+        }
+      ],
+      "mathml": 5,
+      "pending": 0,
+      "ready": true,
+      "renderers": 5,
+      "title": "Chain of Draft：Thinking Faster by Writing Less",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/06-reasoning/reference/2502.18600.md",
+      "path": "docs/06-reasoning/reference/2502.18600.md",
+      "expected": 5,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "a54b1a50ebe4ef82ad0909f750c500e2d4918d195582a2d7d4c5091962830838",
+      "math_signature": "ca2f68531144d680d1f1cccfea5c01893edf4863fa37a987b72103c169a61866",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Confidence distributions for correct vs. incorrect reasoning traces across different metrics.",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "DeepConf during online generation.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Generated tokens comparison across different tasks based on GPT-OSS-120B.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Accuracy vs. generated tokens for online Lowest Group Confidence filtering (DeepSeek-8B) on AIME24, AIME25, BRUMO25, and HMMT25.",
+          "complete": true,
+          "width": 2200
+        }
+      ],
+      "mathml": 77,
+      "pending": 0,
+      "ready": true,
+      "renderers": 77,
+      "title": "Deep Think with Confidence：用模型内部置信度压缩并行推理",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/06-reasoning/reference/2508.15260.md",
+      "path": "docs/06-reasoning/reference/2508.15260.md",
+      "expected": 77,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "a29343461d595fe88e59bd0e331db78dbcd47ad742de387d4404f9a4f04935f7",
+      "math_signature": "840e5ee2edb5a0299073c7fea993e8485596d4519525d8eaf03e9faef8b0e9c4",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "本章研究路线图",
+          "complete": true,
+          "width": 1536
+        },
+        {
+          "alt": "Overview of LLMLingua-2",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "An illustration of RECOMP, which compresses retrieved documents into a textual summary before prepending it as input to a language model at inference time.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig. 3: LoRA-adapted encoder and fixed target-LLM decoder for autoencoding.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Overview of the context management strategies evaluated in the work.",
+          "complete": true,
+          "width": 1748
+        },
+        {
+          "alt": "The LightMem architecture. LightMem consists of an efficient Sensory Memory Module, a topic aware STM Module, and an LTM module updated in sleep time.",
+          "complete": true,
+          "width": 4094
+        }
+      ],
+      "mathml": 20,
+      "pending": 0,
+      "ready": true,
+      "renderers": 20,
+      "title": "07 Prompt、检索、上下文与记忆：减少读入，同时保留可用信息",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/07-context/index.md",
+      "path": "docs/07-context/index.md",
+      "expected": 20,
+      "commit": "298c94d",
+      "pass": true,
+      "source_sha256": "ffcd299901b29c14c633b65eb09b30312b4ca4c6d25df00c9e04ff0cb748c2cd",
+      "math_signature": "aafa5c20ce4ad9af7233c22f76345b3c3656fdadf6ecd840bc9664748b3f36e4",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "原图 1：ICAE 用例",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig. 1: Compressing a long context into a short span of memory slots.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig. 3: LoRA-adapted encoder and fixed target-LLM decoder for autoencoding.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig. 7: Text-continuation pretraining objective.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig. 4: Llama-7b k=128 autoencoding BLEU, prefix EM and loss versus context length.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig. 6: Individually compressing/concatenating spans and PPL of original versus 4x-compressed contexts.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig. 6: Individually compressing/concatenating spans and PPL of original versus 4x-compressed contexts.",
+          "complete": true,
+          "width": 2200
+        }
+      ],
+      "mathml": 81,
+      "pending": 0,
+      "ready": true,
+      "renderers": 81,
+      "title": "In-context Autoencoder for Context Compression in a Large Language Model：正文级中文精读",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/07-context/reference/2307.06945.md",
+      "path": "docs/07-context/reference/2307.06945.md",
+      "expected": 81,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "a654e88911e7707c0fae80f80979168761a88e7bb40f3b394d0f18552d1e8713",
+      "math_signature": "ebe0e8dcb2fb7b8e510f7f0207414846289981678b0a73c2f8215e7fae917cbf",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "An illustration of RECOMP, which compresses retrieved documents into a textual summary before prepending it as input to a language model at inference time.",
+          "complete": true,
+          "width": 2200
+        }
+      ],
+      "mathml": 40,
+      "pending": 0,
+      "ready": true,
+      "renderers": 40,
+      "title": "RECOMP: Improving Retrieval-Augmented LMs with Compression and Selective Augmentation",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/07-context/reference/2310.04408.md",
+      "path": "docs/07-context/reference/2310.04408.md",
+      "expected": 40,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "46f34c82a8d276028913403006c9aa044ea6c09266e0b5f34a7fc25c356dfdc0",
+      "math_signature": "b47255e8b19c4438593cc20b00f42abececbdc65670f2474a9a99ea9a96eac0a",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Environment observation tokens dominate the context window of an SE agent's trajectory.",
+          "complete": true,
+          "width": 755
+        },
+        {
+          "alt": "The effectiveness versus efficiency tradeoff for context management strategies within SWE-agent on SWE-bench Verified.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Impact of context management strategies on trajectory length.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Probing generality with OpenHands on SWE-bench Verified-50.",
+          "complete": true,
+          "width": 1650
+        },
+        {
+          "alt": "Hybrid Observation Masking and LLM-Summary on SWE-bench Verified-50 with Qwen3-Coder 480B.",
+          "complete": true,
+          "width": 1650
+        },
+        {
+          "alt": "Observation Masking window-size ablation; M=10 peaks in a single 150-sample experiment.",
+          "complete": true,
+          "width": 1189
+        },
+        {
+          "alt": "LLM-Summary N/M configuration ablation on a single 150-sample experiment.",
+          "complete": true,
+          "width": 1189
+        },
+        {
+          "alt": "Critic-enhanced summary does not improve solve rate and increases cost.",
+          "complete": true,
+          "width": 1189
+        },
+        {
+          "alt": "Preliminary empirical and simulated behavior across turns.",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Preliminary downstream performance on SWE-bench Lite-50.",
+          "complete": true,
+          "width": 1189
+        }
+      ],
+      "mathml": 64,
+      "pending": 0,
+      "ready": true,
+      "renderers": 64,
+      "title": "The Complexity Trap: Simple Observation Masking Is as Efficient as LLM Summarization for Agent Context Management",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/07-context/reference/2508.21433.md",
+      "path": "docs/07-context/reference/2508.21433.md",
+      "expected": 64,
+      "commit": "298c94d",
+      "pass": true,
+      "source_sha256": "7e33119e819cef71438f5c5555de4a347f65d60a062708183f773240d3362b78",
+      "math_signature": "c8c1e791f10c086200c5c927a0688822e4cdcbe53c5e982276765f85ca39bebf",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Comparison of previous works and LightMem.",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "The LightMem architecture. LightMem consists of an efficient Sensory Memory Module, a topic aware STM Module, and an LTM module updated in sleep time.",
+          "complete": true,
+          "width": 4094
+        },
+        {
+          "alt": "Analysis and Ablation Study of Key Modules: compression-ratio accuracy, segmentation-method comparison, and topic-segmentation ablations.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Impact of STM buffer threshold th on performance and efficiency across compression ratios r.",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Example of Topic Segment Attention Matrix.",
+          "complete": true,
+          "width": 2361
+        },
+        {
+          "alt": "Example of Topic Segment Attention Matrix.",
+          "complete": true,
+          "width": 2350
+        },
+        {
+          "alt": "Example of Topic Segment Attention Matrix.",
+          "complete": false,
+          "width": 3032
+        }
+      ],
+      "mathml": 85,
+      "pending": 0,
+      "ready": true,
+      "renderers": 85,
+      "title": "LightMem: Lightweight and Efficient Memory-Augmented Generation",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/07-context/reference/2510.18866.md",
+      "path": "docs/07-context/reference/2510.18866.md",
+      "expected": 85,
+      "commit": "298c94d",
+      "pass": true,
+      "source_sha256": "1cfc705962e619e130d900d5bcf47f43bbb44864f1558aebd3d0e1c2013942fd",
+      "math_signature": "ca646b13db00d656882d68f60187bd83438c4def543e9683a7637ac6aefe21a7",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Overview of LLMLingua-2",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "LLMLingua-2 performs context awareness compression",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Overview of LLMLingua-2",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "LLMLingua-2 performs context awareness compression",
+          "complete": true,
+          "width": 2200
+        }
+      ],
+      "mathml": 11,
+      "pending": 0,
+      "ready": true,
+      "renderers": 11,
+      "title": "LLMLingua-2：Data Distillation for Efficient and Faithful Task-Agnostic Prompt Compression",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/07-context/reference/src-7cc3fedc37b4.md",
+      "path": "docs/07-context/reference/src-7cc3fedc37b4.md",
+      "expected": 11,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "3f8af72d1f264c3df38e55cc0899c15210303950741c6927e7b00f54fcd1e5e4",
+      "math_signature": "16164695ad30985608b38fff90417507eaf70cc0515d445466aaeb08c1a21b05",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "本章研究路线图",
+          "complete": true,
+          "width": 1536
+        },
+        {
+          "alt": "Workflow of ReWOO: Planner blueprint, Worker evidence, Solver answer.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig.2：Planner、Task Fetching Unit、Executor与DAG依赖替换概览",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "RL pipeline, context evolution, and 2D mask",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Figure 4: AgentPrune空间/时间剪枝及示例token账",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Routing performance/cost trade-off between GPT-4 and Mixtral-8x7B；GSM8K、MT Bench增强和CPT/APGR示意",
+          "complete": true,
+          "width": 566
+        },
+        {
+          "alt": "Routing performance/cost trade-off between GPT-4 and Mixtral-8x7B；GSM8K、MT Bench增强和CPT/APGR示意",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Routing performance/cost trade-off between GPT-4 and Mixtral-8x7B；GSM8K、MT Bench增强和CPT/APGR示意",
+          "complete": false,
+          "width": 0
+        }
+      ],
+      "mathml": 12,
+      "pending": 0,
+      "ready": true,
+      "renderers": 12,
+      "title": "08 Harness、智能体与工具：决定哪些调用有必要发生",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/08-agents/index.md",
+      "path": "docs/08-agents/index.md",
+      "expected": 12,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "987a18ccb050ceb7ea167f4c9ba489e9e0db6e700a7d2912f2076e748ae31e9a",
+      "math_signature": "5180c3a52b29ff422c1f067498ec690db4dba07b09f26a6ecc17823a6d540000",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Workflow of ReWOO: Planner blueprint, Worker evidence, Solver answer.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Observation-dependent TAO prompting versus ReWOO Plan-Work-Solve prompting.",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Performance degraded when incrementally adding extraneous tools.",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Offloading foreseeable reasoning from GPT-3.5 into Alpaca 7B and Planner 7B.",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Performance effect of changing the LLM in ReWOO; Planner 7B tuned on HotpotQA and TriviaQA.",
+          "complete": false,
+          "width": 0
+        }
+      ],
+      "mathml": 30,
+      "pending": 0,
+      "ready": true,
+      "renderers": 30,
+      "title": "ReWOO：把推理与观察解耦的高效增强语言模型",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/08-agents/reference/2305.18323.md",
+      "path": "docs/08-agents/reference/2305.18323.md",
+      "expected": 30,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "e9d209ac5b5960d38e7ee9ceac2a712dfb2296a292aea764b5c7f34a499d1c74",
+      "math_signature": "80e4361fcb824d076670b2260ae2d7e92b5254bd3ae65fb3fce87374274ef74e",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Fig.1：ReAct与LLMCompiler在HotpotQA示例中的运行时对比",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig.2：Planner、Task Fetching Unit、Executor与DAG依赖替换概览",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Fig.3：独立、分层依赖和汇合型函数调用图样例",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig.A.1：Movie Recommendation中ReAct、ReAct†、LLMCompiler函数调用次数分布",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig.A.2：按ReAct调用次数分组的Movie Recommendation准确率",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig.A.3：HotpotQA中ReAct与LLMCompiler函数调用次数分布",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig.A.4：按ReAct调用次数分组的HotpotQA准确率",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig.E.5：ParallelQA按最大可并行任务数分组的延迟",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig.J.6：Game of 24的Tree-of-Thoughts搜索树与top-5保留",
+          "complete": false,
+          "width": 0
+        }
+      ],
+      "mathml": 17,
+      "pending": 0,
+      "ready": true,
+      "renderers": 17,
+      "title": "An LLM Compiler for Parallel Function Calling：正文级精读",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/08-agents/reference/2312.04511.md",
+      "path": "docs/08-agents/reference/2312.04511.md",
+      "expected": 17,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "c78cdec87acc881476f1ce7b0831a0fed293b8144aa8c70a0f5daf5a4a446c2f",
+      "math_signature": "6404ee10db559d950aa4811c1e64eb3e491c29384298522195492506540254a7",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "作者原图 main-gsm8k",
+          "complete": true,
+          "width": 566
+        },
+        {
+          "alt": "作者原图 main-mt-bench",
+          "complete": true,
+          "width": 566
+        },
+        {
+          "alt": "作者原图 main-mmlu",
+          "complete": true,
+          "width": 597
+        },
+        {
+          "alt": "作者原图 main-mmlu",
+          "complete": true,
+          "width": 597
+        },
+        {
+          "alt": "作者原图 main-gsm8k",
+          "complete": true,
+          "width": 566
+        },
+        {
+          "alt": "MT Bench上与Unify AI、Martian等路由系统比较",
+          "complete": true,
+          "width": 577
+        },
+        {
+          "alt": "MT Bench上与Unify AI、Martian等路由系统比较",
+          "complete": true,
+          "width": 566
+        },
+        {
+          "alt": "作者原图 main-gsm8k",
+          "complete": true,
+          "width": 566
+        },
+        {
+          "alt": "作者原图 main-mt-bench",
+          "complete": true,
+          "width": 566
+        },
+        {
+          "alt": "作者原图 main-mmlu",
+          "complete": true,
+          "width": 597
+        },
+        {
+          "alt": "MT Bench上与Unify AI、Martian等路由系统比较",
+          "complete": true,
+          "width": 577
+        },
+        {
+          "alt": "MT Bench上与Unify AI、Martian等路由系统比较",
+          "complete": true,
+          "width": 566
+        }
+      ],
+      "mathml": 89,
+      "pending": 0,
+      "ready": true,
+      "renderers": 89,
+      "title": "RouteLLM：利用偏好数据学习 LLM 路由",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/08-agents/reference/2406.18665.md",
+      "path": "docs/08-agents/reference/2406.18665.md",
+      "expected": 89,
+      "commit": "298c94d",
+      "pass": true,
+      "source_sha256": "d470ad77d319049a9308af8b5808dfc90386422991f82567fbed69795be1448f",
+      "math_signature": "05c5a63c1e10300c8ea0d8f7bd8fa182c48967e06a9ec7d33213bbce003e7efc",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Figure 2: MMLU准确率、prompt token消耗和AgentPrune概览",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Figure 6: agent prompt attack下各框架MMLU准确率",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Figure 21: agent数与early stopping/query轮数敏感性",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Figure 24: complete graph + MMLU一次性空间剪枝",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Figure 30: HumanEval中LLM-Debate式时间剪枝",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Figure 32: MMLU空间connectivity mask随轮次演化",
+          "complete": false,
+          "width": 0
+        }
+      ],
+      "mathml": 87,
+      "pending": 0,
+      "ready": true,
+      "renderers": 87,
+      "title": "AgentPrune：Cut the Crap: An Economical Communication Pipeline for LLM-based Multi-Agent Systems",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/08-agents/reference/2410.02506.md",
+      "path": "docs/08-agents/reference/2410.02506.md",
+      "expected": 87,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "f250fd0a1553529fabbc454af762ad569fe566b3a823b5e112f13c738f3ca602",
+      "math_signature": "073fda1279b7ccff76166970b9c6031625b86088af57c4ebf9fa22832b874aa5",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Performance and efficiency scaling",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Emergent internal-state behaviors",
+          "complete": false,
+          "width": 0
+        }
+      ],
+      "mathml": 3,
+      "pending": 0,
+      "ready": true,
+      "renderers": 3,
+      "title": "MEM1：Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/08-agents/reference/2506.15841.md",
+      "path": "docs/08-agents/reference/2506.15841.md",
+      "expected": 3,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "8174864d7222b008f18654cb80c948b81d29e12148cd94d3df47bca77c8e0a7d",
+      "math_signature": "07e81d5f50073a41067c4ce827ff43902562b56553fb7af139efb589baee09b3",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "本章研究路线图",
+          "complete": true,
+          "width": 1536
+        },
+        {
+          "alt": "FastV video pipeline, K/R pruning and output examples for Video-LLaVA.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "PruMerge has 3 steps",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig.2 Architecture of LongVU",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "The proposed SpeechPrune, with two phases of token pruning.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Figure 1: Overview of LongVU-TTT.",
+          "complete": true,
+          "width": 2200
+        }
+      ],
+      "mathml": 15,
+      "pending": 0,
+      "ready": true,
+      "renderers": 15,
+      "title": "09 多模态与世界模型：先明确删掉的是哪种 token",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/09-multimodal/index.md",
+      "path": "docs/09-multimodal/index.md",
+      "expected": 15,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "2b8fffe76a69a2d4182a9100e6813a1df02b4dd30ce58d1a724499d25e002ffd",
+      "math_signature": "440375fd8faa8d318d391ed8edac443ae62356a9f945137b485c11021c1864ae",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "作者原图 fig-mllm-struct",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "作者原图 fig-attn-ill",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "作者原图 fig-attn-map",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "作者原图 fig-fastv",
+          "complete": false,
+          "width": 0
+        }
+      ],
+      "mathml": 72,
+      "pending": 0,
+      "ready": true,
+      "renderers": 72,
+      "title": "FastV：An Image is Worth 1/2 Tokens After Layer 2: Plug-and-Play Inference Acceleration for Large Vision-Language Models",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/09-multimodal/reference/2403.06764.md",
+      "path": "docs/09-multimodal/reference/2403.06764.md",
+      "expected": 72,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "e21f17f07a69b40cc6df84fb236e48ba5bf59cd89988be156a3a9954f076e89b",
+      "math_signature": "d8e25ff8d365726c968abb8801cf4553234d0c9591dc49a8691f898de6cd82e4",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Distribution of attention values",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "PruMerge has 3 steps",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Image & Tokens Visualizations",
+          "complete": true,
+          "width": 2200
+        }
+      ],
+      "mathml": 47,
+      "pending": 0,
+      "ready": true,
+      "renderers": 47,
+      "title": "LLaVA-PruMerge：面向高效大型多模态模型的自适应 Token 缩减",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/09-multimodal/reference/2403.15388.md",
+      "path": "docs/09-multimodal/reference/2403.15388.md",
+      "expected": 47,
+      "commit": "298c94d",
+      "pass": true,
+      "source_sha256": "7ebd2314270d86565ddfb84ec235e758081803261fa2623a1418e385b31e4ba1",
+      "math_signature": "641b21b086fb95fbc0977db25e6f93091c145825a72e2f74fe10d237f3eeda8e",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Fig.1 Effectiveness over uniform and dense sampling",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig.2 Architecture of LongVU",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig.3 Qualitative examples for video understanding",
+          "complete": true,
+          "width": 1540
+        },
+        {
+          "alt": "Fig.4 Frame/token reduction distributions",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Fig.5 Needle-in-a-Haystack results",
+          "complete": true,
+          "width": 2200
+        }
+      ],
+      "mathml": 57,
+      "pending": 0,
+      "ready": true,
+      "renderers": 57,
+      "title": "LongVU：面向长视频语言理解的时空自适应压缩",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/09-multimodal/reference/2410.17434.md",
+      "path": "docs/09-multimodal/reference/2410.17434.md",
+      "expected": 57,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "a15eba3a8ec276683a124acf0efc581c9e89c18cba278e6c96a8b9314755e531",
+      "math_signature": "d20da3613b37869764241c88e77a66697f05895b7942b35785c1973ef84d61c3",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "The proposed SpeechPrune, with two phases of token pruning.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Qualitative analysis of token embeddings via t-SNE visualization: SpeechPrune versus random pruning.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Ablation study comparing first phase only, second phase only, and SpeechPrune on SPIRAL-H.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "The proposed SpeechPrune, with two phases of token pruning.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Qualitative analysis of token embeddings via t-SNE visualization: SpeechPrune versus random pruning.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Ablation study comparing first phase only, second phase only, and SpeechPrune on SPIRAL-H.",
+          "complete": true,
+          "width": 2200
+        }
+      ],
+      "mathml": 56,
+      "pending": 0,
+      "ready": true,
+      "renderers": 56,
+      "title": "SpeechPrune：面向语音信息检索的上下文感知 Token 剪枝",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/09-multimodal/reference/2412.12009.md",
+      "path": "docs/09-multimodal/reference/2412.12009.md",
+      "expected": 56,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "ca33f96d6b90d0a11864c02aa2ea65f531bf5da2c3530f13a94dd588a214aa58",
+      "math_signature": "623a827c76536a7ccdcf339a2bea83dec010374755cc0753baeb185b0a2cd411",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Figure 1: Overview of LongVU-TTT.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Figure 3: Importance score components across 128 frames of a representative video.",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Figure 2: System optimization results measured on A100 40GB GPUs with NVLink intra-node and InfiniBand inter-node connections.",
+          "complete": false,
+          "width": 0
+        }
+      ],
+      "mathml": 93,
+      "pending": 0,
+      "ready": true,
+      "renderers": 93,
+      "title": "LongVU-TTT: Causal Test-Time Training for Visual Resampling in Long Video Understanding",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/09-multimodal/reference/2608.25729.md",
+      "path": "docs/09-multimodal/reference/2608.25729.md",
+      "expected": 93,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "ebe823d7178e2f62559070bc465712059b8e2b64c8ac25b595782db8c0e5bd13",
+      "math_signature": "74bfc7bd2ae2ca1091e1bfa473ffd3386758f6e52c59854e985b68d6674ce1f1",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "本章研究路线图",
+          "complete": true,
+          "width": 1536
+        },
+        {
+          "alt": "Speculative decoding token suggestions, accepted guesses, rejected guesses, and corrections in unconditional LM.",
+          "complete": true,
+          "width": 2624
+        },
+        {
+          "alt": "Training-time test compared with EAGLE feature prediction and unconstrained direct prediction.",
+          "complete": true,
+          "width": 1262
+        },
+        {
+          "alt": "Training-time test compared with EAGLE feature prediction and unconstrained direct prediction.",
+          "complete": false,
+          "width": 0
+        }
+      ],
+      "mathml": 19,
+      "pending": 0,
+      "ready": true,
+      "renderers": 19,
+      "title": "10 系统与部署：更快处理 token 与更少使用 token",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/10-systems/index.md",
+      "path": "docs/10-systems/index.md",
+      "expected": 19,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "9dc5aecfce7b54381fd3862c40f32e0a270be71a4795a958e15104b2cb49f9c6",
+      "math_signature": "750dfeb7a92c6f7252a31509690988e9197465a1196da341b251f06a6db44cda",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Speculative decoding token suggestions, accepted guesses, rejected guesses, and corrections in unconditional LM.",
+          "complete": true,
+          "width": 2624
+        }
+      ],
+      "mathml": 202,
+      "pending": 0,
+      "ready": true,
+      "renderers": 202,
+      "title": "Fast Inference from Transformers via Speculative Decoding",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/10-systems/reference/2211.17192.md",
+      "path": "docs/10-systems/reference/2211.17192.md",
+      "expected": 202,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "4aa9db5c6725af85668222d6d3e66ca4cdd041b3e306b8a54b3d90393c3b0183",
+      "math_signature": "fabc76d5bf632a613cadd1f25f4691c4ae0398fd6fecd27040280cb706490557",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Temperature-0 speedup ratios for a subset of methods and targets.",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Temperature-0 speedup ratios for a subset of methods and targets.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "EAGLE-3 inference pipeline with fused low/middle/high features and three draft steps.",
+          "complete": true,
+          "width": 1262
+        },
+        {
+          "alt": "EAGLE-3 inference pipeline with fused low/middle/high features and three draft steps.",
+          "complete": true,
+          "width": 1262
+        },
+        {
+          "alt": "Training-time test compared with EAGLE feature prediction and unconstrained direct prediction.",
+          "complete": true,
+          "width": 1262
+        },
+        {
+          "alt": "Training-time test compared with EAGLE feature prediction and unconstrained direct prediction.",
+          "complete": true,
+          "width": 1262
+        },
+        {
+          "alt": "Attention causal masks for native and simulated training-time test steps.",
+          "complete": true,
+          "width": 2007
+        },
+        {
+          "alt": "Attention causal masks for native and simulated training-time test steps.",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Scaling law on MT-bench/LLaMA-Instruct 3.1 8B: speedup ratio and average acceptance length versus data scale relative to ShareGPT.",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Scaling law on MT-bench/LLaMA-Instruct 3.1 8B: speedup ratio and average acceptance length versus data scale relative to ShareGPT.",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Acceptance-rate comparison across data scales; first and second draft positions.",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Acceptance-rate comparison across data scales; first and second draft positions.",
+          "complete": false,
+          "width": 0
+        }
+      ],
+      "mathml": 70,
+      "pending": 0,
+      "ready": true,
+      "renderers": 70,
+      "title": "EAGLE-3：通过训练时测试扩展大语言模型推理加速",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/10-systems/reference/2503.01840.md",
+      "path": "docs/10-systems/reference/2503.01840.md",
+      "expected": 70,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "63c392f7517b96161d757db2a920259d3bc0e26e7c94050d3ed6c159b5031fa7",
+      "math_signature": "f9d4bfd71330b3e03d7e76af35c0adf6dd9efdf78d2b4b6ee06281fc79c111b8",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "本章研究路线图",
+          "complete": true,
+          "width": 1536
+        },
+        {
+          "alt": "Joint optimization maintains accuracy while significantly reducing cost.",
+          "complete": true,
+          "width": 1076
+        },
+        {
+          "alt": "Illustration of overthinking: 2+3 token usage and MATH500 token-accuracy plot",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Illustration of overthinking: 2+3 token usage and MATH500 token-accuracy plot",
+          "complete": true,
+          "width": 2200
+        }
+      ],
+      "mathml": 22,
+      "pending": 0,
+      "ready": true,
+      "renderers": 22,
+      "title": "11 评测、诊断与可解释性：哪些证据支持前沿改善",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/11-evaluation/index.md",
+      "path": "docs/11-evaluation/index.md",
+      "expected": 22,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "5ca05b293a55a5368b98aeafae17facf1e5ab29c781bf59299b90d595bd5c7bc",
+      "math_signature": "f9a8882a9f2d6256937229aca134f6de733c4714b77dcf4f66ac2b90694d8e5d",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Our simple baselines offer Pareto improvements over SOTA agents.",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Joint optimization maintains accuracy while significantly reducing cost.",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "With increased use, the total cost of running an agent is dominated by the variable cost.",
+          "complete": false,
+          "width": 0
+        }
+      ],
+      "mathml": 23,
+      "pending": 0,
+      "ready": true,
+      "renderers": 23,
+      "title": "AI Agents That Matter：把智能体评估从“只看准确率”改成成本、泛化与可复现的工程科学",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/11-evaluation/reference/2407.01502.md",
+      "path": "docs/11-evaluation/reference/2407.01502.md",
+      "expected": 23,
+      "commit": "298c94d",
+      "pass": true,
+      "source_sha256": "95fe156b8f2391d357a81cb7758619ea0d6185701a36e1c883fde464078c103f",
+      "math_signature": "4b154679ad3a5ea80bbcca8fc0fa4dff47e90c345f638639558582eaed322dac",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Figure 2 原图：QwQ 对 2+3 的 13 个 solution",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "QwQ-32B-Preview response with 13 solutions for 2+3",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Solution count distribution and MATH500 difficulty decomposition",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Solution count distribution and MATH500 difficulty decomposition",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Solution count distribution and MATH500 difficulty decomposition",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "QwQ and DeepSeek-R1 outcome/process efficiency across MATH500 levels",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "QwQ and DeepSeek-R1 outcome/process efficiency across MATH500 levels",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Illustration of overthinking: 2+3 token usage and MATH500 token-accuracy plot",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Illustration of overthinking: 2+3 token usage and MATH500 token-accuracy plot",
+          "complete": true,
+          "width": 2200
+        }
+      ],
+      "mathml": 48,
+      "pending": 0,
+      "ready": true,
+      "renderers": 48,
+      "title": "Do NOT Think That Much for 2+3=? On the Overthinking of o1-Like LLMs：正文级精读",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/11-evaluation/reference/2412.21187.md",
+      "path": "docs/11-evaluation/reference/2412.21187.md",
+      "expected": 48,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "ee6363ed006a24f670af7cf21eefe3d9bfc943912204a48b7e20490750537ed7",
+      "math_signature": "ec5189ea39d33626dab05a2ee1ed290e01a19050d89fa30239605de21d2bf58f",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "本章研究路线图",
+          "complete": true,
+          "width": 1536
+        },
+        {
+          "alt": "Overview of OverThink Attack.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Threat model and monitor placement. The attacker injects a reasoning-consuming decoy through any text-bearing context channel. RecurGuard monitors exposed reasoning traces online and can halt generation; QDM operates post-hoc on the final output when traces are hidden.",
+          "complete": true,
+          "width": 2200
+        }
+      ],
+      "mathml": 1,
+      "pending": 0,
+      "ready": true,
+      "renderers": 1,
+      "title": "12 安全、隐私与可靠性：防止不必要消耗，同时保留正常能力",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/12-safety/index.md",
+      "path": "docs/12-safety/index.md",
+      "expected": 1,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "a78743bd808f7c81dd22c0bfcb7a7260c39addc0b2ee2881c4d8cec75496ada0",
+      "math_signature": "f1b4ced25935edcbb24d894e62d679912fd07e01669f28b943a8573653879fe9",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Overview of OverThink Attack.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "OverThink Attack Methodology.",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Pre-attack document/inference and post-attack document/inference (appendix chatbot attack).",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Pre-attack document/inference and post-attack document/inference (appendix chatbot attack).",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Pre-attack document/inference and post-attack document/inference (appendix chatbot attack).",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Pre-attack document/inference and post-attack document/inference (appendix chatbot attack).",
+          "complete": false,
+          "width": 0
+        }
+      ],
+      "mathml": 28,
+      "pending": 0,
+      "ready": true,
+      "renderers": 28,
+      "title": "OverThink: Slowdown Attacks on Reasoning LLMs",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/12-safety/reference/2502.02542.md",
+      "path": "docs/12-safety/reference/2502.02542.md",
+      "expected": 28,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "5064b85d24afb69defd339d7a0f3e8476d1f356c50b7ef5f09b605204e5e48e9",
+      "math_signature": "4c64da33be283f26cbd4eb83dd724dbe045e7607d2f2c670a34278e48df8287c",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [],
+      "mathml": 39,
+      "pending": 0,
+      "ready": true,
+      "renderers": 39,
+      "title": "RecurGuard: Runtime Monitoring for Reasoning-Token Consumption Attacks",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/12-safety/reference/2606.07968.md",
+      "path": "docs/12-safety/reference/2606.07968.md",
+      "expected": 39,
+      "commit": "298c94d",
+      "pass": true,
+      "source_sha256": "f13bd648a898a8d3ee475957c5a3d85342cb5fffb17a292335d3818550277d6d",
+      "math_signature": "45ba83514b2020b9b71e09cf3086e119d2f4a80382d3d702cfe63853ff4e5c0a",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "本章研究路线图",
+          "complete": true,
+          "width": 1536
+        },
+        {
+          "alt": "Figure 1: CoT 与 PAL 的自然语言步骤、程序步骤和 Python 执行示意",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "The chain-of-thought prompts and example model outputs in the MGSM experiments",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Overview of the cold-start data collection process employed by DeepSeek-Prover-V2. DeepSeek-V3 produces a natural-language proof sketch and Lean statements with sorry placeholders; a 7B prover recursively solves subgoals; proofs are composed and appended to the chain of thought.",
+          "complete": true,
+          "width": 2200
+        }
+      ],
+      "mathml": 7,
+      "pending": 0,
+      "ready": true,
+      "renderers": 7,
+      "title": "13 领域、多语言与科学：效率机制能否跨任务迁移",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/13-domains/index.md",
+      "path": "docs/13-domains/index.md",
+      "expected": 7,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "4ec252e3afb017093c924061fd02f2aeb552d5d0f8b81201bab92e80434576bc",
+      "math_signature": "cd4bdadbd6debc89ab42749a14c48af1e9a8dfed98ac8eccc36c386b3f6e30fc",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Correlation between language frequency and MGSM accuracy for PaLM-540B",
+          "complete": false,
+          "width": 2200
+        },
+        {
+          "alt": "MGSM problem distribution with respect to number of reasoning steps",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "The chain-of-thought prompts and example model outputs in the MGSM experiments",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "MGSM accuracy with different model scales",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "MGSM accuracy of PaLM-540B with different numbers of few-shot exemplars",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Prompt template in the direct answer prediction setting",
+          "complete": false,
+          "width": 0
+        },
+        {
+          "alt": "Prompt template in the English CoT setting",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Prompt template with CoT in the question language",
+          "complete": true,
+          "width": 1822
+        }
+      ],
+      "mathml": 10,
+      "pending": 0,
+      "ready": true,
+      "renderers": 10,
+      "title": "Language Models are Multilingual Chain-of-Thought Reasoners：正文级精读",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/13-domains/reference/2210.03057.md",
+      "path": "docs/13-domains/reference/2210.03057.md",
+      "expected": 10,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "0dbddee46f45dceee93e5c0023f01322fd7e033f62351daadb7055d437ecc365",
+      "math_signature": "971aabb55fea9258772d7e0dc727521363731e742850185f7e779e00a5794730",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Figure 1: CoT 与 PAL 的自然语言步骤、程序步骤和 Python 执行示意",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Figure 2: PAL 提示中自然语言与程序语句交错的局部示例",
+          "complete": false,
+          "width": 0
+        }
+      ],
+      "mathml": 20,
+      "pending": 0,
+      "ready": true,
+      "renderers": 20,
+      "title": "PAL: Program-aided Language Models",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/13-domains/reference/2211.10435.md",
+      "path": "docs/13-domains/reference/2211.10435.md",
+      "expected": 20,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "d198eafd15034c096e532f2fbb5112ece5478bd7a1c70bb3427d8da6e1307ac1",
+      "math_signature": "e37d56f8ad58d739b58623637e1bd7a36259e46c48e1e24d3c9e8ff8be6566da",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Benchmark performance of DeepSeek-Prover-V2. On the AIME benchmark, DeepSeek-V3 is evaluated using the standard find-answer task for natural-language reasoning, while prover models generate Lean code to construct formal proofs for a given correct answer.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Overview of the cold-start data collection process employed by DeepSeek-Prover-V2. DeepSeek-V3 produces a natural-language proof sketch and Lean statements with sorry placeholders; a 7B prover recursively solves subgoals; proofs are composed and appended to the chain of thought.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "An illustrative example translating decomposed subgoals into lemma statements: (a) substitute the original goal; (b) incorporate preceding subgoals as premises. Type (b) supports recursive solving; both types enter curriculum learning.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Benchmark performance of DeepSeek-Prover-V2. On the AIME benchmark, DeepSeek-V3 is evaluated using the standard find-answer task for natural-language reasoning, while prover models generate Lean code to construct formal proofs for a given correct answer.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "Overview of the cold-start data collection process employed by DeepSeek-Prover-V2. DeepSeek-V3 produces a natural-language proof sketch and Lean statements with sorry placeholders; a 7B prover recursively solves subgoals; proofs are composed and appended to the chain of thought.",
+          "complete": true,
+          "width": 2200
+        },
+        {
+          "alt": "An illustrative example translating decomposed subgoals into lemma statements: (a) substitute the original goal; (b) incorporate preceding subgoals as premises. Type (b) supports recursive solving; both types enter curriculum learning.",
+          "complete": true,
+          "width": 2200
+        }
+      ],
+      "mathml": 31,
+      "pending": 0,
+      "ready": true,
+      "renderers": 31,
+      "title": "DeepSeek-Prover-V2：通过子目标分解与强化学习推进形式数学推理",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/13-domains/reference/2504.21801.md",
+      "path": "docs/13-domains/reference/2504.21801.md",
+      "expected": 31,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "a0452442df3e96680d28c03c547ea2b583df60cfa4dd10fe43a5d93e51cfa772",
+      "math_signature": "f097a80e7649fe405d155ff74bb7deee2aff955dd58478b5aaa596379f2edda9",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [],
+      "mathml": 0,
+      "pending": 0,
+      "ready": true,
+      "renderers": 0,
+      "title": "研究地图阅读目录",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/README.md",
+      "path": "docs/README.md",
+      "expected": 0,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "09c9d598f36cd357518d9ac6d1aaad402043400321a577cd2b71afd3910b2f00",
+      "math_signature": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [],
+      "mathml": 0,
+      "pending": 0,
+      "ready": true,
+      "renderers": 0,
+      "title": "按需查阅的附录",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/appendix/README.md",
+      "path": "docs/appendix/README.md",
+      "expected": 0,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "b69b84c49dccd78a1be528cfcb0af0e0426abecdb3529aced1011e0cc6793825",
+      "math_signature": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "数据审核的四个独立维度",
+          "complete": true,
+          "width": 1080
+        },
+        {
+          "alt": "预算曲线可能交叉",
+          "complete": true,
+          "width": 1116
+        },
+        {
+          "alt": "AMO-0 三角格点",
+          "complete": true,
+          "width": 743
+        },
+        {
+          "alt": "OTB 官方迷宫实例的代码重绘",
+          "complete": true,
+          "width": 771
+        },
+        {
+          "alt": "AUCOAA 与聚合顺序",
+          "complete": true,
+          "width": 1574
+        },
+        {
+          "alt": "同长度下的效率比率反例",
+          "complete": true,
+          "width": 1574
+        },
+        {
+          "alt": "AppWorld 原始框架图",
+          "complete": true,
+          "width": 1324
+        }
+      ],
+      "mathml": 34,
+      "pending": 0,
+      "ready": true,
+      "renderers": 34,
+      "title": "数据与基准使用指南",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/appendix/benchmark-guide.md",
+      "path": "docs/appendix/benchmark-guide.md",
+      "expected": 34,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "ffd21f2d8c95c6c61f3021c550d8ce10ceb48a49359ff80d22c708eacc30fd46",
+      "math_signature": "160f1ce8ed8e84b369bfc876f607842b9b191a7385b5d572436bc51a71aeccf8",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [],
+      "mathml": 0,
+      "pending": 0,
+      "ready": true,
+      "renderers": 0,
+      "title": "术语速查",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/appendix/glossary.md",
+      "path": "docs/appendix/glossary.md",
+      "expected": 0,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "3b9ad83aec473c4ee3a7be5f3209360df0167a8ea58b591d2389c91040b74d4b",
+      "math_signature": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "同一教师分布下，两个方向的 KL 随学生概率变化；两条曲线最低点相同但惩罚形状不同。",
+          "complete": true,
+          "width": 900
+        },
+        {
+          "alt": "PPO 正负优势的裁剪目标；正优势在右侧变平，负优势在左侧变平。",
+          "complete": true,
+          "width": 900
+        },
+        {
+          "alt": "四个回答全部正确时，二值奖励优势全零；加入门控成本后，较短回答优势为正，较长回答优势为负。",
+          "complete": true,
+          "width": 900
+        },
+        {
+          "alt": "Token、计算和时间的区别",
+          "complete": true,
+          "width": 300
+        }
+      ],
+      "mathml": 164,
+      "pending": 0,
+      "ready": true,
+      "renderers": 164,
+      "title": "数学基础与成本定义",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/appendix/math-foundations.md",
+      "path": "docs/appendix/math-foundations.md",
+      "expected": 164,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "c9a21884f00340fb6713c0ccd0b745d9214ab88006de12bf32b8c5b0ebfbdfb7",
+      "math_signature": "3b4c33c0de8e7bd0f02b16b29c1f66b75e142be4a44bbf1b860af778623cdc41",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [
+        {
+          "alt": "下一词元、多词元预测与部署成本",
+          "complete": true,
+          "width": 1080
+        },
+        {
+          "alt": "上下文处理流程",
+          "complete": true,
+          "width": 300
+        },
+        {
+          "alt": "Harness 运行闭环",
+          "complete": true,
+          "width": 1360
+        }
+      ],
+      "mathml": 44,
+      "pending": 0,
+      "ready": true,
+      "renderers": 44,
+      "title": "算例、教学程序与练习",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/appendix/worked-examples.md",
+      "path": "docs/appendix/worked-examples.md",
+      "expected": 44,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "2c1187ba6fec0721d9d07da432cd7d7ef8fe76ef27d21b029a2a4d7af71c438f",
+      "math_signature": "b2996eee6a75f4545a03cdeb5544ac2e7f6b09a724d688789b88ed61b96581f7",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    },
+    {
+      "article": true,
+      "failures": [],
+      "images": [],
+      "mathml": 0,
+      "pending": 0,
+      "ready": true,
+      "renderers": 0,
+      "title": "从研究地图到可证伪选题",
+      "unparsed": [],
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/research-opportunities.md",
+      "path": "docs/research-opportunities.md",
+      "expected": 0,
+      "commit": "5cd4b23",
+      "pass": true,
+      "source_sha256": "97958d58507bc6201a903676321f05bfffb3484dd40c73dbb3e8a004d915e933",
+      "math_signature": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+    }
+  ],
+  "total_pages": 65,
+  "total_math_fragments": 2687,
+  "first_pass": {
+    "commit": "5cd4b23",
+    "pages": 65,
+    "failed_pages": [
+      "docs/01-data/index.md",
+      "docs/02-pretraining/reference/2412.08821.md",
+      "docs/03-midtraining/index.md",
+      "docs/03-midtraining/reference/2404.07965.md",
+      "docs/04-architecture/reference/2412.09871.md",
+      "docs/05-posttraining/index.md",
+      "docs/05-posttraining/reference/2306.13649.md",
+      "docs/05-posttraining/reference/2502.09601.md",
+      "docs/05-posttraining/reference/2502.12067.md",
+      "docs/05-posttraining/reference/2504.11536.md",
+      "docs/05-posttraining/reference/2601.18734.md",
+      "docs/07-context/index.md",
+      "docs/07-context/reference/2508.21433.md",
+      "docs/09-multimodal/reference/2403.15388.md",
+      "docs/12-safety/reference/2606.07968.md"
+    ]
+  },
+  "recheck": {
+    "commit": "298c94d",
+    "pages": 19,
+    "all_pass": true
+  },
+  "reuse_rule": "Unchanged page bytes verified against the commit actually inspected; changed pages rechecked.",
+  "visual_spot_checks": [
+    "Coconut forward equations: roman function names, ellipsis and latent interval visible; no red error boxes.",
+    "Overview: required performance-token conceptual illustration appears before the research landscape."
+  ],
+  "ci": [
+    {
+      "commit": "5cd4b23",
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/actions/runs/34360590736",
+      "status": "success"
+    },
+    {
+      "commit": "298c94d",
+      "url": "https://github.com/Shiba-hua/token-efficient-llm/actions/runs/34362155612",
+      "status": "success"
+    }
+  ]
+}

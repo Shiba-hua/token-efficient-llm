@@ -1,0 +1,312 @@
+[
+  {
+    "path": "docs/01-data/index.md",
+    "commit": "5cd4b23",
+    "failures": [
+      {
+        "tag": "MATH-RENDERER",
+        "text": "\n    Extra open brace or missing close brace\n  \n        \n        $$\\mathcal L_x=-\\sum_{t=1}^{\\ell(y_x^*)}\n\\log\\pi_\\theta(y^*_{x,t}\\mid x,y^*_{x,<t}).$$"
+      },
+      {
+        "tag": "DIV",
+        "text": "\n    Extra open brace or missing close brace\n  "
+      }
+    ],
+    "pending": 0,
+    "expected": 8,
+    "mathml": 7
+  },
+  {
+    "path": "docs/02-pretraining/reference/2412.08821.md",
+    "commit": "5cd4b23",
+    "failures": [
+      {
+        "tag": "MATH-RENDERER",
+        "text": "\n    Extra open brace or missing close brace\n  \n        \n        $$\\hat x_n=f_\\theta(x_{<n}),\\qquad\n\\mathcal L_{\\mathrm{Base}}(\\theta)=\\mathbb E_{x\\sim q}\\left[\\sum_{n=1}^{N}\\|f_\\theta(x_{<n})-x_n\\|_2^2\\right].$$"
+      },
+      {
+        "tag": "DIV",
+        "text": "\n    Extra open brace or missing close brace\n  "
+      }
+    ],
+    "pending": 0,
+    "expected": 70,
+    "mathml": 69
+  },
+  {
+    "path": "docs/03-midtraining/index.md",
+    "commit": "5cd4b23",
+    "failures": [
+      {
+        "tag": "MATH-RENDERER",
+        "text": "\n    Extra open brace or missing close brace\n  \n        \n        $$\\ell_i^{\\mathrm{ref}}=-\\log p_{\\mathrm{ref}}(x_i\\mid x_{<i}),\\qquad\n\\ell_i^\\theta=-\\log p_\\theta(x_i\\mid x_{<i}),\\qquad\ne_i=\\ell_i^\\theta-\\ell_i^{\\mathrm{ref}}.$$"
+      },
+      {
+        "tag": "DIV",
+        "text": "\n    Extra open brace or missing close brace\n  "
+      }
+    ],
+    "pending": 0,
+    "expected": 8,
+    "mathml": 7
+  },
+  {
+    "path": "docs/03-midtraining/reference/2404.07965.md",
+    "commit": "5cd4b23",
+    "failures": [
+      {
+        "tag": "MATH-RENDERER",
+        "text": "\n    Extra open brace or missing close brace\n  \n        \n        $$\\mathcal{L}_{\\mathrm{ref}}(x_i)=-\\log P_{\\mathrm{RM}}(x_i\\mid x_{<i}).$$"
+      },
+      {
+        "tag": "DIV",
+        "text": "\n    Extra open brace or missing close brace\n  "
+      },
+      {
+        "tag": "MATH-RENDERER",
+        "text": "\n    Extra open brace or missing close brace\n  \n        \n        $$\\mathcal{L}_{\\mathrm{SLM}}(\\theta)=\n-\\frac{1}{N\\,k\\%}\\sum_{i=1}^{N}I_{k\\%}(x_i)\\log P_{\\theta}(x_i\\mid x_{<i}).$$"
+      },
+      {
+        "tag": "DIV",
+        "text": "\n    Extra open brace or missing close brace\n  "
+      }
+    ],
+    "pending": 0,
+    "expected": 21,
+    "mathml": 19
+  },
+  {
+    "path": "docs/04-architecture/reference/2412.09871.md",
+    "commit": "5cd4b23",
+    "failures": [
+      {
+        "tag": "MATH-RENDERER",
+        "text": "\n    Extra open brace or missing close brace\n  \n        \n        $$H(x_i)=\\sum_{v\\in\\mathcal V}p_e(x_i=v\\mid\\mathbf{x}_{<i})\\log p_e(x_i=v\\mid\\mathbf{x}_{<i}).$$"
+      },
+      {
+        "tag": "DIV",
+        "text": "\n    Extra open brace or missing close brace\n  "
+      },
+      {
+        "tag": "MATH-RENDERER",
+        "text": "\n    Extra open brace or missing close brace\n  \n        \n        $$f_p(\\mathbf{x}_{<i})=f_p(\\mathbf{x})_{<i}.$$"
+      },
+      {
+        "tag": "DIV",
+        "text": "\n    Extra open brace or missing close brace\n  "
+      }
+    ],
+    "pending": 0,
+    "expected": 27,
+    "mathml": 25
+  },
+  {
+    "path": "docs/05-posttraining/index.md",
+    "commit": "5cd4b23",
+    "failures": [
+      {
+        "tag": "MATH-RENDERER",
+        "text": "\n    Extra open brace or missing close brace\n  \n        \n        $$S_r=\\mathrm{TopK}(s_{1:T},k_r),\\qquad\n\\widetilde y_r=(y_t:t\\in S_r\\text{，按原位置排序}),\n\\qquad\n\\mathcal L=-\\sum_t\\log\\pi_\\theta(\\widetilde y_{r,t}\\mid x,r,\\widetilde y_{r,<t}).$$"
+      },
+      {
+        "tag": "DIV",
+        "text": "\n    Extra open brace or missing close brace\n  "
+      },
+      {
+        "tag": "MATH-RENDERER",
+        "text": "\n    Extra open brace or missing close brace\n  \n        \n        $$\\widehat y\\sim\\pi_\\theta(\\cdot\\mid x),\\qquad\n\\mathcal L=\\mathbb E\\left[\n\\frac1{|\\widehat y|}\\sum_t\nD\\!\\left(p_T(\\cdot\\mid x,y^*,\\widehat y_{<t})\\Vert\n\\pi_\\theta(\\cdot\\mid x,\\widehat y_{<t})\\right)\\right].$$"
+      },
+      {
+        "tag": "DIV",
+        "text": "\n    Extra open brace or missing close brace\n  "
+      }
+    ],
+    "pending": 0,
+    "expected": 44,
+    "mathml": 42
+  },
+  {
+    "path": "docs/05-posttraining/reference/2306.13649.md",
+    "commit": "5cd4b23",
+    "failures": [
+      {
+        "tag": "MATH-RENDERER",
+        "text": "\n    Extra open brace or missing close brace\n  \n        \n        $$D(p_T\\|p_S^\\theta)(y\\mid x)=\\frac1{L_y}\\sum_{n=1}^{L_y}\nD\\bigl(p_T(\\cdot\\mid y_{<n},x)\\|p_S^\\theta(\\cdot\\mid y_{<n},x)\\bigr).$$"
+      },
+      {
+        "tag": "DIV",
+        "text": "\n    Extra open brace or missing close brace\n  "
+      }
+    ],
+    "pending": 0,
+    "expected": 77,
+    "mathml": 76
+  },
+  {
+    "path": "docs/05-posttraining/reference/2502.09601.md",
+    "commit": "5cd4b23",
+    "failures": [
+      {
+        "tag": "MATH-RENDERER",
+        "text": "\n    Extra open brace or missing close brace\n  \n        \n        $$p(a\\mid t_1,\\ldots,t_n,q;\\theta)\\prod_{i=1}^{n}p(t_i\\mid t_{<i},q;\\theta).$$"
+      },
+      {
+        "tag": "DIV",
+        "text": "\n    Extra open brace or missing close brace\n  "
+      },
+      {
+        "tag": "MATH-RENDERER",
+        "text": "\n    Extra open brace or missing close brace\n  \n        \n        $$\\max_{\\Delta\\theta}\\;\\mathbb E_{(q,a)\\sim D}\\left[p(a\\mid t_{1:m},q;\\theta+\\Delta\\theta)\\prod_{i=1}^{m}p(t_i\\mid t_{<i},q;\\theta+\\Delta\\theta)\\right].$$"
+      },
+      {
+        "tag": "DIV",
+        "text": "\n    Extra open brace or missing close brace\n  "
+      }
+    ],
+    "pending": 0,
+    "expected": 60,
+    "mathml": 58
+  },
+  {
+    "path": "docs/05-posttraining/reference/2502.12067.md",
+    "commit": "5cd4b23",
+    "failures": [
+      {
+        "tag": "MATH-RENDERER",
+        "text": "\n    Extra open brace or missing close brace\n  \n        \n        $$I_1(x_i)=-\\log P(x_i\\mid x_{<i};\\theta_{M_L}).$$"
+      },
+      {
+        "tag": "DIV",
+        "text": "\n    Extra open brace or missing close brace\n  "
+      },
+      {
+        "tag": "MATH-RENDERER",
+        "text": "\n    Extra open brace or missing close brace\n  \n        \n        $$\\mathcal L=-\\sum_{i=1}^{l}\\log P(y_i\\mid x,\\gamma,y_{<i};\\theta_M).$$"
+      },
+      {
+        "tag": "DIV",
+        "text": "\n    Extra open brace or missing close brace\n  "
+      }
+    ],
+    "pending": 0,
+    "expected": 52,
+    "mathml": 50
+  },
+  {
+    "path": "docs/05-posttraining/reference/2504.11536.md",
+    "commit": "5cd4b23",
+    "failures": [
+      {
+        "tag": "MATH-RENDERER",
+        "text": "\n    Missing close brace\n  \n        \n        $$\\mathcal{J}_{\\mathrm{PPO}}(\\theta)=\n\\mathbb{E}\\left[\\min\\left(\n\\frac{\\pi_\\theta(o_t\\mid q,o_{<t};\\mathrm{CI})}\n{\\pi_{\\theta_{\\mathrm{old}}}(o_t\\mid q,o_{<t};\\mathrm{CI})}\\hat A_t,\n\\mathrm{clip}\\left(\\frac{\\pi_\\theta(o_t\\mid q,o_{<t};\\mathrm{CI})}\n{\\pi_{\\theta_{\\mathrm{old}}}(o_t\\mid q,o_{<t};\\mathrm{CI})},1-\\epsilon,1+\\epsilon\\right)\\hat A_t\n\\right)\\right].$$"
+      },
+      {
+        "tag": "DIV",
+        "text": "\n    Missing close brace\n  "
+      }
+    ],
+    "pending": 0,
+    "expected": 23,
+    "mathml": 22
+  },
+  {
+    "path": "docs/05-posttraining/reference/2601.18734.md",
+    "commit": "5cd4b23",
+    "failures": [
+      {
+        "tag": "MATH-RENDERER",
+        "text": "\n    Extra open brace or missing close brace\n  \n        \n        $$D(p_T\\|p_S)(\\hat y\\mid x)=\n\\frac1{|\\hat y|}\\sum_{n=1}^{|\\hat y|}\nD\\!\\left(p_T(\\cdot\\mid x,y^\\star,\\hat y_{<n})\\;\\middle\\|\\;\np_S(\\cdot\\mid x,\\hat y_{<n})\\right).$$"
+      },
+      {
+        "tag": "DIV",
+        "text": "\n    Extra open brace or missing close brace\n  "
+      },
+      {
+        "tag": "MATH-RENDERER",
+        "text": "\n    Extra open brace or missing close brace\n  \n        \n        $$A_n=\\log p_T(\\hat y_n\\mid x,y^\\star,\\hat y_{<n})-\n\\log p_S(\\hat y_n\\mid x,\\hat y_{<n}),$$"
+      },
+      {
+        "tag": "DIV",
+        "text": "\n    Extra open brace or missing close brace\n  "
+      }
+    ],
+    "pending": 0,
+    "expected": 38,
+    "mathml": 36
+  },
+  {
+    "path": "docs/07-context/index.md",
+    "commit": "5cd4b23",
+    "failures": [
+      {
+        "tag": "MATH-RENDERER",
+        "text": "\n    Extra open brace or missing close brace\n  \n        \n        $$U(c)=\\sum_t\\log p_{\\mathrm{LM}}(y_t\\mid x,c,y_{<t}).$$"
+      },
+      {
+        "tag": "DIV",
+        "text": "\n    Extra open brace or missing close brace\n  "
+      },
+      {
+        "tag": "MATH-RENDERER",
+        "text": "\n    Extra open brace or missing close brace\n  \n        \n        $$\\mathcal L_{\\mathrm{AE}}=-\\sum_i\\log p_{\\theta_0}(c_i\\mid z_\\phi(c),c_{<i}),\\qquad\n\\mathcal L_{\\mathrm{LM}}=-\\sum_t\\log p_{\\theta_0}(y_t\\mid z_\\phi(c),y_{<t}).$$"
+      },
+      {
+        "tag": "DIV",
+        "text": "\n    Extra open brace or missing close brace\n  "
+      }
+    ],
+    "pending": 0,
+    "expected": 20,
+    "mathml": 18
+  },
+  {
+    "path": "docs/07-context/reference/2508.21433.md",
+    "commit": "5cd4b23",
+    "failures": [],
+    "pending": 1,
+    "expected": 64,
+    "mathml": 63
+  },
+  {
+    "path": "docs/09-multimodal/reference/2403.15388.md",
+    "commit": "5cd4b23",
+    "failures": [
+      {
+        "tag": "DIV",
+        "text": "\n    Missing open brace for superscript\n  "
+      },
+      {
+        "tag": "DIV",
+        "text": "\n    Missing open brace for superscript\n  "
+      },
+      {
+        "tag": "DIV",
+        "text": "\n    Missing open brace for superscript\n  "
+      },
+      {
+        "tag": "DIV",
+        "text": "\n    Missing open brace for superscript\n  "
+      }
+    ],
+    "pending": 0,
+    "expected": 47,
+    "mathml": 43
+  },
+  {
+    "path": "docs/12-safety/reference/2606.07968.md",
+    "commit": "5cd4b23",
+    "failures": [
+      {
+        "tag": "MATH-RENDERER",
+        "text": "\n    Extra open brace or missing close brace\n  \n        \n        $$MPD(S)=\\frac{2}{|S|(|S|-1)}\\sum_{i<j}\\|e_i-e_j\\|_2,$$"
+      },
+      {
+        "tag": "DIV",
+        "text": "\n    Extra open brace or missing close brace\n  "
+      }
+    ],
+    "pending": 0,
+    "expected": 39,
+    "mathml": 38
+  }
+]
