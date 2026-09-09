@@ -127,13 +127,14 @@
       "title": "Self-Training Elicits Concise Reasoning in Large Language Models：正文级中文精读",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/01-data/reference/2502.20122.md",
-      "path": "docs/01-data/reference/2502.20122.md",
+      "path": "docs/01-data/reference/最短正确自训练.md",
       "expected": 12,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "89cf4e9fcd9a73d96403821a6a51cdf744c144da39f3a9d4977d9b71a0e0138e",
       "math_signature": "5dcd26202ebf0813bcc51e44793d2c4617baf740d0ecc4f2d2004c423a0a956a",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/01-data/reference/2502.20122.md"
     },
     {
       "article": true,
@@ -247,13 +248,14 @@
       "title": "Better & Faster Large Language Models via Multi-token Prediction",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/02-pretraining/reference/2404.19737.md",
-      "path": "docs/02-pretraining/reference/2404.19737.md",
+      "path": "docs/02-pretraining/reference/MTP.md",
       "expected": 86,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "498786739f5f11fcc5c75c3f8df3290e3f2c7c37731011213fda794c10f4196c",
       "math_signature": "92f01b746f894e04b85c577738283f3c3aa6873c464aae9bc6a6ffabfbf0032b",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/02-pretraining/reference/2404.19737.md"
     },
     {
       "article": true,
@@ -307,13 +309,14 @@
       "title": "Large Concept Models: Language Modeling in a Sentence Representation Space",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/02-pretraining/reference/2412.08821.md",
-      "path": "docs/02-pretraining/reference/2412.08821.md",
+      "path": "docs/02-pretraining/reference/LCM.md",
       "expected": 70,
       "commit": "298c94d",
       "pass": true,
       "source_sha256": "d625c8fce692ef1cfa664e66f983860bfac5d3e9a7d7dfb6404e97a15e80fc19",
       "math_signature": "f6bff5b60053dcf882741a2d88828e0e87496129562948016b8e51ef8d0558e7",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/02-pretraining/reference/2412.08821.md"
     },
     {
       "article": true,
@@ -402,13 +405,14 @@
       "title": "Rho-1: Not All Tokens Are What You Need",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/03-midtraining/reference/2404.07965.md",
-      "path": "docs/03-midtraining/reference/2404.07965.md",
+      "path": "docs/03-midtraining/reference/Rho-1.md",
       "expected": 21,
       "commit": "298c94d",
       "pass": true,
       "source_sha256": "b30f5a78d8c7e7b99d8c80f32575c863ba3cef308fc36ad5f5f6988ddbecb173",
       "math_signature": "94839232396d35d990dbbe110398d40e539fa584dcb0c8139c83e12e893e23da",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/03-midtraining/reference/2404.07965.md"
     },
     {
       "article": true,
@@ -497,13 +501,14 @@
       "title": "Training Large Language Models to Reason in a Continuous Latent Space（Coconut）",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/04-architecture/reference/2412.06769.md",
-      "path": "docs/04-architecture/reference/2412.06769.md",
+      "path": "docs/04-architecture/reference/Coconut.md",
       "expected": 70,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "852bb0f16e449b43b3c922c583784f58e043fd9af9a02a45f0f2a5412b350795",
       "math_signature": "85457feaa5c643819d237a1074ed9401810274e9e6e38e8bc951c1825da8da30",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/04-architecture/reference/2412.06769.md"
     },
     {
       "article": true,
@@ -547,13 +552,14 @@
       "title": "Byte Latent Transformer: Patches Scale Better Than Tokens",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/04-architecture/reference/2412.09871.md",
-      "path": "docs/04-architecture/reference/2412.09871.md",
+      "path": "docs/04-architecture/reference/BLT.md",
       "expected": 27,
       "commit": "298c94d",
       "pass": true,
       "source_sha256": "1d948d718b28e3d4d32881c028cf4079e426c3623457030ab605b8301c03985e",
       "math_signature": "55d28d93fd3a5d9c8394b599f4f9ba1c897dd69cf9db81bea588703294ec0862",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/04-architecture/reference/2412.09871.md"
     },
     {
       "article": true,
@@ -612,13 +618,14 @@
       "title": "CODI：通过自蒸馏把思维链压缩到连续空间",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/04-architecture/reference/2502.21074.md",
-      "path": "docs/04-architecture/reference/2502.21074.md",
+      "path": "docs/04-architecture/reference/CODI.md",
       "expected": 42,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "50c0c3a196c0b71c0ddf84b491e10b10d9d227dc92b4ddf715d68cf4ec1cc104",
       "math_signature": "658329e3a5eb1470fc8998a6785400015f08d1e60099e7cf23bb95f8bfa277bf",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/04-architecture/reference/2502.21074.md"
     },
     {
       "article": true,
@@ -742,13 +749,14 @@
       "title": "On-Policy Distillation of Language Models: Learning from Self-Generated Mistakes（GKD）",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/05-posttraining/reference/2306.13649.md",
-      "path": "docs/05-posttraining/reference/2306.13649.md",
+      "path": "docs/05-posttraining/reference/GKD.md",
       "expected": 77,
       "commit": "298c94d",
       "pass": true,
       "source_sha256": "4086306c590180c42b9c8bb629ed273479ac9534becf522e8efd042d9dce3c52",
       "math_signature": "d6927a7ab0f3bdda6c17e26ddbc8eaaaad3e1ce4b5cfdd3c214d7b863faca1d6",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/05-posttraining/reference/2306.13649.md"
     },
     {
       "article": true,
@@ -777,13 +785,14 @@
       "title": "Distilling System 2 into System 1：把慢思考编译进直接生成",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/05-posttraining/reference/2407.06023.md",
-      "path": "docs/05-posttraining/reference/2407.06023.md",
+      "path": "docs/05-posttraining/reference/System2-to-1.md",
       "expected": 21,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "a66b7a071230cfb4c802c9a25f76a828efe9dcc9b32024c8959f16e705f4aff8",
       "math_signature": "18831f68f53fc0f60eb6727bafdc87038e8be1869392946f6f3fcdfdec48211d",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/05-posttraining/reference/2407.06023.md"
     },
     {
       "article": true,
@@ -867,13 +876,14 @@
       "title": "CoT-Valve：可按长度压缩的 Chain-of-Thought 调优",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/05-posttraining/reference/2502.09601.md",
-      "path": "docs/05-posttraining/reference/2502.09601.md",
+      "path": "docs/05-posttraining/reference/CoT-Valve.md",
       "expected": 60,
       "commit": "298c94d",
       "pass": true,
       "source_sha256": "0499d95f8d1f9dd906a480e13802f582710be1df992605b0c76ca4e97088a300",
       "math_signature": "8aaa6bb50a71ace235c18ef2fbb9aae15f7f2b8e8a1116e28d0715989483c6a3",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/05-posttraining/reference/2502.09601.md"
     },
     {
       "article": true,
@@ -922,13 +932,14 @@
       "title": "TokenSkip：可控的 LLM 思维链压缩",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/05-posttraining/reference/2502.12067.md",
-      "path": "docs/05-posttraining/reference/2502.12067.md",
+      "path": "docs/05-posttraining/reference/TokenSkip.md",
       "expected": 52,
       "commit": "298c94d",
       "pass": true,
       "source_sha256": "4b3fcf89192e1e00252383acfbc05743ca0ba7d150db7c61ef6fdebe72b15330",
       "math_signature": "02d2286b557fb7ea6108c2a4de65a3b78f8ff5c7b908b1aa75df879a8f974d9e",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/05-posttraining/reference/2502.12067.md"
     },
     {
       "article": true,
@@ -977,13 +988,14 @@
       "title": "DAST: Difficulty-Adaptive Slow-Thinking for Large Reasoning Models",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/05-posttraining/reference/2503.04472.md",
-      "path": "docs/05-posttraining/reference/2503.04472.md",
+      "path": "docs/05-posttraining/reference/DAST.md",
       "expected": 55,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "853a6819a357aff85ab8c79bc99a284d57093deedb275ca9d8b404296b298818",
       "math_signature": "a3cdcd4df97564870d8c79b8491a3ae17133f74a7e1c95392ed24f6175bc961a",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/05-posttraining/reference/2503.04472.md"
     },
     {
       "article": true,
@@ -1032,13 +1044,14 @@
       "title": "L1: Controlling How Long A Reasoning Model Thinks With Reinforcement Learning",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/05-posttraining/reference/2503.04697.md",
-      "path": "docs/05-posttraining/reference/2503.04697.md",
+      "path": "docs/05-posttraining/reference/L1.md",
       "expected": 45,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "9e2c42ccfc41f887dfc96960dddd769fee3360642d16882675245f1e5a54fd9a",
       "math_signature": "c663f15e7c88ca56314a69fdebfacfdac207cb54604a2037118b5705cfc56ef5",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/05-posttraining/reference/2503.04697.md"
     },
     {
       "article": true,
@@ -1092,13 +1105,14 @@
       "title": "ReTool: Reinforcement Learning for Strategic Tool Use in LLMs",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/05-posttraining/reference/2504.11536.md",
-      "path": "docs/05-posttraining/reference/2504.11536.md",
+      "path": "docs/05-posttraining/reference/ReTool.md",
       "expected": 23,
       "commit": "298c94d",
       "pass": true,
       "source_sha256": "7ada0da5ab360d962a932cd01a525170cc0b7e616ad625777a6e3c412de0aabf",
       "math_signature": "fa4191552515d2daef8f284d7ce6cb9a63fb4be35a57bae9137206081a3248c8",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/05-posttraining/reference/2504.11536.md"
     },
     {
       "article": true,
@@ -1117,13 +1131,14 @@
       "title": "Self-Distilled Reasoner: On-Policy Self-Distillation for Large Language Models",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/05-posttraining/reference/2601.18734.md",
-      "path": "docs/05-posttraining/reference/2601.18734.md",
+      "path": "docs/05-posttraining/reference/OPSD.md",
       "expected": 38,
       "commit": "298c94d",
       "pass": true,
       "source_sha256": "fabd4c111e9792908c24aab13297eadc7abde1fba49318c2afbed5e9771cd40a",
       "math_signature": "b5b4c40f2bca6f98a844e53366b7d8a8120347c6f004d8f806537a486a2f2b54",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/05-posttraining/reference/2601.18734.md"
     },
     {
       "article": true,
@@ -1242,13 +1257,14 @@
       "title": "The Art of Efficient Reasoning: Data, Reward, and Optimization：正文级中文精读",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/05-posttraining/reference/2602.20945.md",
-      "path": "docs/05-posttraining/reference/2602.20945.md",
+      "path": "docs/05-posttraining/reference/The-Art-of-Efficient-Reasoning.md",
       "expected": 95,
       "commit": "298c94d",
       "pass": true,
       "source_sha256": "9da67329faf0c48bd1e20b2358c8b4edba36c533d46ec8d7206628619ecc5c44",
       "math_signature": "b2a15438bf95685a9cf40875705ea50430365f1eac08c5f60e922b41ea422656",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/05-posttraining/reference/2602.20945.md"
     },
     {
       "article": true,
@@ -1372,13 +1388,14 @@
       "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/06-reasoning/reference/2408.03314.md",
-      "path": "docs/06-reasoning/reference/2408.03314.md",
+      "path": "docs/06-reasoning/reference/Compute-optimal-Test-Time-Scaling.md",
       "expected": 55,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "536f2e627abcac9551baf4252cd946734a5132b86df8c2c78b68035ca491b4bc",
       "math_signature": "3e88b36ab96707c1254c4d8739d85467ab7e95f2be90b4ff43a8b290d307d996",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/06-reasoning/reference/2408.03314.md"
     },
     {
       "article": true,
@@ -1397,13 +1414,14 @@
       "title": "Chain of Draft：Thinking Faster by Writing Less",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/06-reasoning/reference/2502.18600.md",
-      "path": "docs/06-reasoning/reference/2502.18600.md",
+      "path": "docs/06-reasoning/reference/Chain-of-Draft.md",
       "expected": 5,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "a54b1a50ebe4ef82ad0909f750c500e2d4918d195582a2d7d4c5091962830838",
       "math_signature": "ca2f68531144d680d1f1cccfea5c01893edf4863fa37a987b72103c169a61866",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/06-reasoning/reference/2502.18600.md"
     },
     {
       "article": true,
@@ -1437,13 +1455,14 @@
       "title": "Deep Think with Confidence：用模型内部置信度压缩并行推理",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/06-reasoning/reference/2508.15260.md",
-      "path": "docs/06-reasoning/reference/2508.15260.md",
+      "path": "docs/06-reasoning/reference/DeepConf.md",
       "expected": 77,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "a29343461d595fe88e59bd0e331db78dbcd47ad742de387d4404f9a4f04935f7",
       "math_signature": "840e5ee2edb5a0299073c7fea993e8485596d4519525d8eaf03e9faef8b0e9c4",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/06-reasoning/reference/2508.15260.md"
     },
     {
       "article": true,
@@ -1542,13 +1561,14 @@
       "title": "In-context Autoencoder for Context Compression in a Large Language Model：正文级中文精读",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/07-context/reference/2307.06945.md",
-      "path": "docs/07-context/reference/2307.06945.md",
+      "path": "docs/07-context/reference/ICAE.md",
       "expected": 81,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "a654e88911e7707c0fae80f80979168761a88e7bb40f3b394d0f18552d1e8713",
       "math_signature": "ebe0e8dcb2fb7b8e510f7f0207414846289981678b0a73c2f8215e7fae917cbf",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/07-context/reference/2307.06945.md"
     },
     {
       "article": true,
@@ -1567,13 +1587,14 @@
       "title": "RECOMP: Improving Retrieval-Augmented LMs with Compression and Selective Augmentation",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/07-context/reference/2310.04408.md",
-      "path": "docs/07-context/reference/2310.04408.md",
+      "path": "docs/07-context/reference/RECOMP.md",
       "expected": 40,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "46f34c82a8d276028913403006c9aa044ea6c09266e0b5f34a7fc25c356dfdc0",
       "math_signature": "b47255e8b19c4438593cc20b00f42abececbdc65670f2474a9a99ea9a96eac0a",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/07-context/reference/2310.04408.md"
     },
     {
       "article": true,
@@ -1637,13 +1658,14 @@
       "title": "The Complexity Trap: Simple Observation Masking Is as Efficient as LLM Summarization for Agent Context Management",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/07-context/reference/2508.21433.md",
-      "path": "docs/07-context/reference/2508.21433.md",
+      "path": "docs/07-context/reference/The-Complexity-Trap.md",
       "expected": 64,
       "commit": "298c94d",
       "pass": true,
       "source_sha256": "7e33119e819cef71438f5c5555de4a347f65d60a062708183f773240d3362b78",
       "math_signature": "c8c1e791f10c086200c5c927a0688822e4cdcbe53c5e982276765f85ca39bebf",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/07-context/reference/2508.21433.md"
     },
     {
       "article": true,
@@ -1692,13 +1714,14 @@
       "title": "LightMem: Lightweight and Efficient Memory-Augmented Generation",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/07-context/reference/2510.18866.md",
-      "path": "docs/07-context/reference/2510.18866.md",
+      "path": "docs/07-context/reference/LightMem.md",
       "expected": 85,
       "commit": "298c94d",
       "pass": true,
       "source_sha256": "1cfc705962e619e130d900d5bcf47f43bbb44864f1558aebd3d0e1c2013942fd",
       "math_signature": "ca646b13db00d656882d68f60187bd83438c4def543e9683a7637ac6aefe21a7",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/07-context/reference/2510.18866.md"
     },
     {
       "article": true,
@@ -1732,13 +1755,14 @@
       "title": "LLMLingua-2：Data Distillation for Efficient and Faithful Task-Agnostic Prompt Compression",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/07-context/reference/src-7cc3fedc37b4.md",
-      "path": "docs/07-context/reference/src-7cc3fedc37b4.md",
+      "path": "docs/07-context/reference/LLMLingua-2.md",
       "expected": 11,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "3f8af72d1f264c3df38e55cc0899c15210303950741c6927e7b00f54fcd1e5e4",
       "math_signature": "16164695ad30985608b38fff90417507eaf70cc0515d445466aaeb08c1a21b05",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/07-context/reference/src-7cc3fedc37b4.md"
     },
     {
       "article": true,
@@ -1837,13 +1861,14 @@
       "title": "ReWOO：把推理与观察解耦的高效增强语言模型",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/08-agents/reference/2305.18323.md",
-      "path": "docs/08-agents/reference/2305.18323.md",
+      "path": "docs/08-agents/reference/ReWOO.md",
       "expected": 30,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "e9d209ac5b5960d38e7ee9ceac2a712dfb2296a292aea764b5c7f34a499d1c74",
       "math_signature": "80e4361fcb824d076670b2260ae2d7e92b5254bd3ae65fb3fce87374274ef74e",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/08-agents/reference/2305.18323.md"
     },
     {
       "article": true,
@@ -1902,13 +1927,14 @@
       "title": "An LLM Compiler for Parallel Function Calling：正文级精读",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/08-agents/reference/2312.04511.md",
-      "path": "docs/08-agents/reference/2312.04511.md",
+      "path": "docs/08-agents/reference/LLMCompiler.md",
       "expected": 17,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "c78cdec87acc881476f1ce7b0831a0fed293b8144aa8c70a0f5daf5a4a446c2f",
       "math_signature": "6404ee10db559d950aa4811c1e64eb3e491c29384298522195492506540254a7",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/08-agents/reference/2312.04511.md"
     },
     {
       "article": true,
@@ -1982,13 +2008,14 @@
       "title": "RouteLLM：利用偏好数据学习 LLM 路由",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/08-agents/reference/2406.18665.md",
-      "path": "docs/08-agents/reference/2406.18665.md",
+      "path": "docs/08-agents/reference/RouteLLM.md",
       "expected": 89,
       "commit": "298c94d",
       "pass": true,
       "source_sha256": "d470ad77d319049a9308af8b5808dfc90386422991f82567fbed69795be1448f",
       "math_signature": "05c5a63c1e10300c8ea0d8f7bd8fa182c48967e06a9ec7d33213bbce003e7efc",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/08-agents/reference/2406.18665.md"
     },
     {
       "article": true,
@@ -2032,13 +2059,14 @@
       "title": "AgentPrune：Cut the Crap: An Economical Communication Pipeline for LLM-based Multi-Agent Systems",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/08-agents/reference/2410.02506.md",
-      "path": "docs/08-agents/reference/2410.02506.md",
+      "path": "docs/08-agents/reference/AgentPrune.md",
       "expected": 87,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "f250fd0a1553529fabbc454af762ad569fe566b3a823b5e112f13c738f3ca602",
       "math_signature": "073fda1279b7ccff76166970b9c6031625b86088af57c4ebf9fa22832b874aa5",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/08-agents/reference/2410.02506.md"
     },
     {
       "article": true,
@@ -2062,13 +2090,14 @@
       "title": "MEM1：Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/08-agents/reference/2506.15841.md",
-      "path": "docs/08-agents/reference/2506.15841.md",
+      "path": "docs/08-agents/reference/MEM1.md",
       "expected": 3,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "8174864d7222b008f18654cb80c948b81d29e12148cd94d3df47bca77c8e0a7d",
       "math_signature": "07e81d5f50073a41067c4ce827ff43902562b56553fb7af139efb589baee09b3",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/08-agents/reference/2506.15841.md"
     },
     {
       "article": true,
@@ -2152,13 +2181,14 @@
       "title": "FastV：An Image is Worth 1/2 Tokens After Layer 2: Plug-and-Play Inference Acceleration for Large Vision-Language Models",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/09-multimodal/reference/2403.06764.md",
-      "path": "docs/09-multimodal/reference/2403.06764.md",
+      "path": "docs/09-multimodal/reference/FastV.md",
       "expected": 72,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "e21f17f07a69b40cc6df84fb236e48ba5bf59cd89988be156a3a9954f076e89b",
       "math_signature": "d8e25ff8d365726c968abb8801cf4553234d0c9591dc49a8691f898de6cd82e4",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/09-multimodal/reference/2403.06764.md"
     },
     {
       "article": true,
@@ -2187,13 +2217,14 @@
       "title": "LLaVA-PruMerge：面向高效大型多模态模型的自适应 Token 缩减",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/09-multimodal/reference/2403.15388.md",
-      "path": "docs/09-multimodal/reference/2403.15388.md",
+      "path": "docs/09-multimodal/reference/PruMerge.md",
       "expected": 47,
       "commit": "298c94d",
       "pass": true,
       "source_sha256": "7ebd2314270d86565ddfb84ec235e758081803261fa2623a1418e385b31e4ba1",
       "math_signature": "641b21b086fb95fbc0977db25e6f93091c145825a72e2f74fe10d237f3eeda8e",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/09-multimodal/reference/2403.15388.md"
     },
     {
       "article": true,
@@ -2232,13 +2263,14 @@
       "title": "LongVU：面向长视频语言理解的时空自适应压缩",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/09-multimodal/reference/2410.17434.md",
-      "path": "docs/09-multimodal/reference/2410.17434.md",
+      "path": "docs/09-multimodal/reference/LongVU.md",
       "expected": 57,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "a15eba3a8ec276683a124acf0efc581c9e89c18cba278e6c96a8b9314755e531",
       "math_signature": "d20da3613b37869764241c88e77a66697f05895b7942b35785c1973ef84d61c3",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/09-multimodal/reference/2410.17434.md"
     },
     {
       "article": true,
@@ -2282,13 +2314,14 @@
       "title": "SpeechPrune：面向语音信息检索的上下文感知 Token 剪枝",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/09-multimodal/reference/2412.12009.md",
-      "path": "docs/09-multimodal/reference/2412.12009.md",
+      "path": "docs/09-multimodal/reference/SpeechPrune.md",
       "expected": 56,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "ca33f96d6b90d0a11864c02aa2ea65f531bf5da2c3530f13a94dd588a214aa58",
       "math_signature": "623a827c76536a7ccdcf339a2bea83dec010374755cc0753baeb185b0a2cd411",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/09-multimodal/reference/2412.12009.md"
     },
     {
       "article": true,
@@ -2317,13 +2350,14 @@
       "title": "LongVU-TTT: Causal Test-Time Training for Visual Resampling in Long Video Understanding",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/09-multimodal/reference/2608.25729.md",
-      "path": "docs/09-multimodal/reference/2608.25729.md",
+      "path": "docs/09-multimodal/reference/LongVU-TTT.md",
       "expected": 93,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "ebe823d7178e2f62559070bc465712059b8e2b64c8ac25b595782db8c0e5bd13",
       "math_signature": "74bfc7bd2ae2ca1091e1bfa473ffd3386758f6e52c59854e985b68d6674ce1f1",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/09-multimodal/reference/2608.25729.md"
     },
     {
       "article": true,
@@ -2382,13 +2416,14 @@
       "title": "Fast Inference from Transformers via Speculative Decoding",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/10-systems/reference/2211.17192.md",
-      "path": "docs/10-systems/reference/2211.17192.md",
+      "path": "docs/10-systems/reference/Speculative-Decoding.md",
       "expected": 202,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "4aa9db5c6725af85668222d6d3e66ca4cdd041b3e306b8a54b3d90393c3b0183",
       "math_signature": "fabc76d5bf632a613cadd1f25f4691c4ae0398fd6fecd27040280cb706490557",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/10-systems/reference/2211.17192.md"
     },
     {
       "article": true,
@@ -2462,13 +2497,14 @@
       "title": "EAGLE-3：通过训练时测试扩展大语言模型推理加速",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/10-systems/reference/2503.01840.md",
-      "path": "docs/10-systems/reference/2503.01840.md",
+      "path": "docs/10-systems/reference/EAGLE-3.md",
       "expected": 70,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "63c392f7517b96161d757db2a920259d3bc0e26e7c94050d3ed6c159b5031fa7",
       "math_signature": "f9d4bfd71330b3e03d7e76af35c0adf6dd9efdf78d2b4b6ee06281fc79c111b8",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/10-systems/reference/2503.01840.md"
     },
     {
       "article": true,
@@ -2537,13 +2573,14 @@
       "title": "AI Agents That Matter：把智能体评估从“只看准确率”改成成本、泛化与可复现的工程科学",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/11-evaluation/reference/2407.01502.md",
-      "path": "docs/11-evaluation/reference/2407.01502.md",
+      "path": "docs/11-evaluation/reference/AI-Agents-That-Matter.md",
       "expected": 23,
       "commit": "298c94d",
       "pass": true,
       "source_sha256": "95fe156b8f2391d357a81cb7758619ea0d6185701a36e1c883fde464078c103f",
       "math_signature": "4b154679ad3a5ea80bbcca8fc0fa4dff47e90c345f638639558582eaed322dac",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/11-evaluation/reference/2407.01502.md"
     },
     {
       "article": true,
@@ -2602,13 +2639,14 @@
       "title": "Do NOT Think That Much for 2+3=? On the Overthinking of o1-Like LLMs：正文级精读",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/11-evaluation/reference/2412.21187.md",
-      "path": "docs/11-evaluation/reference/2412.21187.md",
+      "path": "docs/11-evaluation/reference/Do-NOT-Think-That-Much-for-2-plus-3.md",
       "expected": 48,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "ee6363ed006a24f670af7cf21eefe3d9bfc943912204a48b7e20490750537ed7",
       "math_signature": "ec5189ea39d33626dab05a2ee1ed290e01a19050d89fa30239605de21d2bf58f",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/11-evaluation/reference/2412.21187.md"
     },
     {
       "article": true,
@@ -2687,13 +2725,14 @@
       "title": "OverThink: Slowdown Attacks on Reasoning LLMs",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/12-safety/reference/2502.02542.md",
-      "path": "docs/12-safety/reference/2502.02542.md",
+      "path": "docs/12-safety/reference/OverThink.md",
       "expected": 28,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "5064b85d24afb69defd339d7a0f3e8476d1f356c50b7ef5f09b605204e5e48e9",
       "math_signature": "4c64da33be283f26cbd4eb83dd724dbe045e7607d2f2c670a34278e48df8287c",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/12-safety/reference/2502.02542.md"
     },
     {
       "article": true,
@@ -2706,13 +2745,14 @@
       "title": "RecurGuard: Runtime Monitoring for Reasoning-Token Consumption Attacks",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/298c94d/docs/12-safety/reference/2606.07968.md",
-      "path": "docs/12-safety/reference/2606.07968.md",
+      "path": "docs/12-safety/reference/RecurGuard.md",
       "expected": 39,
       "commit": "298c94d",
       "pass": true,
       "source_sha256": "f13bd648a898a8d3ee475957c5a3d85342cb5fffb17a292335d3818550277d6d",
       "math_signature": "45ba83514b2020b9b71e09cf3086e119d2f4a80382d3d702cfe63853ff4e5c0a",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/12-safety/reference/2606.07968.md"
     },
     {
       "article": true,
@@ -2806,13 +2846,14 @@
       "title": "Language Models are Multilingual Chain-of-Thought Reasoners：正文级精读",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/13-domains/reference/2210.03057.md",
-      "path": "docs/13-domains/reference/2210.03057.md",
+      "path": "docs/13-domains/reference/MGSM.md",
       "expected": 10,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "0dbddee46f45dceee93e5c0023f01322fd7e033f62351daadb7055d437ecc365",
       "math_signature": "971aabb55fea9258772d7e0dc727521363731e742850185f7e779e00a5794730",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/13-domains/reference/2210.03057.md"
     },
     {
       "article": true,
@@ -2836,13 +2877,14 @@
       "title": "PAL: Program-aided Language Models",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/13-domains/reference/2211.10435.md",
-      "path": "docs/13-domains/reference/2211.10435.md",
+      "path": "docs/13-domains/reference/PAL.md",
       "expected": 20,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "d198eafd15034c096e532f2fbb5112ece5478bd7a1c70bb3427d8da6e1307ac1",
       "math_signature": "e37d56f8ad58d739b58623637e1bd7a36259e46c48e1e24d3c9e8ff8be6566da",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/13-domains/reference/2211.10435.md"
     },
     {
       "article": true,
@@ -2886,13 +2928,14 @@
       "title": "DeepSeek-Prover-V2：通过子目标分解与强化学习推进形式数学推理",
       "unparsed": [],
       "url": "https://github.com/Shiba-hua/token-efficient-llm/blob/5cd4b23/docs/13-domains/reference/2504.21801.md",
-      "path": "docs/13-domains/reference/2504.21801.md",
+      "path": "docs/13-domains/reference/DeepSeek-Prover-V2.md",
       "expected": 31,
       "commit": "5cd4b23",
       "pass": true,
       "source_sha256": "a0452442df3e96680d28c03c547ea2b583df60cfa4dd10fe43a5d93e51cfa772",
       "math_signature": "f097a80e7649fe405d155ff74bb7deee2aff955dd58478b5aaa596379f2edda9",
-      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited"
+      "scope": "DOM renderer/error/unparsed checks; scientific prose coverage not audited",
+      "inspected_path_before_rename": "docs/13-domains/reference/2504.21801.md"
     },
     {
       "article": true,
@@ -3145,5 +3188,10 @@
       "url": "https://github.com/Shiba-hua/token-efficient-llm/actions/runs/34362155612",
       "status": "success"
     }
-  ]
+  ],
+  "reference_filename_migration": {
+    "manifest": "meta/reference-renames.json",
+    "scope": "Only current lookup paths rebased. The original inspected URLs/commits are retained. All 43 renamed reading bodies are byte-identical; chapter link updates do not alter formula signatures.",
+    "reinspection_claimed": false
+  }
 }

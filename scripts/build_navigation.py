@@ -19,7 +19,7 @@ def render():
         table += f'| [研究机会]({link("docs/research-opportunities.md")}) | 最近邻、最小区分实验、否证条件和资源需求 |\n'
         text = '# Token-efficient LLM：推理时 token 效率研究地图\n\n' if target=='README.md' else '# 研究地图阅读目录\n\n'
         text += '**同样的任务性能，更少的实际推理 token。** 本地图按 13 个研究方向组织，生命周期与效率机制作为交叉索引。资料截止日为 2026-09-09。\n\n'
-        text += f'从[总论]({link("docs/00-overview.md")})开始，再选择一个章节。每章的 `index.md` 包含本章概要和方法详解；需要读完整论文内容时，点击正文的精读链接，进入同章 `reference/`。当前版本共有 13 章、43 篇共享精读。\n\n'
+        text += f'从[总论]({link("docs/00-overview.md")})开始，再选择一个章节。每章的 `index.md` 包含本章概要和方法详解；需要读完整论文内容时，点击正文的精读链接，进入同章 `reference/`。精读文件直接采用方法名，例如 `TokenSkip.md`；论文编号保留在文献台账。当前版本共有 13 章、43 篇共享精读。\n\n'
         text += table
         text += f'\n[附录：基础推导、算例、术语与基准]({link("docs/appendix/README.md")})仅供按需查阅；它按用途组织，没有另一套章节编号。必要的方法机制保留在章节正文。\n\n'
         text += f'[生命周期与机制索引]({link("sources/coverage.md")}) · [文献台账与证据]({link("sources/README.md")}) · [历史版本]({link("VERSIONS.md")})\n\n'

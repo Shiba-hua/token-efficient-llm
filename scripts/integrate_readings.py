@@ -16,6 +16,7 @@ from pathlib import Path
 
 from check_content import prose_only
 from check_math import extract, fragment_errors
+from research_registry import reference_path
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -97,7 +98,7 @@ def main() -> None:
         assets = [a for a in assets if a['paper_id'] != pid]
         pending = [a for a in pending if a['paper_id'] != pid]
         text = re.sub(r'`(\{\{FIG:[^}]+\}\})`', r'\1', text)
-        page = ROOT / 'docs' / chapter / 'reference' / (pid + '.md')
+        page = ROOT / reference_path(paper)
         page.parent.mkdir(parents=True, exist_ok=True)
         resolved = {}
         source_targets, digest_targets = {}, {}

@@ -1,7 +1,7 @@
 import copy
 import unittest
 
-from scripts.research_registry import claim, normalize_identifier, validate
+from scripts.research_registry import claim, normalize_identifier, validate, reference_path
 
 
 class RegistryTests(unittest.TestCase):
@@ -43,6 +43,23 @@ class RegistryTests(unittest.TestCase):
         self.assertTrue(validate(self.data))
         self.data['papers'][0]['qc_record'] = 'meta/qc-samples.json#sample-1'
         self.assertEqual(validate(self.data), [])
+
+    def test_reference_name_is_independent_of_paper_identifier(self):
+        paper = {'paper_id': '2502.12067', 'primary_chapter': '05-posttraining',
+                 'method_name': 'TokenSkip', 'reference_filename': 'TokenSkip.md'}
+        self.assertEqual(str(reference_path(paper)), 'docs/05-posttraining/reference/TokenSkip.md')
+        paper['reference_filename'] = '2502.12067.md'
+        with self.assertRaises(ValueError):
+            reference_path(paper)
+
+    def test_reference_filename_requires_an_explicit_safe_name(self):
+        paper = {'paper_id': 'p1', 'primary_chapter': '01-data', 'method_name': '短正确轨迹'}
+        for filename in ['', '../escape.md', 'a/b.md', 'a\\b.md']:
+            paper['reference_filename'] = filename
+            with self.assertRaises(ValueError):
+                reference_path(paper)
+        paper['reference_filename'] = '最短正确自训练.md'
+        self.assertEqual(reference_path(paper).name, '最短正确自训练.md')
 
 
 if __name__ == '__main__':

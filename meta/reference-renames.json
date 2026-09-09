@@ -1,0 +1,379 @@
+{
+  "base_commit": "e2d30b72938117c865a7ac53518cc412edd1ff81",
+  "execution": "7 independent gpt-5.6-luna groups renamed disjoint reference directories; main agent integrated links, registry and validators.",
+  "naming_rule": "Use the method name/recognizable title from each chapter index; stable paper_id stays in the registry, not the filename.",
+  "content_verification": "All 43 reading files match pre-rename SHA-256 exactly.",
+  "changes": [
+    {
+      "paper_id": "2502.20122",
+      "old_path": "docs/01-data/reference/2502.20122.md",
+      "new_path": "docs/01-data/reference/最短正确自训练.md",
+      "method_name": "Shortest-correct self-training",
+      "index_quote": "同题选择短正确轨迹 | Shortest-correct self-training",
+      "sha256": "89cf4e9fcd9a73d96403821a6a51cdf744c144da39f3a9d4977d9b71a0e0138e",
+      "content_sha256": "89cf4e9fcd9a73d96403821a6a51cdf744c144da39f3a9d4977d9b71a0e0138e"
+    },
+    {
+      "paper_id": "2404.19737",
+      "old_path": "docs/02-pretraining/reference/2404.19737.md",
+      "new_path": "docs/02-pretraining/reference/MTP.md",
+      "method_name": "Multi-token Prediction (MTP)",
+      "index_quote": "Gloeckle 等的 Multi-token Prediction（MTP）在共享 Transformer 主干上增加多个未来预测头。",
+      "sha256": "498786739f5f11fcc5c75c3f8df3290e3f2c7c37731011213fda794c10f4196c",
+      "content_sha256": "498786739f5f11fcc5c75c3f8df3290e3f2c7c37731011213fda794c10f4196c"
+    },
+    {
+      "paper_id": "2412.08821",
+      "old_path": "docs/02-pretraining/reference/2412.08821.md",
+      "new_path": "docs/02-pretraining/reference/LCM.md",
+      "method_name": "Large Concept Models (LCM)",
+      "index_quote": "Large Concept Models（LCM）把句子经SONAR编码为连续表示",
+      "sha256": "d625c8fce692ef1cfa664e66f983860bfac5d3e9a7d7dfb6404e97a15e80fc19",
+      "content_sha256": "d625c8fce692ef1cfa664e66f983860bfac5d3e9a7d7dfb6404e97a15e80fc19"
+    },
+    {
+      "paper_id": "2404.07965",
+      "old_path": "docs/03-midtraining/reference/2404.07965.md",
+      "new_path": "docs/03-midtraining/reference/Rho-1.md",
+      "method_name": "Rho-1",
+      "index_quote": "Rho-1 的问题是：文档级过滤之后，一段文本内部的 token 是否都值得用相同权重训练？",
+      "sha256": "b30f5a78d8c7e7b99d8c80f32575c863ba3cef308fc36ad5f5f6988ddbecb173",
+      "content_sha256": "b30f5a78d8c7e7b99d8c80f32575c863ba3cef308fc36ad5f5f6988ddbecb173"
+    },
+    {
+      "paper_id": "2412.06769",
+      "old_path": "docs/04-architecture/reference/2412.06769.md",
+      "new_path": "docs/04-architecture/reference/Coconut.md",
+      "method_name": "Coconut",
+      "index_quote": "Coconut 的 latent 模式省去这个离散化步骤",
+      "sha256": "852bb0f16e449b43b3c922c583784f58e043fd9af9a02a45f0f2a5412b350795",
+      "content_sha256": "852bb0f16e449b43b3c922c583784f58e043fd9af9a02a45f0f2a5412b350795"
+    },
+    {
+      "paper_id": "2502.21074",
+      "old_path": "docs/04-architecture/reference/2502.21074.md",
+      "new_path": "docs/04-architecture/reference/CODI.md",
+      "method_name": "CODI",
+      "index_quote": "CODI 给连续路径增加更直接的教学信号。",
+      "sha256": "50c0c3a196c0b71c0ddf84b491e10b10d9d227dc92b4ddf715d68cf4ec1cc104",
+      "content_sha256": "50c0c3a196c0b71c0ddf84b491e10b10d9d227dc92b4ddf715d68cf4ec1cc104"
+    },
+    {
+      "paper_id": "2412.09871",
+      "old_path": "docs/04-architecture/reference/2412.09871.md",
+      "new_path": "docs/04-architecture/reference/BLT.md",
+      "method_name": "BLT",
+      "index_quote": "BLT 用局部字节模块和动态 patch 分配大模型计算",
+      "sha256": "1d948d718b28e3d4d32881c028cf4079e426c3623457030ab605b8301c03985e",
+      "content_sha256": "1d948d718b28e3d4d32881c028cf4079e426c3623457030ab605b8301c03985e"
+    },
+    {
+      "paper_id": "2502.12067",
+      "old_path": "docs/05-posttraining/reference/2502.12067.md",
+      "new_path": "docs/05-posttraining/reference/TokenSkip.md",
+      "method_name": "TokenSkip",
+      "index_quote": "### TokenSkip：将重要性选择转成可控生成",
+      "content_sha256": "4b3fcf89192e1e00252383acfbc05743ca0ba7d150db7c61ef6fdebe72b15330"
+    },
+    {
+      "paper_id": "2502.09601",
+      "old_path": "docs/05-posttraining/reference/2502.09601.md",
+      "new_path": "docs/05-posttraining/reference/CoT-Valve.md",
+      "method_name": "CoT-Valve",
+      "index_quote": "### CoT-Valve：把长度控制放在参数方向上",
+      "content_sha256": "0499d95f8d1f9dd906a480e13802f582710be1df992605b0c76ca4e97088a300"
+    },
+    {
+      "paper_id": "2407.06023",
+      "old_path": "docs/05-posttraining/reference/2407.06023.md",
+      "new_path": "docs/05-posttraining/reference/System2-to-1.md",
+      "method_name": "System 2→1",
+      "index_quote": "### System 2→1：有些过程可内化，有些任务会失去必要计算",
+      "content_sha256": "a66b7a071230cfb4c802c9a25f76a828efe9dcc9b32024c8959f16e705f4aff8"
+    },
+    {
+      "paper_id": "2306.13649",
+      "old_path": "docs/05-posttraining/reference/2306.13649.md",
+      "new_path": "docs/05-posttraining/reference/GKD.md",
+      "method_name": "GKD",
+      "index_quote": "### GKD：在学生真正访问的前缀上教学",
+      "content_sha256": "4086306c590180c42b9c8bb629ed273479ac9534becf522e8efd042d9dce3c52"
+    },
+    {
+      "paper_id": "2601.18734",
+      "old_path": "docs/05-posttraining/reference/2601.18734.md",
+      "new_path": "docs/05-posttraining/reference/OPSD.md",
+      "method_name": "OPSD",
+      "index_quote": "### 2026 OPSD：特权上下文能改善教学，论文的 token 节省发生在训练侧",
+      "content_sha256": "fabd4c111e9792908c24aab13297eadc7abde1fba49318c2afbed5e9771cd40a"
+    },
+    {
+      "paper_id": "2503.04472",
+      "old_path": "docs/05-posttraining/reference/2503.04472.md",
+      "new_path": "docs/05-posttraining/reference/DAST.md",
+      "method_name": "DAST",
+      "index_quote": "## 偏好优化：DAST 按难度改变长度偏好的方向",
+      "content_sha256": "853a6819a357aff85ab8c79bc99a284d57093deedb275ca9d8b404296b298818"
+    },
+    {
+      "paper_id": "2602.20945",
+      "old_path": "docs/05-posttraining/reference/2602.20945.md",
+      "new_path": "docs/05-posttraining/reference/The-Art-of-Efficient-Reasoning.md",
+      "method_name": "The Art",
+      "index_quote": "### The Art：同一个长度目标可以产生不同训练动力学",
+      "content_sha256": "9da67329faf0c48bd1e20b2358c8b4edba36c533d46ec8d7206628619ecc5c44"
+    },
+    {
+      "paper_id": "2503.04697",
+      "old_path": "docs/05-posttraining/reference/2503.04697.md",
+      "new_path": "docs/05-posttraining/reference/L1.md",
+      "method_name": "L1",
+      "index_quote": "### L1：教模型接近预算，或者允许它提前结束",
+      "content_sha256": "9e2c42ccfc41f887dfc96960dddd769fee3360642d16882675245f1e5a54fd9a"
+    },
+    {
+      "paper_id": "2504.11536",
+      "old_path": "docs/05-posttraining/reference/2504.11536.md",
+      "new_path": "docs/05-posttraining/reference/ReTool.md",
+      "method_name": "ReTool",
+      "index_quote": "## Agentic-RL：工具反馈扩大了可学习的策略空间",
+      "content_sha256": "7ada0da5ab360d962a932cd01a525170cc0b7e616ad625777a6e3c412de0aabf"
+    },
+    {
+      "paper_id": "2408.03314",
+      "old_path": "docs/06-reasoning/reference/2408.03314.md",
+      "new_path": "docs/06-reasoning/reference/Compute-optimal-Test-Time-Scaling.md",
+      "method_name": "Compute-optimal Test-Time Scaling",
+      "index_quote": "Compute-optimal test-time scaling",
+      "content_sha256": "536f2e627abcac9551baf4252cd946734a5132b86df8c2c78b68035ca491b4bc"
+    },
+    {
+      "paper_id": "2502.18600",
+      "old_path": "docs/06-reasoning/reference/2502.18600.md",
+      "new_path": "docs/06-reasoning/reference/Chain-of-Draft.md",
+      "method_name": "Chain of Draft",
+      "index_quote": "Chain of Draft",
+      "content_sha256": "a54b1a50ebe4ef82ad0909f750c500e2d4918d195582a2d7d4c5091962830838"
+    },
+    {
+      "paper_id": "2508.15260",
+      "old_path": "docs/06-reasoning/reference/2508.15260.md",
+      "new_path": "docs/06-reasoning/reference/DeepConf.md",
+      "method_name": "DeepConf",
+      "index_quote": "DeepConf",
+      "content_sha256": "a29343461d595fe88e59bd0e331db78dbcd47ad742de387d4404f9a4f04935f7"
+    },
+    {
+      "paper_id": "src-7cc3fedc37b4",
+      "old_path": "docs/07-context/reference/src-7cc3fedc37b4.md",
+      "new_path": "docs/07-context/reference/LLMLingua-2.md",
+      "method_name": "LLMLingua-2",
+      "index_quote": "LLMLingua-2",
+      "content_sha256": "3f8af72d1f264c3df38e55cc0899c15210303950741c6927e7b00f54fcd1e5e4"
+    },
+    {
+      "paper_id": "2310.04408",
+      "old_path": "docs/07-context/reference/2310.04408.md",
+      "new_path": "docs/07-context/reference/RECOMP.md",
+      "method_name": "RECOMP",
+      "index_quote": "RECOMP",
+      "content_sha256": "46f34c82a8d276028913403006c9aa044ea6c09266e0b5f34a7fc25c356dfdc0"
+    },
+    {
+      "paper_id": "2307.06945",
+      "old_path": "docs/07-context/reference/2307.06945.md",
+      "new_path": "docs/07-context/reference/ICAE.md",
+      "method_name": "ICAE",
+      "index_quote": "ICAE",
+      "content_sha256": "a654e88911e7707c0fae80f80979168761a88e7bb40f3b394d0f18552d1e8713"
+    },
+    {
+      "paper_id": "2508.21433",
+      "old_path": "docs/07-context/reference/2508.21433.md",
+      "new_path": "docs/07-context/reference/The-Complexity-Trap.md",
+      "method_name": "The Complexity Trap",
+      "index_quote": "The Complexity Trap",
+      "content_sha256": "7e33119e819cef71438f5c5555de4a347f65d60a062708183f773240d3362b78"
+    },
+    {
+      "paper_id": "2510.18866",
+      "old_path": "docs/07-context/reference/2510.18866.md",
+      "new_path": "docs/07-context/reference/LightMem.md",
+      "method_name": "LightMem",
+      "index_quote": "LightMem",
+      "content_sha256": "1cfc705962e619e130d900d5bcf47f43bbb44864f1558aebd3d0e1c2013942fd"
+    },
+    {
+      "paper_id": "2305.18323",
+      "old_path": "docs/08-agents/reference/2305.18323.md",
+      "new_path": "docs/08-agents/reference/ReWOO.md",
+      "method_name": "ReWOO",
+      "index_quote": "解耦规划与观察 | ReWOO | 减少每个工具步骤都由模型重读历史、重新规划",
+      "content_sha256": "e9d209ac5b5960d38e7ee9ceac2a712dfb2296a292aea764b5c7f34a499d1c74"
+    },
+    {
+      "paper_id": "2312.04511",
+      "old_path": "docs/08-agents/reference/2312.04511.md",
+      "new_path": "docs/08-agents/reference/LLMCompiler.md",
+      "method_name": "LLMCompiler",
+      "index_quote": "显式依赖和流式调度 | LLMCompiler | 使可并行工具尽早执行，必要时重新规划",
+      "content_sha256": "c78cdec87acc881476f1ce7b0831a0fed293b8144aa8c70a0f5daf5a4a446c2f"
+    },
+    {
+      "paper_id": "2506.15841",
+      "old_path": "docs/08-agents/reference/2506.15841.md",
+      "new_path": "docs/08-agents/reference/MEM1.md",
+      "method_name": "MEM1",
+      "index_quote": "学习紧凑任务状态 | MEM1 | 让模型保留对后续行动有用的信息，丢弃不必要历史",
+      "content_sha256": "8174864d7222b008f18654cb80c948b81d29e12148cd94d3df47bca77c8e0a7d"
+    },
+    {
+      "paper_id": "2410.02506",
+      "old_path": "docs/08-agents/reference/2410.02506.md",
+      "new_path": "docs/08-agents/reference/AgentPrune.md",
+      "method_name": "AgentPrune",
+      "index_quote": "稀疏通信 | AgentPrune | 决定哪些角色和轮次之间传递消息",
+      "content_sha256": "f250fd0a1553529fabbc454af762ad569fe566b3a823b5e112f13c738f3ca602"
+    },
+    {
+      "paper_id": "2406.18665",
+      "old_path": "docs/08-agents/reference/2406.18665.md",
+      "new_path": "docs/08-agents/reference/RouteLLM.md",
+      "method_name": "RouteLLM",
+      "index_quote": "模型路由 | RouteLLM | 在请求开始时选择强弱模型，原目标主要是质量—费用",
+      "content_sha256": "d470ad77d319049a9308af8b5808dfc90386422991f82567fbed69795be1448f"
+    },
+    {
+      "paper_id": "2403.06764",
+      "old_path": "docs/09-multimodal/reference/2403.06764.md",
+      "new_path": "docs/09-multimodal/reference/FastV.md",
+      "method_name": "FastV",
+      "index_quote": "LLM层间剪枝 | FastV",
+      "content_sha256": "e21f17f07a69b40cc6df84fb236e48ba5bf59cd89988be156a3a9954f076e89b"
+    },
+    {
+      "paper_id": "2403.15388",
+      "old_path": "docs/09-multimodal/reference/2403.15388.md",
+      "new_path": "docs/09-multimodal/reference/PruMerge.md",
+      "method_name": "PruMerge",
+      "index_quote": "PruMerge：重要patch作为代表，再收集相似信息",
+      "content_sha256": "7ebd2314270d86565ddfb84ec235e758081803261fa2623a1418e385b31e4ba1"
+    },
+    {
+      "paper_id": "2410.17434",
+      "old_path": "docs/09-multimodal/reference/2410.17434.md",
+      "new_path": "docs/09-multimodal/reference/LongVU.md",
+      "method_name": "LongVU",
+      "index_quote": "时空分阶段压缩 | LongVU",
+      "content_sha256": "a15eba3a8ec276683a124acf0efc581c9e89c18cba278e6c96a8b9314755e531"
+    },
+    {
+      "paper_id": "2412.12009",
+      "old_path": "docs/09-multimodal/reference/2412.12009.md",
+      "new_path": "docs/09-multimodal/reference/SpeechPrune.md",
+      "method_name": "SpeechPrune",
+      "index_quote": "查询相关语音压缩 | SpeechPrune",
+      "content_sha256": "ca33f96d6b90d0a11864c02aa2ea65f531bf5da2c3530f13a94dd588a214aa58"
+    },
+    {
+      "paper_id": "2608.25729",
+      "old_path": "docs/09-multimodal/reference/2608.25729.md",
+      "new_path": "docs/09-multimodal/reference/LongVU-TTT.md",
+      "method_name": "LongVU-TTT",
+      "index_quote": "压缩前进行动态状态聚合 | LongVU-TTT",
+      "content_sha256": "ebe823d7178e2f62559070bc465712059b8e2b64c8ac25b595782db8c0e5bd13"
+    },
+    {
+      "paper_id": "2211.17192",
+      "old_path": "docs/10-systems/reference/2211.17192.md",
+      "new_path": "docs/10-systems/reference/Speculative-Decoding.md",
+      "method_name": "Speculative decoding",
+      "index_quote": "## 投机解码：便宜地提案，严格地验证\n\nSpeculative decoding 让便宜的模型",
+      "content_sha256": "4aa9db5c6725af85668222d6d3e66ca4cdd041b3e306b8a54b3d90393c3b0183"
+    },
+    {
+      "paper_id": "2503.01840",
+      "old_path": "docs/10-systems/reference/2503.01840.md",
+      "new_path": "docs/10-systems/reference/EAGLE-3.md",
+      "method_name": "EAGLE-3",
+      "index_quote": "## EAGLE-3：让草稿在更接近部署的状态上学习\n\nEAGLE系列利用目标模型的中间特征辅助草稿。EAGLE-3结合不同深度的信息",
+      "content_sha256": "63c392f7517b96161d757db2a920259d3bc0e26e7c94050d3ed6c159b5031fa7"
+    },
+    {
+      "paper_id": "2407.01502",
+      "old_path": "docs/11-evaluation/reference/2407.01502.md",
+      "new_path": "docs/11-evaluation/reference/AI-Agents-That-Matter.md",
+      "method_name": "AI Agents That Matter",
+      "index_quote": "## AI Agents That Matter：评价会反过来塑造算法\n\n这项工作指出只优化准确率会奖励昂贵的Agent设计",
+      "content_sha256": "95fe156b8f2391d357a81cb7758619ea0d6185701a36e1c883fde464078c103f"
+    },
+    {
+      "paper_id": "2412.21187",
+      "old_path": "docs/11-evaluation/reference/2412.21187.md",
+      "new_path": "docs/11-evaluation/reference/Do-NOT-Think-That-Much-for-2-plus-3.md",
+      "method_name": "Do NOT Think That Much for 2+3=?",
+      "index_quote": "《Do NOT Think That Much for 2+3=?》把长响应分成多个解法，观察首次正确和后续策略的新颖性。",
+      "content_sha256": "ee6363ed006a24f670af7cf21eefe3d9bfc943912204a48b7e20490750537ed7"
+    },
+    {
+      "paper_id": "2502.02542",
+      "old_path": "docs/12-safety/reference/2502.02542.md",
+      "new_path": "docs/12-safety/reference/OverThink.md",
+      "method_name": "OverThink",
+      "index_quote": "| 外部内容诱发额外推理 | OverThink | 不可信文档中的任务诱饵、模型间转移与资源放大 |",
+      "content_sha256": "5064b85d24afb69defd339d7a0f3e8476d1f356c50b7ef5f09b605204e5e48e9"
+    },
+    {
+      "paper_id": "2606.07968",
+      "old_path": "docs/12-safety/reference/2606.07968.md",
+      "new_path": "docs/12-safety/reference/RecurGuard.md",
+      "method_name": "RecurGuard",
+      "index_quote": "| 流式异常消耗监测 | RecurGuard | 重复、增长和任务进度信号；连续异常后停止 |",
+      "content_sha256": "f13bd648a898a8d3ee475957c5a3d85342cb5fffb17a292335d3818550277d6d"
+    },
+    {
+      "paper_id": "2211.10435",
+      "old_path": "docs/13-domains/reference/2211.10435.md",
+      "new_path": "docs/13-domains/reference/PAL.md",
+      "method_name": "PAL",
+      "index_quote": "| 把精确计算交给程序 | PAL、ReTool | 文本推导是否可替换为代码，解释器与重试成本是多少 |",
+      "content_sha256": "d198eafd15034c096e532f2fbb5112ece5478bd7a1c70bb3427d8da6e1307ac1"
+    },
+    {
+      "paper_id": "2210.03057",
+      "old_path": "docs/13-domains/reference/2210.03057.md",
+      "new_path": "docs/13-domains/reference/MGSM.md",
+      "method_name": "MGSM",
+      "index_quote": "| 改变推理语言 | Multilingual CoT / MGSM | 能力和分词差异能否改善实际预算，翻译是否增加开销 |",
+      "content_sha256": "0dbddee46f45dceee93e5c0023f01322fd7e033f62351daadb7055d437ecc365"
+    },
+    {
+      "paper_id": "2504.21801",
+      "old_path": "docs/13-domains/reference/2504.21801.md",
+      "new_path": "docs/13-domains/reference/DeepSeek-Prover-V2.md",
+      "method_name": "DeepSeek-Prover-V2",
+      "index_quote": "| 分解为可验证子目标 | DeepSeek-Prover-V2 | 子问题和验证能否减少无效搜索，训练与高预算成本怎样计量 |",
+      "content_sha256": "a0452442df3e96680d28c03c547ea2b583df60cfa4dd10fe43a5d93e51cfa772"
+    }
+  ],
+  "link_updated_documents": [
+    "assets/papers/README.md",
+    "docs/00-overview.md",
+    "docs/01-data/index.md",
+    "docs/02-pretraining/index.md",
+    "docs/03-midtraining/index.md",
+    "docs/04-architecture/index.md",
+    "docs/05-posttraining/index.md",
+    "docs/06-reasoning/index.md",
+    "docs/07-context/index.md",
+    "docs/08-agents/index.md",
+    "docs/09-multimodal/index.md",
+    "docs/10-systems/index.md",
+    "docs/11-evaluation/index.md",
+    "docs/12-safety/index.md",
+    "docs/13-domains/index.md",
+    "docs/research-opportunities.md",
+    "sources/coverage.md"
+  ],
+  "historical_records": "Immutable old URLs and historical migration/failure records are preserved; live registry and formula-receipt lookup paths are updated."
+}

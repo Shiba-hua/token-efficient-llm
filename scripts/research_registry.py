@@ -11,6 +11,23 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT = ROOT / 'sources' / 'papers.json'
 
 
+def reference_path(paper: dict) -> Path:
+    """Keep the stable paper identity separate from the reader-facing filename."""
+    filename = paper.get('reference_filename', '')
+    chapter = paper.get('primary_chapter', '')
+    if not paper.get('method_name') or not filename.endswith('.md'):
+        raise ValueError(f"{paper['paper_id']}: choose a method name and reference_filename")
+    stem = filename[:-3]
+    if (not stem or not stem[0].isalnum()
+            or any(not (c.isalnum() or c in '._-') for c in stem)
+            or stem == paper['paper_id']
+            or re.fullmatch(r'\d{4}\.\d{4,5}|src-[a-f0-9]+', stem)):
+        raise ValueError(f"{paper['paper_id']}: unsafe or identifier-only reference filename")
+    if not re.fullmatch(r'\d{2}-[a-z][a-z0-9-]*', chapter):
+        raise ValueError(f"{paper['paper_id']}: invalid primary chapter")
+    return Path('docs') / chapter / 'reference' / filename
+
+
 def normalize_identifier(value: str) -> str:
     value = unquote(value.strip())
     match = re.search(r'(?:arxiv(?:\.org/(?:abs|html|pdf)/|:))?(\d{4}\.\d{4,5})(?:v\d+)?(?:\.pdf)?', value, re.I)

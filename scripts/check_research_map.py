@@ -14,7 +14,7 @@ import sys
 from urllib.parse import unquote, urlsplit
 
 from check_content import ROOT, links_in, prose_only, published_markdown
-from research_registry import validate
+from research_registry import validate, reference_path
 from check_math import collect as collect_math
 
 
@@ -73,7 +73,11 @@ def main() -> int:
     artifacts = []
     for paper in published:
         pid = paper["paper_id"]
-        expected = f"docs/{paper['primary_chapter']}/reference/{pid}.md"
+        try:
+            expected = str(reference_path(paper))
+        except ValueError as error:
+            errors.append(str(error))
+            continue
         if paper.get("artifact") != expected or not (ROOT / expected).is_file():
             errors.append(f"invalid primary artifact: {pid}")
         artifacts.append(expected)
@@ -89,6 +93,8 @@ def main() -> int:
                 (ROOT / "docs").glob("*/reference/*.md")}
     if set(artifacts) != physical or len(artifacts) != len(set(artifacts)):
         errors.append("reference files and unique publication records differ")
+    if len({p.casefold() for p in artifacts}) != len(artifacts):
+        errors.append('case-insensitive reference filename collision')
     queue = json.loads((metadata / "reading-queue.json").read_text())
     expected_ids = {p["paper_id"] for p in queue} | {"2602.20945", "src-7cc3fedc37b4"}
     if expected_ids != {p["paper_id"] for p in published}:

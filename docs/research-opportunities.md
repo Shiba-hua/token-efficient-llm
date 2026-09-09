@@ -10,11 +10,11 @@
 
 | 候选问题 | 最近邻与尚缺证据 | 最小区分实验 | 否证条件与资源 |
 | --- | --- | --- | --- |
-| 保留失败信号与出处的状态压缩 | [Complexity Trap](07-context/reference/2508.21433.md)、[MEM1](08-agents/reference/2506.15841.md)、[LightMem](07-context/reference/2510.18866.md)；单轮压缩率不能解释任务轮数 | 固定一个已有软件/检索环境，比较观察遮蔽、摘要、带出处回读与候选策略；按是否需要历史错误线索分层，计入摘要和回读 | 若相同成功率的总 I/O 无改善，或收益只来自删掉失败任务，则否证。可先只做现成模型推理，训练随后决定 |
-| 依据验证收益停止搜索 | [Snell](06-reasoning/reference/2408.03314.md)、[DeepConf](06-reasoning/reference/2508.15260.md)、[L1](05-posttraining/reference/2503.04697.md)；验证也有费用，置信度会失配 | 同模型比较固定预算、简洁/预算提示、原方法停止器和候选信号；开发集定阈值，测试集按难度报告多预算曲线与尾部 | 加上验证成本后收益消失，或困难题只是更早放弃，即否证。需要可取得 logits/usage 的推理接口，先不训练大模型 |
-| 短轨迹训练是否学到预算利用策略 | [The Art](05-posttraining/reference/2602.20945.md)、[最短正确自训练](01-data/reference/2502.20122.md)、[TokenSkip](05-posttraining/reference/2502.12067.md)、[DAST](05-posttraining/reference/2503.04472.md)；平均缩短与高预算潜力可能冲突 | 固定教师采样量与学生初始化，比较短 SFT、表达压缩、难度偏好和效率 RL；同时测低/中/高预算、正确/错误长度和多次采样成功率 | 候选只在一个预算点有效、训练投入不对齐，或高预算损失抵消目标收益，则不能声称整条前沿改善。先用小模型开发，再按目标 GPU 预检可训练长度 |
-| 程序化控制流与工具观察选择 | [ReWOO](08-agents/reference/2305.18323.md)、[LLMCompiler](08-agents/reference/2312.04511.md)、[ReTool](05-posttraining/reference/2504.11536.md)；提前规划可能缺反馈 | 固定工具与执行器，比较逐步决策、依赖图执行、确定性结果过滤和候选介入策略；按可预知依赖/需观察修正分组 | 只击败冗长弱基线，或省下提示却增加重试，则否证。优先复用现有 harness，保留事件流，不先自建整个平台 |
-| 上游目标怎样改变达到同样质量的推理长度 | [MTP](02-pretraining/reference/2404.19737.md)、[Rho-1](03-midtraining/reference/2404.07965.md)、[LCM](02-pretraining/reference/2412.08821.md)；现有能力证据不等于部署 token 证据 | 优先取得受控训练目标/检查点对照，固定普通自回归解码，绘制多预算任务曲线；把草稿加速关掉，分开测能力和生成长度 | 若仅 FLOPs/训练损失改善，或不同模型/数据混杂无法排除，则没有回答该问题。可用公开受控小模型或有限继续训练做机制实验；从头大模型训练不作默认起点 |
+| 保留失败信号与出处的状态压缩 | [Complexity Trap](07-context/reference/The-Complexity-Trap.md)、[MEM1](08-agents/reference/MEM1.md)、[LightMem](07-context/reference/LightMem.md)；单轮压缩率不能解释任务轮数 | 固定一个已有软件/检索环境，比较观察遮蔽、摘要、带出处回读与候选策略；按是否需要历史错误线索分层，计入摘要和回读 | 若相同成功率的总 I/O 无改善，或收益只来自删掉失败任务，则否证。可先只做现成模型推理，训练随后决定 |
+| 依据验证收益停止搜索 | [Snell](06-reasoning/reference/Compute-optimal-Test-Time-Scaling.md)、[DeepConf](06-reasoning/reference/DeepConf.md)、[L1](05-posttraining/reference/L1.md)；验证也有费用，置信度会失配 | 同模型比较固定预算、简洁/预算提示、原方法停止器和候选信号；开发集定阈值，测试集按难度报告多预算曲线与尾部 | 加上验证成本后收益消失，或困难题只是更早放弃，即否证。需要可取得 logits/usage 的推理接口，先不训练大模型 |
+| 短轨迹训练是否学到预算利用策略 | [The Art](05-posttraining/reference/The-Art-of-Efficient-Reasoning.md)、[最短正确自训练](01-data/reference/最短正确自训练.md)、[TokenSkip](05-posttraining/reference/TokenSkip.md)、[DAST](05-posttraining/reference/DAST.md)；平均缩短与高预算潜力可能冲突 | 固定教师采样量与学生初始化，比较短 SFT、表达压缩、难度偏好和效率 RL；同时测低/中/高预算、正确/错误长度和多次采样成功率 | 候选只在一个预算点有效、训练投入不对齐，或高预算损失抵消目标收益，则不能声称整条前沿改善。先用小模型开发，再按目标 GPU 预检可训练长度 |
+| 程序化控制流与工具观察选择 | [ReWOO](08-agents/reference/ReWOO.md)、[LLMCompiler](08-agents/reference/LLMCompiler.md)、[ReTool](05-posttraining/reference/ReTool.md)；提前规划可能缺反馈 | 固定工具与执行器，比较逐步决策、依赖图执行、确定性结果过滤和候选介入策略；按可预知依赖/需观察修正分组 | 只击败冗长弱基线，或省下提示却增加重试，则否证。优先复用现有 harness，保留事件流，不先自建整个平台 |
+| 上游目标怎样改变达到同样质量的推理长度 | [MTP](02-pretraining/reference/MTP.md)、[Rho-1](03-midtraining/reference/Rho-1.md)、[LCM](02-pretraining/reference/LCM.md)；现有能力证据不等于部署 token 证据 | 优先取得受控训练目标/检查点对照，固定普通自回归解码，绘制多预算任务曲线；把草稿加速关掉，分开测能力和生成长度 | 若仅 FLOPs/训练损失改善，或不同模型/数据混杂无法排除，则没有回答该问题。可用公开受控小模型或有限继续训练做机制实验；从头大模型训练不作默认起点 |
 
 前两项的优先级来自首轮证据成本与可复用性，并非预计论文一定更容易。第三项最近邻密集：The Art 已系统比较数据、奖励与优化，“GRPO 加长度惩罚”需要进一步指出新增机制。第五项保留上游研究入口，同时正面暴露当前证据缺口。
 

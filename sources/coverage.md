@@ -64,46 +64,46 @@
 
 | 主归属 | 论文 | 固定读取版本 |
 | --- | --- | --- |
-| 01-data | [Self-Training Elicits Concise Reasoning in Large Language Models](../docs/01-data/reference/2502.20122.md) | arXiv v3, 2025-06-10 |
-| 02-pretraining | [Better & Faster Large Language Models via Multi-token Prediction](../docs/02-pretraining/reference/2404.19737.md) | arXiv v1, 2024-04-30 |
-| 02-pretraining | [Large Concept Models](../docs/02-pretraining/reference/2412.08821.md) | 2412.08821v2 |
-| 03-midtraining | [Rho-1: Not All Tokens Are What You Need](../docs/03-midtraining/reference/2404.07965.md) | v1 |
-| 04-architecture | [Coconut](../docs/04-architecture/reference/2412.06769.md) | v4 (2026-08-23) |
-| 04-architecture | [Byte Latent Transformer: Patches Scale Better Than Tokens](../docs/04-architecture/reference/2412.09871.md) | 2412.09871v1 |
-| 04-architecture | [CODI](../docs/04-architecture/reference/2502.21074.md) | 2502.21074v3 |
-| 05-posttraining | [GKD / On-policy Distillation of Language Models](../docs/05-posttraining/reference/2306.13649.md) | 2306.13649v3 (2024-01-17), ICLR 2024 camera-ready |
-| 05-posttraining | [Distilling System 2 into System 1](../docs/05-posttraining/reference/2407.06023.md) | 2407.06023v3 |
-| 05-posttraining | [CoT-Valve](../docs/05-posttraining/reference/2502.09601.md) | 2502.09601v1 |
-| 05-posttraining | [TokenSkip](../docs/05-posttraining/reference/2502.12067.md) | v3 (2025-09-16; EMNLP 2025 camera-ready) |
-| 05-posttraining | [DAST](../docs/05-posttraining/reference/2503.04472.md) | v3 (2026-01-12) |
-| 05-posttraining | [L1](../docs/05-posttraining/reference/2503.04697.md) | 2503.04697v2 / COLM 2025 |
-| 05-posttraining | [ReTool](../docs/05-posttraining/reference/2504.11536.md) | 2504.11536v2 |
-| 05-posttraining | [Self-Distilled Reasoner: On-Policy Self-Distillation for Large Language Models](../docs/05-posttraining/reference/2601.18734.md) | 2601.18734v3 (2026-03-20) |
-| 05-posttraining | [The Art of Efficient Reasoning: Data, Reward, and Optimization](../docs/05-posttraining/reference/2602.20945.md) | v3 |
-| 06-reasoning | [Compute-optimal Test-Time Scaling](../docs/06-reasoning/reference/2408.03314.md) | v1 (2024-08-06), fixed for reading on 2026-09-09 |
-| 06-reasoning | [Chain of Draft: Thinking faster by writing less](../docs/06-reasoning/reference/2502.18600.md) | 2502.18600v2 |
-| 06-reasoning | [DeepConf](../docs/06-reasoning/reference/2508.15260.md) | 2508.15260v1 |
-| 07-context | [ICAE](../docs/07-context/reference/2307.06945.md) | 2307.06945v4 (ICLR 2024 camera-ready source; arXiv 2024-05-08) |
-| 07-context | [RECOMP](../docs/07-context/reference/2310.04408.md) | v1 (2023-10-06) |
-| 07-context | [The Complexity Trap](../docs/07-context/reference/2508.21433.md) | 2508.21433v3 |
-| 07-context | [LightMem: Lightweight and Efficient Memory-Augmented Generation](../docs/07-context/reference/2510.18866.md) | 2510.18866v4 |
-| 07-context | [LLMLingua-2](../docs/07-context/reference/src-7cc3fedc37b4.md) | {'title': 'LLMLingua-2: Data Distillation for Efficient and Faithful Task-Agnostic Prompt Compression', 'authors': ['Zhuoshi Pan', 'Qianhui Wu', 'Huiqiang Jiang', 'Menglin Xia', 'Xufang Luo', 'Jue Zhang', 'Qingwei Lin', 'Victor Rühle', 'Yuqing Yang', 'Chin-Yew Lin', 'H. Vicky Zhao', 'Lili Qiu', 'Dongmei Zhang'], 'year': 2024, 'venue': 'Findings of ACL 2024', 'pages': '963-981', 'doi': '10.18653/v1/2024.findings-acl.57', 'url': 'https://aclanthology.org/2024.findings-acl.57/', 'pdf_url': 'https://aclanthology.org/2024.findings-acl.57.pdf'} |
-| 08-agents | [REWOO: Decoupling Reasoning from Observations for Efficient Augmented Language Models](../docs/08-agents/reference/2305.18323.md) | arXiv v1, submitted 2023-05-23 |
-| 08-agents | [LLMCompiler](../docs/08-agents/reference/2312.04511.md) | 2312.04511v3 |
-| 08-agents | [RouteLLM](../docs/08-agents/reference/2406.18665.md) | 2406.18665v4 |
-| 08-agents | [AgentPrune](../docs/08-agents/reference/2410.02506.md) | 2410.02506v1 |
-| 08-agents | [MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents](../docs/08-agents/reference/2506.15841.md) | 2506.15841v2 |
-| 09-multimodal | [FastV](../docs/09-multimodal/reference/2403.06764.md) | 2403.06764v3 |
-| 09-multimodal | [LLaVA-PruMerge](../docs/09-multimodal/reference/2403.15388.md) | 2403.15388v6 |
-| 09-multimodal | [LongVU](../docs/09-multimodal/reference/2410.17434.md) | 2410.17434v1 |
-| 09-multimodal | [SpeechPrune](../docs/09-multimodal/reference/2412.12009.md) | 2412.12009v2 (arXiv online 2025-03-30) |
-| 09-multimodal | [LongVU-TTT](../docs/09-multimodal/reference/2608.25729.md) | 2608.25729v1 |
-| 10-systems | [Speculative Decoding](../docs/10-systems/reference/2211.17192.md) | 2211.17192v2 |
-| 10-systems | [EAGLE-3](../docs/10-systems/reference/2503.01840.md) | 2503.01840v3 |
-| 11-evaluation | [AI Agents That Matter](../docs/11-evaluation/reference/2407.01502.md) | 2407.01502v1 |
-| 11-evaluation | [Do Not Think That Much for 2+3=? on the Overthinking of o1-like LLMs](../docs/11-evaluation/reference/2412.21187.md) | 2412.21187v2 |
-| 12-safety | [OverThink](../docs/12-safety/reference/2502.02542.md) | 2502.02542v4 |
-| 12-safety | [RecurGuard: Runtime Monitoring for Reasoning-Token Consumption Attacks](../docs/12-safety/reference/2606.07968.md) | v1 (2026-06-06) |
-| 13-domains | [Language models are multilingual chain-of-thought reasoners](../docs/13-domains/reference/2210.03057.md) | 2210.03057v1 |
-| 13-domains | [PAL](../docs/13-domains/reference/2211.10435.md) | 2211.10435v2 (2023-01-27) |
-| 13-domains | [DeepSeek-Prover-V2: Advancing Formal Mathematical Reasoning via Reinforcement Learning for Subgoal Decomposition](../docs/13-domains/reference/2504.21801.md) | arXiv:2504.21801v2 (2025-07-18) |
+| 01-data | [Self-Training Elicits Concise Reasoning in Large Language Models](../docs/01-data/reference/最短正确自训练.md) | arXiv v3, 2025-06-10 |
+| 02-pretraining | [Better & Faster Large Language Models via Multi-token Prediction](../docs/02-pretraining/reference/MTP.md) | arXiv v1, 2024-04-30 |
+| 02-pretraining | [Large Concept Models](../docs/02-pretraining/reference/LCM.md) | 2412.08821v2 |
+| 03-midtraining | [Rho-1: Not All Tokens Are What You Need](../docs/03-midtraining/reference/Rho-1.md) | v1 |
+| 04-architecture | [Coconut](../docs/04-architecture/reference/Coconut.md) | v4 (2026-08-23) |
+| 04-architecture | [Byte Latent Transformer: Patches Scale Better Than Tokens](../docs/04-architecture/reference/BLT.md) | 2412.09871v1 |
+| 04-architecture | [CODI](../docs/04-architecture/reference/CODI.md) | 2502.21074v3 |
+| 05-posttraining | [GKD / On-policy Distillation of Language Models](../docs/05-posttraining/reference/GKD.md) | 2306.13649v3 (2024-01-17), ICLR 2024 camera-ready |
+| 05-posttraining | [Distilling System 2 into System 1](../docs/05-posttraining/reference/System2-to-1.md) | 2407.06023v3 |
+| 05-posttraining | [CoT-Valve](../docs/05-posttraining/reference/CoT-Valve.md) | 2502.09601v1 |
+| 05-posttraining | [TokenSkip](../docs/05-posttraining/reference/TokenSkip.md) | v3 (2025-09-16; EMNLP 2025 camera-ready) |
+| 05-posttraining | [DAST](../docs/05-posttraining/reference/DAST.md) | v3 (2026-01-12) |
+| 05-posttraining | [L1](../docs/05-posttraining/reference/L1.md) | 2503.04697v2 / COLM 2025 |
+| 05-posttraining | [ReTool](../docs/05-posttraining/reference/ReTool.md) | 2504.11536v2 |
+| 05-posttraining | [Self-Distilled Reasoner: On-Policy Self-Distillation for Large Language Models](../docs/05-posttraining/reference/OPSD.md) | 2601.18734v3 (2026-03-20) |
+| 05-posttraining | [The Art of Efficient Reasoning: Data, Reward, and Optimization](../docs/05-posttraining/reference/The-Art-of-Efficient-Reasoning.md) | v3 |
+| 06-reasoning | [Compute-optimal Test-Time Scaling](../docs/06-reasoning/reference/Compute-optimal-Test-Time-Scaling.md) | v1 (2024-08-06), fixed for reading on 2026-09-09 |
+| 06-reasoning | [Chain of Draft: Thinking faster by writing less](../docs/06-reasoning/reference/Chain-of-Draft.md) | 2502.18600v2 |
+| 06-reasoning | [DeepConf](../docs/06-reasoning/reference/DeepConf.md) | 2508.15260v1 |
+| 07-context | [ICAE](../docs/07-context/reference/ICAE.md) | 2307.06945v4 (ICLR 2024 camera-ready source; arXiv 2024-05-08) |
+| 07-context | [RECOMP](../docs/07-context/reference/RECOMP.md) | v1 (2023-10-06) |
+| 07-context | [The Complexity Trap](../docs/07-context/reference/The-Complexity-Trap.md) | 2508.21433v3 |
+| 07-context | [LightMem: Lightweight and Efficient Memory-Augmented Generation](../docs/07-context/reference/LightMem.md) | 2510.18866v4 |
+| 07-context | [LLMLingua-2](../docs/07-context/reference/LLMLingua-2.md) | {'title': 'LLMLingua-2: Data Distillation for Efficient and Faithful Task-Agnostic Prompt Compression', 'authors': ['Zhuoshi Pan', 'Qianhui Wu', 'Huiqiang Jiang', 'Menglin Xia', 'Xufang Luo', 'Jue Zhang', 'Qingwei Lin', 'Victor Rühle', 'Yuqing Yang', 'Chin-Yew Lin', 'H. Vicky Zhao', 'Lili Qiu', 'Dongmei Zhang'], 'year': 2024, 'venue': 'Findings of ACL 2024', 'pages': '963-981', 'doi': '10.18653/v1/2024.findings-acl.57', 'url': 'https://aclanthology.org/2024.findings-acl.57/', 'pdf_url': 'https://aclanthology.org/2024.findings-acl.57.pdf'} |
+| 08-agents | [REWOO: Decoupling Reasoning from Observations for Efficient Augmented Language Models](../docs/08-agents/reference/ReWOO.md) | arXiv v1, submitted 2023-05-23 |
+| 08-agents | [LLMCompiler](../docs/08-agents/reference/LLMCompiler.md) | 2312.04511v3 |
+| 08-agents | [RouteLLM](../docs/08-agents/reference/RouteLLM.md) | 2406.18665v4 |
+| 08-agents | [AgentPrune](../docs/08-agents/reference/AgentPrune.md) | 2410.02506v1 |
+| 08-agents | [MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents](../docs/08-agents/reference/MEM1.md) | 2506.15841v2 |
+| 09-multimodal | [FastV](../docs/09-multimodal/reference/FastV.md) | 2403.06764v3 |
+| 09-multimodal | [LLaVA-PruMerge](../docs/09-multimodal/reference/PruMerge.md) | 2403.15388v6 |
+| 09-multimodal | [LongVU](../docs/09-multimodal/reference/LongVU.md) | 2410.17434v1 |
+| 09-multimodal | [SpeechPrune](../docs/09-multimodal/reference/SpeechPrune.md) | 2412.12009v2 (arXiv online 2025-03-30) |
+| 09-multimodal | [LongVU-TTT](../docs/09-multimodal/reference/LongVU-TTT.md) | 2608.25729v1 |
+| 10-systems | [Speculative Decoding](../docs/10-systems/reference/Speculative-Decoding.md) | 2211.17192v2 |
+| 10-systems | [EAGLE-3](../docs/10-systems/reference/EAGLE-3.md) | 2503.01840v3 |
+| 11-evaluation | [AI Agents That Matter](../docs/11-evaluation/reference/AI-Agents-That-Matter.md) | 2407.01502v1 |
+| 11-evaluation | [Do Not Think That Much for 2+3=? on the Overthinking of o1-like LLMs](../docs/11-evaluation/reference/Do-NOT-Think-That-Much-for-2-plus-3.md) | 2412.21187v2 |
+| 12-safety | [OverThink](../docs/12-safety/reference/OverThink.md) | 2502.02542v4 |
+| 12-safety | [RecurGuard: Runtime Monitoring for Reasoning-Token Consumption Attacks](../docs/12-safety/reference/RecurGuard.md) | v1 (2026-06-06) |
+| 13-domains | [Language models are multilingual chain-of-thought reasoners](../docs/13-domains/reference/MGSM.md) | 2210.03057v1 |
+| 13-domains | [PAL](../docs/13-domains/reference/PAL.md) | 2211.10435v2 (2023-01-27) |
+| 13-domains | [DeepSeek-Prover-V2: Advancing Formal Mathematical Reasoning via Reinforcement Learning for Subgoal Decomposition](../docs/13-domains/reference/DeepSeek-Prover-V2.md) | arXiv:2504.21801v2 (2025-07-18) |
